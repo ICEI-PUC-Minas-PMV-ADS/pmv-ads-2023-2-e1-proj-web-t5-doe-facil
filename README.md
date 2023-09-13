@@ -1,26 +1,25 @@
-# Título do Projeto
+# Doe Fácil
 
-`CURSO`
+Tecnologia em Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+Desenvolvimento de aplicação Web Front-and
 
-`SEMESTRE`
+   1 SEMESTRE
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+`Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.`
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Bárbara Figueiredo de Assis Almeida
+* Carlos Roberto da Silva Júnior 
+* Edmilson José dos Santos Júnior
+* Guilherme Radicchi Campos Lobato de Almeida
+* Jéssica Reis de Souza 
+* Márcia Monique Oliveira
 
 ## Orientador
 
-* Nome completo do professor
-
+* Simone Alves Nogueira 
 # Documentação
 
 <ol>
