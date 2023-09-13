@@ -9,9 +9,16 @@ Pensando nisso desenvolvemos o projeto da ‘Doe Fácil!’, uma plataforma que 
 A missão da ‘Doe Fácil!’ é facilitar e incentivar a doação para organizações que necessitam delas, resolvendo o problema de transporte e disponibilidade de tempo dos doadores. Consequentemente ampliando o impacto positivo das instituições de caridade, organizações sem fins lucrativos e causas humanitárias.
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
 
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+Proporcionar uma nova finalidade para objetos e roupas através da doação é uma ação que produz inúmeros benefícios para a sociedade. Porém, doar não é uma ação fácil, para realizar uma doação, os doadores levam em consideração vários aspectos. 
+
+Dentre eles temos: a instituição possuir credibilidade, qual instituição realmente vai precisar dos itens que o doador quer doar, as pessoas que vão receber realmente precisam dos itens, etc. 
+
+Para as pessoas que realizam a doação é uma forma de desapegar e liberar espaço. O ato de doar faz com que os itens não sejam destinados ao lixo, com isso reduz a poluição e a sobrecarga de aterros sanitários. 
+
+Diariamente inúmeras pessoas apresentam como problema a dificuldade de realizar a destinação adequada para itens de doação. Onde realizar a entrega? Quando? O que posso doar?   
+
+São muitas dúvidas, que fazem com que o doador acabe por não realizar a doação. Além destas dúvidas, ele também encontra outros obstáculos, estes relacionados a credibilidade das instituições. 
 
 
 ## Objetivos
