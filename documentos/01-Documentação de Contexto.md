@@ -1,6 +1,12 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+Com base em uma pesquisa realizada pelo IDIS – Instituto para o Desenvolvimento do Investimento Social, de 2015 para 2020, o número de brasileiros que realizou algum tipo de doação caiu de 77% dos entrevistados para 66%. Diversos motivos podem ser apontados para essa queda, no entanto, é perceptível que a sociedade como um todo reconhece a importância de se doar e possuem uma visão mais positiva das instituições de caridade (IDIS - Instituto para o Desenvolvimento do Investimento Social, 2021). 
+
+Com a rotina cada vez mais corrida, muitas pessoas acabam deixando de doar por falta de tempo para levar as doações até as instituições. Além disso, dúvidas relacionadas ao processo de doação em si começam a surgir, como “Quais instituições de caridade existem?”, “Quem eles ajudam?”, “De que forma o doador posso ajudar?”, “Como ajudar?”, entre outros. 
+
+Pensando nisso desenvolvemos o projeto da ‘Doe Fácil!’, uma plataforma que visará facilitar a ponte entre os doadores e as instituições que buscam doações. Por meio da ‘Doe Fácil!’, será possível que doadores se cadastrem, bem como gerencie suas doações, listando os itens que serão doados, suas instituições de preferência e a data nas quais estas instituições poderão recolher as doações. 
+
+A missão da ‘Doe Fácil!’ é facilitar e incentivar a doação para organizações que necessitam delas, resolvendo o problema de transporte e disponibilidade de tempo dos doadores. Consequentemente ampliando o impacto positivo das instituições de caridade, organizações sem fins lucrativos e causas humanitárias.
 
 ## Problema
 [Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
