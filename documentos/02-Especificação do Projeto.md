@@ -46,7 +46,7 @@
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
+| Doador | Fazer doações para instituições confiáveis de forma segura. | Ter a confiança de que minhas doações tenham um bom uso |
 | ...                | ...                       | ...                              |
 
 ## Requisitos do Projeto
