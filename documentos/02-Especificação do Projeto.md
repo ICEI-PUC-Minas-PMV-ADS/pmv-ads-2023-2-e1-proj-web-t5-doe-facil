@@ -2,22 +2,36 @@
 
 ## Perfis de Usuários
 
-[Enumere e faça o detalhamento dos perfis de usuários. Utilize o modelo de tabela abaixo para sintetizá-los.]
+<table>
+  <tbody>
+    <tr align=center>
+      <th colspan="2">Doador</th>
+    </tr>
+    <tr>
+      <td width="150px"><b>Descrição</b></td>
+      <td width="600px">Pessoas físicas com a intenção de fazer doações para instituições de caridade. </td>
+    </tr>
+    <tr>
+      <td><b>Necessidades</b></td>
+      <td>Entender o que pode ser doado, saber quais instituição receberão as doações e ter a segurança de que a doação será feita de forma segura e confiável. </td>
+    </tr>
+  </tbody>
+</table>
 
 <table>
-<tbody>
-<tr align=center>
-<th colspan="2">Perfil Nome </th>
-</tr>
-<tr>
-<td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
-</tr>
-<tr>
-<td><b>Necessidades</b></td>
-<td>...</td>
-</tr>
-</tbody>
+  <tbody>
+    <tr align=center>
+      <th colspan="2">Instituição</th>
+    </tr>
+    <tr>
+      <td width="150px"><b>Descrição</b></td>
+      <td width="600px">Instituições interessadas nas doações que estão sendo feitas. </td>
+    </tr>
+    <tr>
+      <td><b>Necessidades</b></td>
+      <td>Avaliar o estado dos itens doados, definir o tipo de itens que estão abertos a receber e poder ter a escolha de aceite das doações. Aumentar o alcance da instituição. </td>
+    </tr>
+  </tbody>
 </table>
 
 
