@@ -1,10 +1,10 @@
 # Doe Fácil
 
-Tecnologia em Análise e Desenvolvimento de Sistemas
+Tecnologia em Análise e Desenvolvimento de Sistemas - PUC Minas
 
 Desenvolvimento de aplicação Web Front-and
 
-   1º SEMESTRE
+   2º SEMESTRE/2023
 
 O projeto "Doe Fácil", é uma plataforma que tem como finalidade facilitar a relação entre pessoas que tem interesse em realizar doações e instituições de caridade. Por meio da plataforma os doadores poderão gerenciar seus doações, verificar informações relacionadas as instituições e as datas de recolhimento das doações.
 
