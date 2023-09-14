@@ -87,8 +87,9 @@
 
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
-| RNF-01 |  ...                    | ...   | 
-| ...    |  ...                    | ...   | 
+| RNF-01 | Os formulários de cadastro devem ser simples e de fácil entendimento, contendo apenas campos necessários. | Alta | 
+| RNF-02 | As páginas devem se adaptar ao ambiente mobile para ser acessado de forma simples por todos os dispositivos. | Alta | 
+| RNF-03 | A interface deve ser clara e não possuir informações desnecessárias. | Média |
 
 **Prioridade: Alta / Média / Baixa. 
 
