@@ -23,9 +23,13 @@ São muitas dúvidas, que fazem com que o doador acabe por não realizar a doaç
 
 ## Objetivos
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
- 
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+O objetivo geral tem por sua vez, conectar doadores às instituições de caridade e organizações sem fins lucrativos. Trata-se de uma abordagem para facilitar o processo de doações e ajudar as instituições, auxiliando desde o momento da coleta dos materiais diretamente com o doador no local desejado, até a entrega dos mesmos para instituição que receberá a doação, bem como a transparência das doações que são feitas e entregues. 
+
+Para o problema dos doadores, nosso objetivo é auxiliar as pessoas a encontrarem um destino adequado para os itens que serão desapegados. 
+
+No que se refere as instituições e os problemas relacionados a elas, nosso objetivo é dar visibilidade as instituições que possuem credibilidade e auxiliar no processo de angariar doações. 
+
+O objetivo específico é ser um facilitador entre a conexão de doadores e instituições, possibilitando uma coleta e entrega de itens doados de forma mais segura e íntegra do início ao fim, tanto para a instituição, quanto para quem doa.
 
 ## Justificativa
 
