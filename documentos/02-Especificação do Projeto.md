@@ -47,7 +47,12 @@
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
 | Doador | Fazer doações para instituições confiáveis de forma segura. | Ter a confiança de que minhas doações tenham um bom uso |
-| ...                | ...                       | ...                              |
+| Doador | Saber quais tipos de doações posso fazer e se há necessidade de quantidade mínima de itens. | Entender se os itens que tenho disponíveis em casa para doar são utilizáveis para alguém. |
+|Instituição | Me tornar uma instituição beneficiada. | Participar do recolhimento das doações. |
+|Instituição | Ter a segurança de estar recebendo doações em bom estado de uso. | Evitar de ter que lidar com o descarte de doações. |
+|Instituição | Saber os endereços dos doadores e a data que será possível fazer o recolhimento das doações. | Que seja possível organizar o recolhimento. |
+|Instituição | Saber de antemão os tipos de doações antes de as aceitarem. | Decidir se faz sentido receber aquela doação. |
+|Instituição | Ter as informações e objetivos da minha instituição, expostos de forma clara ao doador. | Alcançar mais pessoas e esclarecer as nossas necessidades como instituição, para que as doações sejam mais assertivas. |
 
 ## Requisitos do Projeto
 
