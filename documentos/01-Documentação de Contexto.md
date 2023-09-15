@@ -33,39 +33,27 @@ O objetivo específico é ser um facilitador entre a conexão de doadores e inst
 
 ## Justificativa
 
-Com o avanço da tecnologia e a consolidação dos aplicativos para celulares e 
-smartphones, observa-se a popularização do uso de aplicativos com finalidade 
-social, no qual existe a interação entre o indivíduo e instituições sem fins lucrativos. 
-O projeto a ser desenvolvido busca apresentar soluções para a dificuldade 
-encontrada por indivíduos que querem realizar doações e por algum motivo não 
-podem se deslocar até as instituições/ONG´s. 
-Para este projeto relacionamos dois aspectos relevantes para justificar os 
-desenvolvimentos de um app´s para doação.
-O primeiro ponto destacado para justificar o desenvolvimento deste projeto são os 
-dados apresentados pela Brasil giving (2020), no qual são apresentados dados 
-referentes a descrição da doação no Brasil (BRASIL GIVING REPORT, 2020).
-A pesquisa realizada entre agosto/2018 e julho/2019, aponta um aumento na 
-confiança dos brasileiros em ONG´s e uma maior sensibilização das pessoas quanto 
-a causas sociais e políticas (BRASIL GIVING REPORT, 2020). 
-Considerando ainda a pesquisa realizada pela Brasil giving (2021), agora para o ano 
-de 2021, observou-se uma redução das doações durante o período de pandemia do 
-Covid-19 (BRASIL GIVING REPORT, 2021).
-Observou-se que durante o período de isolamento social, a segunda forma de 
-doação mais utilizado pelos brasileiros foi a doação de maneira online, ou seja, sem 
-que houvesse a necessidade de sair de casa (BRASIL GIVING REPORT, 2021).
-Relacionado aos dados apresentados referentes a predisposição dos brasileiros 
-para utilizar um app que facilite a realização de doação, apresentamos também o 
-segundo aspecto relevante para este projeto, a redução do ciclo de vida de produtos 
-e o padrão de consumo.
-De acordo com dados do artigo “Comportamento de Consumo de Moda: Motivações 
-e Atributos no Descarte de Roupas Usadas”, a moda tem forte efeito no ciclo de vida 
-de bens de consumo, fazendo com que itens em sua maioria de vestuários sejam 
-descartados (CALÍOPE, Thamires, et al., 2017).
-Niinimäki e Hassi (2011) e O’cass (2000) destacam que a indústria de vestuário é 
-baseada em ciclos curtos e rápidos de moda, o que leva a um excesso de consumo
-Desta forma, apresentar uma solução que relacione o interesse dos indivíduos de 
-doar e a necessidade de apresentar uma nova utilização para itens que teriam como 
-destino o lixo, é uma ação que apresenta caráter social e ambiental.
+Com o avanço da tecnologia e a consolidação dos aplicativos para celulares e smartphones, observa-se a popularização do uso de aplicativos com finalidade social, no qual existe a interação entre o indivíduo e instituições sem fins lucrativos.  
+
+O projeto a ser desenvolvido busca apresentar soluções para a dificuldade encontrada por indivíduos que querem realizar doações e por algum motivo não podem se deslocar até as instituições/ONG´s.  
+
+Para este projeto relacionamos dois aspectos relevantes para justificar os desenvolvimentos de um app´s para doação. 
+
+O primeiro ponto destacado para justificar o desenvolvimento deste projeto são os dados apresentados pela Brasil giving (2020), no qual são apresentados dados referentes a descrição da doação no Brasil (BRASIL GIVING REPORT, 2020). 
+
+A pesquisa realizada entre agosto/2018 e julho/2019, aponta um aumento na confiança dos brasileiros em ONG´s e uma maior sensibilização das pessoas quanto a causas sociais e políticas (BRASIL GIVING REPORT, 2020).  
+
+Considerando ainda a pesquisa realizada pela Brasil giving (2021), agora para o ano de 2021, observou-se uma redução das doações durante o período de pandemia do Covid-19 (BRASIL GIVING REPORT, 2021). 
+
+Observou-se que durante o período de isolamento social, a segunda forma de doação mais utilizado pelos brasileiros foi a doação de maneira online, ou seja, sem que houvesse a necessidade de sair de casa (BRASIL GIVING REPORT, 2021). 
+
+Relacionado aos dados apresentados referentes a predisposição dos brasileiros para utilizar um app que facilite a realização de doação, apresentamos também o segundo aspecto relevante para este projeto, a redução do ciclo de vida de produtos e o padrão de consumo. 
+
+De acordo com dados do artigo “Comportamento de Consumo de Moda: Motivações e Atributos no Descarte de Roupas Usadas”, a moda tem forte efeito no ciclo de vida de bens de consumo, fazendo com que itens em sua maioria de vestuários sejam descartados (CALÍOPE, Thamires, et al., 2017). 
+
+Niinimäki  e  Hassi  (2011) e O’cass (2000) destacam que a indústria de vestuário é baseada em ciclos curtos e rápidos de moda, o que leva a um excesso de consumo. 
+
+Desta forma, apresentar uma solução que relacione o interesse dos indivíduos de doar e a necessidade de apresentar uma nova utilização para itens que teriam como destino o lixo, é uma ação que apresenta caráter social e ambiental. 
 
 ## Público-Alvo
 
