@@ -5,7 +5,7 @@ Esta seção descreve a organização da equipe para a execução das tarefas do
 
 
 ## Gerenciamento de Projeto
-A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a “visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum Master e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.”
+As metodologias ágeis escolhidas para o desenvolvimento deste projeto foram o Scrum e o Kanban, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a “visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum Master e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.”
 
 ### Divisão de Papéis
 
@@ -24,8 +24,12 @@ A equipe  será organizada da seguinte maneira:
 ### Processo
 
 [Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
+
+Para a realização do presente projeto, nossa equipe optou por usar algumas metodologias ágeis. Pegamos alguns elementos do Scrum e do Kanban para melhor nos organizar e realizar as tarefas. Do Scrum, estamos adotando reuniões curtas e períodicas a fim de alinharmos as tarefas que estão sendo realizadas, discutir eventuais bloqueios e apoiar os membros do time, caso necessitem. Não classificamos as reunições como "Dailys" porque não são realizadas diariamente, mas possuem o mesmo objetivo. Também adotamos uma "Planning" que é uma reunião que normalmente fazemos após as orientações recebidas pela professora orientadora.
+
+Quanto ao Kanban, adotamos um quadro no GitHub Project com as seguintes divisões:
 - Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
-- To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
+- To Do: Esta lista representa o Sprint Backlog. Representa as tarefas que serão realizadas na Sprint atual. 
 - Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
 - Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
