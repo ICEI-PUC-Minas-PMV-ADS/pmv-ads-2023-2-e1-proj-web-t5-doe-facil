@@ -57,12 +57,35 @@ Desta forma, apresentar uma solução que relacione o interesse dos indivíduos 
 
 ## Público-Alvo
 
-[Aqui é necessário descrever os atores envolvidos no problema, destacando os diferentes perfis de usuários. O propósito é apresentar as características, necessidades, conhecimentos prévios e experiência com a tecnologia do público-alvo.
+Doadores casuais (Pessoas Físicas):  
 
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
+Características: Indivíduos interessados em fazer doações, e não tem disponibilidade para sair de casa para levar as doações ou não conhecem os locais apropriados para fazer. 
 
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
+Necessidades:  
 
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
+Encontrar instituições próximas a sua localidade. 
+
+Ter informações sobre as Instituições de caridade (missão, localidade, quem ajudam, como ajudam, itens que precisam, entre outros). 
+
+Identificar se a instituição precisa do item que será desapegado. 
+
+Ter a segurança de que os itens doados serão bem utilizados por quem vai receber a doação. 
+
+Conhecimento: Pode ou não possuir conhecimentos de informática e por isso o cadastro de doações e visualização das doações devem ser o mais simplificado possível. 
+
+Instituições que receberão as doações:  
+
+Características: Instituições de caridade e organizações sem fins lucrativos que desejam participar das coletas de doações. 
+
+Necessidades:  
+
+Aumentar o número de doações recebidas.  
+
+Melhorar a qualidade dos itens que chegam à instituição. 
+
+Torna-se mais conhecida e ter mais visibilidade, relacionada a visibilidade, ampliar a divulgação os itens de maior necessidade.  
+
+Aumentar o número de doares e como consequência conseguir ajudar a um número maior de pessoas. 
+
+Conhecimento: Esse perfil pode possuir ou não possuir conhecimentos de informática, já que essas instituições podem ser organizadas por pessoas de diferentes níveis de instrução. 
 
