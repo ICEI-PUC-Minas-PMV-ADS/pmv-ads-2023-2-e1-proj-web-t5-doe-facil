@@ -57,11 +57,11 @@ Desta forma, apresentar uma solução que relacione o interesse dos indivíduos 
 
 ## Público-Alvo
 
-Doadores casuais (Pessoas Físicas):  
+### Doadores casuais (Pessoas Físicas):  
 
 Características: Indivíduos interessados em fazer doações, e não tem disponibilidade para sair de casa para levar as doações ou não conhecem os locais apropriados para fazer. 
 
-Necessidades:  
+#### Necessidades:  
 
 Encontrar instituições próximas a sua localidade. 
 
@@ -73,11 +73,11 @@ Ter a segurança de que os itens doados serão bem utilizados por quem vai receb
 
 Conhecimento: Pode ou não possuir conhecimentos de informática e por isso o cadastro de doações e visualização das doações devem ser o mais simplificado possível. 
 
-Instituições que receberão as doações:  
+### Instituições que receberão as doações:  
 
 Características: Instituições de caridade e organizações sem fins lucrativos que desejam participar das coletas de doações. 
 
-Necessidades:  
+#### Necessidades:  
 
 Aumentar o número de doações recebidas.  
 
