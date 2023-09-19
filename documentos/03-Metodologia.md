@@ -10,10 +10,10 @@ As metodologias ágeis escolhidas para o desenvolvimento deste projeto foram o S
 
 A equipe  será organizada da seguinte maneira:
 
-- Scrum Master: Bárbara Figueiredo, principal responsável pela gestão do projeto.
+- Scrum Master: Carlos Roberto, principal responsável pela gestão do projeto.
 - Product Owner: Jéssica Reis, representante dos interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
-- Equipe de Desenvolvimento:Bárbara Figueiredo, Carlos Roberto, Edmilson José, Guilherme Radicchi, Jéssica Reis, Márcia Monique, pois todos os membros deverão implementar uma tela/funcionalidade.
-- Equipe de Design: Carlos Roberto, Guilherme Radicchi, Márcia Monique.
+- Equipe de Desenvolvimento: Bárbara Figueiredo, Carlos Roberto, Edmilson José, Guilherme Radicchi, Jéssica Reis, Márcia Monique, pois todos os membros deverão implementar uma tela/funcionalidade.
+- Equipe de Design: Carlos Roberto, Guilherme Radicchi, Márcia Monique, Bárbara Figueiredo, Jéssica Reis, Edmilson José.
 
 ### Processo
 
