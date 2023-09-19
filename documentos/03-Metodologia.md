@@ -3,7 +3,6 @@
 
 Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
 
-
 ## Gerenciamento de Projeto
 As metodologias ágeis escolhidas para o desenvolvimento deste projeto foram o Scrum e o Kanban, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a “visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum Master e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.”
 
@@ -16,11 +15,6 @@ A equipe  será organizada da seguinte maneira:
 - Equipe de Desenvolvimento:Bárbara Figueiredo, Carlos Roberto, Edmilson José, Guilherme Radicchi, Jéssica Reis, Márcia Monique, pois todos os membros deverão implementar uma tela/funcionalidade.
 - Equipe de Design: Carlos Roberto, Guilherme Radicchi, Márcia Monique.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
 ### Processo
 
 [Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
@@ -32,13 +26,6 @@ Quanto ao Kanban, adotamos um quadro no GitHub Project com as seguintes divisõe
 - To Do: Esta lista representa o Sprint Backlog. Representa as tarefas que serão realizadas na Sprint atual. 
 - Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
 - Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
-
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
-
 
 ### Etiquetas
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
@@ -65,7 +52,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
+| Repositório de código fonte         | GitHub                             | [Repositório](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil)|
 | Documentos do projeto               | GitHub                             | http://....                            |
 | Projeto de Interface                | Figma                              | http://....                            |
 | Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
