@@ -53,9 +53,9 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | [Repositório](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil)|
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de Interface                | Figma                              | http://....                            |
-| Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
+| Documentos do projeto               | GitHub                             | [Apresentação](https://sgapucminasbr-my.sharepoint.com/:p:/g/personal/696192_sga_pucminas_br/EaNlTGyxfiVNoH9UN9XJSfgBamjTVodZr5IjDe8z7dWC6A?e=SvzLLm)                          |
+| Projeto de Interface                | Figma                              | [Protótipo]([http://....](https://www.figma.com/file/dqXg8pCxWnpWswyVefzP4s/Figma-basics?type=design&node-id=1669-162202&mode=design&t=E90eBQ5eURBbBlgO-0)                            |
+| Gerenciamento do Projeto            | GitHub Projects                    | [Quadro] ([http://....](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/590)                            |
 | Hospedagem                          | GitHub Pages                       | http://....                            |
 
 
