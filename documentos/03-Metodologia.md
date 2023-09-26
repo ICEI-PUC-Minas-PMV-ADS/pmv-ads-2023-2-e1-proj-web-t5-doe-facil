@@ -19,7 +19,7 @@ A equipe  será organizada da seguinte maneira:
 
 [Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
 
-Para a realização do presente projeto, nossa equipe optou por usar algumas metodologias ágeis. Pegamos alguns elementos do Scrum e do Kanban para melhor nos organizar e realizar as tarefas. Do Scrum, estamos adotando reuniões curtas e períodicas a fim de alinharmos as tarefas que estão sendo realizadas, discutir eventuais bloqueios e apoiar os membros do time, caso necessitem. Não classificamos as reunições como "Dailys" porque não são realizadas diariamente, mas possuem o mesmo objetivo. Também adotamos uma "Planning" que é uma reunião que normalmente fazemos após as orientações recebidas pela professora orientadora.
+Para a realização do presente projeto, nossa equipe optou por usar algumas metodologias ágeis. Pegamos alguns elementos do Scrum e do Kanban para melhor nos organizar e realizar as tarefas. Do Scrum, estamos adotando reuniões curtas e períodicas a fim de alinharmos as tarefas que estão sendo realizadas, discutir eventuais bloqueios e apoiar os membros do time, caso necessitem. Não classificamos as reunições como "Dailys" porque não são realizadas diariamente, mas possuem o mesmo objetivo. Também adotamos uma "Planning" que é uma reunião que normalmente fazemos após as orientações recebidas pela professora orientadora para planejar as próximas tarefas a serem realizadas.
 
 Quanto ao Kanban, adotamos um quadro no GitHub Project com as seguintes divisões:
 - Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
@@ -54,8 +54,8 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | [Repositório](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil)|
 | Documentos do projeto               | GitHub                             | [Apresentação](https://sgapucminasbr-my.sharepoint.com/:p:/g/personal/696192_sga_pucminas_br/EaNlTGyxfiVNoH9UN9XJSfgBamjTVodZr5IjDe8z7dWC6A?e=SvzLLm)                          |
-| Projeto de Interface                | Figma                              | [Protótipo]([http://....](https://www.figma.com/file/dqXg8pCxWnpWswyVefzP4s/Figma-basics?type=design&node-id=1669-162202&mode=design&t=E90eBQ5eURBbBlgO-0)                            |
-| Gerenciamento do Projeto            | GitHub Projects                    | [Quadro] ([http://....](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/590)                            |
+| Projeto de Interface                | Figma                              | [Protótipo](https://www.figma.com/file/dqXg8pCxWnpWswyVefzP4s/Figma-basics?type=design&node-id=1669-162202&mode=design&t=E90eBQ5eURBbBlgO-0)                            |
+| Gerenciamento do Projeto            | GitHub Projects                    | [Quadro](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/590)                            |
 | Hospedagem                          | GitHub Pages                       | http://....                            |
 
 
