@@ -2,32 +2,32 @@
 
 Com base em uma pesquisa realizada pelo IDIS – Instituto para o Desenvolvimento do Investimento Social, de 2015 para 2020, o número de brasileiros que realizou algum tipo de doação caiu de 77% dos entrevistados para 66%. Diversos motivos podem ser apontados para essa queda, no entanto, é perceptível que a sociedade como um todo reconhece a importância de se doar e possuem uma visão mais positiva das instituições de caridade (IDIS - Instituto para o Desenvolvimento do Investimento Social, 2021). 
 
-Com a rotina cada vez mais corrida, muitas pessoas acabam deixando de doar por falta de tempo para levar as doações até as instituições. Além disso, dúvidas relacionadas ao processo de doação em si começam a surgir, como “Quais instituições de caridade existem?”, “Quem eles ajudam?”, “De que forma o doador posso ajudar?”, “Como ajudar?”, entre outros. 
+Com a rotina cada vez mais corrida, muitas pessoas acabam deixando de doar por falta de tempo para levar as doações até as instituições. Além disso, dúvidas relacionadas ao processo de doação em si começam a surgir, como “Quais instituições de caridade existem?”, “Quem eles ajudam?”, “De que forma o doador pode ajudar?”, “Como ajudar?”, entre outros. 
 
-Pensando nisso desenvolvemos o projeto da ‘Doe Fácil!’, uma plataforma que visará facilitar a ponte entre os doadores e as instituições que buscam doações. Por meio da ‘Doe Fácil!’, será possível que doadores se cadastrem, bem como gerencie suas doações, listando os itens que serão doados, suas instituições de preferência e a data nas quais estas instituições poderão recolher as doações. 
+Pensando nisso desenvolvemos o projeto da ‘Doe Fácil!’, uma plataforma que visará facilitar a ponte entre os doadores e as instituições que buscam doações. Por meio da ‘Doe Fácil!’, será possível que doadores se cadastrem, bem como gerenciem suas doações, listando os itens que serão doados, suas instituições de preferência e a data nas quais estas instituições poderão recolher as doações. 
 
-A missão da ‘Doe Fácil!’ é facilitar e incentivar a doação para organizações que necessitam delas, resolvendo o problema de transporte e disponibilidade de tempo dos doadores. Consequentemente ampliando o impacto positivo das instituições de caridade, organizações sem fins lucrativos e causas humanitárias.
+A missão da ‘Doe Fácil!’ é facilitar e incentivar a doação para organizações que necessitam delas, resolvendo o problema de transporte e disponibilidade de tempo dos doadores, consequentemente, ampliando o impacto positivo das instituições de caridade, organizações sem fins lucrativos e causas humanitárias.
 
 ## Problema
 
-Proporcionar uma nova finalidade para objetos e roupas através da doação é uma ação que produz inúmeros benefícios para a sociedade. Porém, doar não é uma ação fácil, para realizar uma doação, os doadores levam em consideração vários aspectos. 
+Proporcionar uma nova finalidade para objetos e roupas através da doação é uma ação que produz inúmeros benefícios para a sociedade. Porém, doar não é tão simples assim, já que os doadores devem levar em consideração vários aspectos. 
 
-Dentre eles temos: a instituição possuir credibilidade, qual instituição realmente vai precisar dos itens que o doador quer doar, as pessoas que vão receber realmente precisam dos itens, etc. 
+Dentre eles temos: a credibilidade da instituição, qual instituição realmente vai precisar dos itens que o doador quer doar, se as pessoas que vão receber realmente precisam dos itens, etc. 
 
-Para as pessoas que realizam a doação é uma forma de desapegar e liberar espaço. O ato de doar faz com que os itens não sejam destinados ao lixo, com isso reduz a poluição e a sobrecarga de aterros sanitários. 
+Para as pessoas que realizam a doação é uma forma de desapegar e liberar espaço. Além disso, doar faz com que os itens não sejam destinados ao lixo, o que reduz a poluição e a sobrecarga de aterros sanitários.  
 
 Diariamente inúmeras pessoas apresentam como problema a dificuldade de realizar a destinação adequada para itens de doação. Onde realizar a entrega? Quando? O que posso doar?   
 
-São muitas dúvidas, que fazem com que o doador acabe por não realizar a doação. Além destas dúvidas, ele também encontra outros obstáculos, estes relacionados a credibilidade das instituições. 
+São muitas dúvidas que fazem com que o doador acabe por não realizar a doação. Além destas, ele também encontra outros obstáculos, estes relacionados à credibilidade das instituições. 
 
 
 ## Objetivos
 
-O objetivo geral tem por sua vez, conectar doadores às instituições de caridade e organizações sem fins lucrativos. Trata-se de uma abordagem para facilitar o processo de doações e ajudar as instituições, auxiliando desde o momento da coleta dos materiais diretamente com o doador no local desejado, até a entrega dos mesmos para instituição que receberá a doação, bem como a transparência das doações que são feitas e entregues. 
+O objetivo geral é conectar doadores às instituições de caridade e organizações sem fins lucrativos. Trata-se de uma abordagem para facilitar o processo de doações e ajudar as instituições, auxiliando desde o momento da coleta dos materiais diretamente com o doador no local desejado, até a entrega destes para a instituição que os receberá, bem como a transparência das doações que são feitas e entregues. 
 
 Para o problema dos doadores, nosso objetivo é auxiliar as pessoas a encontrarem um destino adequado para os itens que serão desapegados. 
 
-No que se refere as instituições e os problemas relacionados a elas, nosso objetivo é dar visibilidade as instituições que possuem credibilidade e auxiliar no processo de angariar doações. 
+No que se refere às instituições e os problemas relacionados a elas, nosso objetivo é dar visibilidade às instituições que possuem credibilidade e auxiliar no processo de angariar doações. 
 
 O objetivo específico é ser um facilitador entre a conexão de doadores e instituições, possibilitando uma coleta e entrega de itens doados de forma mais segura e íntegra do início ao fim, tanto para a instituição, quanto para quem doa.
 
@@ -59,7 +59,7 @@ Desta forma, apresentar uma solução que relacione o interesse dos indivíduos 
 
 ### Doadores casuais (Pessoas Físicas):  
 
-Características: Indivíduos interessados em fazer doações, e não tem disponibilidade para sair de casa para levar as doações ou não conhecem os locais apropriados para fazer. 
+Características: Indivíduos interessados em fazer doações e que não têm disponibilidade para sair de casa para levá-las ou não conhecem os locais apropriados para realizá-las. 
 
 #### Necessidades:  
 
@@ -71,7 +71,7 @@ Identificar se a instituição precisa do item que será desapegado.
 
 Ter a segurança de que os itens doados serão bem utilizados por quem vai receber a doação. 
 
-Conhecimento: Pode ou não possuir conhecimentos de informática e por isso o cadastro de doações e visualização das doações devem ser o mais simplificado possível. 
+Conhecimento: Pode ou não possuir conhecimentos de informática e, por isso, o cadastro de doações e visualização das doações deve ser o mais simplificado possível. 
 
 ### Instituições que receberão as doações:  
 
@@ -83,9 +83,9 @@ Aumentar o número de doações recebidas.
 
 Melhorar a qualidade dos itens que chegam à instituição. 
 
-Torna-se mais conhecida e ter mais visibilidade, relacionada a visibilidade, ampliar a divulgação os itens de maior necessidade.  
+Tornar-se mais conhecida e ter mais visibilidade, relacionada a visibilidade, ampliar a divulgação os itens de maior necessidade.  
 
-Aumentar o número de doares e como consequência conseguir ajudar a um número maior de pessoas. 
+Aumentar o número de doares e, como consequência, conseguir ajudar a um número maior de pessoas. 
 
 Conhecimento: Esse perfil pode possuir ou não possuir conhecimentos de informática, já que essas instituições podem ser organizadas por pessoas de diferentes níveis de instrução. 
 
