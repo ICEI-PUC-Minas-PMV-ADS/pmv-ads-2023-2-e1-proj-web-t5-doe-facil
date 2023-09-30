@@ -41,7 +41,7 @@ Quanto ao Kanban, adotamos um quadro no GitHub Project com as seguintes divisõe
 
 <figure> 
   <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
-    <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
+  <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
   
 ### Ferramentas
@@ -53,10 +53,11 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | [Repositório](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil)|
-| Documentos do projeto               | GitHub                             | [Apresentação](https://sgapucminasbr-my.sharepoint.com/:p:/g/personal/696192_sga_pucminas_br/EaNlTGyxfiVNoH9UN9XJSfgBamjTVodZr5IjDe8z7dWC6A?e=SvzLLm)                          |
+| Documentos do projeto               | -                                  | [Apresentação](https://drive.google.com/file/d/1q6cG1JIJwmRMA_94c8ZaAq7SUtPW_w7g/view?usp=sharing)                          |
+| Diagramas de Fluxo                  | Miro                               | [Diagramas](https://miro.com/app/board/uXjVMkgPJdw=/?share_link_id=827497143826)                            |
 | Projeto de Interface                | Figma                              | [Protótipo](https://www.figma.com/file/dqXg8pCxWnpWswyVefzP4s/Figma-basics?type=design&node-id=1669-162202&mode=design&t=E90eBQ5eURBbBlgO-0)                            |
 | Gerenciamento do Projeto            | GitHub Projects                    | [Quadro](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/590)                            |
-| Hospedagem                          | GitHub Pages                       | http://....                            |
+| Hospedagem                          | GitHub Pages                       | ...                            |
 
 
 ### Estratégia de Organização de Codificação 
