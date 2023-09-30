@@ -17,8 +17,6 @@ A equipe  será organizada da seguinte maneira:
 
 ### Processo
 
-[Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
-
 Para a realização do presente projeto, nossa equipe optou por usar algumas metodologias ágeis. Pegamos alguns elementos do Scrum e do Kanban para melhor nos organizar e realizar as tarefas. Do Scrum, estamos adotando reuniões curtas e períodicas a fim de alinharmos as tarefas que estão sendo realizadas, discutir eventuais bloqueios e apoiar os membros do time, caso necessitem. Não classificamos as reunições como "Dailys" porque não são realizadas diariamente, mas possuem o mesmo objetivo. Também adotamos uma "Planning" que é uma reunião que normalmente fazemos após as orientações recebidas pela professora orientadora para planejar as próximas tarefas a serem realizadas.
 
 Quanto ao Kanban, adotamos um quadro no GitHub Project com as seguintes divisões:
@@ -45,8 +43,6 @@ Quanto ao Kanban, adotamos um quadro no GitHub Project com as seguintes divisõe
 </figure> 
   
 ### Ferramentas
-
-[Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
