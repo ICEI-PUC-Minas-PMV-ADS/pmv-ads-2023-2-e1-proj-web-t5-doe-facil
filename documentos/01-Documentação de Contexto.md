@@ -61,31 +61,21 @@ Desta forma, apresentar uma solução que relacione o interesse dos indivíduos 
 
 Características: Indivíduos interessados em fazer doações e que não têm disponibilidade para sair de casa para levá-las ou não conhecem os locais apropriados para realizá-las. 
 
-#### Necessidades:  
-
-Encontrar instituições próximas a sua localidade. 
-
-Ter informações sobre as Instituições de caridade (missão, localidade, quem ajudam, como ajudam, itens que precisam, entre outros). 
-
-Identificar se a instituição precisa do item que será desapegado. 
-
-Ter a segurança de que os itens doados serão bem utilizados por quem vai receber a doação. 
-
-Conhecimento: Pode ou não possuir conhecimentos de informática e, por isso, o cadastro de doações e visualização das doações deve ser o mais simplificado possível. 
+#### Necessidades:
+- Encontrar instituições próximas a sua localidade. 
+- Ter informações sobre as Instituições de caridade (missão, localidade, quem ajudam, como ajudam, itens que precisam, entre outros). 
+- Identificar se a instituição precisa do item que será desapegado. 
+- Ter a segurança de que os itens doados serão bem utilizados por quem vai receber a doação. 
+- Conhecimento: Pode ou não possuir conhecimentos de informática e, por isso, o cadastro de doações e visualização das doações deve ser o mais simplificado possível. 
 
 ### Instituições que receberão as doações:  
 
 Características: Instituições de caridade e organizações sem fins lucrativos que desejam participar das coletas de doações. 
 
 #### Necessidades:  
-
-Aumentar o número de doações recebidas.  
-
-Melhorar a qualidade dos itens que chegam à instituição. 
-
-Tornar-se mais conhecida e ter mais visibilidade, relacionada a visibilidade, ampliar a divulgação os itens de maior necessidade.  
-
-Aumentar o número de doares e, como consequência, conseguir ajudar a um número maior de pessoas. 
-
-Conhecimento: Esse perfil pode possuir ou não possuir conhecimentos de informática, já que essas instituições podem ser organizadas por pessoas de diferentes níveis de instrução. 
+- Aumentar o número de doações recebidas.
+- Melhorar a qualidade dos itens que chegam à instituição. 
+- Tornar-se mais conhecida e ter mais visibilidade, relacionada a visibilidade, ampliar a divulgação os itens de maior necessidade.  
+- Aumentar o número de doares e, como consequência, conseguir ajudar a um número maior de pessoas. 
+- Conhecimento: Esse perfil pode possuir ou não possuir conhecimentos de informática, já que essas instituições podem ser organizadas por pessoas de diferentes níveis de instrução. 
 
