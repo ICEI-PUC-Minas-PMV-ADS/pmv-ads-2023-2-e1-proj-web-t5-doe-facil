@@ -1,3 +1,5 @@
+const PREFIX_URL = '/codigo-fonte/'
+
 const linkList = [
     {
         label: 'Página Inicial',
@@ -132,7 +134,7 @@ function makeMenu() {
 
 function makeNavLink(href, label, active, dropdown) {
     const link = document.createElement('a')
-    link.href = href
+    link.href = PREFIX_URL + href
     link.textContent = label
     link.classList = dropdown ? 'dropdown-item' : 'nav-link'
     if (active) link.classList.add('active')
