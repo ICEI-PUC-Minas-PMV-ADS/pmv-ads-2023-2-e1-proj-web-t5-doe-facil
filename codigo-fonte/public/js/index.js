@@ -82,10 +82,11 @@ function makeMenu() {
     const menu = document.querySelector('#menu')
 
     const navbar = document.createElement('nav')
-    navbar.classList = 'navbar navbar-expand-lg bg-body-tertiary'
+    navbar.classList = 'navbar navbar-expand-lg bg-body-tertiary custom-navbar'
+    setAttributeList(navbar, [['data-bs-theme', 'dark']])
 
     const container = document.createElement('div')
-    container.classList.add(['container-fluid'])
+    container.classList.add(['container'])
 
     const navbarBrand = document.createElement('a')
     navbarBrand.classList.add(['navbar-brand'])
