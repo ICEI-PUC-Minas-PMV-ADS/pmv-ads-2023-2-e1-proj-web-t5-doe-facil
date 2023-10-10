@@ -1,7 +1,13 @@
 * {
     --primary-color: #79d6b7;
+    --primary-color-dark: #6ac8a8;
 }
 
 .custom-navbar {
     background-color: var(--primary-color) !important;
+}
+
+.custom-navbar .dropdown-menu {
+    background-color: var(--primary-color-dark) !important;
+    border: 0;
 }
