@@ -1,0 +1,52 @@
+.titulo {
+    
+    font-size: 48px;
+    color: #EF5DA8;
+}
+.principal {
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+}
+
+.texto {
+    display: inline-block;
+    width: 50%;
+    margin: 20px;
+}
+
+.botao-doacao {
+    background-color: #EF5DA8;
+    color: white;
+    padding: 5px 8px;
+    border: 1px solid #EF5DA8;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s ease;
+
+}
+
+.botao-doacao:hover {
+    background-color: white;
+    color: #EF5DA8;
+}
+
+.container-botao {
+    text-align: start;
+}
+.rodape{
+    display: flex;
+    background-color: #EF5DA8;
+    border: 1px solid #EF5DA8;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+}
+.rodape .item{
+    display: inline-block;
+    width: 30%;
+
+}
+.imagem-doe-facil{
+    width:95%;
+}
