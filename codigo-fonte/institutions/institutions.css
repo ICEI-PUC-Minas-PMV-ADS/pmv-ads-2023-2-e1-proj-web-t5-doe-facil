@@ -1,9 +1,14 @@
 .container-1{
     padding: 20px 40px;
 }
-.titulo {
-    font-size: 48px;
+h1 {
     color: #EF5DA8;
+}
+#titulo {
+    font-size: 48px;
+}
+.cabecalho{
+    font-family: arial;
 }
 .principal{
     display: flex;
