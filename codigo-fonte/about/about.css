@@ -1,20 +1,26 @@
+.container-1{
+    padding: 20px 40px;
+}
 .titulo {
-    
     font-size: 48px;
     color: #EF5DA8;
 }
-.principal {
+.principal{
+    display: flex;
+    padding-top: 20px;
+}
+.principal-img {
     display: inline-block;
-    width: 30%;
-    margin: auto;
+    width: 42%;
+    padding-right: 40px;
 }
 
 .texto {
     display: inline-block;
-    width: 50%;
-    margin: 20px;
+    width: 58%;
+    padding-top:30px;
+    padding-left: 10px;
 }
-
 .botao-doacao {
     background-color: #EF5DA8;
     color: white;
@@ -24,9 +30,7 @@
     cursor: pointer;
     font-size: 15px;
     transition: all .3s ease;
-
 }
-
 .botao-doacao:hover {
     background-color: white;
     color: #EF5DA8;
@@ -35,18 +39,37 @@
 .container-botao {
     text-align: start;
 }
+
 .rodape{
     display: flex;
-    background-color: #EF5DA8;
-    border: 1px solid #EF5DA8;
+    background-color: #F0AFAB;
+    border: 1px solid #F0AFAB;
     justify-content: space-between;
     padding: 20px 30px 20px 30px;
 }
+
 .rodape .item{
     display: inline-block;
     width: 30%;
-
 }
+
 .imagem-doe-facil{
-    width:95%;
+    width: 300px;
+    height: 250px;
+    display: block;
+    margin: auto;  
+}
+#img1{
+    background-color: #F4F4F4;
+    border:4px solid #e7e5e5;
+    width: 499px;
+    height: 334px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    vertical-align:middle;
+
+
+
+    
 }
