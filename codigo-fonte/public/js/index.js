@@ -27,12 +27,6 @@ const linkList = [
         type: 'link',
     },
     {
-        label: 'Acessar',
-        href: 'login',
-        active: false,
-        type: 'link',
-    },
-    {
         label: 'Cadastro Instituição',
         href: 'signup/institution',
         active: false,
@@ -69,6 +63,13 @@ const linkList = [
                 type: 'sub',
             },
         ],
+    },
+    {
+        label: 'Acessar',
+        href: 'login',
+        active: false,
+        type: 'link',
+        class: 'custom--primary',
     },
 ]
 
@@ -110,7 +111,7 @@ function makeMenu() {
     navbarColapse.id = 'principal-menu'
 
     const navbarUl = document.createElement('ul')
-    navbarUl.classList = 'navbar-nav me-auto mb-2 mb-lg-0'
+    navbarUl.classList = 'navbar-nav'
 
     for (const link of linkList) {
         navbarUl.appendChild(
@@ -119,7 +120,8 @@ function makeMenu() {
                 link.label,
                 link.active,
                 link.type,
-                link.items
+                link.items,
+                link.class
             )
         )
     }
@@ -133,16 +135,24 @@ function makeMenu() {
     menu.appendChild(navbar)
 }
 
-function makeNavLink(href, label, active, dropdown) {
+function makeNavLink(href, label, active, dropdown, className) {
     const link = document.createElement('a')
     link.href = PREFIX_URL + href
     link.textContent = label
     link.classList = dropdown ? 'dropdown-item' : 'nav-link'
     if (active) link.classList.add('active')
+    if (className) link.classList.add(className)
     return link
 }
 
-function makeMenuLink(href, label, active, type = '', subLinks = []) {
+function makeMenuLink(
+    href,
+    label,
+    active,
+    type = '',
+    subLinks = [],
+    className
+) {
     if (type === 'dropdown') {
         const liDropdown = document.createElement('li')
         liDropdown.classList = 'nav-item dropdown'
@@ -176,9 +186,11 @@ function makeMenuLink(href, label, active, type = '', subLinks = []) {
 
     const li = document.createElement('li')
     if (type === 'sub') li.appendChild(makeNavLink(href, label, active, true))
-    else li.appendChild(makeNavLink(href, label, active))
+    else li.appendChild(makeNavLink(href, label, active, false, className))
 
     return li
 }
 
 makeMenu()
+
+function makeFooter() {}
