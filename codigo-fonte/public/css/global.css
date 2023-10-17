@@ -11,3 +11,14 @@
     background-color: var(--primary-color-dark) !important;
     border: 0;
 }
+
+.custom--primary {
+    background-color: #EF5DA8;
+    border: 0;
+    border-bottom: 4px solid #CE5091;
+}
+
+.custom--primary:hover {
+    background-color: #CE5091;
+    border-bottom: 4px solid #BA4A83;
+}
