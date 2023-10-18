@@ -1,0 +1,37 @@
+main {
+    padding: 50px 50px;
+}
+
+main h1 {
+    font-size: 36px;
+    color: #EF5DA8;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #EF5DA8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
