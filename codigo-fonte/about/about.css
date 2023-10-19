@@ -1,6 +1,4 @@
-.container-1{
-    padding: 20px 40px;
-}
+
 .titulo {
     font-size: 48px;
     color: #EF5DA8;
@@ -8,20 +6,19 @@
 .principal{
     display: flex;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
-.principal-img {
+.principal .principal-img {
     display: inline-block;
-    width: 42%;
     padding-right: 40px;
 }
 
-.texto {
+.principal .texto {
     display: inline-block;
-    width: 58%;
     padding-top:30px;
     padding-left: 10px;
 }
-.botao-doacao {
+.principal .botao-doacao {
     background-color: #EF5DA8;
     color: white;
     padding: 5px 8px;
@@ -31,12 +28,12 @@
     font-size: 15px;
     transition: all .3s ease;
 }
-.botao-doacao:hover {
+.principal .botao-doacao:hover {
     background-color: white;
     color: #EF5DA8;
 }
 
-.container-botao {
+.principal .container-botao {
     text-align: start;
 }
 
@@ -69,7 +66,4 @@
     justify-content: center;
     vertical-align:middle;
 
-
-
-    
 }
