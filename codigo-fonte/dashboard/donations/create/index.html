@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
@@ -10,17 +10,173 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="../../../public/css/global.css">
-        <link rel="stylesheet" href="create.css">
+        <link rel="stylesheet" href="../../../public/css/global.css" />
+        <link rel="stylesheet" href="create.css" />
     </head>
 
     <body>
         <div id="menu"></div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Cadastro da Doação</h1>
+        <div class="container pt-4 mt-4">
+            <div class="row g-3">
+                <div class="col-4">
+                    <div class="m-2 block__content">
+
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <form class="m-2 block__content">
+                        <div class="row">
+                            <div class="mb-3 col">
+                                <label for="name" class="form-label">
+                                    Nome completo
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    aria-describedby="name"
+                                />
+                            </div>
+
+                            <div class="mb-3 col-4">
+                                <label for="birthdate" class="form-label">
+                                    Data de nascimento
+                                </label>
+
+                                <input
+                                    type="date"
+                                    class="form-control"
+                                    id="birthdate"
+                                    aria-describedby=""
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="mb-3 col">
+                                <label for="name" class="form-label">
+                                    Instituição
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    aria-describedby="name"
+                                />
+                            </div>
+
+                            <div class="mb-3 col-4">
+                                <label for="birthdate" class="form-label">
+                                    CEP
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="birthdate"
+                                    aria-describedby=""
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="mb-3 col">
+                                <label for="name" class="form-label">
+                                    Endereço de coleta
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    aria-describedby="name"
+                                />
+                            </div>
+
+                            <div class="mb-3 col-5">
+                                <label for="birthdate" class="form-label">
+                                    Bairro
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="birthdate"
+                                    aria-describedby=""
+                                />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-3">
+                                <label for="name" class="form-label">
+                                    Coletar do dia
+                                </label>
+
+                                <input
+                                    type="date"
+                                    class="form-control"
+                                    id="birthdate"
+                                    aria-describedby=""
+                                />
+                            </div>
+
+                            <div class="mb-3 col-3">
+                                <label for="birthdate" class="form-label">
+                                    Até o dia
+                                </label>
+
+                                <input
+                                    type="date"
+                                    class="form-control"
+                                    id="birthdate"
+                                    aria-describedby=""
+                                />
+                            </div>
+
+                            <div class="mb-3 col-3">
+                                <label for="birthdate" class="form-label">
+                                    A partir de (hora)
+                                </label>
+
+                                <input
+                                    type="time"
+                                    class="form-control"
+                                    id="birthdate"
+                                    aria-describedby=""
+                                />
+                            </div>
+
+                            <div class="mb-3 col-3">
+                                <label for="birthdate" class="form-label">
+                                    Até (hora)
+                                </label>
+
+                                <input
+                                    type="time"
+                                    class="form-control"
+                                    id="birthdate"
+                                    aria-describedby=""
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-3 d-grid">
+                                <button type="submit" class="btn btn-secondary">
+                                    Cancelar
+                                </button>
+                            </div>
+                            <div class="col-9 d-grid">
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary custom--primary"
+                                >
+                                    Cadastrar Doação e Fazer a Diferença!
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
