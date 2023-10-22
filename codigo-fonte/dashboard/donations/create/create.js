@@ -1,4 +1,11 @@
 const donationForm = document.querySelector('#donation-form')
+const donateTypes = [
+    'Brinquedos',
+    'Roupas',
+    'Calçados',
+    'Cama e banho',
+    'Outro'
+]
 
 const addDonationFields = () => {
     const donationItems = donationForm.querySelector('#donation-items')
@@ -8,14 +15,19 @@ const addDonationFields = () => {
     const donationClone = donationExample.cloneNode(true)
     donationItems.appendChild(donationClone)
 
-    const donationRemove = donationClone.querySelector('.donation_remove')
+    const donationRemoveButton = donationClone.querySelector('.donation_remove')
+    const typeSelect = donationClone.querySelector('.type_select')
+
+    for(type of donateTypes) {
+        typeSelect.appendChild(new Option(type))
+    }
 
     if (donationsCount === 1) {
-        donationRemove.style.display = 'none'
+        donationRemoveButton.style.display = 'none'
         return
     }
 
-    donationRemove.addEventListener('click', (e) => {
+    donationRemoveButton.addEventListener('click', (e) => {
         e.preventDefault()
         donationItems.removeChild(donationClone)
     })
