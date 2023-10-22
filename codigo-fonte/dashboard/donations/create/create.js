@@ -1,54 +1,72 @@
 const donationForm = document.querySelector('#donation-form')
-const formValues = JSON.parse(localStorage.getItem('donation-values'))
-
-for (input of formValues) {
-    donationForm.querySelector(`#${input.input}`).value = input.value
-}
-
-const donationListRow = donationForm.querySelector('#donation-items')
-
-const donationItemsList = donationListRow.querySelectorAll('.donation_item')
-const donationExample = donationItemsList[0].cloneNode(true)
-
-donationListRow.removeChild(donationListRow.querySelector('.donation_item'))
 
 const addDonationFields = () => {
-    const donationItemsList = donationListRow.querySelectorAll('.donation_item')
-    const donationNumber = donationItemsList.length + 1
+    const donationItems = donationForm.querySelector('#donation-items')
+    const donationsCount =
+        donationItems.querySelectorAll('.donation_item').length + 1
 
     const donationClone = donationExample.cloneNode(true)
-    donationListRow.appendChild(donationClone)
+    donationItems.appendChild(donationClone)
 
     const donationRemove = donationClone.querySelector('.donation_remove')
 
-    if (donationNumber === 1) {
+    if (donationsCount === 1) {
         donationRemove.style.display = 'none'
         return
     }
 
     donationRemove.addEventListener('click', (e) => {
         e.preventDefault()
-        donationListRow.removeChild(donationClone)
+        donationItems.removeChild(donationClone)
     })
 }
 
-addDonationFields()
-
-const addDonationItemButton = donationForm.querySelector('#add-donation-item')
-
-addDonationItemButton.addEventListener('click', (e) => {
-    e.preventDefault()
-    addDonationFields()
-})
-
-donationForm.addEventListener('submit', (e) => {
-    e.preventDefault()
-
+const saveDonationForm = () => {
     const formInputs = donationForm.querySelectorAll('.form_item')
     const formValues = [...formInputs].map((input) => ({
         input: input.id,
         value: input.value,
     }))
 
-    localStorage.setItem('donation-values', JSON.stringify(formValues))
+    const donationFormValues = {
+        inputs: formValues,
+        // donations: formDonations,
+    }
+
+    localStorage.setItem('donation-values', JSON.stringify(donationFormValues))
+}
+
+const injectFormOldValues = () => {
+    const donationFormValues = JSON.parse(
+        localStorage.getItem('donation-values')
+    )
+
+    if (!donationFormValues.inputs) return
+
+    for (input of donationFormValues.inputs) {
+        donationForm.querySelector(`#${input.input}`).value = input.value
+    }
+}
+
+// form events
+donationForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    saveDonationForm()
 })
+
+const addDonationButton = donationForm.querySelector('#add-donation-item')
+addDonationButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    addDonationFields()
+})
+
+// logic methods sequence
+const donationItems = donationForm.querySelector('#donation-items')
+const donationExample = donationItems
+    .querySelectorAll('.donation_item')[0]
+    .cloneNode(true)
+donationItems.removeChild(donationItems.querySelector('.donation_item')) // remove existent donation_item
+
+addDonationFields() // add donation_item with events
+
+injectFormOldValues()
