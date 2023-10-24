@@ -1,6 +1,12 @@
 * {
+    --background-color: #f0e9d116;
+    --light-background-color: #ffffff;
     --primary-color: #79d6b7;
     --primary-color-dark: #6ac8a8;
+}
+
+body {
+    background: var(--background-color);
 }
 
 .custom-navbar {
@@ -10,4 +16,22 @@
 .custom-navbar .dropdown-menu {
     background-color: var(--primary-color-dark) !important;
     border: 0;
+}
+
+.custom--primary {
+    background-color: #ef5da8;
+    border: 0;
+    border-bottom: 4px solid #ce5091;
+}
+
+.custom--primary:hover {
+    background-color: #ce5091;
+    border-bottom: 4px solid #ba4a83;
+}
+
+.block__content {
+    background-color: var(--light-background-color);
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 30px;
 }
