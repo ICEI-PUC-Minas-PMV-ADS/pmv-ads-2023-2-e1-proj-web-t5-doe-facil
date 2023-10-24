@@ -18,7 +18,7 @@ const addDonationFields = () => {
     const donationRemoveButton = donationClone.querySelector('.donation_remove')
     const typeSelect = donationClone.querySelector('.type_select')
 
-    for (type of donateTypes) {
+    for (const type of donateTypes) {
         typeSelect.appendChild(new Option(type))
     }
 
@@ -45,7 +45,7 @@ const getFormInputs = () => {
     const formDonationsValues = []
 
     if (donationFields.length) {
-        for (donation of donationFields) {
+        for (const donation of donationFields) {
             const inputs = donation.querySelectorAll('.donation_item')
 
             const inputList = [...inputs].map((input) => ({
@@ -65,25 +65,56 @@ const getFormInputs = () => {
     return donationFormValues
 }
 
+const createPayload = (donationForm) => {
+    const { inputs, donations } = donationForm
+
+    const donationPayload = {
+        donations: [],
+    }
+
+    console.log(inputs)
+
+    for (const input of inputs) {
+        donationPayload[input.input] = input.value
+    }
+
+    for (const donation of donations) {
+        const donationObject = {}
+
+        for (const field of donation) {
+            donationObject[field.input] = field.value
+        }
+        donationPayload.donations.push(donationObject)
+    }
+
+    return donationPayload
+}
+
 const submitDonationForm = () => {
-    console.log('TODO: implement submit')
+    let donations = JSON.parse(localStorage.getItem('donations'))
+    if (!donations) donations = []
+
+    donations.push(createPayload(getFormInputs()))
+
+    localStorage.setItem('donations', JSON.stringify(donations))
 }
 
 const saveDraftForm = () => {
-    localStorage.setItem('donation-values', JSON.stringify(getFormInputs()))
+    localStorage.setItem('donation_draft', JSON.stringify(getFormInputs()))
     console.log('draft saved')
 }
 
 const injectFormOldValues = () => {
     const donationFormValues = JSON.parse(
-        localStorage.getItem('donation-values')
+        localStorage.getItem('donation_draft')
     )
 
     if (!donationFormValues) return
 
     if (donationFormValues.inputs) {
-        for (input of donationFormValues.inputs) {
-            donationForm.querySelector(`#${input.input}`).value = input.value
+        for (const input of donationFormValues.inputs) {
+            const selectedInput = donationForm.querySelector(`#${input.input}`)
+            if (selectedInput) selectedInput.value = input.value
         }
     }
 
@@ -96,11 +127,12 @@ const injectFormOldValues = () => {
             donationFields = donationForm.querySelectorAll('.donation_fields')
         }
 
-        for (fields of donationFields) {
+        for (const fields of donationFields) {
             const donation = donations.shift()
 
-            for (input of donation) {
-                fields.querySelector(`#${input.input}`).value = input.value
+            for (const input of donation) {
+                const field = fields.querySelector(`#${input.input}`)
+                if (field) field.value = input.value
             }
         }
     }
