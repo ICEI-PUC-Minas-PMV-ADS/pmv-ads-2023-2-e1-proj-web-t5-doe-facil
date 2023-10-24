@@ -57,7 +57,15 @@ p1{
     color: #EF5DA8;
 
 }
-
+button{
+    background-color: #79d6b7;
+    color: #FDFBF8;
+    border-color: #6ac8a8;
+    border-radius: 10px;
+    vertical-align: middle;
+    text-decoration: underline;
+    
+ }
 .container2{
     background-color: #FDFBF8;
     margin-top: 50px;
