@@ -33,7 +33,7 @@ const addDonationFields = () => {
     })
 }
 
-const saveDonationForm = () => {
+const getFormInputs = () => {
     const formInputs = donationForm.querySelectorAll('.form_item')
 
     const formValues = [...formInputs].map((input) => ({
@@ -62,7 +62,16 @@ const saveDonationForm = () => {
         donations: formDonationsValues,
     }
 
-    localStorage.setItem('donation-values', JSON.stringify(donationFormValues))
+    return donationFormValues
+}
+
+const submitDonationForm = () => {
+    console.log('TODO: implement submit')
+}
+
+const saveDraftForm = () => {
+    localStorage.setItem('donation-values', JSON.stringify(getFormInputs()))
+    console.log('draft saved')
 }
 
 const injectFormOldValues = () => {
@@ -100,7 +109,13 @@ const injectFormOldValues = () => {
 // form events
 donationForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    saveDonationForm()
+    submitDonationForm()
+})
+
+const draftButton = donationForm.querySelector('#draft')
+draftButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    saveDraftForm()
 })
 
 const addDonationButton = donationForm.querySelector('#add-donation-item')
@@ -115,8 +130,8 @@ const donationExample = donationItems
     .querySelectorAll('.donation_fields')[0]
     .cloneNode(true)
 
-donationItems.removeChild(donationItems.querySelector('.donation_fields')) 
+donationItems.removeChild(donationItems.querySelector('.donation_fields'))
 
-addDonationFields() 
+addDonationFields()
 
 injectFormOldValues()
