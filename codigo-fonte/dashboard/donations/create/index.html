@@ -20,23 +20,22 @@
         <div class="container pt-4 mt-4">
             <div class="row g-3">
                 <div class="col-4">
-                    <div class="m-2 block__content">
-
-                    </div>
+                    <div class="m-2 block__content"></div>
                 </div>
 
                 <div class="col-8">
-                    <form class="m-2 block__content">
+                    <form id="donation-form" class="m-2 block__content">
                         <div class="row">
                             <div class="mb-3 col">
                                 <label for="name" class="form-label">
                                     Nome completo
                                 </label>
+
                                 <input
-                                    type="text"
-                                    class="form-control"
                                     id="name"
-                                    aria-describedby="name"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
                                 />
                             </div>
 
@@ -46,121 +45,213 @@
                                 </label>
 
                                 <input
-                                    type="date"
-                                    class="form-control"
                                     id="birthdate"
-                                    aria-describedby=""
+                                    type="date"
+                                    class="form-control form_item"
+                                    required
                                 />
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="mb-3 col">
-                                <label for="name" class="form-label">
+                                <label for="institution" class="form-label">
                                     Instituição
                                 </label>
+
                                 <input
+                                    id="institution"
                                     type="text"
-                                    class="form-control"
-                                    id="name"
-                                    aria-describedby="name"
+                                    class="form-control form_item"
+                                    required
                                 />
                             </div>
 
                             <div class="mb-3 col-4">
-                                <label for="birthdate" class="form-label">
+                                <label for="cep" class="form-label">
                                     CEP
                                 </label>
 
                                 <input
+                                    id="cep"
                                     type="text"
-                                    class="form-control"
-                                    id="birthdate"
-                                    aria-describedby=""
+                                    class="form-control form_item"
+                                    required
                                 />
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="mb-3 col">
-                                <label for="name" class="form-label">
+                                <label for="address" class="form-label">
                                     Endereço de coleta
                                 </label>
+
                                 <input
+                                    id="address"
+                                    class="form-control form_item"
                                     type="text"
-                                    class="form-control"
-                                    id="name"
-                                    aria-describedby="name"
+                                    required
                                 />
                             </div>
 
                             <div class="mb-3 col-5">
-                                <label for="birthdate" class="form-label">
+                                <label for="neighborhood" class="form-label">
                                     Bairro
                                 </label>
 
                                 <input
+                                    id="neighborhood"
+                                    class="form-control form_item"
                                     type="text"
-                                    class="form-control"
-                                    id="birthdate"
-                                    aria-describedby=""
+                                    required
                                 />
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="mb-3 col-3">
-                                <label for="name" class="form-label">
+                                <label for="collection-date" class="form-label">
                                     Coletar do dia
                                 </label>
 
                                 <input
+                                    id="collection-date"
+                                    class="form-control form_item"
                                     type="date"
-                                    class="form-control"
-                                    id="birthdate"
-                                    aria-describedby=""
+                                    required
                                 />
                             </div>
 
                             <div class="mb-3 col-3">
-                                <label for="birthdate" class="form-label">
+                                <label
+                                    for="finish-collection-date"
+                                    class="form-label"
+                                >
                                     Até o dia
                                 </label>
 
                                 <input
+                                    id="finish-collection-date"
+                                    class="form-control form_item"
                                     type="date"
-                                    class="form-control"
-                                    id="birthdate"
-                                    aria-describedby=""
+                                    required
                                 />
                             </div>
 
                             <div class="mb-3 col-3">
-                                <label for="birthdate" class="form-label">
+                                <label for="from-hour" class="form-label">
                                     A partir de (hora)
                                 </label>
 
                                 <input
+                                    id="from-hour"
+                                    class="form-control form_item"
                                     type="time"
-                                    class="form-control"
-                                    id="birthdate"
-                                    aria-describedby=""
+                                    required
                                 />
                             </div>
 
                             <div class="mb-3 col-3">
-                                <label for="birthdate" class="form-label">
+                                <label for="until-hour" class="form-label">
                                     Até (hora)
                                 </label>
 
                                 <input
+                                    id="until-hour"
+                                    class="form-control form_item"
                                     type="time"
-                                    class="form-control"
-                                    id="birthdate"
-                                    aria-describedby=""
+                                    required
                                 />
                             </div>
                         </div>
 
+                        <div class="row my-4">
+                            <div class="col">
+                                <h5>Cadastro das Doações</h5>
+                                <p>
+                                    Cadastre as doações que deseja fazer de
+                                    forma separada por tipos e adicione a
+                                    quantidade, observações e fotos caso tenha
+                                    disponíves. Caso queira fazer mais de um
+                                    tipo de doação, clique no botão “Adicionar
+                                    outra doação” e faça o cadastro da mesma.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="donation-items" class="row">
+                            <div class="row donation_item">
+                                <div class="col-12 pb-2 donation_header">
+                                    <h5 class="donation_title">Descrição da Doação</h5>
+
+                                    <button class="donation_remove">
+                                        Remover doação
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <label class="form-label">
+                                        Tipo de doação
+                                    </label>
+
+                                    <select
+                                        id="type"
+                                        class="form-select type_select"
+                                        type="text"
+                                        required
+                                    ></select>
+
+                                    <label class="form-label mt-3">
+                                        Quantidade:
+                                    </label>
+
+                                    <input
+                                        id="amount"
+                                        class="form-control"
+                                        type="text"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="mb-3 col-8">
+                                    <label class="form-label">
+                                        Observações
+                                    </label>
+
+                                    <textarea
+                                        id="description"
+                                        placeholder="Descreva aqui os itens a serem doados e a situação em que o item se encontra (ex. novo, usado, com pequenos detalhes de uso...)."
+                                        class="form-control"
+                                        rows="4"
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="formFile" class="form-label">
+                                        Fotos da doação:
+                                    </label>
+
+                                    <input
+                                        id="donation-photo"
+                                        class="form-control"
+                                        type="file"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col d-grid mb-4">
+                                <button
+                                    id="add-donation-item"
+                                    type="button"
+                                    class="btn btn-outline-secondary"
+                                >
+                                    + Adicionar outra doação
+                                </button>
+                            </div>
+                        </div>
                         <div class="row g-3">
                             <div class="col-3 d-grid">
                                 <button type="submit" class="btn btn-secondary">
