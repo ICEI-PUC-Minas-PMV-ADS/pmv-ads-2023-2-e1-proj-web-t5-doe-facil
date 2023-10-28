@@ -193,4 +193,45 @@ function makeMenuLink(
 
 makeMenu()
 
+const lateralMenuList = [
+    {
+        label: 'Minhas Doações',
+        tag: 'donation',
+        href: '/dashboard/donations',
+    },
+    {
+        label: 'Meu Perfil',
+        tag: 'profile',
+        href: '/dashboard/profile',
+    },
+    {
+        label: 'Fazer Doações',
+        tag: 'create-donation',
+        href: '/dashboard/donations/create/',
+    },
+    {
+        label: 'Sair',
+        tag: 'exit',
+        href: '#',
+    },
+]
+
+const makeLateralMenu = (activeItem) => {
+    const lateralMenu = document.getElementById('navbar-links')
+    lateralMenu.classList.add('list-group')
+
+    for (const item of lateralMenuList) {
+        const link = document.createElement('a')
+        link.classList = 'list-group-item list-group-item-action'
+
+        if (activeItem === item.tag) link.classList.add('active')
+
+        link.id = `lateral-${item.tag}`
+        link.textContent = item.label
+        link.href = PREFIX_URL + item.href
+
+        lateralMenu.appendChild(link)
+    }
+}
+
 function makeFooter() {}
