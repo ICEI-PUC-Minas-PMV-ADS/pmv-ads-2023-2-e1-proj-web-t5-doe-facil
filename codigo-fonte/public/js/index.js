@@ -73,6 +73,29 @@ const linkList = [
     },
 ]
 
+const lateralMenuList = [
+    {
+        label: 'Minhas Doações',
+        tag: 'donation',
+        href: '/dashboard/donations',
+    },
+    {
+        label: 'Meu Perfil',
+        tag: 'profile',
+        href: '/dashboard/profile',
+    },
+    {
+        label: 'Fazer Doações',
+        tag: 'create-donation',
+        href: '/dashboard/donations/create/',
+    },
+    {
+        label: 'Sair',
+        tag: 'exit',
+        href: '#',
+    },
+]
+
 function setAttributeList(node, list) {
     for (const attribute of list) {
         node.setAttribute(attribute[0], attribute[1])
@@ -81,6 +104,8 @@ function setAttributeList(node, list) {
 
 function makeMenu() {
     const menu = document.querySelector('#menu')
+
+    if (!menu) return
 
     const navbar = document.createElement('nav')
     navbar.classList = 'navbar navbar-expand-lg bg-body-tertiary custom-navbar'
@@ -191,30 +216,6 @@ function makeMenuLink(
     return li
 }
 
-makeMenu()
-
-const lateralMenuList = [
-    {
-        label: 'Minhas Doações',
-        tag: 'donation',
-        href: '/dashboard/donations',
-    },
-    {
-        label: 'Meu Perfil',
-        tag: 'profile',
-        href: '/dashboard/profile',
-    },
-    {
-        label: 'Fazer Doações',
-        tag: 'create-donation',
-        href: '/dashboard/donations/create/',
-    },
-    {
-        label: 'Sair',
-        tag: 'exit',
-        href: '#',
-    },
-]
 
 const makeLateralMenu = (activeItem) => {
     const lateralMenu = document.getElementById('navbar-links')
@@ -235,3 +236,5 @@ const makeLateralMenu = (activeItem) => {
 }
 
 function makeFooter() {}
+
+makeMenu()
