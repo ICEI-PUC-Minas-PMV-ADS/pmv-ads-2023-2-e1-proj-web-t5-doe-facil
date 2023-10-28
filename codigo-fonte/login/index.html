@@ -20,15 +20,15 @@
                 <div class="col-4">
                     <h2 class="form__title">Formulário de Acesso</h2>
 
-                    <form class="block__content m-2">
+                    <form id="access-form" class="block__content m-2">
                         <div class="row">
                             <div class="mb-3 col-12">
-                                <label for="email" class="form-label">
+                                <label for="access-email" class="form-label">
                                     Email
                                 </label>
 
                                 <input
-                                    id="email"
+                                    id="access-email"
                                     type="email"
                                     class="form-control form_item"
                                     required
@@ -36,12 +36,12 @@
                             </div>
 
                             <div class="mb-3 col-12">
-                                <label for="password" class="form-label">
+                                <label for="access-password" class="form-label">
                                     Senha
                                 </label>
 
                                 <input
-                                    id="password"
+                                    id="access-password"
                                     type="password"
                                     class="form-control form_item"
                                     required
@@ -62,10 +62,10 @@
 
                 <div class="col-1"></div>
 
-                <div class="col-4">
+                <div id="register-donator-col" class="col-4">
                     <h2 class="form__title">Cadastro de Doador</h2>
 
-                    <form id="donation-form" class="m-2 block__content">
+                    <form id="register-donator-form" class="m-2 block__content">
                         <div class="row">
                             <div class="mb-3 col-12">
                                 <label for="name" class="form-label">
@@ -151,6 +151,105 @@
                                 >
                                     Cadastrar
                                 </button>
+                            </div>
+
+                            <div class="mt-4 text-center">
+                                É uma Instituição?
+                                <a href="#" onclick="changeForm('institution')"
+                                    >Cadastre-se aqui!</a
+                                >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="register-institution-col" class="col-4 d-none">
+                    <h2 class="form__title">Cadastro de Instituição</h2>
+
+                    <form
+                        id="register-institution-form"
+                        class="m-2 block__content"
+                    >
+                        <div class="row">
+                            <div class="mb-3 col-12">
+                                <label for="name" class="form-label">
+                                    Nome da Instituição
+                                </label>
+
+                                <input
+                                    id="name"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12">
+                                <label for="cnpj" class="form-label">
+                                    CNPJ
+                                </label>
+
+                                <input
+                                    id="cnpj"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12">
+                                <label for="address" class="form-label">
+                                    Endereço
+                                </label>
+
+                                <input
+                                    id="address"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input
+                                    id="email"
+                                    type="email"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12">
+                                <label for="password" class="form-label">
+                                    Senha
+                                </label>
+
+                                <input
+                                    id="password"
+                                    type="password"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="col-12 d-grid mt-3">
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary custom--primary btn--custom"
+                                >
+                                    Cadastrar
+                                </button>
+                            </div>
+
+                            <div class="mt-4 text-center">
+                                É uma Doador?
+                                <a href="#" onclick="changeForm('donator')"
+                                    >Cadastre-se aqui!</a
+                                >
                             </div>
                         </div>
                     </form>
