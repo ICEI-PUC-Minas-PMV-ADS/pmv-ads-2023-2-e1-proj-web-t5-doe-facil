@@ -20,7 +20,9 @@
         <div class="container pt-4 mt-4">
             <div class="row g-3">
                 <div class="col-4">
-                    <div class="m-2 block__content"></div>
+                    <div class="block__navbar m-2">
+                        <div id="navbar-links"></div>
+                    </div>
                 </div>
 
                 <div class="col-8">
@@ -59,12 +61,12 @@
                                     Instituição
                                 </label>
 
-                                <input
+                                <select
                                     id="institution"
+                                    class="form-select type_select form_item"
                                     type="text"
-                                    class="form-control form_item"
                                     required
-                                />
+                                ></select>
                             </div>
 
                             <div class="mb-3 col-4">
@@ -256,14 +258,14 @@
                         </div>
                         <div class="row g-3">
                             <div class="col-3 d-grid">
-                                <button id="draft" class="btn btn-secondary">
+                                <button id="draft" class="btn btn-secondary btn--custom">
                                     Salvar Rascunho
                                 </button>
                             </div>
                             <div class="col-9 d-grid">
                                 <button
                                     type="submit"
-                                    class="btn btn-primary custom--primary"
+                                    class="btn btn-primary custom--primary btn--custom"
                                 >
                                     Cadastrar Doação e Fazer a Diferença!
                                 </button>

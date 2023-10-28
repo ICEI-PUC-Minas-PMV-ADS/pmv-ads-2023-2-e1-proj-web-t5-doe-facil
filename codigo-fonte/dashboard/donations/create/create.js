@@ -1,4 +1,5 @@
 const donationForm = document.querySelector('#donation-form')
+
 const donateTypes = [
     'Brinquedos',
     'Roupas',
@@ -6,6 +7,16 @@ const donateTypes = [
     'Cama e banho',
     'Outro',
 ]
+
+const getInstitutions = () => {
+    return [
+        'Instituição 1',
+        'Instituição 2',
+        'Instituição 3',
+        'Instituição 4',
+        'Instituição 5',
+    ]
+}
 
 const addDonationFields = () => {
     const donationItems = donationForm.querySelector('#donation-items')
@@ -72,8 +83,6 @@ const createPayload = (donationForm) => {
         donations: [],
     }
 
-    console.log(inputs)
-
     for (const input of inputs) {
         donationPayload[input.input] = input.value
     }
@@ -138,6 +147,17 @@ const injectFormOldValues = () => {
     }
 }
 
+const injectInstitutionsForm = () => {
+    const institutionsSelect = donationForm.querySelector('#institution')
+    const institutionsList = getInstitutions()
+
+    for (const item of institutionsList) {
+        const option = document.createElement('option')
+        option.textContent = item
+        institutionsSelect.appendChild(option)
+    }
+}
+
 // form events
 donationForm.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -165,5 +185,7 @@ const donationExample = donationItems
 donationItems.removeChild(donationItems.querySelector('.donation_fields'))
 
 addDonationFields()
-
+injectInstitutionsForm()
 injectFormOldValues()
+
+makeLateralMenu('create-donation')
