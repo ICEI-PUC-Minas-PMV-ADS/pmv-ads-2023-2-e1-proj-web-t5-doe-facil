@@ -1,0 +1,1 @@
+makeLateralMenu('profile')
