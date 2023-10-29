@@ -25,8 +25,132 @@
                     </div>
                 </div>
 
-                <div class="col-8">
-                    <div class="block__content m-2"></div>
+                <div class="col-4">
+                    <h2 class="form__title">Informações</h2>
+
+                    <form id="donator-form" class="m-2 block__content">
+                        <div class="row">
+                            <div class="mb-3 col-12">
+                                <label for="dontator-name" class="form-label">
+                                    Nome completo
+                                </label>
+
+                                <input
+                                    id="donator-name"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12">
+                                <label for="dontator-cpf" class="form-label">
+                                    CPF
+                                </label>
+
+                                <input
+                                    id="donator-cpf"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12">
+                                <label
+                                    for="donator-bnirthdate"
+                                    class="form-label"
+                                >
+                                    Data de nascimento
+                                </label>
+                                <input
+                                    id="donator-birthdate"
+                                    type="date"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12">
+                                <label for="donator-address" class="form-label">
+                                    Endereço
+                                </label>
+
+                                <input
+                                    id="donator-address"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12">
+                                <label for="donator-email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input
+                                    id="donator-email"
+                                    type="email"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="col-12 d-grid mt-3">
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary custom--primary btn--custom"
+                                >
+                                    Salvar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-4">
+                    <h2 class="form__title">Atualizar Senha</h2>
+
+                    <form id="donator-form" class="m-2 block__content">
+                        <div class="row">
+                            <div class="mb-3 col-12">
+                                <label for="password" class="form-label">
+                                    Senha
+                                </label>
+
+                                <input
+                                    id="password"
+                                    type="password"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+                            <div class="mb-3 col-12">
+                                <label
+                                    for="confirm-password"
+                                    class="form-label"
+                                >
+                                    Confirmar senha
+                                </label>
+
+                                <input
+                                    id="confirm-password"
+                                    type="password"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+                            <div class="col-12 d-grid mt-3">
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary custom--primary btn--custom"
+                                >
+                                    Salvar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
