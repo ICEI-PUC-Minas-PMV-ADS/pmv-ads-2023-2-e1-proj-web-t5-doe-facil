@@ -7,7 +7,6 @@ import { mountForm } from './lifecycles.js'
 const form = document.querySelector('#donation-form')
 const { donationElementField } = mountForm()
 
-// form events
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     submitForm(getFormInputs())
