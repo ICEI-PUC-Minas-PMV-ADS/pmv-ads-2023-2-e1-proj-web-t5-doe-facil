@@ -27,12 +27,6 @@ const linkList = [
         type: 'link',
     },
     {
-        label: 'Cadastro Instituição',
-        href: 'signup/institution',
-        active: false,
-        type: 'link',
-    },
-    {
         label: 'Dashboard',
         href: '#',
         active: false,
@@ -63,13 +57,6 @@ const linkList = [
                 type: 'sub',
             },
         ],
-    },
-    {
-        label: 'Acessar',
-        href: 'login',
-        active: false,
-        type: 'link',
-        class: 'custom--primary',
     },
 ]
 
@@ -151,10 +138,20 @@ function makeMenu() {
         )
     }
 
+    const accessButton = document.createElement('button')
+    accessButton.classList = 'btn btn-primary custom--primary'
+    accessButton.textContent = 'Acessar'
+
+    accessButton.addEventListener('click', () => {
+        window.location.replace(PREFIX_URL + 'login')
+    })
+
     navbarColapse.appendChild(navbarUl)
+
     container.appendChild(navbarBrand)
     container.appendChild(navbarToggle)
     container.appendChild(navbarColapse)
+    container.appendChild(accessButton)
 
     navbar.appendChild(container)
     menu.appendChild(navbar)
@@ -215,7 +212,6 @@ function makeMenuLink(
 
     return li
 }
-
 
 const makeLateralMenu = (activeItem) => {
     const lateralMenu = document.getElementById('navbar-links')
