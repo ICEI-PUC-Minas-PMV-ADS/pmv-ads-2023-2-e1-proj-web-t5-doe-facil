@@ -4,14 +4,30 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Doe Fácil - Cadastro da Doação</title>
+
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
         <link rel="stylesheet" href="../../../public/css/global.css" />
         <link rel="stylesheet" href="create.css" />
+        <script defer src="../../../public/js/index.js"></script>
+        <script defer src="create.js"></script>
     </head>
 
     <body>
@@ -26,6 +42,7 @@
                 </div>
 
                 <div class="col-8">
+                    <h2 class="form__title">Cadastro de Doação</h2>
                     <form id="donation-form" class="m-2 block__content">
                         <div class="row">
                             <div class="mb-3 col">
@@ -258,10 +275,14 @@
                         </div>
                         <div class="row g-3">
                             <div class="col-3 d-grid">
-                                <button id="draft" class="btn btn-secondary btn--custom">
+                                <button
+                                    id="draft"
+                                    class="btn btn-secondary btn--custom"
+                                >
                                     Salvar Rascunho
                                 </button>
                             </div>
+
                             <div class="col-9 d-grid">
                                 <button
                                     type="submit"
@@ -277,19 +298,5 @@
         </div>
 
         <div id="footer"></div>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-
-        <script src="../../../public/js/index.js"></script>
-        <script src="create.js"></script>
     </body>
 </html>

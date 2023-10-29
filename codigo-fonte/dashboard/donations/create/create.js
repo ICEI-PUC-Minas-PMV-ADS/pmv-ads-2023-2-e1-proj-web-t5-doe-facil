@@ -1,5 +1,9 @@
 const donationForm = document.querySelector('#donation-form')
 
+const donationExample = document
+    .querySelectorAll('#donation-form .donation_fields')[0]
+    .cloneNode(true)
+
 const donateTypes = [
     'Brinquedos',
     'Roupas',
@@ -42,6 +46,11 @@ const addDonationFields = () => {
         e.preventDefault()
         donationItems.removeChild(donationClone)
     })
+}
+
+const removeFirstDonationField = () => {
+    const donationItems = donationForm.querySelector('#donation-items')
+    donationItems.removeChild(donationItems.querySelector('.donation_fields'))
 }
 
 const getFormInputs = () => {
@@ -164,28 +173,22 @@ donationForm.addEventListener('submit', (e) => {
     submitDonationForm()
 })
 
-const draftButton = donationForm.querySelector('#draft')
-draftButton.addEventListener('click', (e) => {
+donationForm.querySelector('#draft').addEventListener('click', (e) => {
     e.preventDefault()
     saveDraftForm()
 })
 
-const addDonationButton = donationForm.querySelector('#add-donation-item')
-addDonationButton.addEventListener('click', (e) => {
-    e.preventDefault()
-    addDonationFields()
-})
+donationForm
+    .querySelector('#add-donation-item')
+    .addEventListener('click', (e) => {
+        e.preventDefault()
+        addDonationFields()
+    })
 
 // logic methods sequence
-const donationItems = donationForm.querySelector('#donation-items')
-const donationExample = donationItems
-    .querySelectorAll('.donation_fields')[0]
-    .cloneNode(true)
-
-donationItems.removeChild(donationItems.querySelector('.donation_fields'))
-
+removeFirstDonationField()
 addDonationFields()
-injectInstitutionsForm()
 injectFormOldValues()
+injectInstitutionsForm()
 
 makeLateralMenu('create-donation')
