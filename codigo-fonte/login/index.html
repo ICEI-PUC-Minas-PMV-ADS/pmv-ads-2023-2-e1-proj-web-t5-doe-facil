@@ -28,7 +28,8 @@
         <link rel="stylesheet" href="login.css" />
 
         <script defer src="../public/js/index.js"></script>
-        <script defer src="login.js"></script>
+        <script defer type="module" src="./js/module.js"></script>
+        <script defer src="./js/global.js"></script>
     </head>
 
     <body class="access__page">
@@ -42,12 +43,12 @@
                     <form id="access-form" class="block__content m-2">
                         <div class="row">
                             <div class="mb-3 col-12">
-                                <label for="access-email" class="form-label">
+                                <label for="access_email" class="form-label">
                                     Email
                                 </label>
 
                                 <input
-                                    id="access-email"
+                                    id="access_email"
                                     type="email"
                                     class="form-control form_item"
                                     required
@@ -55,12 +56,12 @@
                             </div>
 
                             <div class="mb-3 col-12">
-                                <label for="access-password" class="form-label">
+                                <label for="access_password" class="form-label">
                                     Senha
                                 </label>
 
                                 <input
-                                    id="access-password"
+                                    id="access_password"
                                     type="password"
                                     class="form-control form_item"
                                     required
@@ -68,7 +69,14 @@
                             </div>
 
                             <div class="col-12 d-grid mt-3">
+                                <input
+                                    type="hidden"
+                                    id="donator_type"
+                                    value="donator"
+                                />
+
                                 <button
+                                    id="access_submit"
                                     type="submit"
                                     class="btn btn-primary custom--primary btn--custom"
                                 >
@@ -79,12 +87,10 @@
                     </form>
                 </div>
 
-                <div class="col-1"></div>
-
-                <div id="register-donator-col" class="col-4">
+                <div id="donator-form-col" class="col-4">
                     <h2 class="form__title">Cadastro de Doador</h2>
 
-                    <form id="register-donator-form" class="m-2 block__content">
+                    <form id="donator-form" class="m-2 block__content">
                         <div class="row">
                             <div class="mb-3 col-12">
                                 <label for="dontator-name" class="form-label">
@@ -92,7 +98,7 @@
                                 </label>
 
                                 <input
-                                    id="donator-name"
+                                    id="donator_name"
                                     type="text"
                                     class="form-control form_item"
                                     required
@@ -105,7 +111,7 @@
                                 </label>
 
                                 <input
-                                    id="donator-cpf"
+                                    id="donator_cpf"
                                     type="text"
                                     class="form-control form_item"
                                     required
@@ -114,26 +120,42 @@
 
                             <div class="mb-3 col-12">
                                 <label
-                                    for="donator-bnirthdate"
+                                    for="donator_bnirthdate"
                                     class="form-label"
                                 >
                                     Data de nascimento
                                 </label>
                                 <input
-                                    id="donator-birthdate"
+                                    id="donator_birthdate"
                                     type="date"
                                     class="form-control form_item"
                                     required
                                 />
                             </div>
 
-                            <div class="mb-3 col-12">
-                                <label for="donator-address" class="form-label">
+                            <div class="mb-3 col-8">
+                                <label for="donator_address" class="form-label">
                                     Endereço
                                 </label>
 
                                 <input
-                                    id="donator-address"
+                                    id="donator_address"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-4">
+                                <label
+                                    for="donator_address_number"
+                                    class="form-label"
+                                >
+                                    Número
+                                </label>
+
+                                <input
+                                    id="donator_address_number"
                                     type="text"
                                     class="form-control form_item"
                                     required
@@ -141,12 +163,55 @@
                             </div>
 
                             <div class="mb-3 col-12">
-                                <label for="donator-email" class="form-label">
+                                <label
+                                    for="donator_address_complement"
+                                    class="form-label"
+                                >
+                                    Comeplemento
+                                </label>
+
+                                <input
+                                    id="donator_address_complement"
+                                    type="text"
+                                    class="form-control form_item"
+                                />
+                            </div>
+
+                            <div class="mb-3 col-6">
+                                <label
+                                    for="donator_neighborhood"
+                                    class="form-label"
+                                >
+                                    Bairro
+                                </label>
+
+                                <input
+                                    id="donator_neighborhood"
+                                    class="form-control form_item"
+                                    type="text"
+                                    required
+                                />
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="donator_cep" class="form-label">
+                                    CEP
+                                </label>
+
+                                <input
+                                    id="donator_cep"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12">
+                                <label for="donator_email" class="form-label">
                                     Email
                                 </label>
 
                                 <input
-                                    id="donator-email"
+                                    id="donator_email"
                                     type="email"
                                     class="form-control form_item"
                                     required
@@ -155,14 +220,14 @@
 
                             <div class="mb-3 col-12">
                                 <label
-                                    for="donator-password"
+                                    for="donator_password"
                                     class="form-label"
                                 >
                                     Senha
                                 </label>
 
                                 <input
-                                    id="donator-password"
+                                    id="donator_password"
                                     type="password"
                                     class="form-control form_item"
                                     required
@@ -170,8 +235,16 @@
                             </div>
 
                             <div class="col-12 d-grid mt-3">
+                                <input
+                                    type="hidden"
+                                    id="donator_type"
+                                    value="donator"
+                                    class="form_item"
+                                />
+
                                 <button
                                     type="submit"
+                                    id="donator__submit"
                                     class="btn btn-primary custom--primary btn--custom"
                                 >
                                     Cadastrar
@@ -188,24 +261,25 @@
                     </form>
                 </div>
 
-                <div id="register-institution-col" class="col-4 d-none">
+                <div
+                    id="institution-form-col"
+                    class="col-4"
+                    style="display: none"
+                >
                     <h2 class="form__title">Cadastro de Instituição</h2>
 
-                    <form
-                        id="register-institution-form"
-                        class="m-2 block__content"
-                    >
+                    <form id="institution-form" class="m-2 block__content">
                         <div class="row">
                             <div class="mb-3 col-12">
                                 <label
-                                    for="institution-name"
+                                    for="institution_name"
                                     class="form-label"
                                 >
                                     Nome da Instituição
                                 </label>
 
                                 <input
-                                    id="institution-name"
+                                    id="institution_name"
                                     type="text"
                                     class="form-control form_item"
                                     required
@@ -214,7 +288,7 @@
 
                             <div class="mb-3 col-12">
                                 <label
-                                    for="institution-cnpj"
+                                    for="institution_cnpj"
                                     class="form-label"
                                 >
                                     CNPJ
@@ -228,16 +302,32 @@
                                 />
                             </div>
 
-                            <div class="mb-3 col-12">
+                            <div class="mb-3 col-8">
                                 <label
-                                    for="institution-address"
+                                    for="institution_address"
                                     class="form-label"
                                 >
                                     Endereço
                                 </label>
 
                                 <input
-                                    id="institution-address"
+                                    id="institution_address"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-4">
+                                <label
+                                    for="institution_address_number"
+                                    class="form-label"
+                                >
+                                    Número
+                                </label>
+
+                                <input
+                                    id="institution_address_number"
                                     type="text"
                                     class="form-control form_item"
                                     required
@@ -246,14 +336,57 @@
 
                             <div class="mb-3 col-12">
                                 <label
-                                    for="institution-email"
+                                    for="institution_address_complement"
+                                    class="form-label"
+                                >
+                                    Comeplemento
+                                </label>
+
+                                <input
+                                    id="institution_address_complement"
+                                    type="text"
+                                    class="form-control form_item"
+                                />
+                            </div>
+
+                            <div class="mb-3 col-6">
+                                <label
+                                    for="institution_neighborhood"
+                                    class="form-label"
+                                >
+                                    Bairro
+                                </label>
+
+                                <input
+                                    id="institution_neighborhood"
+                                    class="form-control form_item"
+                                    type="text"
+                                    required
+                                />
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="institution_cep" class="form-label">
+                                    CEP
+                                </label>
+
+                                <input
+                                    id="institution_cep"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12">
+                                <label
+                                    for="institution_email"
                                     class="form-label"
                                 >
                                     Email
                                 </label>
 
                                 <input
-                                    id="institution-email"
+                                    id="institution_email"
                                     type="email"
                                     class="form-control form_item"
                                     required
@@ -262,14 +395,14 @@
 
                             <div class="mb-3 col-12">
                                 <label
-                                    for="institution-password"
+                                    for="institution_password"
                                     class="form-label"
                                 >
                                     Senha
                                 </label>
 
                                 <input
-                                    id="institution-password"
+                                    id="institution_password"
                                     type="password"
                                     class="form-control form_item"
                                     required
@@ -277,7 +410,14 @@
                             </div>
 
                             <div class="col-12 d-grid mt-3">
+                                <input
+                                    type="hidden"
+                                    id="institution_type"
+                                    value="institution"
+                                    class="form_item"
+                                />
                                 <button
+                                    id="institution_submit"
                                     type="submit"
                                     class="btn btn-primary custom--primary btn--custom"
                                 >
