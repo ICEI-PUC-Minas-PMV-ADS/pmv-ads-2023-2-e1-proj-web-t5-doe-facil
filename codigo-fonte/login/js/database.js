@@ -9,7 +9,7 @@ const usersSeed = () => {
             birthdate: '2000-10-13',
             cep: '38770-000',
             cpf: '123.456.789-10',
-            email: 'donator@teste.com',
+            email: 'donator@test.com',
             id: createNewId(),
             name: 'Doador Exemplo',
             neighborhood: 'Centro',
@@ -22,7 +22,7 @@ const usersSeed = () => {
             address_number: '543',
             cep: '38770-000',
             cnpj: '55.213.172/0001-35',
-            email: 'institution@teste.com',
+            email: 'institution@test.com',
             id: createNewId(),
             name: 'Doador Exemplo',
             neighborhood: 'Centro',
@@ -60,4 +60,19 @@ export const registerUser = (user) => {
     table.push(user)
 
     localStorage.setItem('users', JSON.stringify(table))
+}
+
+export const getAllUsers = () => {
+    return JSON.parse(localStorage.getItem('users'))
+}
+
+export const validateLogin = (payload) => {
+    const users = getAllUsers()
+    const user = users.find(
+        (u) => u.email === payload.email && u.password === payload.password
+    )
+
+    if (!user) throw new Error('Usuário ou senha inválidos.')
+
+    return user
 }

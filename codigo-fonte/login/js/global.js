@@ -13,4 +13,3 @@ const changeForm = (form) => {
     }
 }
 
-makeMenu()
