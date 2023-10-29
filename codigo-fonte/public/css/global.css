@@ -29,7 +29,7 @@ body {
 }
 
 .btn--custom {
-    padding: .6em;
+    padding: 0.6em;
 }
 
 .custom--primary:hover {
@@ -66,4 +66,10 @@ body {
 
 .form-label {
     color: #626262;
+}
+
+.form__title {
+    font-size: 1.65rem;
+    padding-bottom: 10px;
+    padding-left: 35px;
 }
