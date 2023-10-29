@@ -1,4 +1,8 @@
-const PREFIX_URL = '/codigo-fonte/'
+if (!localStorage.getItem('PREFIX_URL')) {
+    localStorage.setItem('PREFIX_URL', '/codigo-fonte/')
+}
+
+const PREFIX_URL = localStorage.getItem('PREFIX_URL')
 
 const linkList = [
     {
@@ -63,23 +67,23 @@ const linkList = [
 const lateralMenuList = [
     {
         label: 'Minhas Doações',
-        tag: 'donation',
-        href: '/dashboard/donations',
+        tag: 'donations',
+        href: 'dashboard/donations',
     },
     {
         label: 'Meu Perfil',
         tag: 'profile',
-        href: '/dashboard/profile',
+        href: 'dashboard/profile',
     },
     {
         label: 'Fazer Doações',
         tag: 'create-donation',
-        href: '/dashboard/donations/create/',
+        href: 'dashboard/donations/create/',
     },
     {
         label: 'Sair',
         tag: 'exit',
-        href: '#',
+        href: '',
     },
 ]
 
@@ -89,7 +93,7 @@ function setAttributeList(node, list) {
     }
 }
 
-function makeMenu() {
+function $g_makeMenu() {
     const menu = document.querySelector('#menu')
 
     if (!menu) return
@@ -213,8 +217,10 @@ function makeMenuLink(
     return li
 }
 
-const makeLateralMenu = (activeItem) => {
+const $g_makeLateralMenu = (activeItem) => {
     const lateralMenu = document.getElementById('navbar-links')
+    if (!lateralMenu) return
+
     lateralMenu.classList.add('list-group')
 
     for (const item of lateralMenuList) {
@@ -229,8 +235,38 @@ const makeLateralMenu = (activeItem) => {
 
         lateralMenu.appendChild(link)
     }
+
+    const buttonExit = lateralMenu.querySelector('#lateral-exit')
+
+    if (buttonExit) {
+        buttonExit.addEventListener('click', (e) => {
+            e.preventDefault()
+            $g_clearSession()
+            $g_checkSession()
+        })
+    }
 }
 
-function makeFooter() {}
+function $g_makeFooter() {}
 
-makeMenu()
+const $g_getSessionId = () => {
+    return JSON.parse(localStorage.getItem('session'))
+}
+
+const $g_createSession = (id, type) => {
+    localStorage.setItem('session', JSON.stringify({ id, type }))
+}
+
+const $g_clearSession = () => {
+    localStorage.removeItem('session')
+}
+
+const $g_redirectTo = (path) => {
+    window.location = PREFIX_URL + path
+}
+
+const $g_checkSession = () => {
+    if (!$g_getSessionId()) {
+        $g_redirectTo('login')
+    }
+}
