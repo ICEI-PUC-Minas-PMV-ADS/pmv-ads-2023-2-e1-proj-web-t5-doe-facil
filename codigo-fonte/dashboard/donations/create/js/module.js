@@ -21,3 +21,7 @@ form.querySelector('#add-donation-item').addEventListener('click', (e) => {
     e.preventDefault()
     addDonationFields(donationElementField)
 })
+
+$g_checkSession()
+$g_makeMenu()
+$g_makeLateralMenu('create-donation')

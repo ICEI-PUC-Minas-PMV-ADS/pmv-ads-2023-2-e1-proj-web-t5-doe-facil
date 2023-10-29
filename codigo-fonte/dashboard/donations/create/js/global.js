@@ -1,2 +1,0 @@
-makeLateralMenu('create-donation')
-makeMenu()
