@@ -1,0 +1,2 @@
+makeLateralMenu('create-donation')
+makeMenu()
