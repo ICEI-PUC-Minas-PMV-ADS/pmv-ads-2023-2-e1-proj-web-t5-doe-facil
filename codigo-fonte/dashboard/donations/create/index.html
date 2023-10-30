@@ -26,8 +26,10 @@
 
         <link rel="stylesheet" href="../../../public/css/global.css" />
         <link rel="stylesheet" href="create.css" />
+
         <script defer src="../../../public/js/index.js"></script>
-        <script defer src="create.js"></script>
+        <script type="module" defer src="./js/module.js"></script>
+        <script defer src="./js/global.js"></script>
     </head>
 
     <body>
@@ -210,7 +212,8 @@
                                         Remover doação
                                     </button>
                                 </div>
-                                <div class="col">
+
+                                <div class="col pb-2">
                                     <label class="form-label">
                                         Tipo de doação
                                     </label>
@@ -234,7 +237,7 @@
                                     />
                                 </div>
 
-                                <div class="mb-3 col-8">
+                                <div class="col-8 mb-3">
                                     <label class="form-label">
                                         Observações
                                     </label>
@@ -247,18 +250,19 @@
                                         required
                                     ></textarea>
                                 </div>
+                                <!--
+                                    <div class="col-12">
+                                        <label for="formFile" class="form-label">
+                                            Fotos da doação:
+                                        </label>
 
-                                <div class="col-12">
-                                    <label for="formFile" class="form-label">
-                                        Fotos da doação:
-                                    </label>
-
-                                    <input
-                                        id="donation-photo"
-                                        class="form-control"
-                                        type="file"
-                                    />
-                                </div>
+                                        <input
+                                            id="donation-photo"
+                                            class="form-control"
+                                            type="file"
+                                        />
+                                    </div>
+                                -->
                             </div>
                         </div>
 
