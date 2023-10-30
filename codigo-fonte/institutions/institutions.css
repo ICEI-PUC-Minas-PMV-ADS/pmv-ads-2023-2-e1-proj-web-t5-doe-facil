@@ -57,8 +57,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 .imgcaminho{
     position: relative;
 	left: 543px;
@@ -105,12 +103,55 @@
 
 
 
-
-
 .imgcapec{
-    display: block;
-    margin: auto;
+    position: relative;
+	left: 110px;
+    bottom: 1850px;
 }
+
+.color3{
+    position: relative;
+    left: 90px;
+    bottom: 1250px;
+}
+.colorc3{
+    position: relative;
+    left: 90px;
+    bottom: 1250px;
+}
+
+.capec{
+    position: relative;
+    left: 125px;
+    bottom: 1740px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.capectxt{
+    position: relative;
+    left: 125px;
+    bottom: 1480px;
+    text-align: justify;
+    color: gray;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cidade3{
+    position: relative;
+    left: 125px;
+    bottom: 1310px;
+    font-weight: bold;
+    color: gray;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
 .imgcape{
     display: block;
     margin: auto;
