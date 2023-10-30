@@ -12,29 +12,101 @@
     padding-top: 20px;
 }
 
-.rodape{
-    display: flex;
-    background-color: #F0AFAB;
-    border: 1px solid #F0AFAB;
-    justify-content: space-between;
-    padding: 20px 30px 20px 30px;
-}
-
-.rodape .item{
-    display: inline-block;
-    width: 30%;
-}
 
 .imgsara{
     position: relative;
 	left: 110px;
-    top: 80px;
-    position
+    bottom: 580px;
 }
+
+.color1{
+    position: relative;
+    left: 90px;
+    top: 20px;
+}
+.colorc1{
+    position: relative;
+    left: 90px;
+    bottom: -18px;
+}
+
+.fundacaosara{
+    position: relative;
+    left: 125px;
+    bottom: 470px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.saratxt{
+    position: relative;
+    left: 120px;
+    bottom: 210px;
+    text-align: justify;
+    color: gray;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cidade1{
+    position: relative;
+    left: 120px;
+    bottom: 45px;
+    font-weight: bold;
+    color: gray;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 .imgcaminho{
-    display: block;
-    margin: auto;
+    position: relative;
+	left: 543px;
+    bottom: 1525px;
 }
+.color2{
+    position: relative;
+    left: 520px;
+    bottom: 883px;
+}
+.colorc2{
+    position: relative;
+    left: 520px;
+    bottom: 885px;
+}
+
+.casadocaminho{
+    position: relative;
+    left: 560px;
+    bottom: 1372px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.caminhotxt{
+    position: relative;
+    left: 550px;
+    bottom: 1112px;
+    text-align: justify;
+    color: gray;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cidade2{
+    position: relative;
+    left: 550px;
+    bottom: 950px;
+    font-weight: bold;
+    color: gray;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
 .imgcapec{
     display: block;
     margin: auto;
@@ -42,4 +114,18 @@
 .imgcape{
     display: block;
     margin: auto;
+}
+
+.rodape {
+    display: flex;
+    background-color: #F0AFAB;
+    border: 1px solid #F0AFAB;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+    
+}
+
+.rodape .item {
+    display: inline-block;
+    width: 30%;
 }
