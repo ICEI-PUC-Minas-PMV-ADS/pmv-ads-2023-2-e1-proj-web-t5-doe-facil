@@ -103,4 +103,6 @@ export const createPayload = (formInputs) => {
 export const submitForm = (inputs) => {
     saveDonation(createPayload(inputs))
     form.reset()
+
+    alert('Doação criada com sucesso!')
 }
