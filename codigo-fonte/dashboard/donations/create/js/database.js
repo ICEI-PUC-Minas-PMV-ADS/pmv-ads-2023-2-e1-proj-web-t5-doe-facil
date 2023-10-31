@@ -53,7 +53,7 @@ export const saveDonation = (donation) => {
     if (!donations) donations = []
 
     donation.id = createNewDonationId()
-
     donations.push(donation)
     localStorage.setItem('donations', JSON.stringify(donations))
+    localStorage.removeItem('donation_drafts')
 }
