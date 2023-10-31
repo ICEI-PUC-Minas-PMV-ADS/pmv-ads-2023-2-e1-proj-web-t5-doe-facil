@@ -36,13 +36,13 @@
 
         <div class="container pt-4 mt-4">
             <div class="row g-3">
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <div class="block__navbar m-2">
                         <div id="navbar-links"></div>
                     </div>
                 </div>
 
-                <div class="col-8">
+                <div class="col-12 col-lg-8">
                     <h2 class="form__title">Cadastro de Doação</h2>
                     <form id="donation-form" class="m-2 block__content">
                         <div class="row">
@@ -87,7 +87,19 @@
                                 ></select>
                             </div>
 
-                            <div class="mb-3 col-4">
+                            <div class="mb-3 col-3">
+                                <label for="cpf" class="form-label">
+                                    CPF
+                                </label>
+
+                                <input
+                                    id="cpf"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+                            <div class="mb-3 col-3">
                                 <label for="cep" class="form-label">
                                     CEP
                                 </label>

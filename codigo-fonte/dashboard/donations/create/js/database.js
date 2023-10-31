@@ -1,15 +1,5 @@
 'use strict'
 
-export const getInstitutions = () => {
-    return [
-        'Instituição 1',
-        'Instituição 2',
-        'Instituição 3',
-        'Instituição 4',
-        'Instituição 5',
-    ]
-}
-
 export const getDonationTypes = () => [
     'Brinquedos',
     'Roupas',
@@ -19,11 +9,33 @@ export const getDonationTypes = () => [
 ]
 
 export const saveDraft = (draft) => {
-    localStorage.setItem('donation_draft', JSON.stringify(draft))
-    console.log('draft saved')
+    const { id: userId } = $g_getSessionUser()
+    let drafts = JSON.parse(localStorage.getItem('donation_drafts'))
+
+    if (drafts && drafts.length) {
+        const index = drafts.findIndex((d) => d.userId === userId)
+        if (index !== -1) drafts.splice(index, 1)
+    } else {
+        drafts = []
+    }
+
+    draft.userId = userId
+    drafts.push(draft)
+
+    localStorage.setItem('donation_drafts', JSON.stringify(drafts))
 }
 
-export const getDraft = () => JSON.parse(localStorage.getItem('donation_draft'))
+export const getDraft = () => {
+    const { id: userId } = $g_getSessionUser()
+    const drafts = JSON.parse(localStorage.getItem('donation_drafts'))
+
+    if (!drafts || !drafts.length) return null
+
+    const index = drafts.findIndex((d) => d.userId === userId)
+
+    if (index === -1) return null
+    return drafts[index]
+}
 
 const createNewDonationId = () => {
     let lastId = parseInt(localStorage.getItem('last_donation_id'))

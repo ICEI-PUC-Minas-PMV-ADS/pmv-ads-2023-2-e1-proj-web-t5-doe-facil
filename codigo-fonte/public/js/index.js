@@ -249,7 +249,11 @@ const $g_makeLateralMenu = (activeItem) => {
 
 function $g_makeFooter() {}
 
-const $g_getSessionId = () => {
+const $g_getAllUsers = () => {
+    return JSON.parse(localStorage.getItem('users'))
+}
+
+const $g_getSession = () => {
     return JSON.parse(localStorage.getItem('session'))
 }
 
@@ -266,7 +270,32 @@ const $g_redirectTo = (path) => {
 }
 
 const $g_checkSession = () => {
-    if (!$g_getSessionId()) {
+    if (!$g_getSession()) {
         $g_redirectTo('login')
     }
+}
+
+const $g_handleUsersEmpty = () => {
+    localStorage.clear()
+    $g_checkSession()
+}
+
+const $g_getSessionUser = () => {
+    const session = $g_getSession()
+    const users = $g_getAllUsers()
+
+    if (!users) return $g_handleUsersEmpty()
+
+    const [user] = users.filter((user) => user.id === session.id)
+    return user
+}
+
+const $g_getInstitutions = () => {
+    const users = $g_getAllUsers()
+
+    if (!users) return $g_handleUsersEmpty()
+
+    return users
+        .filter((user) => user.type === 'institution')
+        .map((i) => i.name)
 }

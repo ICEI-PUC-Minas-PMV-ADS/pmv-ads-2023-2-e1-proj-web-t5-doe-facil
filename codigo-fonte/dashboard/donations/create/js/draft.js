@@ -5,11 +5,17 @@ import { getDraft } from './database.js'
 
 const form = document.querySelector('#donation-form')
 
-
 export const injectFormDraft = (donationElementField) => {
-    const draft = getDraft()
+    let draft = getDraft()
 
-    if (!draft) return
+    if (!draft) {
+        const user = $g_getSessionUser()
+        draft = { inputs: [] }
+
+        for (const prop in user) {
+            draft.inputs.push({ input: prop, value: user[prop] })
+        }
+    }
 
     if (draft.inputs) {
         for (const input of draft.inputs) {

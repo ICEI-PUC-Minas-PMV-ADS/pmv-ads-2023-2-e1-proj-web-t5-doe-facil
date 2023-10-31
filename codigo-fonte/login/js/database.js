@@ -3,8 +3,8 @@
 const usersSeed = () => {
     return [
         {
-            address: 'Rua Exemplo',
-            address_complement: 'Apartamento 123',
+            address: 'Rua do Exemplo',
+            address_complement: 'Apt 872',
             address_number: '543',
             birthdate: '2000-10-13',
             cep: '38770-000',
@@ -17,14 +17,14 @@ const usersSeed = () => {
             type: 'donator',
         },
         {
-            address: 'Rua Exemplo',
-            address_complement: 'Apartamento 123',
+            address: 'Avenida do Exemplo',
+            address_complement: 'Apt 123',
             address_number: '543',
             cep: '38770-000',
             cnpj: '55.213.172/0001-35',
             email: 'institution@test.com',
             id: createNewId(),
-            name: 'Doador Exemplo',
+            name: 'Instituição de Exemplo',
             neighborhood: 'Centro',
             password: '1234',
             type: 'institution',
@@ -62,12 +62,8 @@ export const registerUser = (user) => {
     localStorage.setItem('users', JSON.stringify(table))
 }
 
-export const getAllUsers = () => {
-    return JSON.parse(localStorage.getItem('users'))
-}
-
 export const validateLogin = (payload) => {
-    const users = getAllUsers()
+    const users = $g_getAllUsers()
     const user = users.find(
         (u) => u.email === payload.email && u.password === payload.password
     )

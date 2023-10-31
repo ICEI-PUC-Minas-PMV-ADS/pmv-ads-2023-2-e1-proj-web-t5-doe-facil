@@ -1,12 +1,12 @@
 'use strict'
 
-import { getDonationTypes, getInstitutions, saveDonation } from './database.js'
+import { getDonationTypes,  saveDonation } from './database.js'
 
 const form = document.querySelector('#donation-form')
 
 export const injectInstitutionsOptions = () => {
     const select = form.querySelector('#institution')
-    const institutions = getInstitutions()
+    const institutions = $g_getInstitutions()
 
     for (const item of institutions) {
         const option = document.createElement('option')
