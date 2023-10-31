@@ -4,14 +4,31 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Doe Fácil - Cadastro da Doação</title>
+
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
         <link rel="stylesheet" href="../../../public/css/global.css" />
         <link rel="stylesheet" href="create.css" />
+
+        <script defer src="../../../public/js/index.js"></script>
+        <script type="module" defer src="./js/module.js"></script>
     </head>
 
     <body>
@@ -19,11 +36,14 @@
 
         <div class="container pt-4 mt-4">
             <div class="row g-3">
-                <div class="col-4">
-                    <div class="m-2 block__content"></div>
+                <div class="col-12 col-lg-4">
+                    <div class="block__navbar m-2">
+                        <div id="navbar-links"></div>
+                    </div>
                 </div>
 
-                <div class="col-8">
+                <div class="col-12 col-lg-8">
+                    <h2 class="form__title">Cadastro de Doação</h2>
                     <form id="donation-form" class="m-2 block__content">
                         <div class="row">
                             <div class="mb-3 col">
@@ -59,15 +79,27 @@
                                     Instituição
                                 </label>
 
-                                <input
+                                <select
                                     id="institution"
+                                    class="form-select type_select form_item"
+                                    type="text"
+                                    required
+                                ></select>
+                            </div>
+
+                            <div class="mb-3 col-3">
+                                <label for="cpf" class="form-label">
+                                    CPF
+                                </label>
+
+                                <input
+                                    id="cpf"
                                     type="text"
                                     class="form-control form_item"
                                     required
                                 />
                             </div>
-
-                            <div class="mb-3 col-4">
+                            <div class="mb-3 col-3">
                                 <label for="cep" class="form-label">
                                     CEP
                                 </label>
@@ -111,12 +143,12 @@
 
                         <div class="row">
                             <div class="mb-3 col-3">
-                                <label for="collection-date" class="form-label">
+                                <label for="collection_date" class="form-label">
                                     Coletar do dia
                                 </label>
 
                                 <input
-                                    id="collection-date"
+                                    id="collection_date"
                                     class="form-control form_item"
                                     type="date"
                                     required
@@ -125,14 +157,14 @@
 
                             <div class="mb-3 col-3">
                                 <label
-                                    for="finish-collection-date"
+                                    for="finish_collection_date"
                                     class="form-label"
                                 >
                                     Até o dia
                                 </label>
 
                                 <input
-                                    id="finish-collection-date"
+                                    id="finish_collection_date"
                                     class="form-control form_item"
                                     type="date"
                                     required
@@ -140,12 +172,12 @@
                             </div>
 
                             <div class="mb-3 col-3">
-                                <label for="from-hour" class="form-label">
+                                <label for="from_hour" class="form-label">
                                     A partir de (hora)
                                 </label>
 
                                 <input
-                                    id="from-hour"
+                                    id="from_hour"
                                     class="form-control form_item"
                                     type="time"
                                     required
@@ -153,12 +185,12 @@
                             </div>
 
                             <div class="mb-3 col-3">
-                                <label for="until-hour" class="form-label">
+                                <label for="until_hour" class="form-label">
                                     Até (hora)
                                 </label>
 
                                 <input
-                                    id="until-hour"
+                                    id="until_hour"
                                     class="form-control form_item"
                                     type="time"
                                     required
@@ -191,7 +223,8 @@
                                         Remover doação
                                     </button>
                                 </div>
-                                <div class="col">
+
+                                <div class="col pb-2">
                                     <label class="form-label">
                                         Tipo de doação
                                     </label>
@@ -215,7 +248,7 @@
                                     />
                                 </div>
 
-                                <div class="mb-3 col-8">
+                                <div class="col-8 mb-3">
                                     <label class="form-label">
                                         Observações
                                     </label>
@@ -228,18 +261,19 @@
                                         required
                                     ></textarea>
                                 </div>
+                                <!--
+                                    <div class="col-12">
+                                        <label for="formFile" class="form-label">
+                                            Fotos da doação:
+                                        </label>
 
-                                <div class="col-12">
-                                    <label for="formFile" class="form-label">
-                                        Fotos da doação:
-                                    </label>
-
-                                    <input
-                                        id="donation-photo"
-                                        class="form-control"
-                                        type="file"
-                                    />
-                                </div>
+                                        <input
+                                            id="donation-photo"
+                                            class="form-control"
+                                            type="file"
+                                        />
+                                    </div>
+                                -->
                             </div>
                         </div>
 
@@ -256,14 +290,18 @@
                         </div>
                         <div class="row g-3">
                             <div class="col-3 d-grid">
-                                <button id="draft" class="btn btn-secondary">
+                                <button
+                                    id="draft"
+                                    class="btn btn-secondary btn--custom"
+                                >
                                     Salvar Rascunho
                                 </button>
                             </div>
+
                             <div class="col-9 d-grid">
                                 <button
                                     type="submit"
-                                    class="btn btn-primary custom--primary"
+                                    class="btn btn-primary custom--primary btn--custom"
                                 >
                                     Cadastrar Doação e Fazer a Diferença!
                                 </button>
@@ -275,19 +313,5 @@
         </div>
 
         <div id="footer"></div>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-
-        <script src="../../../public/js/index.js"></script>
-        <script src="create.js"></script>
     </body>
 </html>

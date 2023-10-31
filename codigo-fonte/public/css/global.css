@@ -3,6 +3,10 @@
     --light-background-color: #ffffff;
     --primary-color: #79d6b7;
     --primary-color-dark: #6ac8a8;
+    --secondary-color: #ef5da8;
+    --secondary-color-dark: #ce5091;
+    --border-color: #eeeeee;
+    --bs-list-group-border-color: var(--border-color);
 }
 
 body {
@@ -19,19 +23,53 @@ body {
 }
 
 .custom--primary {
-    background-color: #ef5da8;
+    background-color: var(--secondary-color);
     border: 0;
-    border-bottom: 4px solid #ce5091;
+    border-bottom: 4px solid var(--secondary-color-dark);
+}
+
+.btn--custom {
+    padding: 0.6em;
 }
 
 .custom--primary:hover {
-    background-color: #ce5091;
+    background-color: var(--secondary-color);
     border-bottom: 4px solid #ba4a83;
 }
 
 .block__content {
     background-color: var(--light-background-color);
-    border: 1px solid #eeeeee;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 30px;
+}
+
+.block__navbar {
+    background-color: var(--light-background-color);
+    border-radius: 8px;
+}
+
+.list-group-item.active {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.form-control,
+.form-select {
+    padding: 0.575rem 0.95rem;
+    background-color: #a9a9a905;
+}
+
+#navbar-links .list-group-item {
+    padding: 0.65rem 1.25rem;
+}
+
+.form-label {
+    color: #626262;
+}
+
+.form__title {
+    font-size: 1.65rem;
+    padding-bottom: 10px;
+    padding-left: 35px;
 }

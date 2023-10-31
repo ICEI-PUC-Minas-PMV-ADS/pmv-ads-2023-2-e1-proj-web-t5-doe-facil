@@ -1,4 +1,8 @@
-const PREFIX_URL = '/codigo-fonte/'
+if (!localStorage.getItem('PREFIX_URL')) {
+    localStorage.setItem('PREFIX_URL', '/codigo-fonte/')
+}
+
+const PREFIX_URL = localStorage.getItem('PREFIX_URL')
 
 const linkList = [
     {
@@ -23,12 +27,6 @@ const linkList = [
     {
         label: 'Sobre a Instituição',
         href: 'institutions/about',
-        active: false,
-        type: 'link',
-    },
-    {
-        label: 'Cadastro Instituição',
-        href: 'signup/institution',
         active: false,
         type: 'link',
     },
@@ -64,12 +62,28 @@ const linkList = [
             },
         ],
     },
+]
+
+const lateralMenuList = [
     {
-        label: 'Acessar',
-        href: 'login',
-        active: false,
-        type: 'link',
-        class: 'custom--primary',
+        label: 'Minhas Doações',
+        tag: 'donations',
+        href: 'dashboard/donations',
+    },
+    {
+        label: 'Meu Perfil',
+        tag: 'profile',
+        href: 'dashboard/profile',
+    },
+    {
+        label: 'Fazer Doações',
+        tag: 'create-donation',
+        href: 'dashboard/donations/create/',
+    },
+    {
+        label: 'Sair',
+        tag: 'exit',
+        href: '',
     },
 ]
 
@@ -79,8 +93,10 @@ function setAttributeList(node, list) {
     }
 }
 
-function makeMenu() {
+function $g_makeMenu() {
     const menu = document.querySelector('#menu')
+
+    if (!menu) return
 
     const navbar = document.createElement('nav')
     navbar.classList = 'navbar navbar-expand-lg bg-body-tertiary custom-navbar'
@@ -126,10 +142,20 @@ function makeMenu() {
         )
     }
 
+    const accessButton = document.createElement('button')
+    accessButton.classList = 'btn btn-primary custom--primary'
+    accessButton.textContent = 'Acessar'
+
+    accessButton.addEventListener('click', () => {
+        window.location.replace(PREFIX_URL + 'login')
+    })
+
     navbarColapse.appendChild(navbarUl)
+
     container.appendChild(navbarBrand)
     container.appendChild(navbarToggle)
     container.appendChild(navbarColapse)
+    container.appendChild(accessButton)
 
     navbar.appendChild(container)
     menu.appendChild(navbar)
@@ -191,6 +217,85 @@ function makeMenuLink(
     return li
 }
 
-makeMenu()
+const $g_makeLateralMenu = (activeItem) => {
+    const lateralMenu = document.getElementById('navbar-links')
+    if (!lateralMenu) return
 
-function makeFooter() {}
+    lateralMenu.classList.add('list-group')
+
+    for (const item of lateralMenuList) {
+        const link = document.createElement('a')
+        link.classList = 'list-group-item list-group-item-action'
+
+        if (activeItem === item.tag) link.classList.add('active')
+
+        link.id = `lateral-${item.tag}`
+        link.textContent = item.label
+        link.href = PREFIX_URL + item.href
+
+        lateralMenu.appendChild(link)
+    }
+
+    const buttonExit = lateralMenu.querySelector('#lateral-exit')
+
+    if (buttonExit) {
+        buttonExit.addEventListener('click', (e) => {
+            e.preventDefault()
+            $g_clearSession()
+            $g_checkSession()
+        })
+    }
+}
+
+function $g_makeFooter() {}
+
+const $g_getAllUsers = () => {
+    return JSON.parse(localStorage.getItem('users'))
+}
+
+const $g_getSession = () => {
+    return JSON.parse(localStorage.getItem('session'))
+}
+
+const $g_createSession = (id, type) => {
+    localStorage.setItem('session', JSON.stringify({ id, type }))
+}
+
+const $g_clearSession = () => {
+    localStorage.removeItem('session')
+}
+
+const $g_redirectTo = (path) => {
+    window.location = PREFIX_URL + path
+}
+
+const $g_checkSession = () => {
+    if (!$g_getSession()) {
+        $g_redirectTo('login')
+    }
+}
+
+const $g_handleUsersEmpty = () => {
+    localStorage.clear()
+    $g_checkSession()
+}
+
+const $g_getSessionUser = () => {
+    const session = $g_getSession()
+    const users = $g_getAllUsers()
+
+    if (!users) return $g_handleUsersEmpty()
+
+    const [user] = users.filter((user) => user.id === session.id)
+    return user
+}
+
+const $g_getInstitutions = () => {
+    const users = $g_getAllUsers()
+
+    if (!users) return $g_handleUsersEmpty()
+
+    return users
+        .filter((user) => user.type === 'institution')
+        .map((i) => i.name)
+}
