@@ -1,4 +1,6 @@
 var elem = document.getElementById('btn-serDoador');
     elem.addEventListener('click',
-        function () { location.href = "http://codigo-fonte/login/"; 
+        function () { location.href = "/codigo-fonte/login"; 
     };
+
+let count = 1;
