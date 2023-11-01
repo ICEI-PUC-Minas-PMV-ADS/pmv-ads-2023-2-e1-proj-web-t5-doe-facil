@@ -85,6 +85,8 @@ section div{
    h2 {
     color: white;
     margin-left: 10px;
+    text-align: center;
+    font-size: 250%;
    }
    section div img {
     display: block;
@@ -113,7 +115,7 @@ section p{
         font-weight: bold;
     }
     .slides{
-        width: 400%;
+        width: 100%;
         height: 400px;
         display: flex;
     }
@@ -123,13 +125,14 @@ section p{
     .slide {
         width: 25%;
         position: relative;
+        transition: 4s;
     }
     .slide img{
         width: 125px;
     }
     .manual-navigation{
         position: absolute;
-        width: 800px;
+        width: 1000px;
         margin-top: -40px;
         display: flex;
         justify-content: center;
@@ -197,4 +200,8 @@ section p{
     .rodape .item {
         display: inline-block;
         width: 30%;
+        background-color: #F0AFAB
+    }
+    .rodape .item p{
+        background-color: #F0AFAB
     }
