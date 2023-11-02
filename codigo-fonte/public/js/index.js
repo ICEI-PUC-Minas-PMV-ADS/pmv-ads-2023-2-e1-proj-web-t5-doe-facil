@@ -299,3 +299,5 @@ const $g_getInstitutions = () => {
         .filter((user) => user.type === 'institution')
         .map((i) => i.name)
 }
+
+$g_makeMenu()

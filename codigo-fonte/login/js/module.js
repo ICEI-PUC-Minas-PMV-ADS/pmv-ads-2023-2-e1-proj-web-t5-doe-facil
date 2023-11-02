@@ -28,4 +28,3 @@ if ($g_getSession()) {
     $g_redirectTo('dashboard/donations')
 }
 
-$g_makeMenu()

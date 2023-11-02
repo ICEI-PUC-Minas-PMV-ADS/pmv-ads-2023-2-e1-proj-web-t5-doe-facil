@@ -1,5 +1,3 @@
-$g_makeMenu()
-
 const textoIntroducao = document.querySelector("#texto-introducao");
 
 textoIntroducao.textContent = `Idealizada no ano de 2023, a Doe Fácil é uma aplicação que tem o objetivo de
