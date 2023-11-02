@@ -247,7 +247,54 @@ const $g_makeLateralMenu = (activeItem) => {
     }
 }
 
-function $g_makeFooter() {}
+function $g_makeFooter() {
+    const footer = document.querySelector('#footer')
+    footer.classList.add('footer__container')
+    footer.innerHTML = `
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 pb-4 footer__info">
+                    <h3 class="footer__title">Navegação</h3>
+                    <ul class="footer__links">
+                        <li><a href="#">Quero doar!</a></li>
+                        <li><a href="#">Instituições</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-4 pb-4 footer__info">
+                    <h3 class="footer__title">Suporte</h3>
+                    <ul class="footer__links">
+                        <li><a href="#">Encontrou algum problema?</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-4 pb-4 footer__info">
+                    <h3 class="footer__title">Sobre nós</h3>
+                    <p>
+                        Idealizada no ano de 2023, a Doe Fácil! é uma
+                        aplicação que tem o objetivo de ser um facilitador
+                        para pessoas que têm o desejo de doar algo e
+                        instituições que precisam receber doações...
+                    </p>
+                    <a href="#" class="footer__about">Saiba mais sobre nós!</a>
+                </div>
+
+                <div class="col-12 footer__copyright">
+                    <p>
+                        Copyright © 2023 - 2023 Doe Fácil! Company, LLC.
+                        Todos os direitos reservados. Doe Fácil! Unindo você
+                        às Instituições de Caridade da sua região!
+                    </p>
+                </div>
+            </div>
+        </div>
+    `
+}
 
 const $g_getAllUsers = () => {
     return JSON.parse(localStorage.getItem('users'))
@@ -301,3 +348,4 @@ const $g_getInstitutions = () => {
 }
 
 $g_makeMenu()
+$g_makeFooter()
