@@ -393,5 +393,78 @@ const $g_getDonations = () => {
         })
 }
 
+const $g_getFormInputs = (formElement) => {
+    const formInputs = formElement.querySelectorAll('.form_item')
+
+    const inputs = [...formInputs].map((input) => ({
+        input: `${input.id
+            .replace('donator_', '')
+            .replace('institution_', '')
+            .replace('access_', '')
+            .replace('password_', '')}`,
+        value: input.value,
+    }))
+
+    const payload = {}
+
+    for (const input of inputs) {
+        payload[input.input] = input.value
+    }
+
+    return payload
+}
+
+const $g_injectInputForm = (values, form, prefix = '') => {
+    for (const prop in values) {
+        const selectedInput = form.querySelector(`#${prefix + prop}`)
+        if (selectedInput) selectedInput.value = values[prop]
+    }
+}
+
+const $g_getDonationTypes = () => [
+    'Brinquedos',
+    'Roupas',
+    'Calçados',
+    'Cama e banho',
+    'Outro',
+]
+
+const $g_getDonationTypesInput = (checked = []) => {
+    const list = [
+        { input: 'brinquedos', value: 'Brinquedos' },
+        { input: 'roupas', value: 'Roupas' },
+        { input: 'calcados', value: 'Calçados' },
+        { input: 'cama-e-banho', value: 'Cama e Banho' },
+        { input: 'outro', value: 'Outro' },
+    ].map((i) => {
+        if (checked.includes(i.input)) i.checked = true
+        return i
+    })
+
+    return list
+}
+const $g_updateUsers = (users) => {
+    localStorage.setItem('users', JSON.stringify(users))
+}
+const $g_updateUser = (id, values) => {
+    const users = $g_getAllUsers()
+    const index = users.findIndex((u) => u.id === id)
+
+    if (index === -1) return
+
+    users[index] = values
+    $g_updateUsers(users)
+}
+
+const $g_updateUserInfo = (inputs) => {
+    const user = $g_getSessionUser()
+
+    for (const prop in inputs) {
+        user[prop] = inputs[prop]
+    }
+
+    $g_updateUser(user.id, user)
+}
+
 $g_makeMenu()
 $g_makeFooter()
