@@ -1,7 +1,7 @@
-.container-1{
+.container{
     padding: 20px 40px;
 }
-.titulo {
+.titulo{
     color: #EF5DA8;
     font-size: 50px;
     font-family: arial;
@@ -143,12 +143,6 @@
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
-
 .imgcape{
     display: block;
     margin: auto;
