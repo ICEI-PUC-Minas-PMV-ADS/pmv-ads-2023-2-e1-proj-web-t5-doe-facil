@@ -4,10 +4,8 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 [Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
 
-### Título da funcionalidade
-
-[Adicione imagem da funcionalidade/tela]
-
+### Formulário de Cadastro de Doações
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/7f00efec-9a31-4eb4-9ba6-a80ef9e29b45)
 
 #### Requisito atendido
 
