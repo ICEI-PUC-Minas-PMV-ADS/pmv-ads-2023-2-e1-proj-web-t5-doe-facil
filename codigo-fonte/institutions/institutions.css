@@ -100,9 +100,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
 .imgcapec{
     position: relative;
 	left: 110px;
@@ -155,18 +152,4 @@
 .imgcape{
     display: block;
     margin: auto;
-}
-
-.rodape {
-    display: flex;
-    background-color: #F0AFAB;
-    border: 1px solid #F0AFAB;
-    justify-content: space-between;
-    padding: 20px 30px 20px 30px;
-    
-}
-
-.rodape .item {
-    display: inline-block;
-    width: 30%;
 }
