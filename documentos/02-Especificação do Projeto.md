@@ -67,6 +67,8 @@
 | RF- 13 | A aplicação deve possibilitar à “Instituição” visualizar o tipo das doações, assim como o endereço do doador e a data sugerida para a coleta. | Alta |
 | RF- 14 | A aplicação deve possibilitar ao “Doador” acesso a lista de doações feitas na plataforma. | Baixa |
 | RF- 15 | A aplicação deve possibilitar à “Instituição” acesso a lista de doações recebidas na plataforma. | Baixa |
+| RF-16 | A aplicação deve possibilitar ao Doador alterar suas informações pessoais e senha. | Alta |
+| RF-17 | A aplicação deve possibilitar a Instituição alterar as informações básicas, descrições e senha. | Alta |
 
 **Prioridade: Alta / Média / Baixa. 
 
