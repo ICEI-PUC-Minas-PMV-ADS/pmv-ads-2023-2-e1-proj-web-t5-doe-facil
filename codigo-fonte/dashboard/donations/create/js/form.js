@@ -1,6 +1,6 @@
 'use strict'
 
-import { getDonationTypes,  saveDonation } from './database.js'
+import { saveDonation } from './database.js'
 
 const form = document.querySelector('#donation-form')
 
@@ -23,7 +23,7 @@ export const addDonationFields = (elementField) => {
     const removeButton = donationFields.querySelector('.donation_remove')
     const typeSelect = donationFields.querySelector('.type_select')
 
-    const types = getDonationTypes()
+    const types = $g_getDonationTypes()
 
     for (const type of types) {
         typeSelect.appendChild(new Option(type))

@@ -11,7 +11,7 @@ const usersSeed = () => {
             cpf: '123.456.789-10',
             email: 'donator@test.com',
             id: createNewId(),
-            name: 'Doador Exemplo',
+            name: 'Doador da Silva Sauro',
             neighborhood: 'Centro',
             password: '1234',
             type: 'donator',
@@ -24,10 +24,14 @@ const usersSeed = () => {
             cnpj: '55.213.172/0001-35',
             email: 'institution@test.com',
             id: createNewId(),
-            name: 'Instituição de Exemplo',
+            name: 'Instituição de Caridade Exemplo',
+            description:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            role: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             neighborhood: 'Centro',
             password: '1234',
             type: 'institution',
+            types: ['brinquedos', 'roupas', 'outro']
         },
     ]
 }
@@ -45,21 +49,22 @@ const createNewId = () => {
 export const createUsersTable = () => {
     let table = JSON.parse(localStorage.getItem('users'))
     if (!table) table = usersSeed()
-    localStorage.setItem('users', JSON.stringify(table))
+    $g_updateUsers(table)
 }
 
 export const registerUser = (user) => {
-    let table = JSON.parse(localStorage.getItem('users'))
+    let users = JSON.parse(localStorage.getItem('users'))
 
-    if (!table) {
+    if (!users) {
         createUsersTable()
         return registerUser(user)
     }
 
     user.id = createNewId()
-    table.push(user)
+    users.push(user)
 
-    localStorage.setItem('users', JSON.stringify(table))
+    localStorage.setItem('users', JSON.stringify(users))
+    return user
 }
 
 export const validateLogin = (payload) => {
