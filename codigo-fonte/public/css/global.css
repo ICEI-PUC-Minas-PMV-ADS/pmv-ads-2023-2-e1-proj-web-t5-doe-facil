@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     --background-color: #f0e9d116;
     --light-background-color: #ffffff;
@@ -7,10 +9,12 @@
     --secondary-color-dark: #ce5091;
     --border-color: #eeeeee;
     --bs-list-group-border-color: var(--border-color);
+    --footer-color: #f0afab;
 }
 
 body {
     background: var(--background-color);
+    font-family: 'Roboto', sans-serif;
 }
 
 .custom-navbar {
@@ -72,4 +76,45 @@ body {
     font-size: 1.65rem;
     padding-bottom: 10px;
     padding-left: 35px;
+}
+
+.footer__container {
+    background-color: var(--footer-color);
+    padding-top: 70px;
+    margin-top: 60px;
+    padding-bottom: 40px;
+    color: #626262;
+}
+
+.footer__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer__info .footer__links a {
+    text-decoration: none;
+    color: #626262;
+}
+
+.footer__links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__links li {
+    margin-bottom: 5px;
+}
+
+.footer__copyright {
+    padding-top: 40px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #62626230;
+}
+
+.footer__about {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
 }

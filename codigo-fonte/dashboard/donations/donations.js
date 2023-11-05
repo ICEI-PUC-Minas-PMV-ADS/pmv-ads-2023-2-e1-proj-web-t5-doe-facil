@@ -1,4 +1,3 @@
-$g_makeMenu()
 $g_makeLateralMenu('donations')
 
 const editBtList = document.querySelectorAll(".editDoacao") 

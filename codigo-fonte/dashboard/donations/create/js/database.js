@@ -1,13 +1,5 @@
 'use strict'
 
-export const getDonationTypes = () => [
-    'Brinquedos',
-    'Roupas',
-    'Calçados',
-    'Cama e banho',
-    'Outro',
-]
-
 export const saveDraft = (draft) => {
     const { id: userId } = $g_getSessionUser()
     let drafts = JSON.parse(localStorage.getItem('donation_drafts'))

@@ -1,146 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Doe Fácil</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="public/css/global.css" />
+        <link rel="stylesheet" href="home/home.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doe Fácil</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="home/home.css" />
-</head>
+    <body>
+        <div id="menu"></div>
 
-<body>
-    <div id="menu"></div>
-
-    <div class="container1">
-        <div class="row">
-            <div class="col">
-                <img class="Logo" width="350" height="250" src="public/img/Doe Facil 2.png" alt="Logo">
-                <h2 class="Titulo">A Sua Doação É Importante!</h2>
-                <br>
-                <p1 class="Titulo">Fortaleça as <span class="negrito"> Insituições de Caridade da Sua Região! </span> </p1>
-                <br>
-
+        <div class="container">
+            <div class="row pt-4 pb-4">
+                <div class="col-4 pt-4 pb-4">
+                    <img
+                        class="Logo"
+                        src="public/img/Doe Facil 2.png"
+                        alt="Logo"
+                    />
+                </div>
+                <div class="col pt-4 pb-4">
+                    <h2 class="Titulo">A Sua Doação É Importante!</h2>
+                    <p class="">
+                        Fortaleça as
+                        <span class="negrito">
+                            Insituições de Caridade da Sua Região!
+                        </span>
+                    </p>
+                    <button type="button" id="btn-serDoador">
+                        Quero Me Tornar Um Doador
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <button type="button" id="btn-serDoador">Quero Me Tornar Um Doador</button>
-    <script src="home/home.js"></script>
 
-    <section>
-        <div>
-            <h2>Instituições</h2>
-            <img src="public/img/Doacoes.png" alt="Doações Caixa">
-            <p>Venha conhecer nossas Instituições parceiras!
-                Nesta seção, você poderá descobrir o trabalho maravilhoso que elas fazem e de que forma você pode ajudar!</p>
-            </div>
-        <div>
-                <h2>Sobre Nós</h2>
-                <img src="public/img/voluntarios.png" alt="Voluntários">
-                    <p>Nascemos para facilitar a vida de quem deseja ajudar o próximo, mas nem sempre tem tempo de ir até uma Instituição ou, às vezes, nem mesmo conhece uma.
-
-                    Com poucos cliques, unimos você às Instituições da sua região e, assim, você conseguirá saber o que elas precisam e se o que você pretende doar as atende.
-                    
-                    E o melhor, tudo isso sem sair de casa!</p>
+        <section class="container">
+            <div class="row">
+                <div class="col custom__col">
+                    <h2>Instituições</h2>
+                    <img src="public/img/Doacoes.png" alt="Doações Caixa" />
+                    <p>
+                        Venha conhecer nossas Instituições parceiras! Nesta
+                        seção, você poderá descobrir o trabalho maravilhoso que
+                        elas fazem e de que forma você pode ajudar!
+                    </p>
                 </div>
-        <div>
-                    <img src="public/img/Sacola Doacoes.png" alt="Sacola Doações">
-                   
+                <div class="col custom__col">
+                    <h2>Sobre Nós</h2>
+                    <img src="public/img/voluntarios.png" alt="Voluntários" />
+                    <p>
+                        Nascemos para facilitar a vida de quem deseja ajudar o
+                        próximo, mas nem sempre tem tempo de ir até uma
+                        Instituição ou, às vezes, nem mesmo conhece uma. Com
+                        poucos cliques, unimos você às Instituições da sua
+                        região e, assim, você conseguirá saber o que elas
+                        precisam e se o que você pretende doar as atende. E o
+                        melhor, tudo isso sem sair de casa!
+                    </p>
+                </div>
+                <div class="col custom__col">
+                    <img
+                        src="public/img/Sacola Doacoes.png"
+                        alt="Sacola Doações"
+                    />
+
+                    <button type="button" class="botao-doacao">
+                        Seja um doador
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="container container3">
+            <div class="row">
+                <div class="col">
+                    <h5>Depoimentos</h5>
+                    <br />
+                    <div class="slides">
+                        <div class="slide first">
+                            <img
+                                width="125"
+                                height="125"
+                                src="public/img/Robson.png"
+                                alt="Robson"
+                            />
+                            <strong
+                                >Robson Duarte dos Santos<br />
+                                Crianças do Morro</strong
+                            >
+                            <i>
+                                <blockquote>
+                                    “Doe Fácil é uma ferramenta notável que
+                                    facilita as doações para diversas causas
+                                    importantes. Sua plataforma transparente e
+                                    amigável permite que qualquer pessoa física
+                                    contribua para projetos significativos. Eles
+                                    se destacam pela transparência nas
+                                    informações sobre as organizações e o uso
+                                    das doações.”
+                                </blockquote>
+                            </i>
+                        </div>
+
+                        <div class="slide">
+                            <img
+                                src="public/img/Imagem depoimentos 1.jpeg"
+                                width="125"
+                                height="125"
+                                alt="Isabela"
+                            />
+                            <strong
+                                >Isabela Carvalho<br />
+                                Capec</strong
+                            >
+                            <i>
+                                <blockquote>
+                                    “Doe Fácil é incrível! Cadastrar doações no
+                                    site é rápido e descomplicado. Ajudar nunca
+                                    foi tão simples.”
+                                </blockquote>
+                            </i>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="public/img/Imagem depoimentos 2.jpeg"
+                                width="125"
+                                height="125"
+                                alt="Isabela"
+                            />
+                            <strong
+                                >Renato Nakano<br />
+                                Fundação Sara</strong
+                            >
+                            <i>
+                                <blockquote>
+                                    “Doe Fácil faz a diferença! Cadastrar
+                                    doações no site é um piscar de olhos.
+                                    Facilidade e solidariedade em um só lugar.”
+                                </blockquote>
+                            </i>
+                        </div>
                     </div>
-    </section>
-    <div class="container3">
-        <div class="row">
-            <div class="col">
-                <h5>Depoimentos</h5>
-                <br>
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                
-                <div class="slide first"></div>
-                    <img width="125" height="125" src="public/img/Robson.png" alt="Robson">
-                    <strong>Robson Duarte dos Santos<br>
-                        Crianças do Morro</strong>
-                    <i>
-                        <blockquote>“Doe Fácil é uma ferramenta notável que facilita as doações para diversas causas
-                            importantes. Sua plataforma transparente e amigável permite que qualquer pessoa física contribua
-                            para projetos significativos. Eles se destacam pela transparência nas informações sobre as
-                            organizações e o uso das doações.”</blockquote>
-                    </i>
-                </div>
-                <div class="slide">
-                    <img src="public/img/Imagem depoimentos 1.jpeg" width="125" height="125" alt="Isabela">
-                    <strong>Isabela Carvalho<br>
-                        Capec</strong>
-                    <i>
-                        <blockquote>“Doe Fácil é incrível! Cadastrar doações no site é rápido e descomplicado. Ajudar nunca foi tão simples.”</blockquote>
-                    </i>
-                </div>
-                <div class="slide">
-                    <img src="public/img/Imagem depoimentos 2.jpeg" width="125" height="125" alt="Isabela">
-                    <strong>Renato Nakano<br>
-                        Fundação Sara</strong>
-                    <i>
-                        <blockquote>“Doe Fácil faz a diferença! Cadastrar doações no site é um piscar de olhos. Facilidade e solidariedade em um só lugar.”</blockquote>
-                    </i>
-                </div>
 
-                <div class="navigation-auto"> 
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
+                    <div class="manual-navigation">
+                        <label for="radio0" class="manual-btn"></label>
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
 
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
+                        <input type="radio" name="radio-btn" id="radio0" />
+                        <input type="radio" name="radio-btn" id="radio1" />
+                        <input type="radio" name="radio-btn" id="radio2" />
+                    </div>
                 </div>
             </div>
-<<<<<<< HEAD
-        </div>
-    </div>
-=======
-        
+        </div> 
+
         <div id="footer"></div>
-        <div class="container-botao">
-            <button type="button" class="botao-doacao">Seja um doador</button>
-        </div>
-    </section>
-    <footer class="rodape">
-        <section class="item">
-            <h5>MENU DE NAVEGAÇÃO</h5>
-            <p>Quero doar!<br>
-                Sou Intituição<br>
-                Parceiros<br>
-                Icones<br>
-            </p>
-        </section>
-        <section class="item">
-            <h5>
-                SUPORTE
-            </h5>
-            <p>
-                Encontrou algum problema? Fale conosco<br>
-                FAQ<br>
-                Termos de uso<br>
-                Politica de privacidade<br>
-                Ajuda<br>
-            </p>
-        </section>
-        <section class="item">
-            <h5>
-                SOBRE NÓS
-            </h5>
-            <p>
-                Idealizada no ano de 2023, a Doe Fácil! é uma aplicação que tem o objetivo de ser um facilitador para pessoas que têm o desejo de doar algo e instituições que precisam receber doações...<br>
-               <!--LEMBRAR DE ALTERAR O FOOTER "SOBRE NÓS"-->
-                <a href="file:///Users/barbarafigueiredo/Documents/GitHub/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/codigo-fonte/about/index.html" target="_self"> <u>Saiba mais sobre nós</u> </a>
-            </p>
-        </section>
-    </footer>
+
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -151,55 +174,8 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
->>>>>>> d246d63fc78149520e78f560a4ab37c24a1e81a3
 
-    <footer class="rodape">
-		<section class="item">
-			<h6>MENU DE NAVEGAÇÃO</h6>
-			<p>Quero doar!<br>
-				Sou Intituição<br>
-				Parceiros<br>
-				Icones<br>
-			</p>
-		</section>
-		<section class="item">
-			<h6>
-				SUPORTE
-			</h6>
-			<p>
-				Encontrou algum problema? Fale conosco<br>
-				FAQ<br>
-				Termos de uso<br>
-				Politica de privacidade<br>
-				Ajuda<br>
-			</p>
-		</section>
-		<section class="item">
-			<h6>
-				SOBRE NÓS
-			</h6>
-			<p ALIGN=justify>Idealizada no ano de 2023, a Doe Fácil! é uma aplicação que tem o objetivo de ser um
-				facilitador para pessoas que têm o desejo de doar algo e instituições que precisam receber
-				doações...<br>
-				<!--LEMBRAR DE ALTERAR O FOOTER "SOBRE NÓS"-->
-				<a href="file:///Users/barbarafigueiredo/Documents/GitHub/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/codigo-fonte/about/index.html"
-					target="_self">
-					<FONT COLOR="white"><u>Saiba mais sobre nós</u></FONT>
-				</a>
-			</p>
-		</section>
-	</footer>
-
-    <div id="footer"></div>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-
-    <script src="./public/js/index.js"></script>
-    <script src="./home/home.js"></script>
-</body>
-
+        <script src="./public/js/index.js"></script>
+        <script src="./home/home.js"></script>
+    </body>
 </html>
