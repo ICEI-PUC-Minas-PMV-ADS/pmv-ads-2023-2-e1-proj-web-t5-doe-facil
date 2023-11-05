@@ -64,29 +64,6 @@ const linkList = [
     },
 ]
 
-const lateralMenuList = [
-    {
-        label: 'Minhas Doações',
-        tag: 'donations',
-        href: 'dashboard/donations',
-    },
-    {
-        label: 'Meu Perfil',
-        tag: 'profile',
-        href: 'dashboard/profile',
-    },
-    {
-        label: 'Fazer Doações',
-        tag: 'create-donation',
-        href: 'dashboard/donations/create/',
-    },
-    {
-        label: 'Sair',
-        tag: 'exit',
-        href: '',
-    },
-]
-
 function setAttributeList(node, list) {
     for (const attribute of list) {
         node.setAttribute(attribute[0], attribute[1])
@@ -217,13 +194,45 @@ function makeMenuLink(
     return li
 }
 
+const lateralMenuList = [
+    {
+        label: 'Minhas Doações',
+        tag: 'donations',
+        href: 'dashboard/donations',
+        permission: 'all',
+    },
+    {
+        label: 'Meu Perfil',
+        tag: 'profile',
+        href: 'dashboard/profile',
+        permission: 'all',
+    },
+    {
+        label: 'Fazer Doações',
+        tag: 'create-donation',
+        href: 'dashboard/donations/create/',
+        permission: 'donator',
+    },
+    {
+        label: 'Sair',
+        tag: 'exit',
+        href: '',
+        permission: 'all',
+    },
+]
+
 const $g_makeLateralMenu = (activeItem) => {
+    const user = $g_getSessionUser()
     const lateralMenu = document.getElementById('navbar-links')
     if (!lateralMenu) return
 
+    const lateralMenuListFiltered = lateralMenuList.filter((i) =>
+        ['all', user.type].includes(i.permission)
+    )
+
     lateralMenu.classList.add('list-group')
 
-    for (const item of lateralMenuList) {
+    for (const item of lateralMenuListFiltered) {
         const link = document.createElement('a')
         link.classList = 'list-group-item list-group-item-action'
 
