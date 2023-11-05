@@ -300,6 +300,14 @@ const $g_getAllUsers = () => {
     return JSON.parse(localStorage.getItem('users'))
 }
 
+const $g_getUser = (id, password = false) => {
+    const user = $g_getAllUsers().find((user) => user.id === id)
+    if (!user) return null
+
+    if (!password) delete user.password
+    return user
+}
+
 const $g_getSession = () => {
     return JSON.parse(localStorage.getItem('session'))
 }
@@ -339,12 +347,50 @@ const $g_getSessionUser = () => {
 
 const $g_getInstitutions = () => {
     const users = $g_getAllUsers()
+    if (!users) return $g_handleUsersEmpty()
+
+    return users
+        .filter((user) => user.type === 'institution')
+        .map((i) => ({ id: i.id, name: i.name }))
+}
+
+const $g_getInstitutionsInfo = () => {
+    const users = $g_getAllUsers()
 
     if (!users) return $g_handleUsersEmpty()
 
     return users
         .filter((user) => user.type === 'institution')
-        .map((i) => i.name)
+        .map((i) => {
+            i.password
+            return i
+        })
+}
+
+const resumeDonationTypes = (donations) => {
+    let types = new Set(donations.map((d) => d.type))
+    types = [...types]
+    return types.length > 1 ? 'Diversos' : types[0]
+}
+
+const $g_getDonations = () => {
+    const user = $g_getSessionUser()
+    if (!user) return []
+
+    const donations = JSON.parse(localStorage.getItem('donations'))
+
+    return donations
+        .filter((d) => {
+            if (user.type === 'donator')
+                return Number(d.donator) === Number(user.id)
+            else return Number(d.institution) === Number(user.id)
+        })
+        .map((d) => {
+            const dDTO = d
+            dDTO.donator_info = $g_getUser(d.donator)
+            dDTO.donations_type = resumeDonationTypes(d.donations)
+            return dDTO
+        })
 }
 
 $g_makeMenu()

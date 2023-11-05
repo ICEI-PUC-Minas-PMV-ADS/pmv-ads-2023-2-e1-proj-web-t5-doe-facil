@@ -9,9 +9,7 @@ export const injectInstitutionsOptions = () => {
     const institutions = $g_getInstitutions()
 
     for (const item of institutions) {
-        const option = document.createElement('option')
-        option.textContent = item
-        select.appendChild(option)
+        select.appendChild(new Option(item.name, item.id))
     }
 }
 
@@ -96,6 +94,8 @@ export const createPayload = (formInputs) => {
 
         payload.donations.push(donationObj)
     }
+
+    payload.donator = $g_getSessionUser().id
 
     return payload
 }
