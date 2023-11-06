@@ -87,3 +87,27 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 #### Responsável
 
 - Bárbara Figueiredo
+
+  ### Página Inicial
+
+![Página Inicial 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/2f473def-7efd-49da-a274-bb260a846303)
+
+![Página Inicial 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/991c501b-b3ea-4855-b7b3-fc7480a8e016)
+
+#### Requisito atendido
+
+- RF-21	A página inicial deve conter uma seção para visualização dos depoimentos dos usúarios.
+
+#### Artefatos da funcionalidade
+- index.html
+- /home/home.css
+- /home/home.js
+
+#### Instruções de acesso
+
+- Acessar a página inicial.
+- Os depoimentos estão listados e deverão aparecer um a um com a foto, nome e instituição do usuário que o escreveu, além da própria mensagem.
+   
+#### Responsável
+
+- Guilherme
