@@ -111,3 +111,27 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 #### Responsável
 
 - Guilherme
+
+### Página com informações sobre a Doe Fácil.
+
+![Tela sobre nós - Doe Fácil](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/fe266aa9-b3ee-48e3-a489-ee978acc237c)
+
+#### Requisito atendido
+
+RF-18: A aplicação deve possuir uma página dedicada às informações da "Doe Fácil". 
+
+#### Artefatos da funcionalidade
+
+/about/index.html
+/about/about.js
+/about/about.css
+
+
+#### Instruções de acesso
+
+Na barra de navegação superior, clicar em "Sobre nós".
+
+
+#### Responsável
+Jéssica Reis
+
