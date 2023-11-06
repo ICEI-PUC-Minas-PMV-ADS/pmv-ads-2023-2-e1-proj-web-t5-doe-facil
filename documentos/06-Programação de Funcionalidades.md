@@ -137,8 +137,7 @@ Jéssica Reis
 
 ### Página com as instituições.
 
-![Página com as instituições](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/143942367/21b2f7d8-cdfe-4f41-b2fc-e5d10a406919)
-
+![instituições](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/143942367/4fb6becd-f083-448a-a5d7-d6270adc4b80)
 
 #### Requisito atendido
 
