@@ -135,3 +135,27 @@ Na barra de navegação superior, clicar em "Sobre nós".
 #### Responsável
 Jéssica Reis
 
+### Página com as instituições.
+
+![Página com as instituições](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/143942367/21b2f7d8-cdfe-4f41-b2fc-e5d10a406919)
+
+
+#### Requisito atendido
+
+RF-04: A aplicação deve possuir uma página listando às Instituições com suas informações". 
+
+#### Artefatos da funcionalidade
+
+/institutions/index.html
+/institutions/institutions.js
+/institutions/institutions.css
+
+
+#### Instruções de acesso
+
+Na barra de navegação superior, clicar em "Instituições".
+
+
+#### Responsável
+Edmilson José
+
