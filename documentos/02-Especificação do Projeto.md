@@ -55,25 +55,25 @@
 |-------|---------------------------------|----|
 | RF-01 |  A aplicação deve permitir o cadastro do “Doador” na plataforma. | Alta | 
 | RF- 02 | A aplicação deve possuir uma página dedicada ao cadastro da “Instituição” na plataforma. | Alta |
-| RF-03 | A aplicação deve possuir uma página inicial descrevendo as informações sobre a aplicação, objetivo e instituições cadastradas para a coleta das doações. | Alta |
-| RF-05 | A aplicação deve possuir uma página listando às Instituições com suas informações: nome, descrição, endereço, objetivos e informações de contato como site e telefones. | Média |
-| RF-06 | A aplicação deve possibilitar ao “Doador” cadastrar doação na plataforma de forma simplificada e segura. | Alta |
-| RF-07 | A aplicação deve possibilitar o “Doador” a opção de selecionar instituições de preferência ao fazer o cadastro das doações. | Média |
-| RF-08 | A aplicação deve possibilitar ao “Doador” acesso a uma lista com informações sobre as instituições cadastradas para receber as doações. | Alta |
-| RF-09 | A aplicação deve informar os tipos de doações possíveis e a quantidade mínima no momento da doação. | Média |
-| RF- 10 | A aplicação deve possibilitar à “Instituição” a opção de aceite referente ao recolhimento das doações cadastradas. | Média |
-| RF- 11 | A aplicação deve possibilitar à “Instituição” visualizar os itens doados a partir de fotos submetidas pelo doador, além de saber a quantidade. | Média |
-| RF- 12 | A aplicação deve possibilitar à “Instituição” acesso às informações de telefone dos doadores para entrar em contato antes do recolhimento da doação. | Média | 
-| RF- 13 | A aplicação deve possibilitar à “Instituição” visualizar o tipo das doações, assim como o endereço do doador e a data sugerida para a coleta. | Alta |
-| RF- 14 | A aplicação deve possibilitar ao “Doador” acesso a lista de doações feitas na plataforma. | Baixa |
-| RF- 15 | A aplicação deve possibilitar à “Instituição” acesso a lista de doações recebidas na plataforma. | Baixa |
-| RF-16 | A aplicação deve possibilitar ao Doador alterar suas informações pessoais e senha. | Alta |
-| RF-17 | A aplicação deve possibilitar a Instituição alterar as informações básicas, descrições e senha. | Alta |
-| RF-18 | A aplicação deve possuir uma página dedicada às informações da "Doe Fácil".  | Média |
-| RF-19 | A aplicação deve possuir uma página dedicada às informações das instituições cadastradas.  | Média |
-| RF-20 | A aplicação deve possibilitar ao doador a visualização das doações realizadas. | Média |
-| RF-21 | A aplicação deve possibilitar a instituição a visualização das doações recebidas. | Média |
-| RF-22 | A página inicial deve conter uma seção para visualização dos depoimentos dos usúarios. | Média |
+| RF-03 | A aplicação deve possuir uma página inicial com chamada de ação para páginas de informações sobre a aplicação, objetivo e instituições cadastradas para a coleta das doações. | Alta |
+| RF-04 | A aplicação deve possuir uma página listando às Instituições com suas informações: nome, descrição, endereço, objetivos e informações de contato como site e telefones. | Média |
+| RF-05 | A aplicação deve possibilitar ao “Doador” cadastrar doação na plataforma de forma simplificada e segura. | Alta |
+| RF-06 | A aplicação deve possibilitar o “Doador” a opção de selecionar instituições de preferência ao fazer o cadastro das doações. | Média |
+| RF-07 | A aplicação deve possibilitar ao “Doador” acesso a uma lista com informações sobre as instituições cadastradas para receber as doações. | Alta |
+| RF-08 | A aplicação deve informar os tipos de doações possíveis e a quantidade mínima no momento da doação. | Média |
+| RF- 09 | A aplicação deve possibilitar à “Instituição” a opção de aceite referente ao recolhimento das doações cadastradas. | Média |
+| RF- 10 | A aplicação deve possibilitar à “Instituição” visualizar os itens doados a partir de fotos submetidas pelo doador, além de saber a quantidade. | Média |
+| RF- 11 | A aplicação deve possibilitar à “Instituição” acesso às informações de telefone dos doadores para entrar em contato antes do recolhimento da doação. | Média | 
+| RF- 12 | A aplicação deve possibilitar à “Instituição” visualizar o tipo das doações, assim como o endereço do doador e a data sugerida para a coleta. | Alta |
+| RF- 13 | A aplicação deve possibilitar ao “Doador” acesso a lista de doações feitas na plataforma. | Baixa |
+| RF- 14 | A aplicação deve possibilitar à “Instituição” acesso a lista de doações recebidas na plataforma. | Baixa |
+| RF-15 | A aplicação deve possibilitar ao Doador alterar suas informações pessoais e senha. | Alta |
+| RF-16 | A aplicação deve possibilitar a Instituição alterar as informações básicas, descrições e senha. | Alta |
+| RF-17 | A aplicação deve possuir uma página dedicada às informações da "Doe Fácil".  | Média |
+| RF-18 | A aplicação deve possuir uma página dedicada às informações das instituições cadastradas.  | Média |
+| RF-19 | A aplicação deve possibilitar ao doador a visualização das doações realizadas. | Média |
+| RF-20 | A aplicação deve possibilitar a instituição a visualização das doações recebidas. | Média |
+| RF-21 | A página inicial deve conter uma seção para visualização dos depoimentos dos usúarios. | Média |
 
 
 **Prioridade: Alta / Média / Baixa. 
