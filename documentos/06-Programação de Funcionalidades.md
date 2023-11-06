@@ -67,3 +67,23 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 #### Responsável
 
 - Carlos Roberto
+
+###  Tabela de exibição das doações
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144965849/ff2487ea-d3a2-49e1-b7a9-f012fe11aea5)
+
+#### Requisito atendido
+
+- RF- 19 A aplicação deve possibilitar ao doador a visualização das doaçōes realizadas. 
+  
+#### Artefatos da funcionalidade
+- /dashboard/donations/donations.js
+- /dashboard/donations/donations.css
+- /dashboard/donations/index.html
+
+#### Instruções de acesso
+
+- Clicar em "Minhas Doações", visualizar doações realizadas.
+
+#### Responsável
+
+- Bárbara Figueiredo
