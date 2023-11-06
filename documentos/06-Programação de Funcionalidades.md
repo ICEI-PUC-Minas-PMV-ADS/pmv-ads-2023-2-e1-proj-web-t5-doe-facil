@@ -47,7 +47,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 - Carlos Roberto
 
-### Cadastro de Doador e Instituição
+### Formulário de cadastro de Doador e Instituição
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/fe9cd485-df32-46b8-af31-dc6f339a84f6)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/efe4bfd7-2a01-4cfe-a0e9-2b58dda6f587)
 
