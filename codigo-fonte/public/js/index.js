@@ -64,29 +64,6 @@ const linkList = [
     },
 ]
 
-const lateralMenuList = [
-    {
-        label: 'Minhas Doações',
-        tag: 'donations',
-        href: 'dashboard/donations',
-    },
-    {
-        label: 'Meu Perfil',
-        tag: 'profile',
-        href: 'dashboard/profile',
-    },
-    {
-        label: 'Fazer Doações',
-        tag: 'create-donation',
-        href: 'dashboard/donations/create/',
-    },
-    {
-        label: 'Sair',
-        tag: 'exit',
-        href: '',
-    },
-]
-
 function setAttributeList(node, list) {
     for (const attribute of list) {
         node.setAttribute(attribute[0], attribute[1])
@@ -217,13 +194,45 @@ function makeMenuLink(
     return li
 }
 
+const lateralMenuList = [
+    {
+        label: 'Minhas Doações',
+        tag: 'donations',
+        href: 'dashboard/donations',
+        permission: 'all',
+    },
+    {
+        label: 'Meu Perfil',
+        tag: 'profile',
+        href: 'dashboard/profile',
+        permission: 'all',
+    },
+    {
+        label: 'Fazer Doações',
+        tag: 'create-donation',
+        href: 'dashboard/donations/create/',
+        permission: 'donator',
+    },
+    {
+        label: 'Sair',
+        tag: 'exit',
+        href: '',
+        permission: 'all',
+    },
+]
+
 const $g_makeLateralMenu = (activeItem) => {
+    const user = $g_getSessionUser()
     const lateralMenu = document.getElementById('navbar-links')
     if (!lateralMenu) return
 
+    const lateralMenuListFiltered = lateralMenuList.filter((i) =>
+        ['all', user.type].includes(i.permission)
+    )
+
     lateralMenu.classList.add('list-group')
 
-    for (const item of lateralMenuList) {
+    for (const item of lateralMenuListFiltered) {
         const link = document.createElement('a')
         link.classList = 'list-group-item list-group-item-action'
 
@@ -391,6 +400,79 @@ const $g_getDonations = () => {
             dDTO.donations_type = resumeDonationTypes(d.donations)
             return dDTO
         })
+}
+
+const $g_getFormInputs = (formElement) => {
+    const formInputs = formElement.querySelectorAll('.form_item')
+
+    const inputs = [...formInputs].map((input) => ({
+        input: `${input.id
+            .replace('donator_', '')
+            .replace('institution_', '')
+            .replace('access_', '')
+            .replace('password_', '')}`,
+        value: input.value,
+    }))
+
+    const payload = {}
+
+    for (const input of inputs) {
+        payload[input.input] = input.value
+    }
+
+    return payload
+}
+
+const $g_injectInputForm = (values, form, prefix = '') => {
+    for (const prop in values) {
+        const selectedInput = form.querySelector(`#${prefix + prop}`)
+        if (selectedInput) selectedInput.value = values[prop]
+    }
+}
+
+const $g_getDonationTypes = () => [
+    'Brinquedos',
+    'Roupas',
+    'Calçados',
+    'Cama e banho',
+    'Outro',
+]
+
+const $g_getDonationTypesInput = (checked = []) => {
+    const list = [
+        { input: 'brinquedos', value: 'Brinquedos' },
+        { input: 'roupas', value: 'Roupas' },
+        { input: 'calcados', value: 'Calçados' },
+        { input: 'cama-e-banho', value: 'Cama e Banho' },
+        { input: 'outro', value: 'Outro' },
+    ].map((i) => {
+        if (checked.includes(i.input)) i.checked = true
+        return i
+    })
+
+    return list
+}
+const $g_updateUsers = (users) => {
+    localStorage.setItem('users', JSON.stringify(users))
+}
+const $g_updateUser = (id, values) => {
+    const users = $g_getAllUsers()
+    const index = users.findIndex((u) => u.id === id)
+
+    if (index === -1) return
+
+    users[index] = values
+    $g_updateUsers(users)
+}
+
+const $g_updateUserInfo = (inputs) => {
+    const user = $g_getSessionUser()
+
+    for (const prop in inputs) {
+        user[prop] = inputs[prop]
+    }
+
+    $g_updateUser(user.id, user)
 }
 
 $g_makeMenu()

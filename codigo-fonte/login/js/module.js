@@ -28,3 +28,17 @@ if ($g_getSession()) {
     $g_redirectTo('dashboard/donations')
 }
 
+const showAccessInfo = () => {
+    console.log('Dados de Acesso:')
+
+    $g_getAllUsers().forEach(({ email, password, name, type }) => {
+        console.log(
+            `${name} (${type})
+Email: ${email}
+Senha: ${password}
+----------`
+        )
+    })
+}
+
+showAccessInfo()
