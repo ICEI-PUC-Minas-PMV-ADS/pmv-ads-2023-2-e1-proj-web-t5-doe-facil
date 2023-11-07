@@ -1,8 +1,5 @@
-if (!localStorage.getItem('PREFIX_URL')) {
-    localStorage.setItem('PREFIX_URL', '/codigo-fonte/')
-}
-
-const PREFIX_URL = localStorage.getItem('PREFIX_URL')
+const path = `${window.location.pathname}`.split('/').filter((i) => Boolean(i))
+const PREFIX_URL = path.includes('codigo-fonte') ? '/codigo-fonte/' : '/'
 
 const linkList = [
     {
@@ -348,7 +345,7 @@ const $g_getSessionUser = () => {
     const session = $g_getSession()
     const users = $g_getAllUsers()
 
-    if (!users) return $g_handleUsersEmpty()
+    if (!session) return $g_handleUsersEmpty()
 
     const [user] = users.filter((user) => user.id === session.id)
     return user
