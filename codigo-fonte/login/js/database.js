@@ -1,5 +1,7 @@
 'use strict'
 
+import { $g_getAllUsers, $g_updateUsers } from '../../public/js/user.js'
+
 const usersSeed = () => {
     return [
         {
@@ -31,7 +33,7 @@ const usersSeed = () => {
             neighborhood: 'Centro',
             password: '1234',
             type: 'institution',
-            types: ['brinquedos', 'roupas', 'outro']
+            types: ['brinquedos', 'roupas', 'outro'],
         },
     ]
 }

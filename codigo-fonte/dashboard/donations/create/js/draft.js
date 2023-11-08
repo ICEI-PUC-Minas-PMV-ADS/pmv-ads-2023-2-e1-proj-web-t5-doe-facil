@@ -1,5 +1,7 @@
 'use strict'
 
+import { $g_getSessionUser } from '../../../../public/js/session.js'
+
 import { addDonationFields } from './form.js'
 import { getDraft } from './database.js'
 

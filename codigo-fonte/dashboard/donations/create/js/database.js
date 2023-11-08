@@ -1,5 +1,7 @@
 'use strict'
 
+import { $g_getSessionUser } from "../../../../public/js/session.js"
+
 export const saveDraft = (draft) => {
     const { id: userId } = $g_getSessionUser()
     let drafts = JSON.parse(localStorage.getItem('donation_drafts'))
@@ -46,6 +48,7 @@ export const saveDonation = (donation) => {
 
     donation.id = createNewDonationId()
     donations.push(donation)
+
     localStorage.setItem('donations', JSON.stringify(donations))
     localStorage.removeItem('donation_drafts')
 }

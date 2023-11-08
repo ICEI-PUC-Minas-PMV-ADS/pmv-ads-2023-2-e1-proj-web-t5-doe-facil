@@ -1,5 +1,8 @@
 'use strict'
 
+import { $g_getFormInputs } from '../../public/js/form.js'
+import { $g_redirectTo } from '../../public/js/global.js'
+import { $g_createSession } from '../../public/js/session.js'
 import { registerUser, validateLogin } from './database.js'
 
 const donatorForm = document.querySelector('#donator-form')

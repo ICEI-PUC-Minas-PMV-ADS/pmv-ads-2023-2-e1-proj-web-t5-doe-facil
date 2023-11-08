@@ -1,5 +1,11 @@
-const path = `${window.location.pathname}`.split('/').filter((i) => Boolean(i))
-const PREFIX_URL = path.includes('codigo-fonte') ? '/codigo-fonte/' : '/'
+'use strict'
+
+import { PREFIX_URL } from './global.js'
+import {
+    $g_checkSession,
+    $g_clearSession,
+    $g_getSessionUser,
+} from './session.js'
 
 const linkList = [
     {
@@ -67,7 +73,63 @@ function setAttributeList(node, list) {
     }
 }
 
-function $g_makeMenu() {
+function makeNavLink(href, label, active, dropdown, className) {
+    const link = document.createElement('a')
+    link.href = PREFIX_URL + href
+    link.textContent = label
+    link.classList = dropdown ? 'dropdown-item' : 'nav-link'
+    if (active) link.classList.add('active')
+    if (className) link.classList.add(className)
+    return link
+}
+
+function makeMenuLink(
+    href,
+    label,
+    active,
+    type = '',
+    subLinks = [],
+    className
+) {
+    if (type === 'dropdown') {
+        const liDropdown = document.createElement('li')
+        liDropdown.classList = 'nav-item dropdown'
+
+        const dropdownToggle = document.createElement('a')
+        dropdownToggle.href = '#'
+        dropdownToggle.classList = 'nav-link dropdown-toggle'
+
+        setAttributeList(dropdownToggle, [
+            ['role', 'button'],
+            ['data-bs-toggle', 'dropdown'],
+            ['aria-expanded', 'false'],
+        ])
+
+        dropdownToggle.textContent = label
+
+        const dropdownUl = document.createElement('ul')
+        dropdownUl.classList = 'dropdown-menu'
+
+        for (const link of subLinks) {
+            dropdownUl.appendChild(
+                makeMenuLink(link.href, link.label, link.active, link.type)
+            )
+        }
+
+        liDropdown.appendChild(dropdownToggle)
+        liDropdown.appendChild(dropdownUl)
+
+        return liDropdown
+    }
+
+    const li = document.createElement('li')
+    if (type === 'sub') li.appendChild(makeNavLink(href, label, active, true))
+    else li.appendChild(makeNavLink(href, label, active, false, className))
+
+    return li
+}
+
+export function $g_makeMenu() {
     const menu = document.querySelector('#menu')
 
     if (!menu) return
@@ -135,62 +197,6 @@ function $g_makeMenu() {
     menu.appendChild(navbar)
 }
 
-function makeNavLink(href, label, active, dropdown, className) {
-    const link = document.createElement('a')
-    link.href = PREFIX_URL + href
-    link.textContent = label
-    link.classList = dropdown ? 'dropdown-item' : 'nav-link'
-    if (active) link.classList.add('active')
-    if (className) link.classList.add(className)
-    return link
-}
-
-function makeMenuLink(
-    href,
-    label,
-    active,
-    type = '',
-    subLinks = [],
-    className
-) {
-    if (type === 'dropdown') {
-        const liDropdown = document.createElement('li')
-        liDropdown.classList = 'nav-item dropdown'
-
-        const dropdownToggle = document.createElement('a')
-        dropdownToggle.href = '#'
-        dropdownToggle.classList = 'nav-link dropdown-toggle'
-
-        setAttributeList(dropdownToggle, [
-            ['role', 'button'],
-            ['data-bs-toggle', 'dropdown'],
-            ['aria-expanded', 'false'],
-        ])
-
-        dropdownToggle.textContent = label
-
-        const dropdownUl = document.createElement('ul')
-        dropdownUl.classList = 'dropdown-menu'
-
-        for (const link of subLinks) {
-            dropdownUl.appendChild(
-                makeMenuLink(link.href, link.label, link.active, link.type)
-            )
-        }
-
-        liDropdown.appendChild(dropdownToggle)
-        liDropdown.appendChild(dropdownUl)
-
-        return liDropdown
-    }
-
-    const li = document.createElement('li')
-    if (type === 'sub') li.appendChild(makeNavLink(href, label, active, true))
-    else li.appendChild(makeNavLink(href, label, active, false, className))
-
-    return li
-}
-
 const lateralMenuList = [
     {
         label: 'Minhas Doações',
@@ -218,7 +224,7 @@ const lateralMenuList = [
     },
 ]
 
-const $g_makeLateralMenu = (activeItem) => {
+export const $g_makeLateralMenu = (activeItem) => {
     const user = $g_getSessionUser()
     const lateralMenu = document.getElementById('navbar-links')
     if (!lateralMenu) return
@@ -253,7 +259,7 @@ const $g_makeLateralMenu = (activeItem) => {
     }
 }
 
-function $g_makeFooter() {
+export function $g_makeFooter() {
     const footer = document.querySelector('#footer')
     footer.classList.add('footer__container')
     footer.innerHTML = `
@@ -301,176 +307,3 @@ function $g_makeFooter() {
         </div>
     `
 }
-
-const $g_getAllUsers = () => {
-    return JSON.parse(localStorage.getItem('users'))
-}
-
-const $g_getUser = (id, password = false) => {
-    const user = $g_getAllUsers().find((user) => user.id === id)
-    if (!user) return null
-
-    if (!password) delete user.password
-    return user
-}
-
-const $g_getSession = () => {
-    return JSON.parse(localStorage.getItem('session'))
-}
-
-const $g_createSession = (id, type) => {
-    localStorage.setItem('session', JSON.stringify({ id, type }))
-}
-
-const $g_clearSession = () => {
-    localStorage.removeItem('session')
-}
-
-const $g_redirectTo = (path) => {
-    window.location = PREFIX_URL + path
-}
-
-const $g_checkSession = () => {
-    if (!$g_getSession()) {
-        $g_redirectTo('login')
-    }
-}
-
-const $g_handleUsersEmpty = () => {
-    localStorage.clear()
-    $g_checkSession()
-}
-
-const $g_getSessionUser = () => {
-    const session = $g_getSession()
-    const users = $g_getAllUsers()
-
-    if (!session) return $g_handleUsersEmpty()
-
-    const [user] = users.filter((user) => user.id === session.id)
-    return user
-}
-
-const $g_getInstitutions = () => {
-    const users = $g_getAllUsers()
-    if (!users) return $g_handleUsersEmpty()
-
-    return users
-        .filter((user) => user.type === 'institution')
-        .map((i) => ({ id: i.id, name: i.name }))
-}
-
-const $g_getInstitutionsInfo = () => {
-    const users = $g_getAllUsers()
-
-    if (!users) return $g_handleUsersEmpty()
-
-    return users
-        .filter((user) => user.type === 'institution')
-        .map((i) => {
-            i.password
-            return i
-        })
-}
-
-const resumeDonationTypes = (donations) => {
-    let types = new Set(donations.map((d) => d.type))
-    types = [...types]
-    return types.length > 1 ? 'Diversos' : types[0]
-}
-
-const $g_getDonations = () => {
-    const user = $g_getSessionUser()
-    if (!user) return []
-
-    const donations = JSON.parse(localStorage.getItem('donations'))
-
-    return donations
-        .filter((d) => {
-            if (user.type === 'donator')
-                return Number(d.donator) === Number(user.id)
-            else return Number(d.institution) === Number(user.id)
-        })
-        .map((d) => {
-            const dDTO = d
-            dDTO.donator_info = $g_getUser(d.donator)
-            dDTO.donations_type = resumeDonationTypes(d.donations)
-            return dDTO
-        })
-}
-
-const $g_getFormInputs = (formElement) => {
-    const formInputs = formElement.querySelectorAll('.form_item')
-
-    const inputs = [...formInputs].map((input) => ({
-        input: `${input.id
-            .replace('donator_', '')
-            .replace('institution_', '')
-            .replace('access_', '')
-            .replace('password_', '')}`,
-        value: input.value,
-    }))
-
-    const payload = {}
-
-    for (const input of inputs) {
-        payload[input.input] = input.value
-    }
-
-    return payload
-}
-
-const $g_injectInputForm = (values, form, prefix = '') => {
-    for (const prop in values) {
-        const selectedInput = form.querySelector(`#${prefix + prop}`)
-        if (selectedInput) selectedInput.value = values[prop]
-    }
-}
-
-const $g_getDonationTypes = () => [
-    'Brinquedos',
-    'Roupas',
-    'Calçados',
-    'Cama e banho',
-    'Outro',
-]
-
-const $g_getDonationTypesInput = (checked = []) => {
-    const list = [
-        { input: 'brinquedos', value: 'Brinquedos' },
-        { input: 'roupas', value: 'Roupas' },
-        { input: 'calcados', value: 'Calçados' },
-        { input: 'cama-e-banho', value: 'Cama e Banho' },
-        { input: 'outro', value: 'Outro' },
-    ].map((i) => {
-        if (checked.includes(i.input)) i.checked = true
-        return i
-    })
-
-    return list
-}
-const $g_updateUsers = (users) => {
-    localStorage.setItem('users', JSON.stringify(users))
-}
-const $g_updateUser = (id, values) => {
-    const users = $g_getAllUsers()
-    const index = users.findIndex((u) => u.id === id)
-
-    if (index === -1) return
-
-    users[index] = values
-    $g_updateUsers(users)
-}
-
-const $g_updateUserInfo = (inputs) => {
-    const user = $g_getSessionUser()
-
-    for (const prop in inputs) {
-        user[prop] = inputs[prop]
-    }
-
-    $g_updateUser(user.id, user)
-}
-
-$g_makeMenu()
-$g_makeFooter()
