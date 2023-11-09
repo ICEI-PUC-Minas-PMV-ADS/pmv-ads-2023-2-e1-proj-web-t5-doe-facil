@@ -1,5 +1,9 @@
 'use strict'
 
+import { $g_redirectTo } from '../../public/js/global.js'
+import { $g_getSession } from '../../public/js/session.js'
+import { $g_getAllUsers } from '../../public/js/user.js'
+
 import { createUsersTable } from './database.js'
 import { submitCreateUser, submitLogin } from './form.js'
 

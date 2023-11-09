@@ -1,3 +1,5 @@
+import { $g_makeLateralMenu } from "../../public/js/components.js"
+
 $g_makeLateralMenu('donations')
 
 const editBtList = document.querySelectorAll(".editDoacao") 

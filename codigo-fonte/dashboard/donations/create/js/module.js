@@ -1,5 +1,8 @@
 'use strict'
 
+import { $g_checkSession } from '../../../../public/js/session.js'
+import { $g_makeLateralMenu } from '../../../../public/js/components.js'
+
 import { addDonationFields, getFormInputs, submitForm } from './form.js'
 import { saveDraft } from './database.js'
 import { mountForm } from './lifecycles.js'

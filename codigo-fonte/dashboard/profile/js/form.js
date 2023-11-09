@@ -1,5 +1,9 @@
 'use strict'
 
+import { $g_getFormInputs } from "../../../public/js/form.js"
+import { $g_getSessionUser } from "../../../public/js/session.js"
+import { $g_updateUserInfo } from "../../../public/js/user.js"
+
 export const submitChangePasswordForm = (form) => {
     const user = $g_getSessionUser()
     const inputs = $g_getFormInputs(form)
@@ -35,14 +39,15 @@ export const submitAboutForm = (form) => {
         .map(({ value }) => value)
 
     inputs.types = checkTypes
-
     $g_updateUserInfo(inputs)
+
     alert('Informações salvas com sucesso!')
 }
 
 export const submitForm = (form) => {
     const inputs = $g_getFormInputs(form)
     $g_updateUserInfo(inputs)
+
     alert('Informações salvas com sucesso!')
 }
 
