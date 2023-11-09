@@ -1,3 +1,3 @@
 function prox() {
-    window.location = "../../dashboard/donations/create/index.html"
+    window.location = "../../login/index.html"
 };
