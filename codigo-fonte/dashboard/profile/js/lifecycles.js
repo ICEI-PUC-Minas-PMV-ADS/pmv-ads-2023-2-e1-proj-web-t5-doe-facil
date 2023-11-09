@@ -1,5 +1,8 @@
 'use strict'
 
+import { $g_getDonationTypesInput } from "../../../public/js/donation.js"
+import { $g_injectInputForm } from "../../../public/js/form.js"
+import { $g_getSessionUser } from "../../../public/js/session.js"
 import { createCheckBoxElements } from "./form.js"
 
 const donatorForm = document.querySelector('#donator-form')

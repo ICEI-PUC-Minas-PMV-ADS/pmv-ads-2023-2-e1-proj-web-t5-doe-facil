@@ -1,5 +1,7 @@
 'use strict'
 
+import { $g_makeLateralMenu } from '../../../public/js/components.js'
+import { $g_checkSession } from '../../../public/js/session.js'
 import {
     submitAboutForm,
     submitChangePasswordForm,

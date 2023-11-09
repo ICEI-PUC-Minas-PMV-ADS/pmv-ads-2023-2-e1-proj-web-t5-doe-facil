@@ -1,6 +1,5 @@
 'use strict'
 
-import { $g_makeFooter, $g_makeMenu } from '../../public/js/components.js'
 import { $g_redirectTo } from '../../public/js/global.js'
 import { $g_getSession } from '../../public/js/session.js'
 import { $g_getAllUsers } from '../../public/js/user.js'
