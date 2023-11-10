@@ -1,10 +1,8 @@
 'use strict'
 
-import { $g_getDonationTypes } from '../../../../public/js/donation.js'
+import { $g_getDonationTypes, $g_saveDonation } from '../../../../public/js/donation.js'
 import { $g_getInstitutions } from '../../../../public/js/institution.js'
 import { $g_getSessionUser } from '../../../../public/js/session.js'
-
-import { saveDonation } from './database.js'
 
 const form = document.querySelector('#donation-form')
 
@@ -105,7 +103,7 @@ export const createPayload = (formInputs) => {
 }
 
 export const submitForm = (inputs) => {
-    saveDonation(createPayload(inputs))
+    $g_saveDonation(createPayload(inputs))
     form.reset()
 
     alert('Doação criada com sucesso!')

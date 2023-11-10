@@ -2,9 +2,9 @@
 
 import { $g_checkSession } from '../../../../public/js/session.js'
 import { $g_makeLateralMenu } from '../../../../public/js/components.js'
+import { $g_saveDonationDraft } from '../../../../public/js/donation.js'
 
 import { addDonationFields, getFormInputs, submitForm } from './form.js'
-import { saveDraft } from './database.js'
 import { mountForm } from './lifecycles.js'
 
 const form = document.querySelector('#donation-form')
@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
 
 form.querySelector('#draft').addEventListener('click', (e) => {
     e.preventDefault()
-    saveDraft(getFormInputs())
+    $g_saveDonationDraft(getFormInputs())
 })
 
 form.querySelector('#add-donation-item').addEventListener('click', (e) => {

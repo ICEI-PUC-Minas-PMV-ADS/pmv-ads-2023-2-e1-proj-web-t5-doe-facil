@@ -1,14 +1,14 @@
 'use strict'
 
+import { $g_getDonationDraft } from '../../../../public/js/donation.js'
 import { $g_getSessionUser } from '../../../../public/js/session.js'
 
 import { addDonationFields } from './form.js'
-import { getDraft } from './database.js'
 
 const form = document.querySelector('#donation-form')
 
 export const injectFormDraft = (donationElementField) => {
-    let draft = getDraft()
+    let draft = $g_getDonationDraft()
 
     if (!draft) {
         const user = $g_getSessionUser()
