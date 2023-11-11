@@ -1,39 +1,25 @@
 .titulo {
     font-size: 48px;
     color: #EF5DA8;
+    font-weight: bold;
+    padding-top:40px ;
+    padding-bottom:30px  ;
 }
 
-.principal {
-    display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
-.principal .principal-img {
-    display: inline-block;
-    padding-right: 40px;
-}
-
-#texto-introducao {
-    display: inline-block;
-    padding-left: 10px;
+.p--text {
     text-align: justify;
 }
 
-#text-secundario {
-    display: inline-block;
+ .texto {
     padding-top: 30px;
-    padding-left: 10px;
-    text-align: justify;
 }
 
-.principal .texto {
-    display: inline-block;
-    padding-top: 30px;
-    padding-left: 10px;
+.texto h2{
+    font-weight: bold ;
 }
 
-.principal .botao-doacao {
+ .botao-doacao {
     background-color: #EF5DA8;
     color: white;
     padding: 5px 8px;
@@ -44,12 +30,12 @@
     transition: all .3s ease;
 }
 
-.principal .botao-doacao:hover {
+ .botao-doacao:hover {
     background-color: white;
     color: #EF5DA8;
 }
 
-.principal .container-botao {
+ .container-botao {
     text-align: start;
 }
 
@@ -67,16 +53,14 @@
 }
 
 .imagem-doe-facil {
-    width: 300px;
-    height: 250px;
-    display: block;
+    height: 150px;
     margin: auto;
 }
 
 #img1 {
     background-color: #F4F4F4;
     border: 4px solid #e7e5e5;
-    width: 499px;
+    width: 100%;
     height: 334px;
     border-radius: 8px;
     display: flex;
