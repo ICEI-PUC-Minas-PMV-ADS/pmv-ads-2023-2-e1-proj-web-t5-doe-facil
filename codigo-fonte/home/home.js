@@ -1,10 +1,16 @@
 var elem = document.getElementById('btn-serDoador')
 elem.addEventListener('click', function () {
-    location.href = 'http://codigo-fonte/login/'
+    window.location.href = '/codigo-fonte/login'
 })
 
+var elem = document.getElementById('botao-doacao')
+elem.addEventListener('click', function () {
+    window.location.href = '/codigo-fonte/login'
+})
+
+
 let count = 1;
-document.getElementById("radio1").checked = true;
+document.getElementById("radio0").checked = true;
 
 setInterval( function(){
     nextImage();
@@ -16,5 +22,5 @@ function nextImage(){
     count = 1;
     }
     
-    document.getElementById("radio1"+count).checked = true;
+    document.getElementById("radio0"+count).checked = true;
 }

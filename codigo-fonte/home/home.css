@@ -96,29 +96,63 @@ strong {
 h5 {
     font-size: 30pt;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .slides {
+    margin: 10%;
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 .slides input {
     display: none;
 }
 
 .slide {
-    width: 100%;
-    position: relative;
-    text-align: center;
+position: absolute;
+align-items: center;
+justify-content: center;
+
+width: 70%;
+opacity: 0;
+transition: opacity .2s;
 }
 
 .slide img {
     width: 125px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    margin-bottom: 5%;
+
 }
+
+strong{
+position: absolute;
+align-items: center;
+justify-content:center;
+margin-top: 3%;
+margin-left: 3%;
+}
+
+.first {
+    opacity: 1;
+}
+
 .manual-navigation {
-    /* position: absolute; */
+    position: relative;
     width: 800px;
     display: flex;
     justify-content: center;
+    margin-top: 15%;
+    margin-left: 15%;
+
 }
 .manual-btn {
     border: 2px solid #ef5da8;
