@@ -22,3 +22,9 @@ export const $g_getInstitutionsInfo = () => {
             return i
         })
 }
+
+export const $g_getInstitutionById = (id) => {
+    const institutionList = $g_getInstitutionsInfo()
+    const institution = institutionList.find(item => parseInt(item.id) === parseInt(id))
+    return institution ? institution : null
+}
