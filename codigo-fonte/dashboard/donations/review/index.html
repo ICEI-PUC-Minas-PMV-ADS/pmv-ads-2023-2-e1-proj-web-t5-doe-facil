@@ -57,7 +57,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <a class="analisar" id="1" onclick="selectRow(1)">Analisar</a>
+                                    <a class="analisar" data-bs-toggle="modal" data-bs-target="#exampleModal" id="1" onclick="selectRow(1)">Analisar</a>
                                 </td>
                             </tr>
                             <tr>
@@ -66,7 +66,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <a class="analisar" data-bs-toggle="modal" data-bs-target="#exampleModal">Analisar</a>
+                                    <a class="analisar" data-bs-toggle="modal" data-bs-target="#exampleModal"id="2" onclick="selectRow(2)">Analisar</a>
                                 </td>
                             </tr>
                             <tr>
@@ -75,7 +75,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <a class="analisar">Analisar</a>
+                                    <a class="analisar"data-bs-toggle="modal" data-bs-target="#exampleModal"id="3" onclick="selectRow(3)">Analisar</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -109,7 +109,9 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  <div id="content">
+                    
+                  </div>...
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
