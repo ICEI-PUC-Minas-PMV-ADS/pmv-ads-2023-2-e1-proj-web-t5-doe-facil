@@ -38,6 +38,8 @@ export const $g_getDonations = () => {
 
     const donations = JSON.parse(localStorage.getItem('donations'))
 
+    if(!donations) return []
+
     return donations
         .filter((d) => {
             if (user.type === 'donator')
@@ -90,6 +92,18 @@ export const $g_saveDonation = (donation) => {
     localStorage.setItem('donations', JSON.stringify(donations))
     localStorage.removeItem('donation_drafts')
 }
+
+export const $g_getDonationById = function(id){
+    const donationList = $g_getDonations()
+
+    if (donationList.length) {
+        const donation = donationList.find(item => parseInt(item.id) === parseInt(id))
+        return donation ? donation : null 
+    }
+
+    return null
+}
+
 
 export const $g_getDonationDraft = () => {
     const { id: userId } = $g_getSessionUser()

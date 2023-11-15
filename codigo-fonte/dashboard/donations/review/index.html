@@ -10,8 +10,8 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="../../../public/css/global.css">
-        <link rel="stylesheet" href="review.css">
+        <link rel="stylesheet" href="../../../public/css/global.css" />
+        <link rel="stylesheet" href="review.css" />
     </head>
 
     <body>
@@ -27,62 +27,46 @@
                 <div class="col-3">
                     <div class="block__navbar m-2">
                         <div id="navbar-links" class="list-group">
-                            <a class="list-group-item list-group-item-action active" id="lateral-donations"
-                                href="/codigo-fonte/dashboard/donations">Minhas Doações</a>
-                            <a class="list-group-item list-group-item-action" id="lateral-profile"
-                                href="/codigo-fonte/dashboard/profile">Meu Perfil</a>
-                            <a class="list-group-item list-group-item-action" id="lateral-create-donation"
-                                href="/codigo-fonte/dashboard/donations/create/"> Rejeitadas</a>
-                            <a class="list-group-item list-group-item-action" id="lateral-exit"
-                                href="/codigo-fonte/">Sair</a>
-    
+                            <a
+                                class="list-group-item list-group-item-action active"
+                                id="lateral-donations"
+                                href="/codigo-fonte/dashboard/donations"
+                                >Minhas Doações</a
+                            >
+                            <a
+                                class="list-group-item list-group-item-action"
+                                id="lateral-profile"
+                                href="/codigo-fonte/dashboard/profile"
+                                >Meu Perfil</a
+                            >
+                            <a
+                                class="list-group-item list-group-item-action"
+                                id="lateral-exit"
+                                href="/codigo-fonte/"
+                                >Sair</a
+                            >
                         </div>
                     </div>
                 </div>
-                 <div class="col-9">
-                    <table class="table table-transparent table-hover">
-                        <thead class="table-light">
-                            <tr>
-                                <th class="doacao">Doação</th>
-                                <th class="tipoDoacao"> Tipo de Doação</th>
-                                <th ></th> 
-                                <th class="quant">Quantidade</th>
-                                <th class="acoes">Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody id="corpoTabela">
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <a class="analisar" data-bs-toggle="modal" data-bs-target="#exampleModal" id="1" onclick="selectRow(1)">Analisar</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <a class="analisar" data-bs-toggle="modal" data-bs-target="#exampleModal"id="2" onclick="selectRow(2)">Analisar</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <a class="analisar"data-bs-toggle="modal" data-bs-target="#exampleModal"id="3" onclick="selectRow(3)">Analisar</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                <div class="col-12 col-lg-9">
+                    <div class="m-2 block__content table__content">
+                        <section id="donator-info"></section>
+
+                        <table class="table table-transparent table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th class="tipo">Tipo</th>
+                                    <th class="quantidade">Quantidade</th>
+                                    <th class="descrição">Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody id="corpo-tabela"></tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
         <div id="footer"></div>
 
@@ -98,27 +82,47 @@
         ></script>
 
         <script type="module" src="../../../public/js/page.js"></script>
-        <script src="review.js"></script>
+        <script type="module" src="review.js"></script>
 
         <!-- Modal -->
-        <div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div
+            class="modal fade modal-xl"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Modal title
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="content"></div>
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Save changes
+                        </button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  <div id="content">
-                    
-                  </div>...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
     </body>
 </html>

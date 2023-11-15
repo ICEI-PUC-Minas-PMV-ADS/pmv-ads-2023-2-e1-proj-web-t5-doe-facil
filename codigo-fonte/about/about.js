@@ -1,4 +1,5 @@
 import { $g_getAboutInfo } from "../public/js/about.js";
+import { $g_redirectTo } from "../public/js/global.js";
 
 const pageInfo = $g_getAboutInfo()
 const pageInfoDiv = document.querySelector("#page-info");
@@ -21,5 +22,11 @@ pageInfoDiv.appendChild(roleText)
 
 const pageTitle = document.querySelector("#page-title")
 pageTitle.textContent = pageInfo.title
+
+const buttonDonation = document.querySelector("#button-donation")
+buttonDonation.addEventListener('click', function(e) {
+    e.preventDefault()
+    $g_redirectTo('dashboard/donations/create')
+})
 
 
