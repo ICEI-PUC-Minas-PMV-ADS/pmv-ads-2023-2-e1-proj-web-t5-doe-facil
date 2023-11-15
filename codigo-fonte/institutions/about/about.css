@@ -1,10 +1,9 @@
-main {
-    padding: 50px 50px;
-}
-
-main h1 {
-    font-size: 36px;
+.titulo {
+    font-size: 48px;
     color: #EF5DA8;
+    font-weight: bold;
+    padding-top: 40px ;
+    padding-bottom:30px  ;
 }
 
 .content-container {
@@ -13,18 +12,18 @@ main h1 {
     align-items: center;
 }
 
-.image-container {
-    flex: 1;
-    margin-right: 20px; 
-}
 
 .image-container img {
     max-width: 100%;
     height: auto;
 }
 
-.text-container {
-    flex: 1;
+.text-container h2{
+    font-weight: bold;
+}
+
+.institution__image {
+    width: 100%;
 }
 
 .button {
@@ -35,9 +34,4 @@ main h1 {
     text-decoration: none;
     border-radius: 5px;
 }
-.titulo {
-    color: #EF5DA8;
-    font-size: 50px;
-    font-family: arial;
-    font-weight: bold;
-}
+
