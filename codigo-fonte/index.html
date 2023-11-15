@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
@@ -34,10 +34,13 @@
                             Insituições de Caridade da Sua Região!
                         </span>
                     </p>
-                    <button type="button" id="btn-serDoador"
-                    onclick="window.location.href = '/codigo-fonte/login'">
+                    <button
+                        type="button"
+                        class="btn btn-primary custom--primary btn--custom"
+                        id="btn-serDoador"
+                        onclick="window.location.href = '/codigo-fonte/login'"
+                    >
                         Quero Me Tornar Um Doador
-                        
                     </button>
                 </div>
             </div>
@@ -45,38 +48,76 @@
 
         <section class="container">
             <div class="row">
-                <div class="col custom__col">
-                    <h2>Instituições</h2>
-                    <img src="public/img/Doacoes.png" alt="Doações Caixa" />
-                    <p>
-                        Venha conhecer nossas Instituições parceiras! Nesta
-                        seção, você poderá descobrir o trabalho maravilhoso que
-                        elas fazem e de que forma você pode ajudar!
-                    </p>
-                </div>
-                <div class="col custom__col">
-                    <h2>Sobre Nós</h2>
-                    <img src="public/img/voluntarios.png" alt="Voluntários" />
-                    <p>
-                        Nascemos para facilitar a vida de quem deseja ajudar o
-                        próximo, mas nem sempre tem tempo de ir até uma
-                        Instituição ou, às vezes, nem mesmo conhece uma. Com
-                        poucos cliques, unimos você às Instituições da sua
-                        região e, assim, você conseguirá saber o que elas
-                        precisam e se o que você pretende doar as atende. E o
-                        melhor, tudo isso sem sair de casa!
-                    </p>
-                </div>
-                <div class="col custom__col">
-                    <img
-                        src="public/img/Sacola Doacoes.png"
-                        alt="Sacola Doações"
-                    />
+                <div class="col-lg-4">
+                    <section class="card__item">
+                        <div class="card__header">
+                            <h2 class="card__title">Instituições</h2>
 
-                    <button type="button" class="botao-doacao"
-                    onclick="window.location.href = '/codigo-fonte/login'">
-                        Seja um doador
-                    </button>
+                            <img
+                                src="public/img/Doacoes.png"
+                                alt="Doações Caixa"
+                            />
+                        </div>
+                        <div class="card__footer">
+                            <p>
+                                Venha conhecer nossas Instituições parceiras!
+                                Nesta seção, você poderá descobrir o trabalho
+                                maravilhoso que elas fazem e de que forma você
+                                pode ajudar!
+                            </p>
+                            <button
+                                class="btn btn-secondary custom--secondary btn--custom btn--100"
+                            >
+                                Conhecer Instituições
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-lg-4">
+                    <section class="card__item">
+                        <div class="card__header">
+                            <h2 class="card__title">Sobre Nós</h2>
+                            <img
+                                src="public/img/voluntarios.png"
+                                alt="Voluntários"
+                            />
+                        </div>
+                        <div class="card__footer">
+                            <p>
+                                Nascemos para facilitar a vida de quem deseja
+                                ajudar o próximo, mas nem sempre tem tempo de ir
+                                até uma Instituição ou, às vezes, nem mesmo
+                                conh...
+                            </p>
+                            <button
+                                class="btn btn-secondary custom--secondary btn--custom btn--100"
+                            >
+                                Saiba Mais
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-lg-4">
+                    <section class="card__item">
+                        <div class="card__header">
+                            <h2 class="card__title">Seja Um Doador</h2>
+                            <img
+                                src="public/img/Sacola Doacoes.png"
+                                alt="Sacola Doações"
+                            />
+                        </div>
+                        <div class="card__footer">
+                            <button
+                                type="button"
+                                class="btn btn-primary custom--primary btn--custom btn--100"
+                                onclick="window.location.href = '/codigo-fonte/login'"
+                            >
+                                Fazer Doação!
+                            </button>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
@@ -156,12 +197,10 @@
                         <label for="radio0" class="manual-btn"></label>
                         <label for="radio1" class="manual-btn"></label>
                         <label for="radio2" class="manual-btn"></label>
-
-                       
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
         <div id="footer"></div>
 

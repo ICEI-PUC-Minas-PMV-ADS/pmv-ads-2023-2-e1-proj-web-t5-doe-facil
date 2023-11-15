@@ -27,19 +27,36 @@ body {
 }
 
 .custom--primary {
+    background-color: var(--primary-color);
+    border: 0;
+    border-bottom: 4px solid var(--primary-color-dark);
+}
+
+.custom--primary:hover {
+    background-color: var(--primary-color);
+    border-bottom: 4px solid #ba4a83;
+}
+
+.custom--secondary {
     background-color: var(--secondary-color);
     border: 0;
     border-bottom: 4px solid var(--secondary-color-dark);
+}
+
+.custom--secondary:hover {
+    background-color: var(--secondary-color);
+    border-bottom: 4px solid #ba4a83;
 }
 
 .btn--custom {
     padding: 0.6em;
 }
 
-.custom--primary:hover {
-    background-color: var(--secondary-color);
-    border-bottom: 4px solid #ba4a83;
+.btn--100 {
+    width: 100%;
 }
+
+
 
 .block__content {
     background-color: var(--light-background-color);
