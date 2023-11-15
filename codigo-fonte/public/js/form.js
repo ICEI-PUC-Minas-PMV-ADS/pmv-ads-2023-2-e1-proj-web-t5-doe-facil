@@ -8,7 +8,8 @@ export const $g_getFormInputs = (formElement) => {
             .replace('donator_', '')
             .replace('institution_', '')
             .replace('access_', '')
-            .replace('password_', '')}`,
+            .replace('password_', '')
+            .replace('testimony_', '')}`,
         value: input.value,
     }))
 

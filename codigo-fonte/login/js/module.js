@@ -2,9 +2,8 @@
 
 import { $g_redirectTo } from '../../public/js/global.js'
 import { $g_getSession } from '../../public/js/session.js'
-import { $g_getAllUsers } from '../../public/js/user.js'
+import { $g_createUsersTable, $g_getAllUsers } from '../../public/js/user.js'
 
-import { createUsersTable } from './database.js'
 import { submitCreateUser, submitLogin } from './form.js'
 
 const donatorForm = document.querySelector('#donator-form')
@@ -26,7 +25,7 @@ accessForm.addEventListener('submit', (e) => {
     submitLogin()
 })
 
-createUsersTable()
+$g_createUsersTable()
 
 if ($g_getSession()) {
     $g_redirectTo('dashboard/donations')
@@ -37,7 +36,7 @@ const showAccessInfo = () => {
 
     $g_getAllUsers().forEach(({ email, password, name, type }) => {
         console.log(
-            `${name} (${type})
+`${name} (${type})
 Email: ${email}
 Senha: ${password}
 ----------`
