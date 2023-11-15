@@ -1,20 +1,12 @@
 var elem = document.getElementById('btn-serDoador')
 elem.addEventListener('click', function () {
-    location.href = 'http://codigo-fonte/login/'
+    window.location.href = '/codigo-fonte/login'
 })
 
-let count = 1;
-document.getElementById("radio1").checked = true;
+var elem = document.getElementById('botao-doacao')
+elem.addEventListener('click', function () {
+    window.location.href = '/codigo-fonte/login'
+})
 
-setInterval( function(){
-    nextImage();
-}, 2000)
 
-function nextImage(){
-    count++
-    if(count>3){
-    count = 1;
-    }
-    
-    document.getElementById("radio1"+count).checked = true;
-}
+
