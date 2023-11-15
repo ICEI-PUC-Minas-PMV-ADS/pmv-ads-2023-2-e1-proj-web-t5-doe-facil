@@ -1,5 +1,7 @@
 'use strict'
 
+import { _usersSeed } from './data.js'
+import { _createNewId } from './database.js'
 import { $g_checkSession, $g_getSessionUser } from './session.js'
 
 export const $g_handleUsersEmpty = () => {
@@ -9,6 +11,12 @@ export const $g_handleUsersEmpty = () => {
 
 export const $g_getAllUsers = () => {
     return JSON.parse(localStorage.getItem('users'))
+}
+
+export const $g_getUserById = (id) => {
+    const users = $g_getAllUsers(id)
+    const user = users.find((u) => Number(u.id) === Number(id))
+    return user ? user : null
 }
 
 export const $g_getUser = (id, password = false) => {
@@ -41,4 +49,25 @@ export const $g_updateUserInfo = (inputs) => {
     }
 
     $g_updateUser(user.id, user)
+}
+
+export const $g_createUsersTable = () => {
+    let table = JSON.parse(localStorage.getItem('users'))
+    if (!table) table = _usersSeed()
+    $g_updateUsers(table)
+}
+
+export const $g_registerUser = (user) => {
+    let users = JSON.parse(localStorage.getItem('users'))
+
+    if (!users) {
+        $g_createUsersTable()
+        return $g_registerUser(user)
+    }
+
+    user.id = _createNewId()
+    users.push(user)
+
+    localStorage.setItem('users', JSON.stringify(users))
+    return user
 }
