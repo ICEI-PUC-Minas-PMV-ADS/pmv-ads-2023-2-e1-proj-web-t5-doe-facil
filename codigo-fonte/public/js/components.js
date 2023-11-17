@@ -2,13 +2,13 @@
 
 import { lateralMenuList, linkList } from './data.js'
 
-import { PREFIX_URL } from './global.js'
+import { $g_redirectTo, PREFIX_URL } from './global.js'
 import {
     $g_checkSession,
     $g_clearSession,
+    $g_getSession,
     $g_getSessionUser,
 } from './session.js'
-
 
 function setAttributeList(node, list) {
     for (const attribute of list) {
@@ -120,13 +120,17 @@ export function $g_makeMenu() {
             )
         )
     }
+    const session = $g_getSession()
 
     const accessButton = document.createElement('button')
-    accessButton.classList = 'btn btn-primary custom--primary'
-    accessButton.textContent = 'Acessar'
+    accessButton.classList = 'btn custom--secondary'
+    accessButton.textContent = session ? 'Sair' : 'Acessar'
 
-    accessButton.addEventListener('click', () => {
-        window.location.replace(PREFIX_URL + 'login')
+    accessButton.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        if (session) return $g_clearSession()
+        $g_redirectTo(session ? 'exit' : 'login')
     })
 
     navbarColapse.appendChild(navbarUl)
@@ -139,7 +143,6 @@ export function $g_makeMenu() {
     navbar.appendChild(container)
     menu.appendChild(navbar)
 }
-
 
 export const $g_makeLateralMenu = (activeItem) => {
     const user = $g_getSessionUser()
@@ -171,7 +174,6 @@ export const $g_makeLateralMenu = (activeItem) => {
         buttonExit.addEventListener('click', (e) => {
             e.preventDefault()
             $g_clearSession()
-            $g_checkSession()
         })
     }
 }

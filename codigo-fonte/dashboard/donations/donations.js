@@ -27,7 +27,7 @@ function makeDonationTableLine() {
 
         editBtn.addEventListener('click', function(e){
             e.preventDefault()
-            $g_redirectTo(`dashboard/donations/create?id=${doacao.id}`)
+            $g_redirectTo(`dashboard/donations/create/?id=${doacao.id}`)
         })
         
         line.appendChild(td)

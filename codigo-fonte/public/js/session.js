@@ -13,6 +13,7 @@ export const $g_createSession = (id, type) => {
 
 export const $g_clearSession = () => {
     localStorage.removeItem('session')
+    $g_checkSession()
 }
 
 export const $g_checkSession = () => {
