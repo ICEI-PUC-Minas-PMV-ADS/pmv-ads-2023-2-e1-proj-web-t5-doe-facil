@@ -48,7 +48,6 @@ export const $g_getDonations = () => {
         })
         .map((d) => {
             const dDTO = d
-            dDTO.donator_info = $g_getUser(d.donator)
             dDTO.donations_type = _resumeDonationTypes(d.donations)
             return dDTO
         })
