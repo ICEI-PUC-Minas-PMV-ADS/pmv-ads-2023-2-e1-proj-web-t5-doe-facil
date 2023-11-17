@@ -18,44 +18,17 @@
         <div id="menu"></div>
 
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Revisão da Doação</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
+            <div class="row mt-4">
+                <div class="col-12 col-lg-3 mt-4">
                     <div class="block__navbar m-2">
-                        <div id="navbar-links" class="list-group">
-                            <a
-                                class="list-group-item list-group-item-action active"
-                                id="lateral-donations"
-                                href="/codigo-fonte/dashboard/donations"
-                                >Minhas Doações</a
-                            >
-                            <a
-                                class="list-group-item list-group-item-action"
-                                id="lateral-profile"
-                                href="/codigo-fonte/dashboard/profile"
-                                >Meu Perfil</a
-                            >
-                            <a
-                                class="list-group-item list-group-item-action"
-                                id="lateral-exit"
-                                href="/codigo-fonte/"
-                                >Sair</a
-                            >
-                        </div>
+                        <div id="navbar-links"></div>
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-9">
-                    <div class="m-2 block__content table__content">
+                <div class="col-12 col-lg-9 mt-4">
+                    <div class="m-2 block__content table__content review__content">
                         <section id="donator-info">
-                            <div class="col-12 col-lg-9"></div>
-                            <div class="m-2 block__content table__content" id="details-donator">
-                
-                            </div>
+                            <div class="m-2 row" id="details-donator"></div>
                         </section>
 
                         <table class="table table-transparent table-hover">
@@ -69,10 +42,10 @@
                             <tbody id="corpo-tabela"></tbody>
                         </table>
 
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-secondary" type="button">Rejeitar</button>
-                            <button class= "btn btn-secondary custom--secondary" type="button">Aceitar doação</button>
-                          </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-2 px-3">
+                            <button  id="reject-button" class="btn btn-secondary" type="button">Rejeitar</button>
+                            <button  id="accept-button" class= "btn custom--secondary " type="button">Aceitar Doação</button>
+                        </div>
                     </div>
                 </div>
             </div>

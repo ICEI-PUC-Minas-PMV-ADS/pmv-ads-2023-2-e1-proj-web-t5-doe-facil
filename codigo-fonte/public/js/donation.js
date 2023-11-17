@@ -115,3 +115,11 @@ export const $g_getDonationDraft = () => {
     if (index === -1) return null
     return drafts[index]
 }
+
+export const $g_acceptDonation = (id) => {
+    alert('Doação aceita: ' + id)
+}
+
+export const $g_rejectDonation = (id) => {
+    alert('Doação rejeitada: ' + id)
+}
