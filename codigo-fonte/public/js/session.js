@@ -31,3 +31,20 @@ export const $g_getSessionUser = () => {
     const [user] = users.filter((user) => user.id === session.id)
     return user
 }
+
+export const $g_getSessionUserType = () => {
+    const user = $g_getSession()
+    return user.type
+}
+
+export const $g_sessionUserIsInstitution = () => {
+    return $g_getSessionUserType() === 'institution'
+}
+
+export const $g_sessionUserIsDonator = () => {
+    return $g_getSessionUserType() === 'donator'
+}
+
+export const $g_sessionUserIsAdmin = () => {
+    return $g_getSessionUserType() === 'admin'
+}
