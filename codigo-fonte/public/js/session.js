@@ -34,7 +34,7 @@ export const $g_getSessionUser = () => {
 
 export const $g_getSessionUserType = () => {
     const user = $g_getSession()
-    return user.type
+    return user ? user.type : null
 }
 
 export const $g_sessionUserIsInstitution = () => {

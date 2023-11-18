@@ -24,7 +24,7 @@ export const createTestimonyItem = (id, text, author) => {
     return testimonyItem
 }
 
-export const updatesTestimonyList = () => {
+export const updateTestimonyList = () => {
     const testimonyDiv = document.querySelector('#testimonials')
     testimonyDiv.innerHTML = ''
 

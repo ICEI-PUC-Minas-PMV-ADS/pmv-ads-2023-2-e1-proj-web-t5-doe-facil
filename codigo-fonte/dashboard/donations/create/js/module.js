@@ -2,12 +2,13 @@
 
 import { $g_makeLateralMenu } from '../../../../public/js/components.js'
 import { $g_saveDonationDraft } from '../../../../public/js/donation.js'
+import { $g_checkDonatorPermissions } from '../../../../public/js/permissions.js'
 
 import { addDonationFields, getFormInputs, submitForm } from './form.js'
-import { checkPermissions, mountForm } from './lifecycles.js'
+import { mountForm } from './lifecycles.js'
 
+$g_checkDonatorPermissions()
 $g_makeLateralMenu('create-donation')
-checkPermissions()
 
 const form = document.querySelector('#donation-form')
 const { donationElementField } = mountForm()

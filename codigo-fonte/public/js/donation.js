@@ -1,7 +1,6 @@
 'use strict'
 
 import { $g_getSessionUser } from './session.js'
-import { $g_getUser } from './user.js'
 
 const _resumeDonationTypes = (donations) => {
     let types = new Set(donations.map((d) => d.type))

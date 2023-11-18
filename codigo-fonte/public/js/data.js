@@ -64,6 +64,18 @@ export const linkList = [
 
 export const lateralMenuList = [
     {
+        label: 'Painel Geral',
+        tag: 'general',
+        href: 'dashboard/general',
+        permission: 'admin',
+    },
+    {
+        label: 'Sobre Nós',
+        tag: 'about',
+        href: 'dashboard/about',
+        permission: 'admin',
+    },
+    {
         label: 'Minhas Doações',
         tag: 'donations',
         href: 'dashboard/donations',
@@ -134,6 +146,75 @@ export const _usersSeed = () => {
             password: '1234',
             type: 'institution',
             types: ['brinquedos', 'roupas', 'outro'],
+        },
+    ]
+}
+
+export const _firstSeed = () => {
+    return {
+        title: 'A Sua Doação é Importante!',
+        description: 'Fortaleça as Insituições de Caridade da Sua Região!',
+        image: 'public/img/logo.png',
+        button: 'Quero me tornar um Doador',
+        button_type: 'secondary',
+        button_href: 'login',
+    }
+}
+
+export const _aboutSeed = () => {
+    return {
+        title: 'Sobre a Doe Fácil',
+        description: `Idealizada no ano de 2023, a Doe Fácil é uma aplicação que tem o objetivo de
+            ser um facilitador para pessoas que têm o desejo de doar algo e instituições que precisam receber doações.
+            Viemos com o intuito de auxiliar na conexão entre doadores e instituições sem fins lucrativos, na intenção de
+            ajudar pessoas que queiram e tenham algo a doar, porém, não sabem quais lugares estão necessitando do bem a
+            ser doado, bem como ajudar as instituições a alcançar mais doadores, apresentando a todos, a sua finalidade,
+            suas necessidades e seu impacto na sociedade.`,
+        sub_title: `Nosso papel na Sociedade`,
+        role: `Ajudamos o maior número de Instituições sem fins lucrativos a receberem mais
+            doações, auxiliar na visibilidade das mesmas e filtrar da melhor maneira possīvel suas necessidades, como
+            principais doações necessárias no momento ou regularmente. Qualquer pessoa pode ser um doador, desta maneira,
+            nossa plataforma auxilia na busca pela Instituição que melhor atende o doador em relação ao item a ser doado
+            e à localização. Aumentando também o conhecimento de outras Instituições e seus objetivos.`,
+        image: '../public/img/logo.png',
+        button: 'Seja um Doador',
+        button_type: 'secondary',
+        button_href: 'dashboard/donations/create',
+    }
+}
+
+export const _cardSeed = () => {
+    return [
+        {
+            title: 'Instituições',
+            image: 'public/img/donate_1.png',
+            description:
+                'Venha conhecer nossas Instituições parceiras! Nesta seção, você poderá descobrir o trabalho maravilhoso que elas fazem e de que forma você pode ajudar!',
+            button: 'Conhecer Instituições',
+            button_type: 'secondary',
+            button_href: 'institutions',
+            type: 'home',
+        },
+
+        {
+            title: 'Sobre Nós',
+            image: 'public/img/donate_2.png',
+            description:
+                'Nascemos para facilitar a vida de quem deseja ajudar o próximo, mas nem sempre tem tempo de ir até uma Instituição ou, às vezes, nem mesmo conh...',
+            button: 'Saiba Mais!',
+            button_type: 'secondary',
+            button_href: 'about',
+            type: 'home',
+        },
+
+        {
+            title: 'Seja Um Doador',
+            image: 'public/img/donate_1.png',
+            description: '',
+            button: 'Fazer Doação!',
+            button_type: 'primary',
+            button_href: 'login',
+            type: 'home',
         },
     ]
 }

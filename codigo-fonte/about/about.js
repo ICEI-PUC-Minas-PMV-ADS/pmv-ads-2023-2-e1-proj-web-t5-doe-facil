@@ -1,4 +1,4 @@
-import { $g_getAboutInfo } from "../public/js/about.js";
+import { $g_getAboutInfo } from "../public/js/pagesInfo.js";
 import { $g_redirectTo } from "../public/js/global.js";
 
 const pageInfo = $g_getAboutInfo()
@@ -22,6 +22,9 @@ pageInfoDiv.appendChild(roleText)
 
 const pageTitle = document.querySelector("#page-title")
 pageTitle.textContent = pageInfo.title
+
+const pageImage = document.querySelector("#page-image")
+pageImage.src = pageInfo.image
 
 const buttonDonation = document.querySelector("#button-donation")
 buttonDonation.addEventListener('click', function(e) {

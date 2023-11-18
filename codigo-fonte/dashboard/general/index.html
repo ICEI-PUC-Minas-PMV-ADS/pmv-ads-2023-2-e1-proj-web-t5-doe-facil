@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Doe Fácil - Painel Geral</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+            integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+            crossorigin="anonymous"
+            async
+        ></script>
+
+        <link rel="stylesheet" href="../../public/css/global.css" />
+        <link rel="stylesheet" href="general.css" />
+
+        <script type="module" defer src="../../public/js/page.js"></script>
+        <script type="module" defer src="./js/module.js"></script>
+    </head>
+
+    <body>
+        <div id="menu"></div>
+
+        <div class="container pt-4 mt-4">
+            <div class="row g-3">
+                <div class="col-4">
+                    <div class="block__navbar m-2">
+                        <div id="navbar-links"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3 extra__block">
+                        <h2 class="form__title">Dobra da Página Inicial</h2>
+
+                        <form id="first-form" class="m-2 block__content">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <label for="first_image" class="form-label">
+                                        Imagem
+                                    </label>
+
+                                    <input
+                                        id="first_image"
+                                        type="text"
+                                        class="form-control form_item"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <label for="first_title" class="form-label">
+                                        Título
+                                    </label>
+
+                                    <input
+                                        id="first_title"
+                                        type="text"
+                                        class="form-control form_item"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <label
+                                        class="form-label"
+                                        for="first_description"
+                                    >
+                                        Descrição
+                                    </label>
+
+                                    <textarea
+                                        id="first_description"
+                                        placeholder=""
+                                        class="form-control form_item"
+                                        rows="4"
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <label
+                                        for="first_button"
+                                        class="form-label"
+                                    >
+                                        Texto do Botão
+                                    </label>
+
+                                    <input
+                                        id="first_button"
+                                        type="text"
+                                        class="form-control form_item"
+                                    />
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <label
+                                        for="first_button_type"
+                                        class="form-label"
+                                    >
+                                        Tipo de Botão
+                                    </label>
+
+                                    <input
+                                        id="first_button_type"
+                                        type="text"
+                                        class="form-control form_item"
+                                        value="primary"
+                                    />
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <label
+                                        for="first_button_href"
+                                        class="form-label"
+                                    >
+                                        Destino do Botão
+                                    </label>
+
+                                    <input
+                                        id="first_button_href"
+                                        type="text"
+                                        class="form-control form_item"
+                                    />
+                                </div>
+
+                                <div class="col-12 d-grid mt-3">
+                                    <button
+                                        type="submit"
+                                        class="btn custom--primary btn--custom"
+                                    >
+                                        Salvar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3 extra__block">
+                        <h2 class="form__title">Card (Página Inicial)</h2>
+
+                        <form id="card-form" class="m-2 block__content">
+                            <div class="col-12 mb-3">
+                                <label for="card_image" class="form-label">
+                                    Imagem
+                                </label>
+
+                                <input
+                                    id="card_image"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="card_title" class="form-label">
+                                    Título
+                                </label>
+
+                                <input
+                                    id="card_title"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label
+                                    class="form-label"
+                                    for="card_description"
+                                >
+                                    Descrição
+                                </label>
+
+                                <textarea
+                                    id="card_description"
+                                    placeholder=""
+                                    class="form-control form_item"
+                                    rows="4"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="card_button" class="form-label">
+                                    Texto do Botão
+                                </label>
+
+                                <input
+                                    id="card_button"
+                                    type="text"
+                                    class="form-control form_item"
+                                />
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label
+                                    for="card_button_type"
+                                    class="form-label"
+                                >
+                                    Tipo de Botão
+                                </label>
+
+                                <input
+                                    id="card_button_type"
+                                    type="text"
+                                    class="form-control form_item"
+                                    value="primary"
+                                />
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label
+                                    for="card_button_href"
+                                    class="form-label"
+                                >
+                                    Destino do Botão
+                                </label>
+
+                                <input
+                                    id="card_button_href"
+                                    type="text"
+                                    class="form-control form_item"
+                                />
+                            </div>
+
+                            <div class="col-12 d-grid mt-3">
+                                <input
+                                    type="hidden"
+                                    id="card_type"
+                                    value="home"
+                                    class="form_item"
+                                />
+                                <button
+                                    type="submit"
+                                    class="btn custom--primary btn--custom"
+                                >
+                                    Criar Card
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4"></div>
+
+                <div class="col-12 col-lg-8">
+                    <div class="extra__block mb-4">
+                        <h2 class="form__title">Cards (Página inicial)</h2>
+                        <div id="cards" class="m-2 block__content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>

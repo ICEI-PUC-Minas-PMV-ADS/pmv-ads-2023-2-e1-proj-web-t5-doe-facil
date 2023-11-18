@@ -25,8 +25,6 @@ accessForm.addEventListener('submit', (e) => {
     submitLogin()
 })
 
-$g_createUsersTable()
-
 if ($g_getSession()) {
     $g_redirectTo('dashboard/donations')
 }

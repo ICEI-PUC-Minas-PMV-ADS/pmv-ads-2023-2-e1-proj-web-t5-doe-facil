@@ -9,7 +9,10 @@ export const $g_getFormInputs = (formElement) => {
             .replace('institution_', '')
             .replace('access_', '')
             .replace('password_', '')
-            .replace('testimony_', '')}`,
+            .replace('testimony_', '')
+            .replace('card_', '')
+            .replace('about_', '')
+            .replace('first_', '')}`,
         value: input.value,
     }))
 

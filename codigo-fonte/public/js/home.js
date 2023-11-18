@@ -1,30 +1,9 @@
 'use strict'
 
+import { $g_getAllCards } from './cards.js'
+
 export const $g_getHomeCardsInfo = () => {
-    return [
-        {
-            title: 'Instituições',
-            description:
-                'Venha conhecer nossas Instituições parceiras! Nesta seção, você poderá descobrir o trabalho maravilhoso que elas fazem e de que forma você pode ajudar!',
-            button: 'secondary',
-            buttonText: 'Conhecer Instituições',
-        },
-
-        {
-            title: 'Sobre Nós',
-            description:
-                'Nascemos para facilitar a vida de quem deseja ajudar o próximo, mas nem sempre tem tempo de ir até uma Instituição ou, às vezes, nem mesmo conh...',
-            button: 'secondary',
-            buttonText: 'Saiba Mais',
-        },
-
-        {
-            title: 'Seja Um Doador',
-            description: '',
-            button: 'primary',
-            buttonText: 'Fazer Doação!',
-        },
-    ]
+    return $g_getAllCards().filter((c) => c.type === 'home')
 }
 
 export const $g_makeHomeCards = () => {
@@ -41,16 +20,16 @@ export const $g_makeHomeCards = () => {
         <h2 class="card__title">${cardItem.title}</h2>
 
         <img
-            src="public/img/Doacoes.png"
+            src="${cardItem.image}"
             alt="Doações Caixa"
         />
     </div>
     <div class="card__footer">
         <p>${cardItem.description}</p>
         <button
-            class="btn btn-${cardItem.button} custom--${cardItem.button} btn--custom btn--100"
+            class="btn custom--${cardItem.button_type} btn--custom btn--100"
         >
-            ${cardItem.buttonText}
+            ${cardItem.button}
             </button>
     </div>
 </section>
