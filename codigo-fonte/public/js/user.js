@@ -48,6 +48,8 @@ export const $g_updateUserInfo = (inputs) => {
         user[prop] = inputs[prop]
     }
 
+    if (!inputs.image) user.image = '../public/img/default.png'
+
     $g_updateUser(user.id, user)
 }
 
@@ -66,6 +68,7 @@ export const $g_registerUser = (user) => {
     }
 
     user.id = _createNewId()
+    user.image = '../public/img/default.png'
     users.push(user)
 
     localStorage.setItem('users', JSON.stringify(users))

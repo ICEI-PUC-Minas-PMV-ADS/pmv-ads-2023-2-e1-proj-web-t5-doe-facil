@@ -28,16 +28,12 @@ function makeDonationTableLine() {
 
         const td = document.createElement('td')
         const editBtn = document.createElement('a')
-        editBtn.textContent = $g_sessionUserIsDonator() ? 'Editar' : 'Analisar'
+        editBtn.textContent = $g_sessionUserIsDonator() ? 'Visualizar' : 'Analisar'
         editBtn.href = '#'
 
         editBtn.addEventListener('click', function (e) {
             e.preventDefault()
-            $g_redirectTo(
-                $g_sessionUserIsDonator()
-                    ? `dashboard/donations/create/?id=${doacao.id}`
-                    : `dashboard/donations/review/?id=${doacao.id}`
-            )
+            $g_redirectTo(`dashboard/donations/review/?id=${doacao.id}`)
         })
 
         line.appendChild(td)

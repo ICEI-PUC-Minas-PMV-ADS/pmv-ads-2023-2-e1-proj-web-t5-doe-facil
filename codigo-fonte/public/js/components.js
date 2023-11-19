@@ -3,12 +3,7 @@
 import { lateralMenuList, linkList } from './data.js'
 
 import { $g_redirectTo, PREFIX_URL } from './global.js'
-import {
-    $g_checkSession,
-    $g_clearSession,
-    $g_getSession,
-    $g_getSessionUser,
-} from './session.js'
+import { $g_clearSession, $g_getSession, $g_getSessionUser } from './session.js'
 
 function setAttributeList(node, list) {
     for (const attribute of list) {
@@ -138,6 +133,17 @@ export function $g_makeMenu() {
     container.appendChild(navbarBrand)
     container.appendChild(navbarToggle)
     container.appendChild(navbarColapse)
+
+    const user = $g_getSessionUser()
+    if (user) {
+        const userInfo = document.createElement('div')
+        userInfo.classList = 'user__info'
+        userInfo.innerHTML = `
+            <p>${user.name}</p>
+        `
+        container.appendChild(userInfo)
+    }
+
     container.appendChild(accessButton)
 
     navbar.appendChild(container)

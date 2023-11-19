@@ -1,6 +1,7 @@
 'use strict'
 
 import { $g_getDonationTypes, $g_saveDonation } from '../../../../public/js/donation.js'
+import { $g_redirectTo } from '../../../../public/js/global.js'
 import { $g_getInstitutions } from '../../../../public/js/institution.js'
 import { $g_getSessionUser } from '../../../../public/js/session.js'
 
@@ -103,8 +104,7 @@ export const createPayload = (formInputs) => {
 }
 
 export const submitForm = (inputs) => {
-    $g_saveDonation(createPayload(inputs))
+    const donation = $g_saveDonation(createPayload(inputs))
     form.reset()
-
-    alert('Doação criada com sucesso!')
+    $g_redirectTo(`dashboard/donations/review/?id=${donation.id}`)
 }

@@ -41,14 +41,15 @@ export const submitAboutForm = (form) => {
     inputs.types = checkTypes
     $g_updateUserInfo(inputs)
 
-    alert('Informações salvas com sucesso!')
+    alert('Informações salvas com sucesso!')
 }
 
 export const submitForm = (form) => {
     const inputs = $g_getFormInputs(form)
     $g_updateUserInfo(inputs)
 
-    alert('Informações salvas com sucesso!')
+    alert('Informações salvas com sucesso!')
+    location.replace(location.href)
 }
 
 export const createCheckBoxElements = (items, element) => {

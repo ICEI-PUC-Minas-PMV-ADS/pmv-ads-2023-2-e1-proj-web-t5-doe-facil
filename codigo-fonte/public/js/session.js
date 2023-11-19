@@ -26,7 +26,7 @@ export const $g_getSessionUser = () => {
     const session = $g_getSession()
     const users = $g_getAllUsers()
 
-    if (!session) return $g_handleUsersEmpty()
+    if (!session) return null 
 
     const [user] = users.filter((user) => user.id === session.id)
     return user

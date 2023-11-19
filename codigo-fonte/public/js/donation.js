@@ -1,7 +1,6 @@
 'use strict'
 
 import { $g_getSessionUser } from './session.js'
-import { $g_getUser } from './user.js'
 
 const _resumeDonationTypes = (donations) => {
     let types = new Set(donations.map((d) => d.type))
@@ -10,8 +9,10 @@ const _resumeDonationTypes = (donations) => {
 }
 
 const _getAmountDonations = (donations) => {
-    // TODO: implement
-    return Math.floor(Math.random() * 20)
+    return donations.reduce(
+        (accumulator, donation) => accumulator + parseInt(donation.amount),
+        0
+    )
 }
 
 export const $g_getDonationTypes = () => [
@@ -43,7 +44,7 @@ export const $g_getDonations = () => {
 
     const donations = JSON.parse(localStorage.getItem('donations'))
 
-    if(!donations) return []
+    if (!donations) return []
 
     return donations
         .filter((d) => {
@@ -55,7 +56,6 @@ export const $g_getDonations = () => {
             const dDTO = d
             dDTO.donations_type = _resumeDonationTypes(d.donations)
             dDTO.amount = _getAmountDonations(d.donations)
-            dDTO.date = new Date()
             return dDTO
         })
 }
@@ -93,23 +93,26 @@ export const $g_saveDonation = (donation) => {
     if (!donations) donations = []
 
     donation.id = _createNewDonationId()
+    donation.date = new Date().toLocaleDateString()
     donations.push(donation)
 
     localStorage.setItem('donations', JSON.stringify(donations))
     localStorage.removeItem('donation_drafts')
+    return donation
 }
 
-export const $g_getDonationById = function(id){
+export const $g_getDonationById = function (id) {
     const donationList = $g_getDonations()
 
     if (donationList.length) {
-        const donation = donationList.find(item => parseInt(item.id) === parseInt(id))
-        return donation ? donation : null 
+        const donation = donationList.find(
+            (item) => parseInt(item.id) === parseInt(id)
+        )
+        return donation ? donation : null
     }
 
     return null
 }
-
 
 export const $g_getDonationDraft = () => {
     const { id: userId } = $g_getSessionUser()
@@ -122,7 +125,6 @@ export const $g_getDonationDraft = () => {
     if (index === -1) return null
     return drafts[index]
 }
-
 
 export const $g_acceptDonation = (id) => {
     alert('Doação aceita: ' + id)
