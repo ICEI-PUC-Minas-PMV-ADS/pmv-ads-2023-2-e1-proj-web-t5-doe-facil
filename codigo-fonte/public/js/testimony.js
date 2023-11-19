@@ -1,6 +1,31 @@
 'use strict'
 
 import { _createNewId } from './database.js'
+import { $g_getUserById } from './user.js'
+
+export function $g_getLastTestimonials(num = 3) {
+    const testimonials = $g_getAllTestimony()
+    let lastTestimonials = []
+
+    let total = num
+    if (total > testimonials.length) {
+        total = testimonials.length
+    }
+
+    for (let i = 1; i <= total; i++) {
+        lastTestimonials.push(testimonials[testimonials.length - i])
+    }
+
+    lastTestimonials = lastTestimonials.map(t => {
+        const author = $g_getUserById(t.author)
+        return {...t,
+            author_name: author.name,
+            author_type: author.type
+        } 
+    })
+
+    return lastTestimonials
+}
 
 export const $g_getAllTestimony = () => {
     let testimonials = JSON.parse(localStorage.getItem('testimonials'))

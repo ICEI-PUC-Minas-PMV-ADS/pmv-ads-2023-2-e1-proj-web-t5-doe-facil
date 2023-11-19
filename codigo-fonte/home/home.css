@@ -12,29 +12,17 @@
     border: 0;
 }
 
-.container1 {
-    background-color: #ffff;
-}
 .Logo {
     width: 80%;
-    height:auto;
-
+    height: auto;
     justify-content: center;
     vertical-align: middle;
     padding-top: 10px;
 }
+
 .Titulo {
-    font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        'Segoe UI',
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        'Open Sans',
-        'Helvetica Neue',
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
         sans-serif;
     display: flex;
     font-weight: bold;
@@ -45,28 +33,25 @@
 .card__item {
     color: black;
     vertical-align: top;
-    box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
 
 .card__item img {
     width: 100%;
     transform: scale(1.1) translateX(15px) translateY(10px);
-    
 }
 
-
-.card__header{
+.card__header {
     border-radius: 15px 15px 0 0;
     background-color: #ef5da8;
     padding: 15px 15px 0px 15px;
-
 }
 
 .card__footer {
     border-radius: 0 0 15px 15px;
     background-color: #f8f8f8;
-    
+
     padding: 15px;
     margin-top: 20px;
 }
@@ -78,45 +63,42 @@
     font-size: 30px;
 }
 
-/* section p {
-    margin-top: 10px;
-    padding-left: 10px;
-    background-color: #f8f8f8;
-} */
-
-h5,
-strong {
+.slide__header {
     color: #ef5da8;
-}
-h5 {
-    font-size: 30pt;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-left: 40%;
+    text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+.slide__header h5 {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+
+.slide__author {
+    color: #ef5da8;
+    font-size: 25px;
+}
+
+.slide__quote {
+    margin-top: 10px;
+}
+
 .slides {
-    margin: 10%;
+    position: relative;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
-.slides input {
-    display: none;
-}
 
 .slide {
-position: absolute;
-align-items: center;
-justify-content: center;
-
-width: 70%;
-opacity: 0;
-transition: opacity .2s;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: opacity 0.2s;
+    text-align: center;
 }
 
 .slide img {
@@ -125,30 +107,21 @@ transition: opacity .2s;
     justify-content: center;
     margin-left: 30%;
     margin-bottom: 5%;
-
-}
-
-strong{
-position: absolute;
-align-items: center;
-justify-content:center;
-margin-top: 3%;
-margin-left: 3%;
-}
-
-.first {
-    opacity: 1;
 }
 
 .manual-navigation {
     position: relative;
-    width: 800px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    margin-top: 15%;
-    margin-left: 15%;
-
 }
+
+.manual-navigation .radio {
+    opacity: 0;
+    position: absolute;
+    left: -1000000000px;
+}
+
 .manual-btn {
     border: 2px solid #ef5da8;
     padding: 5px;
@@ -157,53 +130,10 @@ margin-left: 3%;
     transition: 1s;
 }
 
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
+.manual-btn {
+    margin: 0 20px;
 }
+
 .manual-btn:hover {
     background-color: #ef5da8;
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-#radio2:checked ~ .first {
-    margin-left: -25%;
-}
-#radio3:checked ~ .first {
-    margin-left: -50%;
-}
-.navigation-auto div {
-    border: 2px solid #ef5da8;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .autobtn1 {
-    background-color: #ef5da8;
-}
-#radio1:checked ~ .navigation-auto .autobtn2 {
-    background-color: #ef5da8;
-}
-#radio1:checked ~ .navigation-auto .autobtn3 {
-    background-color: #ef5da8;
-}
-
-.rodape {
-    display: flex;
-    background-color: #f0afab;
-    border: 1px solid #f0afab;
-    justify-content: space-between;
-    padding: 20px 30px 20px 30px;
-}
-
-.rodape .item {
-    display: inline-block;
-    width: 30%;
 }
