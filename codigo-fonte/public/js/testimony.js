@@ -25,3 +25,10 @@ export const $g_getUserTestimony = (id) => {
     testimonials = testimonials.filter((t) => t.author === id)
     return testimonials
 }
+
+
+export const $g_deleteTestimony = (id) => {
+  let testimonials = $g_getAllTestimony()
+  testimonials = testimonials.filter((t) => t.id !== id)
+  localStorage.setItem('testimonials' , JSON.stringify(testimonials))
+}
