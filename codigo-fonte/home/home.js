@@ -1,6 +1,6 @@
 'use strict'
 
-import { $g_makeHomeCards } from "../public/js/home.js"
+import { $g_makeHomeCards, $g_updateHomeFirstInfo } from "../public/js/home.js"
 
 // var elem = document.getElementById('btn-serDoador')
 // elem.addEventListener('click', function () {
@@ -14,3 +14,4 @@ import { $g_makeHomeCards } from "../public/js/home.js"
 
 
 $g_makeHomeCards()
+$g_updateHomeFirstInfo()

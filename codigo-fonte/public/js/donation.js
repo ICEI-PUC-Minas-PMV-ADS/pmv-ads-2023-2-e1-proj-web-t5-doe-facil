@@ -1,11 +1,17 @@
 'use strict'
 
 import { $g_getSessionUser } from './session.js'
+import { $g_getUser } from './user.js'
 
 const _resumeDonationTypes = (donations) => {
     let types = new Set(donations.map((d) => d.type))
     types = [...types]
     return types.length > 1 ? 'Diversos' : types[0]
+}
+
+const _getAmountDonations = (donations) => {
+    // TODO: implement
+    return Math.floor(Math.random() * 20)
 }
 
 export const $g_getDonationTypes = () => [
@@ -48,6 +54,8 @@ export const $g_getDonations = () => {
         .map((d) => {
             const dDTO = d
             dDTO.donations_type = _resumeDonationTypes(d.donations)
+            dDTO.amount = _getAmountDonations(d.donations)
+            dDTO.date = new Date()
             return dDTO
         })
 }
@@ -114,6 +122,7 @@ export const $g_getDonationDraft = () => {
     if (index === -1) return null
     return drafts[index]
 }
+
 
 export const $g_acceptDonation = (id) => {
     alert('Doação aceita: ' + id)
