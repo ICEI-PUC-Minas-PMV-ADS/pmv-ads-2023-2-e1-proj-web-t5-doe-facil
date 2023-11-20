@@ -69,6 +69,7 @@ function makeMenuLink(
 
 export function $g_makeMenu() {
     const menu = document.querySelector('#menu')
+    const session = $g_getSession()
 
     if (!menu) return
 
@@ -103,7 +104,16 @@ export function $g_makeMenu() {
     const navbarUl = document.createElement('ul')
     navbarUl.classList = 'navbar-nav'
 
-    for (const link of linkList) {
+    const links = [...linkList]
+
+    if(session) links.push({
+        label: 'Painel',
+        href: 'dashboard/donations',
+        active: false,
+        type: 'link',
+    })
+
+    for (const link of links) {
         navbarUl.appendChild(
             makeMenuLink(
                 link.href,
@@ -115,7 +125,6 @@ export function $g_makeMenu() {
             )
         )
     }
-    const session = $g_getSession()
 
     const accessButton = document.createElement('button')
     accessButton.classList = 'btn custom--secondary'
