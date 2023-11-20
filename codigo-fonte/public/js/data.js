@@ -232,7 +232,7 @@ export const _cardSeed = () => {
             description: '',
             button: 'Fazer Doação!',
             button_type: 'primary',
-            button_href: 'login',
+            button_href: 'dashboard/donations/create',
             type: 'home',
         },
     ]

@@ -37,6 +37,12 @@ export const $g_makeHomeCards = () => {
                 </div>
             </section>
         `
+
+        card.querySelector('button').addEventListener('click', (e) => {
+            e.preventDefault()
+            $g_redirectTo(cardItem.button_href)
+        })
+
         homeCards.appendChild(card)
     }
 }
@@ -46,7 +52,7 @@ export function $g_updateHomeFirstInfo() {
     const firstTitle = document.querySelector('#fisrt-title')
     const firstDescription = document.querySelector('#first-description')
     const firstButton = document.querySelector('#first-button')
-    
+
     const firstInfo = $g_getFirstInfo()
 
     firstImage.src = firstInfo.image
@@ -103,7 +109,7 @@ export function $g_createTestimonySlides(){
         radio.classList = 'radio'
         radio.value = count
 
-        label.addEventListener('click', (e) => {
+        label.addEventListener('click', () => {
             _updateTestimonyInfo(testimony)
         })
 
