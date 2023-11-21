@@ -20,7 +20,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | O usuário deve ser redirecionado para uma página com a visualização das informações da doação. |
 | Responsável pela elaboração do caso de Teste | Carlos Roberto |
 
-|Caso de Teste    | CT-2 - Testar edição de edição de informações dos usuários|
+|Caso de Teste    | CT-2 - Testar edição de edição de informações dos usuários |
 |:---|:---|
 | Requisitos Associados | RF-15, RF-16 |
 | Objetivo do Teste | Testar a alteração das informações do perfil de Doador e Instituição |
@@ -45,7 +45,7 @@ Caso de Teste    | CT-4 - Verificar a funcionalidade dos botões "quero me torna
 | Critérios de êxito | O botão deve redirecionar o usuário para a tela de cadastro, caso o usuário ainda não esteja logado, estando logado redirecionar para pagina de cadastro de doação.  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
-Caso de Teste    | CT-5 - Verificar o login do usuário" |
+Caso de Teste    | CT-5 - Verificar o login do usuário |
 |:---|:---|
 | Requisitos Associados | RF-, RF-|
 | Objetivo do Teste | A funcionalidade deve permitir o login do usuários havendo diferença entre a conta do doador e da instituição. |
@@ -53,7 +53,7 @@ Caso de Teste    | CT-5 - Verificar o login do usuário" |
 | Critérios de êxito | Após o login, o usuário deverá ser redirecionado para sua página de doações.  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
-Caso de Teste    | CT-6 - inclusão de informações na pagina "Sobre nós" |
+Caso de Teste    | CT-6 - Inclusão de informações na pagina "Sobre nós" |
 |:---|:---|
 | Requisitos Associados | RF-, RF-|
 | Objetivo do Teste | A funcionalidade deve permitir a alteração dos dados incluídos na página sobre nós, através da conta de administrador |
