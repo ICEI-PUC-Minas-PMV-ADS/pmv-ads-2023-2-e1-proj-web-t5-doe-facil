@@ -121,6 +121,7 @@ export const _usersSeed = () => {
             address_complement: 'Apt 872',
             address_number: '543',
             cep: '38770-000',
+            phone: '(10) 9 8765-4321',
             neighborhood: 'Centro',
             type: 'donator',
         },
@@ -136,6 +137,7 @@ export const _usersSeed = () => {
             address_number: '543',
             neighborhood: 'Centro',
             cep: '38770-000',
+            phone: '(10) 9 8765-4321',
             description:
                 'O Instituto Casa do Caminho nasceu com o propósito de oferecer um acolhimento que pudesse ser transformador no enfrentamento da doença, além de ter como princípio uma gestão profissionalizada e um modelo autossustentável através dos bazares beneficentes.',
             role: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -154,6 +156,7 @@ export const _usersSeed = () => {
             address_number: '543',
             neighborhood: 'Centro',
             cep: '38770-000',
+            phone: '(10) 9 8765-4321',
             description:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             role: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
