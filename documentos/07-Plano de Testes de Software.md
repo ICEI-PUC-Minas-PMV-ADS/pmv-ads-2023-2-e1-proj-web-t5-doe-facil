@@ -12,7 +12,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | Indicar os critérios de êxito  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
-|Caso de Teste| CT-X - Teste do cadastro de doações |
+|Caso de Teste| CT-X - Teste do Cadastro de Doações |
 |:---|:---|
 | Requisitos Associados | RF-05, RF-06, RF-08, RF-33 |
 | Objetivo do Teste | Testar cadastro das doações pelo Doador |
