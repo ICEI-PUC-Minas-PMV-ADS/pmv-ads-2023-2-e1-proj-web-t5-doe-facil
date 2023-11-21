@@ -62,19 +62,29 @@
 | RF-07 | A aplicação deve possibilitar ao “Doador” acesso a uma lista com informações sobre as instituições cadastradas para receber as doações. | Alta |
 | RF-08 | A aplicação deve informar os tipos de doações possíveis e a quantidade mínima no momento da doação. | Média |
 | RF- 09 | A aplicação deve possibilitar à “Instituição” a opção de aceite referente ao recolhimento das doações cadastradas. | Média |
-| RF- 10 | A aplicação deve possibilitar à “Instituição” visualizar os itens doados a partir de fotos submetidas pelo doador, além de saber a quantidade. | Média |
 | RF- 11 | A aplicação deve possibilitar à “Instituição” acesso às informações de telefone dos doadores para entrar em contato antes do recolhimento da doação. | Média | 
 | RF- 12 | A aplicação deve possibilitar à “Instituição” visualizar o tipo das doações, assim como o endereço do doador e a data sugerida para a coleta. | Alta |
-| RF- 13 | A aplicação deve possibilitar ao “Doador” acesso a lista de doações feitas na plataforma. | Baixa |
-| RF- 14 | A aplicação deve possibilitar à “Instituição” acesso a lista de doações recebidas na plataforma. | Baixa |
+| RF- 13 | A aplicação deve possibilitar ao “Doador” acesso a lista de doações feitas na plataforma. | Alta |
+| RF- 14 | A aplicação deve possibilitar à “Instituição” acesso a lista de doações recebidas na plataforma. | Alta |
 | RF-15 | A aplicação deve possibilitar ao Doador alterar suas informações pessoais e senha. | Alta |
 | RF-16 | A aplicação deve possibilitar a Instituição alterar as informações básicas, descrições e senha. | Alta |
 | RF-17 | A aplicação deve possuir uma página dedicada às informações da "Doe Fácil".  | Média |
 | RF-18 | A aplicação deve possuir uma página dedicada às informações das instituições cadastradas.  | Média |
-| RF-19 | A aplicação deve possibilitar ao doador a visualização das doações realizadas. | Média |
-| RF-20 | A aplicação deve possibilitar a instituição a visualização das doações recebidas. | Média |
 | RF-21 | A página inicial deve conter uma seção para visualização dos depoimentos dos usúarios. | Média |
-
+| RF-22 | A aplicação deve possibilitar o cadastro e exclusão de depoimentos |
+| RF-23 | A página inicial deve conter cards dinâmicos cadastraveis pelo painel |
+| RF-24 | Todas as páginas devem possuir um menu de navegação no topo da página |
+| RF-25 | Todas as páginas devem possuir um rodpé com links das páginas de informação e do painel, além de direitos autorais |
+| RF-26 | A página inicial deve conter uma chamada de ação para se tornar um doador (dobra da página) cadastrável pelo painel |
+| RF-27 | A aplicação deve possuir um painel administrativo contendo um menu de navegação das páginas internas |
+| RF-28 | O painel da aplicação deve possuir uma área dedicada para a edição das informações da página inicial |
+| RF-29 | O painel da aplicação deve possuir uma página dedicada ao cadastro de depoimentos |
+| RF-30 | O painel deve possuir uma página dedicada a edição da página de "Sobre Nós" |
+| RF-31 | O painel deve possuir uma página para alterar as informações do Doador e Instituição |
+| RF-32 | O painel deve possuir um formulário de edição de senha dos usuários |
+| RF-33 | O painel deve possuir uma página dedicada ao cadastro e edição de doações |
+| RF-34 | O painel deve possuir uma página de revisão referente às doações |
+| RF-35 | A ferramenta deve poussir usuários do tipo "Doador", "Instituição" e "Administrador" |
 
 **Prioridade: Alta / Média / Baixa. 
 
