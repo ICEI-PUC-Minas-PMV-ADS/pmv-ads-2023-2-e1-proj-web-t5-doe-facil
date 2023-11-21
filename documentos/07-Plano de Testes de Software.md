@@ -12,13 +12,21 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | Indicar os critérios de êxito  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
-|Caso de Teste| CT-X - Teste do Cadastro de Doações |
+|Caso de Teste| CT-1 - Teste do Cadastro de Doações |
 |:---|:---|
 | Requisitos Associados | RF-05, RF-06, RF-08, RF-33 |
 | Objetivo do Teste | Testar cadastro das doações pelo Doador |
 | Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como doador (informações de login no console do navegador). <br> 3 - Clicar no item "Fazer Doações" no menu lateral. <br> 4 - Cadastrar as informações sobre as doações 5 - finalizar a doação no botão "Cadastrar Doação e Fazer a Diferença!" |
 | Critérios de êxito | O usuário deve ser redirecionado para uma página com a visualização das informações da doação feita. |
 | Responsável pela elaboração do caso de Teste | Carlos Roberto |
+
+|Caso de Teste    | CT-2 - Testar edição de edição de informações dos usuários|
+|:---|:---|
+| Requisitos Associados | RF-15, RF-16 |
+| Objetivo do Teste | Testar a alteração das informações do perfil de Doador e Instituição |
+| Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como doador e instituição (repetir passos). <br> 3 - Clicar no item do menu lateral "Meu Perfil" <br> 4 - Alterar os dados do formulário de Informações <br> 5 - Clicar em Salvar <br> 6 - Alterar a senha <br> 7 - Clicar em Salvar <br> 8 - Caso esteja com perfil de Instituição, alterar informações do formulário Extra <br> 9 - Clicar em Salvar  |
+| Critérios de êxito | Todos formulários devem emitir um alerta de confirmação da modificação. <br> Os formulário de Informações e Extra devem mantar as informações alteradas. <br> No caso da edição da senha, deve ser possível acessar o painel administrativo com a nova senha.   |
+| Responsável pela elaborar do caso de Teste | Carlos Roberto |
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
