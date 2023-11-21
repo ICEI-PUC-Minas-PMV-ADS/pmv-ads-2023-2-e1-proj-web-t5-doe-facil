@@ -46,7 +46,7 @@
                     <h2 class="form__title">Cadastro de Doação</h2>
                     <form id="donation-form" class="m-2 block__content">
                         <div class="row">
-                            <div class="mb-3 col">
+                            <div class="mb-3 col-12 col-md-12 col-lg-6">
                                 <label for="name" class="form-label">
                                     Nome completo
                                 </label>
@@ -59,7 +59,7 @@
                                 />
                             </div>
 
-                            <div class="mb-3 col-4">
+                            <div class="mb-3 col-6 col-md-3">
                                 <label for="birthdate" class="form-label">
                                     Data de nascimento
                                 </label>
@@ -71,10 +71,119 @@
                                     required
                                 />
                             </div>
+                            <div class="mb-3 col-6 col-md-3">
+                                <label for="cpf" class="form-label">
+                                    CPF
+                                </label>
+
+                                <input
+                                    id="cpf"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 col">
+                            <div class="mb-3 col-12 col-md-6">
+                                <label for="address" class="form-label">
+                                    Endereço de Coleta
+                                </label>
+
+                                <input
+                                    id="address"
+                                    class="form-control form_item"
+                                    type="text"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-6 col-md-2">
+                                <label for="address_number" class="form-label">
+                                    Número
+                                </label>
+
+                                <input
+                                    id="address_number"
+                                    class="form-control form_item"
+                                    type="number"
+                                    required
+                                />
+                            </div>
+                            <div class="mb-3 col-6 col-md-4">
+                                <label
+                                    for="address_complement"
+                                    class="form-label"
+                                >
+                                    Complemento
+                                </label>
+
+                                <input
+                                    id="address_complement"
+                                    class="form-control form_item"
+                                    type="text"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="mb-3 col-6 col-md-3">
+                                <label for="neighborhood" class="form-label">
+                                    Bairro
+                                </label>
+
+                                <input
+                                    id="neighborhood"
+                                    class="form-control form_item"
+                                    type="text"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-6 col-md-2">
+                                <label for="cep" class="form-label">
+                                    CEP
+                                </label>
+
+                                <input
+                                    id="cep"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12 col-md-3">
+                                <label for="phone" class="form-label">
+                                    Telefone
+                                </label>
+
+                                <input
+                                    id="phone"
+                                    type="text"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12 col-md-4">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input
+                                    id="email"
+                                    type="email"
+                                    class="form-control form_item"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="mb-3 col-12 col-md-6">
                                 <label for="institution" class="form-label">
                                     Instituição
                                 </label>
@@ -87,93 +196,7 @@
                                 ></select>
                             </div>
 
-                            <div class="mb-3 col-3">
-                                <label for="cpf" class="form-label">
-                                    CPF
-                                </label>
-
-                                <input
-                                    id="cpf"
-                                    type="text"
-                                    class="form-control form_item"
-                                    required
-                                />
-                            </div>
-                            <div class="mb-3 col-3">
-                                <label for="cep" class="form-label">
-                                    CEP
-                                </label>
-
-                                <input
-                                    id="cep"
-                                    type="text"
-                                    class="form-control form_item"
-                                    required
-                                />
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="mb-3 col">
-                                <label for="address" class="form-label">
-                                    Endereço de Coleta
-                                </label>
-
-                                <input
-                                    id="address"
-                                    class="form-control form_item"
-                                    type="text"
-                                    required
-                                />
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="mb-3 col-2">
-                                <label for="address_number" class="form-label">
-                                    Número
-                                </label>
-
-                                <input
-                                    id="address_number"
-                                    class="form-control form_item"
-                                    type="number"
-                                    required
-                                />
-                            </div>
-
-                            <div class="mb-3 col">
-                                <label
-                                    for="address_complement"
-                                    class="form-label"
-                                >
-                                    Complemento 
-                                </label>
-
-                                <input
-                                    id="address_complement"
-                                    class="form-control form_item"
-                                    type="text"
-                                    required
-                                />
-                            </div>
-
-                            <div class="mb-3 col-4">
-                                <label for="neighborhood" class="form-label">
-                                    Bairro
-                                </label>
-
-                                <input
-                                    id="neighborhood"
-                                    class="form-control form_item"
-                                    type="text"
-                                    required
-                                />
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="mb-3 col-3">
+                            <div class="mb-3 col-6 col-md-3">
                                 <label for="collection_date" class="form-label">
                                     Coletar do dia
                                 </label>
@@ -187,7 +210,7 @@
                                 />
                             </div>
 
-                            <div class="mb-3 col-3">
+                            <div class="mb-3 col-6 col-md-3">
                                 <label
                                     for="finish_collection_date"
                                     class="form-label"
@@ -203,8 +226,10 @@
                                     required
                                 />
                             </div>
+                        </div>
 
-                            <div class="mb-3 col-3">
+                        <div class="row">
+                            <div class="mb-3 col-6 col-md-3">
                                 <label for="from_hour" class="form-label">
                                     A partir de (hora)
                                 </label>
@@ -217,7 +242,7 @@
                                 />
                             </div>
 
-                            <div class="mb-3 col-3">
+                            <div class="mb-3 col-6 col-md-3">
                                 <label for="until_hour" class="form-label">
                                     Até (hora)
                                 </label>
@@ -227,6 +252,18 @@
                                     class="form-control form_item"
                                     type="time"
                                     required
+                                />
+                            </div>
+
+                            <div class="mb-3 col-12 col-md-6 col-lg-6">
+                                <label for="observation" class="form-label">
+                                    Observações
+                                </label>
+
+                                <input
+                                    id="obeservation"
+                                    type="text"
+                                    class="form-control form_item"
                                 />
                             </div>
                         </div>
@@ -281,7 +318,7 @@
                                     />
                                 </div>
 
-                                <div class="col-8 mb-3">
+                                <div class="col-12 col-md-8 mb-3">
                                     <label class="form-label">
                                         Observações
                                     </label>
@@ -323,7 +360,7 @@
                                     type="submit"
                                     class="btn btn-primary custom--primary btn--custom"
                                 >
-                                    Cadastrar Doação e Fazer a Diferença!
+                                    Cadastrar Doação
                                 </button>
                             </div>
                         </div>
