@@ -65,20 +65,33 @@ function makeDonationInformation() {
         <p> ${donationInfo.cep}</p>
     </div>
 
-    <div class="pt-2 col-4">
+    <div class="pt-2 col-6">
         <p class="inf-donations">Horário Coleta</p>
         <p> ${donationInfo.from_hour} até ${donationInfo.until_hour}</p>
         
     </div>
-
-    <div class="pt-2 col-4">
+    <div class="pt-2 col-3">
+        <p class="inf-donations">E-mail</p>
+        <p> ${donationInfo.email}</p>
+        
+    </div>
+    <div class="pt-2 col-3">
+        <p class="inf-donations">Telefone</p>
+        <p> ${donationInfo.phone}</p>
+    </div>
+    
+    <div class="pt-2 col-3">
         <p class="inf-donations">Do dia</p>
         <p>${$g_getDateFormatted(donationInfo.collection_date)}</p>
     </div>
-    <div class="pt-2 col-4">
+    <div class="pt-2 col-3">
         <p class="inf-donations"> Até o dia</p>
         <p> ${$g_getDateFormatted(donationInfo.finish_collection_date)}</p>
         
+    </div>
+    <div class="pt-2 col-3">
+        <p class="inf-donations">Observação</p>
+        <p> ${donationInfo.obeservation}</p>
     </div>
     
 
