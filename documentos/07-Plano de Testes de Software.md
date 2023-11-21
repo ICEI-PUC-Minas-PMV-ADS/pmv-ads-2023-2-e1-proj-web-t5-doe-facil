@@ -30,7 +30,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 Caso de Teste    | CT-3 - Verificar a funcionalidade do menu |
 |:---|:---|
-| Requisitos Associados | RF-, RF-|
+| Requisitos Associados | RF-24|
 | Objetivo do Teste | Verificar se os menus redirecionam o usuário para as paginas corretas. |
 | Passos | 1 - Acessar a página principal da funcionalidade <br> 2 - Clicar nas abas superiores <br> 3 - Verificar para qual pagina foi redirecionado |
 | Critérios de êxito | Todas as guias devem redirecionar o usuário para a pagina descrita.  |
@@ -40,9 +40,9 @@ Caso de Teste    | CT-3 - Verificar a funcionalidade do menu |
 Caso de Teste    | CT-4 - Verificar a funcionalidade dos botões "quero me tornar um doador" |
 |:---|:---|
 | Requisitos Associados | RF-, RF-|
-| Objetivo do Teste | Verificar se os botões estão redirecionando o usuário para a tela de cadastro de doação. |
-| Passos | 1 - Acessar a página principal da funcionalidade <br> 2 - Clicar no botão "quero me tornar um Doador" <br> 3 - Verificar para qual pagina foi redirecionado |
-| Critérios de êxito | O botão deve redirecionar o usuário para a tela de cadastro, caso o usuário ainda não esteja logado, estando logado redirecionar para pagina de cadastro de doação.  |
+| Objetivo do Teste | Verificar se as informações da "Dobra" (primeira chamada da página inicial, a descrição e o botão correspondem às informações cadastradas no painel administrativo |
+| Passos | 1 - Acessar a página principal <br> 2 - Verificar as informações da dobra <br> 3 - Clicar em acessar no menu superior e acessar como Administrador (dados de acesso no console do navegador) <br> 4 - Clicar no menu laterar em "Painel Geral" <br> 5 - Alterar as informações referente a "Dobra da Página Inicial" <br> 6 - Acessar a página inicial pelo menu superiro <br> 7 - Verificar se as informações atualizadas no painel refletem com a página inicial. <br> OBS: Deve ser testado também se o redirecionamento está condizente com o endereço cadastrado no painel. |
+| Critérios de êxito | As informações alteradas no painel administrativo devem refletir na página inicial. |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
 Caso de Teste    | CT-5 - Verificar o login do usuário |
