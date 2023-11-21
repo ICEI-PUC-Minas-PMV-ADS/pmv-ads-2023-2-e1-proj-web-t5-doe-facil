@@ -17,7 +17,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Requisitos Associados | RF-05, RF-06, RF-08, RF-33 |
 | Objetivo do Teste | Testar cadastro das doações pelo Doador |
 | Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como doador (informações de login no console do navegador). <br> 3 - Clicar no item "Fazer Doações" no menu lateral. <br> 4 - Cadastrar as informações sobre as doações 5 - finalizar a doação no botão "Cadastrar Doação e Fazer a Diferença!" |
-| Critérios de êxito | O usuário deve ser redirecionado para uma página com a visualização das informações da doação feita. |
+| Critérios de êxito | O usuário deve ser redirecionado para uma página com a visualização das informações da doação. |
 | Responsável pela elaboração do caso de Teste | Carlos Roberto |
 
 |Caso de Teste    | CT-2 - Testar edição de edição de informações dos usuários|
@@ -27,6 +27,47 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como doador e instituição (repetir passos). <br> 3 - Clicar no item do menu lateral "Meu Perfil" <br> 4 - Alterar os dados do formulário de Informações <br> 5 - Clicar em Salvar <br> 6 - Alterar a senha <br> 7 - Clicar em Salvar <br> 8 - Caso esteja com perfil de Instituição, alterar informações do formulário Extra <br> 9 - Clicar em Salvar  |
 | Critérios de êxito | Todos formulários devem emitir um alerta de confirmação da modificação. <br> Os formulário de Informações e Extra devem mantar as informações alteradas. <br> No caso da edição da senha, deve ser possível acessar o painel administrativo com a nova senha.   |
 | Responsável pela elaborar do caso de Teste | Carlos Roberto |
+
+Caso de Teste    | CT-3 - Verificar a funcionalidade do menu |
+|:---|:---|
+| Requisitos Associados | RF-, RF-|
+| Objetivo do Teste | Verificar se os menus redirecionam o usuário para as paginas corretas. |
+| Passos | 1 - Acessar a página principal da funcionalidade <br> 2 - Clicar nas abas superiores <br> 3 - Verificar para qual pagina foi redirecionado |
+| Critérios de êxito | Todas as guias devem redirecionar o usuário para a pagina descrita.  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+
+Caso de Teste    | CT-4 - Verificar a funcionalidade dos botões "quero me tornar um doador" |
+|:---|:---|
+| Requisitos Associados | RF-, RF-|
+| Objetivo do Teste | Verificar se os botões estão redirecionando o usuário para a tela de cadastro de doação. |
+| Passos | 1 - Acessar a página principal da funcionalidade <br> 2 - Clicar no botão "quero me tornar um Doador" <br> 3 - Verificar para qual pagina foi redirecionado |
+| Critérios de êxito | O botão deve redirecionar o usuário para a tela de cadastro, caso o usuário ainda não esteja logado, estando logado redirecionar para pagina de cadastro de doação.  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+Caso de Teste    | CT-5 - Verificar o login do usuário" |
+|:---|:---|
+| Requisitos Associados | RF-, RF-|
+| Objetivo do Teste | A funcionalidade deve permitir o login do usuários havendo diferença entre a conta do doador e da instituição. |
+| Passos | 1 - Acessar a página principal da funcionalidade <br> 2 - Clicar no botão "acessar" <br> 3 - Realizar o cadastro <br> 4 - Acessar usando e-mail e senha |
+| Critérios de êxito | Após o login, o usuário deverá ser redirecionado para sua página de doações.  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+Caso de Teste    | CT-6 - inclusão de informações na pagina "Sobre nós" |
+|:---|:---|
+| Requisitos Associados | RF-, RF-|
+| Objetivo do Teste | A funcionalidade deve permitir a alteração dos dados incluídos na página sobre nós, através da conta de administrador |
+| Passos | 1 - Acessar como administrador <br> 2 - No painel geral clicar em "sobre nós" <br> 3 - Realizar a alteração em um dos campos <br> 4- Salvar a informação <br> 5 - verificar se a alteração foi realizada na pagina sobre nós |
+| Critérios de êxito | Após a alteração utilizando a contra de administrador a pagina sobre nos deverá exibir os textos informados com o usuário administrador. |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+Caso de Teste    | CT-7 - Verificar instituições cadastradas |
+|:---|:---|
+| Requisitos Associados | RF-, RF-|
+| Objetivo do Teste | A funcionalidade deve permitir a visualização das instituições cadastradas na plataforma |
+| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em instituições <br> 3 - Verificar as instituições apresentadas |
+| Critérios de êxito | Após o cadastro de uma nova instituição as informações devem estar disponíveis na pagina de instituições |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
