@@ -11,6 +11,14 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Passos | Indicar passos para a execução do teste |
 | Critérios de êxito | Indicar os critérios de êxito  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+|Caso de Teste| CT-X - Teste do cadastro de doações |
+|:---|:---|
+| Requisitos Associados | RF-05, RF-06, RF-08, RF-33 |
+| Objetivo do Teste | Testar cadastro das doações pelo Doador |
+| Passos | 1 - Acessar a página de acesso no menu inicial e acessar como doador (informações de login no console do navegador). <br> 2 - Clicar no item "Fazer Doações" no menu lateral. <br> 3 - Cadastrar as informações sobre as doações e finalizar a doação no botão "Cadastrar Doação e Fazer a Diferença!" |
+| Critérios de êxito | O usuário deve ser redirecionado para uma página com a visualização das informações da doação feita. |
+| Responsável pela elaboração do caso de Teste | Carlos Roberto |
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
