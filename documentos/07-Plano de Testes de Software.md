@@ -68,6 +68,39 @@ Caso de Teste    | CT-7 - Verificar instituições cadastradas |
 | Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em instituições <br> 3 - Verificar as instituições apresentadas |
 | Critérios de êxito | Após o cadastro de uma nova instituição as informações devem estar disponíveis na pagina de instituições |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+Caso de Teste    | CT-8 - Verificar doações cadastradas  |
+|:---|:---|
+| Requisitos Associados | RF-, RF-|
+| Objetivo do Teste | A funcionalidade deve permitir a visualização das doações cadastradas pelo doador|
+| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em minhas doações <br> 4 -Em ações clicar em visualizar .|
+| Critérios de êxito | Após o cadastro de uma nova doação, esta deverá estar disponivel para visualização no painel lateral na guia minhas doações |
+| Responsável pela elaborar do caso de Teste | Jéssica Reis |
+
+
+Caso de Teste    | CT-9 - Atualização de senha pelo usuário  |
+|:---|:---|
+| Requisitos Associados | RF-, RF-|
+| Objetivo do Teste | A funcionalidade deve permitir a alteração da senha pelo usuário|
+| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
+| Critérios de êxito | Após o preenchimento da nova senha, o login do usuario deverá entrar com os novos parametros fornecidos pelo usuario. |
+| Responsável pela elaborar do caso de Teste |Jéssica Reis |
+
+Caso de Teste    | CT-10 - Cadastro de depoimentos/usuário  |
+|:---|:---|
+| Requisitos Associados | RF-, RF-|
+| Objetivo do Teste | A funcionalidade deve permitir ao usuário o cadastro de depoimentos |
+| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em depoimentos <br> 4 - Inserir um depoimento na caixa de texto <br> 5 - clicar em enviar depoimento.|
+| Critérios de êxito | Após o envio do depoimento, este deverá aparecer na tela inicial na seção depoimentos contendo o nome do usuário que enviou o depoimento  | 
+| Responsável pela elaborar do caso de Teste |Jéssica Reis |
+
+Caso de Teste    | CT-11 - Exclusão de depoimentos/Usuário  |
+|:---|:---|
+| Requisitos Associados | RF-, RF-|
+| Objetivo do Teste | A funcionalidade deve permitir a exclusão do depoimento realizado pelo usuário|
+| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em depoimentos <br> 4 - Inserir um depoimento na caixa de texto <br> 5 - clicar em enviar depoimento  <br> 6 - Logar como instituição <br> 7- Verificar na página inicial se existe depoimento cadastrado 	<br> 8 - Deslogar como instituição <br> 9 - Logar como doador e efetuar o passo 3 novamente, <br> 10 - Em meus depoimentos clicar em excluir.|
+| Critérios de êxito | Após excluido, o depoimento deixará de aparecer na tela inicial de todos os usuarios da plataforma  | 
+| Responsável pela elaborar do caso de Teste |Jéssica Reis |
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
