@@ -16,10 +16,12 @@ const _getAmountDonations = (donations) => {
 }
 
 const _formatDonationStatus = (status) => {
-    return status
-        .replace('accepted', 'Aceita')
-        .replace('public', 'Pública')
-        .replace('new', 'Nova Doação')
+    if (status)
+        return status
+            .replace('accepted', 'Aceita')
+            .replace('public', 'Pública')
+            .replace('new', 'Nova Doação')
+    else return '-'
 }
 
 export const $g_getDonationTypes = () => [
