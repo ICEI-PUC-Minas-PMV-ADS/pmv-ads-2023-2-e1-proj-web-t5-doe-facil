@@ -1,5 +1,6 @@
 'use strict'
 
+import { $g_getInstitutionById } from './institution.js'
 import { $g_getSessionUser } from './session.js'
 
 const _resumeDonationTypes = (donations) => {
@@ -64,6 +65,9 @@ export const $g_getAllDonations = () => {
         dDTO.donations_type = _resumeDonationTypes(d.donations)
         dDTO.amount = _getAmountDonations(d.donations)
         dDTO.formatted_status = _formatDonationStatus(d.status)
+        dDTO.institution_name = d.institution
+            ? $g_getInstitutionById(d.institution).name
+            : ''
         return dDTO
     })
 }

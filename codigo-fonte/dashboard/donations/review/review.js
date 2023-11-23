@@ -154,7 +154,12 @@ function makeDonationInformation() {
 
     <div class="pt-2 col-6">
         <p class="inf-donations">Observações</p>
-        <p> ${donationInfo.obeservation}</p>
+        <p> ${donationInfo.obeservation ? donationInfo.obeservation : '-'}</p>
+    </div>
+
+    <div class="pt-2 col-6">
+        <p class="inf-donations">Instituição Beneficiada</p>
+        <p>${donationInfo.institution_name}</p>
     </div>
 `
     handleButtons(donationInfo.status)
