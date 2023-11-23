@@ -92,9 +92,16 @@ export const $g_saveDonation = (donation) => {
     let donations = JSON.parse(localStorage.getItem('donations'))
     if (!donations) donations = []
 
-    donation.id = _createNewDonationId()
+    if (!donation.id) donation.id = _createNewDonationId()
     donation.date = new Date().toLocaleDateString()
-    donations.push(donation)
+
+    if (!donation.edited) donations.push(donation)
+    else {
+        donations = donations.map((d) => {
+            if (parseInt(d.id) === parseInt(donation.id)) return donation
+            return d
+        })
+    }
 
     localStorage.setItem('donations', JSON.stringify(donations))
     localStorage.removeItem('donation_drafts')
@@ -135,7 +142,7 @@ export const $g_rejectDonation = (id) => {
 }
 
 export const $g_getDateFormatted = (date) => {
-    if(!date) return;
+    if (!date) return
     let data = new Date(date)
     const dia = data.getDate().toString().padStart(2, '0')
     const mes = (data.getMonth() + 1).toString().padStart(2, '0')

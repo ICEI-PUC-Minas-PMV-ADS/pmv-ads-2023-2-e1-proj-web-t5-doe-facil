@@ -7,7 +7,7 @@ import { $g_updateUserInfo } from "../../../public/js/user.js"
 export const submitChangePasswordForm = (form) => {
     const user = $g_getSessionUser()
     const inputs = $g_getFormInputs(form)
-    console.log(user)
+
     if (user.password != inputs.old) {
         alert('Senha atual incorreta')
         return

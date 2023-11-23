@@ -10,8 +10,6 @@ function makeAboutInfo() {
     const institution = $g_getInstitutionById(id)
     if (!institution) return
 
-    console.log(institution)
-
     const institutionTitle = document.querySelector('#institution-title')
     institutionTitle.textContent = institution.name
 

@@ -7,8 +7,38 @@ import { addDonationFields } from './form.js'
 
 const form = document.querySelector('#donation-form')
 
-export const injectFormDraft = (donationElementField) => {
+const donationToDraft = (donation) => {
+    const donations = [...donation.donations]
+    delete donation.donations
+
+    const draft = {
+        inputs: [],
+        donations: [],
+    }
+
+    for (const prop in donation) {
+        draft.inputs.push({ input: prop, value: donation[prop] })
+    }
+
+    for (const item of donations) {
+        const d = []
+
+        for (const prop in item) {
+            d.push({ input: prop, value: item[prop] })
+        }
+
+        draft.donations.push(d)
+    }
+
+    return draft
+}
+
+export const injectFormDraft = (donationElementField, donation = null) => {
     let draft = $g_getDonationDraft()
+
+    if (donation && donation.id) {
+        draft = donationToDraft(donation)
+    }
 
     if (!draft) {
         const user = $g_getSessionUser()

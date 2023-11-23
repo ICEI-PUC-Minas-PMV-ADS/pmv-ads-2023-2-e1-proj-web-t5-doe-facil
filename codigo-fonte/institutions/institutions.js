@@ -8,7 +8,6 @@ const makeInstitutionList = () => {
     const institutionDiv = document.getElementById('institutions')
 
     for(const institution of institutions) {
-        console.log(institution)
         const card = document.createElement('div')
         card.classList = 'col-12 col-lg-4'
         card.innerHTML = `

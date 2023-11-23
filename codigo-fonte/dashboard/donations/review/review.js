@@ -6,11 +6,14 @@ import {
     $g_getDateFormatted,
 } from '../../../public/js/donation.js'
 import { $g_makeLateralMenu } from '../../../public/js/components.js'
+import { $g_getSessionUserType } from '../../../public/js/session.js'
+import { $g_redirectTo } from '../../../public/js/global.js'
 
 $g_makeLateralMenu('donation')
 
 const acceptButton = document.querySelector('#accept-button')
 const rejectButton = document.querySelector('#reject-button')
+const editButton = document.querySelector('#edit-button')
 
 const params = new URLSearchParams(window.location.search)
 const id = params.get('id')
@@ -19,9 +22,15 @@ acceptButton.addEventListener('click', function (e) {
     e.preventDefault()
     $g_acceptDonation(id)
 })
+
 rejectButton.addEventListener('click', function (e) {
     e.preventDefault()
     $g_rejectDonation(id)
+})
+
+editButton.addEventListener('click', function (e) {
+    e.preventDefault()
+    $g_redirectTo(`dashboard/donations/create/?id=${id}`)
 })
 
 function makeDonationTableLines() {
@@ -42,7 +51,6 @@ function makeDonationTableLines() {
 
 function makeDonationInformation() {
     const donationInfo = $g_getDonationById(id)
-    console.log(donationInfo)
     const detailsDonator = document.querySelector('#details-donator')
     detailsDonator.innerHTML = `
     
@@ -53,7 +61,9 @@ function makeDonationInformation() {
 
     <div class="pt-2 col-6">
         <p class="inf-donations">Endereço de Coleta</p>
-        <p>${donationInfo.address}, ${donationInfo.address_number}, ${donationInfo.address_complement}</p>
+        <p>${donationInfo.address}, ${donationInfo.address_number}, ${
+            donationInfo.address_complement
+        }</p>
     </div>
 
     <div class="pt-2 col-3">
@@ -97,7 +107,16 @@ function makeDonationInformation() {
 
     
     
-`;
+`
+
+    const userType = $g_getSessionUserType()
+
+    if (userType === 'donator') {
+        acceptButton.remove()
+        rejectButton.remove()
+    } else if (userType === 'institution') {
+        editButton.remove()
+    }
 }
 
 makeDonationTableLines()
