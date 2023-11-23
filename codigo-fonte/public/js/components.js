@@ -106,12 +106,13 @@ export function $g_makeMenu() {
 
     const links = [...linkList]
 
-    if(session) links.push({
-        label: 'Painel',
-        href: 'dashboard/donations',
-        active: false,
-        type: 'link',
-    })
+    if (session)
+        links.push({
+            label: 'Painel',
+            href: 'dashboard/donations',
+            active: false,
+            type: 'link',
+        })
 
     for (const link of links) {
         navbarUl.appendChild(
@@ -164,9 +165,21 @@ export const $g_makeLateralMenu = (activeItem) => {
     const lateralMenu = document.getElementById('navbar-links')
     if (!lateralMenu) return
 
-    const lateralMenuListFiltered = lateralMenuList.filter((i) =>
-        ['all', user.type].includes(i.permission)
-    )
+    const lateralMenuListFiltered = lateralMenuList.filter((i) => {
+        if (typeof i.permission === 'string')
+            return ['all', user.type].includes(i.permission)
+
+        let hasPermission = false
+
+        for (const p of i.permission) {
+            if (user.type === p) {
+                hasPermission = true
+                break
+            }
+        }
+
+        return hasPermission
+    })
 
     lateralMenu.classList.add('list-group')
 

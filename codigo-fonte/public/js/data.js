@@ -76,6 +76,12 @@ export const lateralMenuList = [
         permission: 'all',
     },
     {
+        label: 'Doações Públicas',
+        tag: 'public-donations',
+        href: 'dashboard/donations/?public=1',
+        permission: ['admin', 'institution'],
+    },
+    {
         label: 'Depoimentos',
         tag: 'testimony',
         href: 'dashboard/testimony',

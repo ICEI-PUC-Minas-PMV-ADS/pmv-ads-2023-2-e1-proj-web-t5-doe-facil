@@ -15,6 +15,13 @@ const _getAmountDonations = (donations) => {
     )
 }
 
+const _formatDonationStatus = (status) => {
+    return status
+        .replace('accepted', 'Aceita')
+        .replace('public', 'Pública')
+        .replace('new', 'Nova Doação')
+}
+
 export const $g_getDonationTypes = () => [
     'Brinquedos',
     'Roupas',
@@ -38,26 +45,43 @@ export const $g_getDonationTypesInput = (checked = []) => {
     return list
 }
 
-export const $g_getDonations = () => {
+const _getDbDonations = () => {
+    const donations = JSON.parse(localStorage.getItem('donations'))
+    if (!donations) return []
+    return donations
+}
+
+export const $g_getAllDonations = () => {
     const user = $g_getSessionUser()
     if (!user) return []
 
-    const donations = JSON.parse(localStorage.getItem('donations'))
+    const donations = _getDbDonations()
 
-    if (!donations) return []
+    return donations.map((d) => {
+        const dDTO = d
+        dDTO.donations_type = _resumeDonationTypes(d.donations)
+        dDTO.amount = _getAmountDonations(d.donations)
+        dDTO.formatted_status = _formatDonationStatus(d.status)
+        return dDTO
+    })
+}
 
-    return donations
-        .filter((d) => {
-            if (user.type === 'donator')
-                return Number(d.donator) === Number(user.id)
-            else return Number(d.institution) === Number(user.id)
-        })
-        .map((d) => {
-            const dDTO = d
-            dDTO.donations_type = _resumeDonationTypes(d.donations)
-            dDTO.amount = _getAmountDonations(d.donations)
-            return dDTO
-        })
+export const $g_getPublicDonations = () => {
+    const donations = $g_getAllDonations()
+    return donations.filter((d) => d.status === 'public')
+}
+
+export const $g_getDonations = () => {
+    const donations = $g_getAllDonations()
+    const user = $g_getSessionUser()
+
+    return donations.filter((d) => {
+        if (user.type === 'donator')
+            return Number(d.donator) === Number(user.id)
+        else if (user.type === 'institution')
+            return Number(d.institution) === Number(user.id)
+        else return true
+    })
 }
 
 export const $g_saveDonationDraft = (draft) => {
@@ -88,11 +112,21 @@ const _createNewDonationId = () => {
     return lastId
 }
 
-export const $g_saveDonation = (donation) => {
-    let donations = JSON.parse(localStorage.getItem('donations'))
-    if (!donations) donations = []
+const _saveDbDonations = (donations) => {
+    localStorage.setItem('donations', JSON.stringify(donations))
+}
 
-    if (!donation.id) donation.id = _createNewDonationId()
+const _removeDonationDrafts = () => {
+    localStorage.removeItem('donation_drafts')
+}
+
+export const $g_saveDonation = (donation) => {
+    let donations = _getDbDonations()
+
+    if (!donation.id) {
+        donation.id = _createNewDonationId()
+        donation.status = 'new'
+    }
     donation.date = new Date().toLocaleDateString()
 
     if (!donation.edited) donations.push(donation)
@@ -103,13 +137,14 @@ export const $g_saveDonation = (donation) => {
         })
     }
 
-    localStorage.setItem('donations', JSON.stringify(donations))
-    localStorage.removeItem('donation_drafts')
+    _saveDbDonations(donations)
+    _removeDonationDrafts()
+
     return donation
 }
 
 export const $g_getDonationById = function (id) {
-    const donationList = $g_getDonations()
+    const donationList = $g_getAllDonations()
 
     if (donationList.length) {
         const donation = donationList.find(
@@ -134,11 +169,35 @@ export const $g_getDonationDraft = () => {
 }
 
 export const $g_acceptDonation = (id) => {
-    alert('Doação aceita: ' + id)
+    let donations = _getDbDonations()
+    const user = $g_getSessionUser()
+
+    donations = donations.map((d) => {
+        if (parseInt(d.id) === parseInt(id)) {
+            d.status = 'accepted'
+            d.institution = user.id
+        }
+        return d
+    })
+    _saveDbDonations(donations)
 }
 
 export const $g_rejectDonation = (id) => {
-    alert('Doação rejeitada: ' + id)
+    let donations = _getDbDonations()
+    donations = donations.map((d) => {
+        if (parseInt(d.id) === parseInt(id)) {
+            d.status = 'public'
+            delete d.institution
+        }
+        return d
+    })
+
+    _saveDbDonations(donations)
+}
+
+export const $g_deleteDonation = (id) => {
+    let donations = _getDbDonations()
+    _saveDbDonations(donations.filter((d) => parseInt(d.id) !== parseInt(id)))
 }
 
 export const $g_getDateFormatted = (date) => {

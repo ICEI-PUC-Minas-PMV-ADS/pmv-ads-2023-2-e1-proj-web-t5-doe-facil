@@ -1,12 +1,20 @@
 import { $g_makeLateralMenu } from '../../public/js/components.js'
-import { $g_getDonations } from '../../public/js/donation.js'
+import { $g_getDonations, $g_getPublicDonations } from '../../public/js/donation.js'
 import { $g_redirectTo } from '../../public/js/global.js'
-import { $g_sessionUserIsDonator } from '../../public/js/session.js'
+import { $g_getSessionUser, $g_sessionUserIsDonator } from '../../public/js/session.js'
 
-$g_makeLateralMenu('donations')
+const params = new URLSearchParams(window.location.search)
+const paramPublic = params.get('public')
 
-function makeDonationTableLine() {
-    const doacoes = $g_getDonations()
+if (paramPublic) {
+    $g_makeLateralMenu('public-donations')
+} else {
+    $g_makeLateralMenu('donations')
+}
+
+function makeDonationTableLine() { 
+    const user = $g_getSessionUser()
+    const doacoes = paramPublic && user.type !== 'donator' ? $g_getPublicDonations() : $g_getDonations()
     const corpoTabela = document.querySelector('#corpoTabela')
 
     if (!doacoes || doacoes.length == 0) {
@@ -22,6 +30,7 @@ function makeDonationTableLine() {
         line.innerHTML = `
             <td>${doacao.name}</td>
             <td>${doacao.donations_type}</td>
+            <td>${doacao.formatted_status}</td>
             <td>${doacao.amount}</td>
             <td>${doacao.date}</td>
         `
