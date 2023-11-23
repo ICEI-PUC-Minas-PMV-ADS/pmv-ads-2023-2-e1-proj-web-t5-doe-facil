@@ -65,7 +65,7 @@ export const $g_getAllDonations = () => {
         dDTO.donations_type = _resumeDonationTypes(d.donations)
         dDTO.amount = _getAmountDonations(d.donations)
         dDTO.formatted_status = _formatDonationStatus(d.status)
-        dDTO.institution_name = d.institution
+        dDTO.institution_name = d.institution && d.institution !== 'public'
             ? $g_getInstitutionById(d.institution).name
             : ''
         return dDTO
@@ -133,6 +133,8 @@ export const $g_saveDonation = (donation) => {
         donation.id = _createNewDonationId()
         donation.status = 'new'
     }
+    if(donation.institution === 'public') donation.status = 'public' 
+
     donation.date = new Date().toLocaleDateString()
 
     if (!donation.edited) donations.push(donation)
@@ -193,7 +195,7 @@ export const $g_rejectDonation = (id) => {
     donations = donations.map((d) => {
         if (parseInt(d.id) === parseInt(id)) {
             d.status = 'public'
-            delete d.institution
+            d.institution = 'public'
         }
         return d
     })

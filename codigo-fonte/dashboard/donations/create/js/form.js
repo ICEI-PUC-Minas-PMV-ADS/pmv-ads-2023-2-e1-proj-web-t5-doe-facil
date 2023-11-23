@@ -11,6 +11,8 @@ export const injectInstitutionsOptions = () => {
     const select = form.querySelector('#institution')
     const institutions = $g_getInstitutions()
 
+    institutions.push({id: 'public', name: 'Doação Publica'})
+
     for (const item of institutions) {
         select.appendChild(new Option(item.name, item.id))
     }

@@ -18,10 +18,13 @@ form.addEventListener('submit', (e) => {
     submitForm(getFormInputs())
 })
 
-form.querySelector('#draft').addEventListener('click', (e) => {
-    e.preventDefault()
-    $g_saveDonationDraft(getFormInputs())
-})
+const draftButton = form.querySelector('#draft')
+if (draftButton) {
+    draftButton.addEventListener('click', (e) => {
+        e.preventDefault()
+        $g_saveDonationDraft(getFormInputs())
+    })
+}
 
 form.querySelector('#add-donation-item').addEventListener('click', (e) => {
     e.preventDefault()
