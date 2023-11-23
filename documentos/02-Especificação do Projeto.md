@@ -56,7 +56,7 @@
 | RF-01 |  A aplicação deve permitir o cadastro do “Doador” na plataforma. | Alta | 
 | RF- 02 | A aplicação deve possuir uma página dedicada ao cadastro da “Instituição” na plataforma. | Alta |
 | RF-03 | A aplicação deve possuir uma página inicial com chamada de ação para páginas de informações sobre a aplicação, objetivo e instituições cadastradas para a coleta das doações. | Alta |
-| RF-04 | A aplicação deve possuir uma página listando às Instituições com suas informações: nome, descrição, endereço, objetivos e informações de contato como site e telefones. | Média |
+| RF-04 | A aplicação deve possuir uma página listando as Instituições com suas informações: nome, descrição, endereço, objetivos e informações de contato como site e telefones. | Média |
 | RF-05 | A aplicação deve possibilitar ao “Doador” cadastrar doação na plataforma de forma simplificada e segura. | Alta |
 | RF-06 | A aplicação deve possibilitar o “Doador” a opção de selecionar instituições de preferência ao fazer o cadastro das doações. | Média |
 | RF-07 | A aplicação deve possibilitar ao “Doador” acesso a uma lista com informações sobre as instituições cadastradas para receber as doações. | Alta |
@@ -84,7 +84,7 @@
 | RF-32 | O painel deve possuir um formulário de edição de senha dos usuários |
 | RF-33 | O painel deve possuir uma página dedicada ao cadastro e edição de doações |
 | RF-34 | O painel deve possuir uma página de revisão referente às doações |
-| RF-35 | A ferramenta deve poussir usuários do tipo "Doador", "Instituição" e "Administrador" |
+| RF-35 | A ferramenta deve possuir usuários do tipo "Doador", "Instituição" e "Administrador" |
 
 **Prioridade: Alta / Média / Baixa. 
 
