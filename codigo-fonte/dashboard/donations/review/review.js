@@ -116,6 +116,10 @@ function makeDonationInformation() {
         rejectButton.remove()
     } else if (userType === 'institution') {
         editButton.remove()
+    } else {
+        acceptButton.remove()
+        rejectButton.remove()
+        editButton.remove()
     }
 }
 
