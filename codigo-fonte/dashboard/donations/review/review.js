@@ -159,7 +159,7 @@ function makeDonationInformation() {
 
     <div class="pt-2 col-6">
         <p class="inf-donations">Instituição Beneficiada</p>
-        <p>${donationInfo.institution_name}</p>
+        <p>${donationInfo.institution_name ? donationInfo.institution_name : 'Doação Pública'}</p>
     </div>
 `
     handleButtons(donationInfo.status)
