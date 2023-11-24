@@ -39,11 +39,11 @@ Caso de Teste    | CT-3 - Verificar a funcionalidade do menu |
 
 Caso de Teste    | CT-4 - Verificar a funcionalidade dos botões "quero me tornar um doador" |
 |:---|:---|
-| Requisitos Associados | RF-, RF-|
+| Requisitos Associados | RF-26, RF-27, RF-28|
 | Objetivo do Teste | Verificar se as informações da "Dobra" (primeira chamada da página inicial, a descrição e o botão correspondem às informações cadastradas no painel administrativo |
 | Passos | 1 - Acessar a página principal <br> 2 - Verificar as informações da dobra <br> 3 - Clicar em acessar no menu superior e acessar como Administrador (dados de acesso no console do navegador) <br> 4 - Clicar no menu laterar em "Painel Geral" <br> 5 - Alterar as informações referente a "Dobra da Página Inicial" <br> 6 - Acessar a página inicial pelo menu superiro <br> 7 - Verificar se as informações atualizadas no painel refletem com a página inicial. <br> OBS: Deve ser testado também se o redirecionamento está condizente com o endereço cadastrado no painel. |
 | Critérios de êxito | As informações alteradas no painel administrativo devem refletir na página inicial. |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Responsável pela elaborar do caso de Teste | Bárbara Figueiredo |
 
 Caso de Teste    | CT-5 - Verificar o login do usuário |
 |:---|:---|
