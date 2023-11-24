@@ -15,9 +15,13 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 |:---|:---|
 | Resultados obtidos |Êxito na execução. <br> Realizado o teste de alteração de informações do perfil do usuário e de alteração de senha. A plataforma permite a alteração de senha pelo usuário.|
 | Responsável pela execução do caso de Teste | Guilherme Radicchi |
-|https://youtube.com/shorts/q9UpWvRdgn8?feature=share|
+|[https://youtube.com/shorts/q9UpWvRdgn8?feature=share]|
 
-
+|Caso de Teste    | CT-3 - Verificar a funcionalidade do menu |
+|:---|:---|
+| Resultados obtidos |Êxito na execução. <br> Realizado o teste de funcionalidades do Menu. Todos os links levam às páginas que deveriam.|
+| Responsável pela execução do caso de Teste | Guilherme Radicchi |
+|[[https://youtube.com/shorts/q9UpWvRdgn8?feature=share](https://youtube.com/shorts/i_3cOX-l6Ro)]|
 
 |Caso de Teste    | CT-9 - Atualização de senha pelo usuário |
 |:---|:---|
