@@ -139,8 +139,8 @@ Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perf
 |:---|:---|
 | Requisitos Associados | RF-12,|
 | Objetivo do Teste | A funcionalidade não deve permitir o envio do formulario de cadastro  de doação, caso o campo endereço de coleta, número, complemento e bairro não estejam preenchidos.|
-| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em fazer doação <br> 4 - retirar informações dos campos endereço de coleta, número, complemento e bairro <br> 5 - inserir demais informações para preenchimento do cadastro <br> 6- clicar em cadastrar doação.|
-| Critérios de êxito | Após excluidos qual um dos campos de teste a funcionalidade não deve permitir o envio do formulario de cadastro de doação. | 
+| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em fazer doação <br> 4 - retirar informações dos campos: endereço de coleta, número, complemento e bairro <br> 5 - inserir demais informações para preenchimento do cadastro <br> 6- clicar em cadastrar doação.|
+| Critérios de êxito | Após excluidos qualquer um dos campos:"endereço de coleta, número, complemento e bairro"  a funcionalidade não deve permitir o envio do formulário de cadastro de doação. | 
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
  
 > **Links Úteis**:
