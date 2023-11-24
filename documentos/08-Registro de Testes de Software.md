@@ -11,6 +11,14 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 [Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
 
+|Caso de Teste    | CT-2 - Testar edição de edição de informações dos usuários |
+|:---|:---|
+| Resultados obtidos |Êxito na execução. <br> Realizado o teste de alteração de informações do perfil do usuário e de alteração de senha. A plataforma permite a alteração de senha pelo usuário.|
+| Responsável pela execução do caso de Teste | Guilherme Radicchi |
+|https://youtube.com/shorts/q9UpWvRdgn8?feature=share|
+
+
+
 |Caso de Teste    | CT-9 - Atualização de senha pelo usuário |
 |:---|:---|
 | Resultados obtidos |Êxito na execução. <br> Realizado o teste de alteração de senha, verificou-se que a plataforma permite a alteração de senha pelo usuário, após a senha alterada, caso o usuário preencha na página de acesso utilizando a senha antiga, a plataforma apresenta uma mensagem de erro "Usuário ou senha inválidos."|
