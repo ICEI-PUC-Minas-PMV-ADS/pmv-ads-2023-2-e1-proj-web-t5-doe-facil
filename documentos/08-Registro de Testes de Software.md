@@ -23,6 +23,11 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Responsável pela execução do caso de Teste | Guilherme Radicchi |
 |[[https://youtube.com/shorts/q9UpWvRdgn8?feature=share](https://youtube.com/shorts/i_3cOX-l6Ro)]|
 
+|Caso de Teste    | CT-4 - Verificar se as informações da "Dobra" correspondem às informações cadastradas no painel administrativo |
+|:---|:---|
+| Resultados obtidos | Êxito na execução. <br> Realizado o teste de se as informações da "Dobra" (primeira chamada da página inicial, a descrição e o botão) correspondem às informações cadastradas no painel administrativo  |
+| Responsável pela execução do caso de Teste | Bárbara Figueiredo |
+
 |Caso de Teste    | CT-9 - Atualização de senha pelo usuário |
 |:---|:---|
 | Resultados obtidos |Êxito na execução. <br> Realizado o teste de alteração de senha, verificou-se que a plataforma permite a alteração de senha pelo usuário, após a senha alterada, caso o usuário preencha na página de acesso utilizando a senha antiga, a plataforma apresenta uma mensagem de erro "Usuário ou senha inválidos."|
