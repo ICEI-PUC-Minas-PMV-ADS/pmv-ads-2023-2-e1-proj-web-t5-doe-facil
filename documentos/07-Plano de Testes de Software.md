@@ -99,12 +99,13 @@ Caso de Teste    | CT-11 - Exclusão de depoimentos/Usuário  |
 | Requisitos Associados | RF-, RF-|
 | Objetivo do Teste | A funcionalidade deve permitir a exclusão do depoimento realizado pelo usuário|
 | Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em depoimentos <br> 4 - Inserir um depoimento na caixa de texto <br> 5 - clicar em enviar depoimento  <br> 6 - Logar como instituição <br> 7- Verificar na página inicial se existe depoimento cadastrado 	<br> 8 - Deslogar como instituição <br> 9 - Logar como doador e efetuar o passo 3 novamente, <br> 10 - Em meus depoimentos clicar em excluir.|
-| Critérios de êxito | Após excluido, o depoimento deixará de aparecer na tela inicial de todos os usuarios da plataforma  | 
+| Critérios de êxito | Após excluído, o depoimento deixará de aparecer na tela inicial de todos os usuários da plataforma  | 
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+
+| Caso de Teste | CT-12 - Testar responsividade das páginas da aplicação |
+|:---|:---|
+| Requisitos Associados | RNF-02 |
+| Objetivo do Teste | As páginas devem se adaptar em telas menores sem perder a usabilidade e apresentar problemas de legibilidade. |
+| Passos | 1 - Navegar na página inicial <br> 2 - Navegar no Sobre Nós <br> 3 - Navegar na lista de instituições <br> 4 - Navegar em uma página de instituição <br> 5 - Navegar pela página de acesso <br> 6 - Acessar painel como administrador e navegar pelas páginas internas do painel <br> 7 - Acessar painel como doador e navegar pelas páginas internas do painel <br> 8 - Acessar painel como instituição e navegar pelas páginas internas do painel. |
+| Critérios de êxito | Após navegar pelas páginas da aplicação, é esperado que todas páginas se adaptem em telas grande e menores. | 
+| Responsável pela elaborar do caso de Teste | Carlos Roberto | 
