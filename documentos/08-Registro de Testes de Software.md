@@ -25,7 +25,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 |Caso de Teste    | CT-4 - Verificar se as informações da "Dobra" correspondem às informações cadastradas no painel administrativo |
 |:---|:---|
-| Resultados obtidos | Êxito na execução. <br> Realizado o teste de se as informações da "Dobra" (primeira chamada da página inicial, a descrição e o botão) correspondem às informações cadastradas no painel administrativo  |
+| Resultados obtidos | Êxito na execução. <br> Realizado o teste para verificar se as informações da "Dobra" (primeira chamada da página inicial, a descrição e o botão) correspondem às informações cadastradas no painel administrativo e de acordo com o teste executado, todas as funcionalidades foram testadas e realizadas com êxito.  |
 | Responsável pela execução do caso de Teste | Bárbara Figueiredo |
 
 |Caso de Teste    | CT-9 - Atualização de senha pelo usuário |
