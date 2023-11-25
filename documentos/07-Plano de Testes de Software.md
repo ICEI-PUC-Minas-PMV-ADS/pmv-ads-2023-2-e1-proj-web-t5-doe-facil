@@ -143,7 +143,7 @@ Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perf
 | Critérios de êxito | Após excluidos qualquer um dos campos:"endereço de coleta, número, complemento e bairro"  a funcionalidade não deve permitir o envio do formulário de cadastro de doação. | 
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
-| Caso de Teste | CT-12 - Testar responsividade das páginas da aplicação |
+| Caso de Teste | CT-15 - Testar responsividade das páginas da aplicação |
 |:---|:---|
 | Requisitos Associados | RNF-02 |
 | Objetivo do Teste | As páginas devem se adaptar em telas menores sem perder a usabilidade e apresentar problemas de legibilidade. |
