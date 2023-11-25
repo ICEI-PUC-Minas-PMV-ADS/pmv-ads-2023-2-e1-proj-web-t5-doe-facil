@@ -94,70 +94,70 @@ function makeDonationInformation() {
     const detailsDonator = document.querySelector('#details-donator')
     detailsDonator.innerHTML = `
     
-    <div class="pt-2 col-6">
+    <div class="pt-2 col-sm-3">
         <p class="inf-donations">Doador</p>
         <p>${donationInfo.name}</p>
     </div>
 
-    <div class="pt-2 col-2">
+    <div class="pt-2 col-sm-3">
         <p class="inf-donations">CPF</p>
         <p> ${donationInfo.cpf}</p>
     </div>
 
-    <div class="pt-2 col-2">
+    <div class="pt-2 col-sm-3 col-md-3">
         <p class="inf-donations">E-mail</p>
         <p> ${donationInfo.email}</p>
     </div>
 
-    <div class="pt-2 col-2">
+    <div class="pt-2 col-sm-3">
         <p class="inf-donations">Telefone</p>
         <p> ${donationInfo.phone}</p>
     </div>
 
-    <div class="pt-2 col-6">
+    <div class="pt-2 col-sm-6">
         <p class="inf-donations">Endereço de Coleta</p>
         <p>${donationInfo.address}, ${donationInfo.address_number}, ${
             donationInfo.address_complement
         }</p>
     </div>
 
-    <div class="pt-2 col-3">
+    <div class="pt-2 col-sm-3">
         <p class="inf-donations">Bairro</p>
         <p>${donationInfo.neighborhood}</p>
     </div>
-    <div class="pt-2 col-3">
+    <div class="pt-2 col-sm-3">
         <p class="inf-donations"> CEP</p>
         <p> ${donationInfo.cep}</p>
     </div>
 
-    <div class="pt-2 col-3">
+    <div class="pt-2 col-sm-3">
         <p class="inf-donations">Período para Coleta</p>
         <p>${$g_getDateFormatted(
             donationInfo.collection_date
         )} até ${$g_getDateFormatted(donationInfo.finish_collection_date)}</p>
     </div>
 
-    <div class="pt-2 col-3">
+    <div class="pt-2 col-sm-3">
         <p class="inf-donations">Horário para Coleta</p>
         <p> ${donationInfo.from_hour} até ${donationInfo.until_hour}</p>
     </div>
 
-    <div class="pt-2 col-3">
+    <div class="pt-2 col-sm-3">
         <p class="inf-donations">Data da Doação</p>
         <p>${donationInfo.date}</p>
     </div>
 
-    <div class="pt-2 col-3">
+    <div class="pt-2 col-sm-3">
         <p class="inf-donations">Situação da Doação</p>
         <p>${donationInfo.formatted_status}</p>
     </div>
 
-    <div class="pt-2 col-6">
+    <div class="pt-2 col-sm-6">
         <p class="inf-donations">Observações</p>
         <p> ${donationInfo.obeservation ? donationInfo.obeservation : '-'}</p>
     </div>
 
-    <div class="pt-2 col-6">
+    <div class="pt-2 col-sm-6 col-md-6">
         <p class="inf-donations">Instituição Beneficiada</p>
         <p>${donationInfo.institution_name ? donationInfo.institution_name : 'Doação Pública'}</p>
     </div>
