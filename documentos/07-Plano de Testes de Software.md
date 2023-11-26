@@ -39,20 +39,20 @@ Caso de Teste    | CT-4 - Verificar se alterações feitas no Painel referentes 
 Caso de Teste    | CT-5 - Verificar o login do usuário |
 |:---|:---|
 | Requisitos Associados | RF-35, RF-36 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | A funcionalidade deve permitir o login do usuários havendo diferença entre a conta do doador e da instituição. |
 | Passos | 1 - Acessar a página principal da funcionalidade <br> 2 - Clicar no botão "acessar" <br> 3 - Realizar o cadastro <br> 4 - Acessar usando e-mail e senha |
 | Critérios de êxito | Após o login, o usuário deverá ser redirecionado para sua página de doações.  |
-| Responsável pela elaborar do caso de Teste | Guilherme Radicchi |
+| Responsável pela elaborar do caso de Teste | Jéssica Reis |
 
 Caso de Teste    | CT-6 - Inclusão de informações na pagina "Sobre nós" |
 |:---|:---|
 | Requisitos Associados | RF-30, RF-17
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | A funcionalidade deve permitir a alteração dos dados incluídos na página sobre nós, através da conta de administrador |
 | Passos | 1 - Acessar como administrador <br> 2 - No painel geral clicar em "sobre nós" <br> 3 - Realizar a alteração em um dos campos <br> 4- Salvar a informação <br> 5 - verificar se a alteração foi realizada na pagina sobre nós |
 | Critérios de êxito | Após a alteração utilizando a contra de administrador a pagina sobre nos deverá exibir os textos informados com o usuário administrador. |
-| Responsável pela elaborar do caso de Teste | Guilherme Radicchi |
+| Responsável pela elaborar do caso de Teste | Jéssica Reis |
 
 Caso de Teste    | CT-7 - Verificar instituições cadastradas |
 |:---|:---|
