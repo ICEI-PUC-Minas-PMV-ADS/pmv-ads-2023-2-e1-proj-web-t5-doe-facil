@@ -85,6 +85,7 @@
 | RF-33 | O painel deve possuir uma página dedicada ao cadastro e edição de doações |
 | RF-34 | O painel deve possuir uma página de revisão referente às doações |
 | RF-35 | A ferramenta deve possuir usuários do tipo "Doador", "Instituição" e "Administrador" |
+| RF-36 | A ferramenta deve possuir uma página para acessar o painel e iniciar sessão |
 
 **Prioridade: Alta / Média / Baixa. 
 
