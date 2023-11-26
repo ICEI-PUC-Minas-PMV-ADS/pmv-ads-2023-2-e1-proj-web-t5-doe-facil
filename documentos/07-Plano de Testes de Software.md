@@ -3,7 +3,7 @@
 |Caso de Teste| CT-1 - Teste do Cadastro de Doações |
 |:---|:---|
 | Requisitos Associados | RF-05, RF-06, RF-08, RF-33 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | Testar cadastro das doações pelo Doador |
 | Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como doador (informações de login no console do navegador). <br> 3 - Clicar no item "Fazer Doações" no menu lateral. <br> 4 - Cadastrar as informações sobre as doações <br> 5 - finalizar a doação no botão "Cadastrar Doação e Fazer a Diferença!" |
 | Critérios de êxito | O usuário deve ser redirecionado para uma página com a visualização das informações da doação. |
@@ -57,7 +57,7 @@ Caso de Teste    | CT-6 - Inclusão de informações na pagina "Sobre nós" |
 Caso de Teste    | CT-7 - Verificar instituições cadastradas |
 |:---|:---|
 | Requisitos Associados | RF-07, RF-18, RF-04 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | A funcionalidade deve permitir a visualização das instituições cadastradas na plataforma |
 | Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em instituições <br> 3 - Verificar as instituições apresentadas |
 | Critérios de êxito | Após o cadastro de uma nova instituição as informações devem estar disponíveis na pagina de instituições |
@@ -111,7 +111,7 @@ Caso de Teste    | CT-12 - Alteração do titulo e descrição Painel Geral / Pe
 Caso de Teste    | CT-13 - Verificação data de coleta/perfil doador  |
 |:---|:---|
 | Requisitos Associados | RF-12 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | A funcionalidade  não deve permitir a inclusão de datas no passado.|
 | Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em fazer doação <br> 4 - Em cadastro de doação nos campos "coletar do dia", "ate o dia" inserir a data no passado <br> 5 - inserir demais informações para preenchimento do cadastro <br> 6- clicar em cadastrar doação.|
 | Critérios de êxito |  A página deverá apresentar uma mensagem de errado para datas menores do que a data atual.  | 
@@ -138,7 +138,7 @@ Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perf
 | Caso de Teste | CT-16 - Testar cadastros de Doador / Instituição |
 |:---|:---|
 | Requisitos Associados | RF-01, RF-02, RF-35 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | Deve ser testado ambos os cadastros presentes na pagina de acesso: Doador e Instituição |
 | Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Criar cadastro de Doador <br> 3 - O usuário será redirecionado para a página "Minhas Doações" <br> 4 - Clicar no botão de "Sair" <br> 5 - Fazer cadastro de Instituição |
 | Critérios de êxito | Apos o cadastro de ambos os perfis de usuário o usuário deve ser redirecionado para a página "Minhas Doações" com uma sessão criada do usuário que acabou de cadastrar. | 
@@ -147,7 +147,7 @@ Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perf
 | Caso de Teste | CT-17 - Testar visualização de doações da Instituição e ações disponíveis |
 |:---|:---|
 | Requisitos Associados | RF-09, RF-11, RF-34, RF-14 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | Deve ser testado a listagem de doações, visualziar informações da doação e testar aceite. |
 | Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como Instituição <br> 3 - Visualizar "Minhas Doações" <br> 4 - Clicar no botão Analisar de uma doação  <br> 5 - Conferir informações disponíveis <br> 6 - Clicar em aceitar doação. |
 | Critérios de êxito | Após o teste o usuário deve ter conseguido seguir todo o fluxo listado e a doção aparecer com estado de aceito na lsita de doações. | 
@@ -156,7 +156,7 @@ Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perf
 | Caso de Teste | CT-18 - Testar a criação de cards dinâmicos na página inicial |
 |:---|:---|
 | Requisitos Associados | RF-23 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | Deve ser testado a criação de cards na página inicial que servem para chamar a atenção do usuário para certos pontos ou páginas da plataforma. |
 | Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como Administrador <br> 3 - Visualizar "Painel Geral" <br> 4 - Criar um card no formulário específico  <br> 5 - Clicar em "Criar Card"|
 | Critérios de êxito | Após o teste, o Administrador deve ter conseguido criar um novo card na página inicial. | 
