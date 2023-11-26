@@ -79,7 +79,6 @@
 | RF-27 | A aplicação deve possuir um painel administrativo contendo um menu de navegação das páginas internas | Alta |
 | RF-28 | O painel da aplicação deve possuir uma área dedicada para a edição das informações da página inicial | Alta |
 | RF-30 | O painel deve possuir uma página dedicada a edição da página de "Sobre Nós" | Média |
-| RF-31 | O painel deve possuir uma página para alterar as informações do Doador e Instituição | Alta |
 | RF-32 | O painel deve possuir um formulário de edição de senha dos usuários | Alta |
 | RF-33 | O painel deve possuir uma página dedicada ao cadastro e edição de doações | Alta |
 | RF-34 | O painel deve possuir uma página de revisão referente às doações | Alta |
