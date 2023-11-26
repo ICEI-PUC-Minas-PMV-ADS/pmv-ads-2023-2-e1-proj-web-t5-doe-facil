@@ -18,38 +18,27 @@ Relatório com as evidências dos testes de software realizados na aplicação p
 |:---|:---|
 | Resultados obtidos | Êxito na execução. <br> Realizado o teste para verificar se as informações da "Dobra" (primeira chamada da página inicial, a descrição e o botão) correspondem às informações cadastradas no painel administrativo e de acordo com o teste executado, todas as funcionalidades foram testadas e realizadas com êxito.  |
 | Responsável pela execução do caso de Teste | Bárbara Figueiredo |
+
 https://drive.google.com/drive/folders/1BwnLnBXJ4KVAWyr22rpAmqGbMLUAZITk?usp=sharing
 
 |Caso de Teste    | CT-9 - Atualização de senha pelo usuário |
 |:---|:---|
 | Resultados obtidos |Êxito na execução. <br> Realizado o teste de alteração de senha, verificou-se que a plataforma permite a alteração de senha pelo usuário, após a senha alterada, caso o usuário preencha na página de acesso utilizando a senha antiga, a plataforma apresenta uma mensagem de erro "Usuário ou senha inválidos."|
 | Responsável pela execução do caso de Teste | Jéssica Reis |
-|[gif da execução]|
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/9ca2567e-6152-477f-8ef5-a50fec1f1e4a
-
-
-
-
-
-
-
 
 |Caso de Teste    |  CT-10 - Cadastro de depoimentos/usuário  |
 |:---|:---|
 | Resultados obtidos |Êxito na execução. <br> Realizado o teste inclusão de depoimento na página principal da aplicação,"|
 | Responsável pela execução do caso de Teste | Jéssica Reis |
-|[gif da execução]|
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/9e1f4bff-f631-43f5-89ec-221c0d495455
-
-
 
 |Caso de Teste    |  CT-11 - Exclusão de depoimentos/Usuário   |
 |:---|:---|
 | Resultados obtidos |Êxito na execução <br> Realizado o teste de exclusão do depoimento cadastrado, verificou-se que após excluido o depoimento deixa de aparecer na pagina principal, tanto para o doador quanto para as instituições.|
 | Responsável pela execução do caso de Teste | Jéssica Reis |
-|[gif da execução]|
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/bda54cb2-2c81-4921-9d1b-15b2a51dddaf
 
