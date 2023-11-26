@@ -106,15 +106,48 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 #### Instruções de acesso
 
 - Acessar a página inicial.
-- Os depoimentos estão listados e deverão aparecer um a um com a foto, nome e instituição do usuário que o escreveu, além da própria mensagem.
-   
+- Os depoimentos estão listados e deverão aparecer um a um com nome e tipo de usuário (doador ou instituição) que o escreveu, além da própria mensagem.
+
+![Página Inicial - Doe Fácil](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/f626f2b2-ca24-4ff4-8764-e4db35740cfd)
+![Inclusão de Depoimento - Doe Fácil](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/5f216653-0948-47e0-a055-b4ae9eaeb9a0)
+![Depoimento página inicial- Doe Fácil](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/a2026ee3-93b1-4ab7-a9dc-74358e2e8a20)
+
+
+#### Responsável
+
+Guilherme
+
+### Página Inicial
+
+![Página Inicial 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/2f473def-7efd-49da-a274-bb260a846303)
+
+![Página Inicial 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/991c501b-b3ea-4855-b7b3-fc7480a8e016)
+
+#### Requisito atendido
+
+- RF-23	A página inicial deve conter cards dinâmicos cadastraveis pelo painel.
+
+#### Artefatos da funcionalidade
+- index.html
+- /home/home.css
+- /home/home.js
+
+#### Instruções de acesso
+
+- Acessar a página inicial.
+- Os novos cards aparecerão alinhados com os já existentes e importarão as informações inseridas no formulário de criação de novos cards.
+
+![Card tese criado](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/65e1126f-2e7c-4340-8bc5-0737722c8ef6)
+
+
+
 #### Responsável
 
 - Guilherme
 
 ### Página com informações sobre a Doe Fácil.
 
-![Tela sobre nós - Doe Fácil](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/fe266aa9-b3ee-48e3-a489-ee978acc237c)
+![Tela sobre nós - Doe Fácil]
 
 #### Requisito atendido
 
