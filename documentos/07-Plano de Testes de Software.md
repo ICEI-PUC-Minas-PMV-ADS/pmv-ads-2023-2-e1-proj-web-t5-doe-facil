@@ -12,7 +12,7 @@
 |Caso de Teste    | CT-2 - Testar edição de edição de informações dos usuários |
 |:---|:---|
 | Requisitos Associados | RF-15, RF-16 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | Testar a alteração das informações do perfil de Doador e Instituição |
 | Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como doador e instituição (repetir passos). <br> 3 - Clicar no item do menu lateral "Meu Perfil" <br> 4 - Alterar os dados do formulário de Informações <br> 5 - Clicar em Salvar <br> 6 - Alterar a senha <br> 7 - Clicar em Salvar <br> 8 - Caso esteja com perfil de Instituição, alterar informações do formulário Extra <br> 9 - Clicar em Salvar  |
 | Critérios de êxito | Todos formulários devem emitir um alerta de confirmação da modificação. <br> Os formulário de Informações e Extra devem mantar as informações alteradas. <br> No caso da edição da senha, deve ser possível acessar o painel administrativo com a nova senha.   |
@@ -20,8 +20,8 @@
 
 Caso de Teste    | CT-3 - Verificar a funcionalidade do menu |
 |:---|:---|
-| Requisitos Associados | RF-24|
-| Estado do Teste | Não Feito |
+| Requisitos Associados | RF-24 |
+| Estado do Teste | Feito |
 | Objetivo do Teste | Verificar se os menus redirecionam o usuário para as paginas corretas. |
 | Passos | 1 - Acessar a página principal da funcionalidade <br> 2 - Clicar nas abas superiores <br> 3 - Verificar para qual pagina foi redirecionado |
 | Critérios de êxito | Todas as guias devem redirecionar o usuário para a pagina descrita.  |
@@ -30,7 +30,7 @@ Caso de Teste    | CT-3 - Verificar a funcionalidade do menu |
 Caso de Teste    | CT-4 - Verificar se alterações feitas no Painel referentes a "dobra" da página se reflete na página inicial |
 |:---|:---|
 | Requisitos Associados | RF-26, RF-28 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | Verificar se as informações da "Dobra" (primeira chamada da página inicial, a descrição e o botão correspondem às informações cadastradas no painel administrativo |
 | Passos | 1 - Acessar a página principal <br> 2 - Verificar as informações da dobra <br> 3 - Clicar em acessar no menu superior e acessar como Administrador (dados de acesso no console do navegador) <br> 4 - Clicar no menu laterar em "Painel Geral" <br> 5 - Alterar as informações referente a "Dobra da Página Inicial" <br> 6 - Acessar a página inicial pelo menu superiro <br> 7 - Verificar se as informações atualizadas no painel refletem com a página inicial. <br> OBS: Deve ser testado também se o redirecionamento está condizente com o endereço cadastrado no painel. |
 | Critérios de êxito | As informações alteradas no painel administrativo devem refletir na página inicial. |
@@ -75,7 +75,7 @@ Caso de Teste    | CT-8 - Verificar doações cadastradas  |
 Caso de Teste    | CT-9 - Atualização de senha pelo usuário/Doador  |
 |:---|:---|
 | Requisitos Associados | RF-15 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | A funcionalidade deve permitir a alteração da senha pelo usuário - doador|
 | Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
 | Critérios de êxito | Após o preenchimento da nova senha, o login do usuario deverá entrar com os novos parametros fornecidos pelo usuario. |
@@ -102,7 +102,7 @@ Caso de Teste    | CT-9.2 - Atualização de senha pelo usuário/Administrador |
 Caso de Teste    | CT-10 - Cadastro de depoimentos/usuário  |
 |:---|:---|
 | Requisitos Associados | RF-22 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | A funcionalidade deve permitir ao usuário o cadastro de depoimentos |
 | Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em depoimentos <br> 4 - Inserir um depoimento na caixa de texto <br> 5 - clicar em enviar depoimento.|
 | Critérios de êxito | Após o envio do depoimento, este deverá aparecer na tela inicial na seção depoimentos contendo o nome do usuário que enviou o depoimento  | 
@@ -111,7 +111,7 @@ Caso de Teste    | CT-10 - Cadastro de depoimentos/usuário  |
 Caso de Teste    | CT-11 - Exclusão de depoimentos/Usuário  |
 |:---|:---|
 | Requisitos Associados | RF-22 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | A funcionalidade deve permitir a exclusão do depoimento realizado pelo usuário|
 | Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em depoimentos <br> 4 - Inserir um depoimento na caixa de texto <br> 5 - clicar em enviar depoimento  <br> 6 - Logar como instituição <br> 7- Verificar na página inicial se existe depoimento cadastrado 	<br> 8 - Deslogar como instituição <br> 9 - Logar como doador e efetuar o passo 3 novamente, <br> 10 - Em meus depoimentos clicar em excluir.|
 | Critérios de êxito | Após excluído, o depoimento deixará de aparecer na tela inicial de todos os usuários da plataforma  | 
