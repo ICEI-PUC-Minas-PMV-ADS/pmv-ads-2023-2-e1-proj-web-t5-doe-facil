@@ -73,3 +73,24 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-faci
 | Responsável pela execução do caso de Teste | Carlos Roberto |
 | Links dos vídeos: | [Parte 1 - Páginas públicas e painel de Administrador](https://www.youtube.com/watch?v=SFAIN5m_x0I&ab_channel=Carlinhos) <br> [Parte 2 - Painel de Doador](https://www.youtube.com/watch?v=z427FWlFKlI&t=61s&ab_channel=Carlinhos) <br> [Parte 3 - Painel de Instituições](https://www.youtube.com/watch?v=UCUtWaexHyM&t=9s&ab_channel=Carlinhos)  |
 
+|Caso de Teste    |  CT-16.1 - Testar cadastros de Doador / Instituição   |
+|:---|:---|
+| Resultados obtidos |Erro na execução <br> Ao realizar os testes, no perfil de doador verificou-se que após o cadastro do doador a página redirecionou o usuário para o  acesso de administrador, comportamento não esperado (video 1). Prosseguindo com o teste, realizando o acesso inicial inserindo o e-mail e senha do novo perfil de doador cadastrado, verificou-se que a plataforma permite o acesso, porém a página não esta imprimindo na tela o nome do novo usuário cadastrado, mas sim o nome do usuario padrão cadrastrado no sistema. As informação apresentadas no sistema para o novo usuarios são referentes ao usuario padrão cadastrado.|
+| Responsável pela execução do caso de Teste | Jéssica Reis |
+
+|Caso de Teste    |  CT-16.2 - Testar cadastros de Doador / Instituição   |
+|:---|:---|
+| Resultados obtidos |Erro na execução <br> Ao realizar os testes, ao realizar o cadastro da nova instituição verificou-se que a plataforma permite o acesso da instituição, porém as informações apresentadas são referentes ao usuário da instituição padrão de teste. Prosseguindo com o teste, verificamos que a nova instituição passa aparecer na lista de instituições cadastradas, porém as informaçãoes de nome da instituição não estão sendo imprimidas na tela corretamente.
+| Responsável pela execução do caso de Teste | Jéssica Reis |
+
+
+VIDEO 1
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/3f8b5a29-9eeb-4826-bb03-c363b01d1e79
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/e7d710f7-d6c0-4585-ba34-9b58d5244ce3
+
+
+
+
