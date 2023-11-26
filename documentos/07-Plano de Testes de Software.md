@@ -65,37 +65,19 @@ Caso de Teste    | CT-7 - Verificar instituições cadastradas |
 
 Caso de Teste    | CT-8 - Verificar doações cadastradas  |
 |:---|:---|
-| Requisitos Associados | RF-13 |
+| Requisitos Associados | RF-13, RF-14 |
 | Estado do Teste | Não Feito |
 | Objetivo do Teste | A funcionalidade deve permitir a visualização das doações cadastradas pelo doador|
 | Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em minhas doações <br> 4 -Em ações clicar em visualizar .|
 | Critérios de êxito | Após o cadastro de uma nova doação, esta deverá estar disponivel para visualização no painel lateral na guia minhas doações |
 | Responsável pela elaborar do caso de Teste | Jéssica Reis |
 
-Caso de Teste    | CT-9 - Atualização de senha pelo usuário/Doador  |
+Caso de Teste    | CT-9 - Atualização de senha pelos usuários  |
 |:---|:---|
-| Requisitos Associados | RF-15 |
+| Requisitos Associados | RF-22 |
 | Estado do Teste | Feito |
 | Objetivo do Teste | A funcionalidade deve permitir a alteração da senha pelo usuário - doador|
-| Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
-| Critérios de êxito | Após o preenchimento da nova senha, o login do usuario deverá entrar com os novos parametros fornecidos pelo usuario. |
-| Responsável pela elaborar do caso de Teste |Jéssica Reis |
-
-Caso de Teste    | CT-9.1 - Atualização de senha pelo usuário/Instituição |
-|:---|:---|
-| Requisitos Associados | RF-15 |
-| Estado do Teste | Não Feito |
-| Objetivo do Teste | A funcionalidade deve permitir a alteração da senha pelo usuário - instituição|
-| Passos | 1 - Acessar como instituição <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
-| Critérios de êxito | Após o preenchimento da nova senha, o login do usuario deverá entrar com os novos parametros fornecidos pelo usuario. |
-| Responsável pela elaborar do caso de Teste |Jéssica Reis |
-
-Caso de Teste    | CT-9.2 - Atualização de senha pelo usuário/Administrador |
-|:---|:---|
-| Requisitos Associados | RF-32 |
-| Estado do Teste | Não Feito |
-| Objetivo do Teste | A funcionalidade deve permitir a alteração da senha pelo usuário - administrador|
-| Passos | 1 - Acessar como administrador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
+| Passos | 1 - Acessar como (Doador e Instituição, repetindo o processos) <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
 | Critérios de êxito | Após o preenchimento da nova senha, o login do usuario deverá entrar com os novos parametros fornecidos pelo usuario. |
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
@@ -117,7 +99,7 @@ Caso de Teste    | CT-11 - Exclusão de depoimentos/Usuário  |
 | Critérios de êxito | Após excluído, o depoimento deixará de aparecer na tela inicial de todos os usuários da plataforma  | 
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
-Caso de Teste    | CT-12 - Alteração do titulo e descrição Painel Geral/ Perfil Administrador  |
+Caso de Teste    | CT-12 - Alteração do titulo e descrição Painel Geral / Perfil Administrador  |
 |:---|:---|
 | Requisitos Associados | RF-03 |
 | Estado do Teste | Não Feito |
@@ -146,7 +128,7 @@ Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perf
 
 | Caso de Teste | CT-15 - Testar responsividade das páginas da aplicação |
 |:---|:---|
-| Requisitos Associados | RNF-02, RF-25, RF-27, RF-35 |
+| Requisitos Associados | RNF-02, RF-25, RF-27, RF-35, RF-21 |
 | Estado do Teste | Feito |
 | Objetivo do Teste | As páginas devem se adaptar em telas menores sem perder a usabilidade e apresentar problemas de legibilidade. |
 | Passos | 1 - Navegar na página inicial <br> 2 - Navegar no Sobre Nós <br> 3 - Navegar na lista de instituições <br> 4 - Navegar em uma página de instituição <br> 5 - Navegar pela página de acesso <br> 6 - Acessar painel como administrador e navegar pelas páginas internas do painel <br> 7 - Acessar painel como doador e navegar pelas páginas internas do painel <br> 8 - Acessar painel como instituição e navegar pelas páginas internas do painel. |
