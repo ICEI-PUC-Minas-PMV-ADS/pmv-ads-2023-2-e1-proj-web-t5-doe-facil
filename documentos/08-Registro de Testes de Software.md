@@ -61,4 +61,9 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-faci
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/bda54cb2-2c81-4921-9d1b-15b2a51dddaf
 
+|Caso de Teste | CT-15 - Testar responsividade das páginas da aplicação |
+|:---|:---|
+| Resultados obtidos | Foram testadas a responsividade de todas as telas, foram encontrados problemas pontuais em quase todas as telas, porém, considerando a quantidade de páginas, os resultados foram satisfatórios, já que em ambiente destkop, a maioria das telas tiveram bons resultado, apresentando problemas apenas no ambiente mobile e intermediário (tablet). <br> Por se tratarem de erros visuais, o vídeo deve ser utilizado com referência nas correções. |
+| Responsável pela execução do caso de Teste | Carlos Roberto |
+| Links dos vídeos: <br> Parte 1 - [Páginas públicas e painel de Administrador](https://www.youtube.com/watch?v=SFAIN5m_x0I&ab_channel=Carlinhos)|
 
