@@ -104,3 +104,9 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-faci
 | Resultados obtidos | Foi possível visualizar as doações feitas pelo usuário e executar todas as ações como instituição e doador. |
 | Responsável pela execução do caso de Teste | Carlos Roberto |
 | Links dos vídeos: | [Caso de Teste - CT17 - Parte 1 - Visualização de Doações e Ações - PUC Minas - Turma 5](https://www.youtube.com/watch?v=sDeRK1NR8B0&ab_channel=Carlinhos) <br> [Caso de Teste - CT17 - Parte 2 - Visualização de Doações e Ações - PUC Minas - Turma 5](https://www.youtube.com/watch?v=uVx36VIsFfI&ab_channel=Carlinhos) |
+
+|Caso de Teste | CT-18 - Testar visualização de doações da Instituição e ações disponíveis |
+|:---|:---|
+| Resultados obtidos | Foram encontrados erros tanto no cadastro do aministrador no campo de botão, quando na visualização das informações do botão e redirecionamento na página inicial. |
+| Responsável pela execução do caso de Teste | Carlos Roberto |
+| Links dos vídeos: | [Caso de Teste - CT18 - Testar cadastro e visualização de cards - PUC Minas - Turma 5](https://www.youtube.com/watch?v=EPKQE5_027Y&ab_channel=Carlinhos)|
