@@ -83,14 +83,14 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-faci
 | Resultados obtidos |Erro na execução <br> Ao realizar os testes, ao realizar o cadastro da nova instituição verificou-se que a plataforma permite o acesso da instituição, porém as informações apresentadas são referentes ao usuário da instituição padrão de teste. Prosseguindo com o teste, verificamos que a nova instituição passa aparecer na lista de instituições cadastradas, porém as informaçãoes de nome da instituição não estão sendo imprimidas na tela corretamente.
 | Responsável pela execução do caso de Teste | Jéssica Reis |
 
-
 VIDEO 1
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/3f8b5a29-9eeb-4826-bb03-c363b01d1e79
 
-
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/e7d710f7-d6c0-4585-ba34-9b58d5244ce3
 
-
-
-
+|Caso de Teste | CT-17 - Testar visualização de doações da Instituição e ações disponíveis |
+|:---|:---|
+| Resultados obtidos | Foi possível visualizar as doações feitas pelo usuário e executar todas as ações como instituição e doador. |
+| Responsável pela execução do caso de Teste | Carlos Roberto |
+| Links dos vídeos: | [Caso de Teste - CT17 - Parte 1 - Visualização de Doações e Ações - PUC Minas - Turma 5](https://www.youtube.com/watch?v=sDeRK1NR8B0&ab_channel=Carlinhos) <br> [Caso de Teste - CT17 - Parte 2 - Visualização de Doações e Ações - PUC Minas - Turma 5](https://www.youtube.com/watch?v=uVx36VIsFfI&ab_channel=Carlinhos) |
