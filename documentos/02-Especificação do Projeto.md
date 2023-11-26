@@ -71,27 +71,25 @@
 | RF-17 | A aplicação deve possuir uma página dedicada às informações da "Doe Fácil".  | Média |
 | RF-18 | A aplicação deve possuir uma página dedicada às informações das instituições cadastradas.  | Média |
 | RF-21 | A página inicial deve conter uma seção para visualização dos depoimentos dos usúarios. | Média |
-| RF-22 | A aplicação deve possibilitar o cadastro e exclusão de depoimentos |
-| RF-23 | A página inicial deve conter cards dinâmicos cadastraveis pelo painel |
-| RF-24 | Todas as páginas devem possuir um menu de navegação no topo da página |
-| RF-25 | Todas as páginas devem possuir um rodpé com links das páginas de informação e do painel, além de direitos autorais |
-| RF-26 | A página inicial deve conter uma chamada de ação para se tornar um doador (dobra da página) cadastrável pelo painel |
-| RF-27 | A aplicação deve possuir um painel administrativo contendo um menu de navegação das páginas internas |
-| RF-28 | O painel da aplicação deve possuir uma área dedicada para a edição das informações da página inicial |
-| RF-29 | O painel da aplicação deve possuir uma página dedicada ao cadastro de depoimentos |
-| RF-30 | O painel deve possuir uma página dedicada a edição da página de "Sobre Nós" |
-| RF-31 | O painel deve possuir uma página para alterar as informações do Doador e Instituição |
-| RF-32 | O painel deve possuir um formulário de edição de senha dos usuários |
-| RF-33 | O painel deve possuir uma página dedicada ao cadastro e edição de doações |
-| RF-34 | O painel deve possuir uma página de revisão referente às doações |
-| RF-35 | A ferramenta deve possuir usuários do tipo "Doador", "Instituição" e "Administrador" |
-| RF-36 | A ferramenta deve possuir uma página para acessar o painel e iniciar sessão |
+| RF-22 | A aplicação deve possibilitar o cadastro e exclusão de depoimentos | Baixa |
+| RF-23 | A página inicial deve conter cards dinâmicos cadastraveis pelo painel | Média |
+| RF-24 | Todas as páginas devem possuir um menu de navegação no topo da página | Alta |
+| RF-25 | Todas as páginas devem possuir um rodpé com links das páginas de informação e do painel, além de direitos autorais | Alta |
+| RF-26 | A página inicial deve conter uma chamada de ação para se tornar um doador (dobra da página) cadastrável pelo painel | Média |
+| RF-27 | A aplicação deve possuir um painel administrativo contendo um menu de navegação das páginas internas | Alta |
+| RF-28 | O painel da aplicação deve possuir uma área dedicada para a edição das informações da página inicial | Alta |
+| RF-29 | O painel da aplicação deve possuir uma página dedicada ao cadastro de depoimentos | Baixa |
+| RF-30 | O painel deve possuir uma página dedicada a edição da página de "Sobre Nós" | Média |
+| RF-31 | O painel deve possuir uma página para alterar as informações do Doador e Instituição | Alta |
+| RF-32 | O painel deve possuir um formulário de edição de senha dos usuários | Alta |
+| RF-33 | O painel deve possuir uma página dedicada ao cadastro e edição de doações | Alta |
+| RF-34 | O painel deve possuir uma página de revisão referente às doações | Alta |
+| RF-35 | A ferramenta deve possuir usuários do tipo "Doador", "Instituição" e "Administrador" | Alta |
+| RF-36 | A ferramenta deve possuir uma página para acessar o painel e iniciar sessão | Alta |
 
 **Prioridade: Alta / Média / Baixa. 
 
 ### Requisitos não Funcionais
-
-
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
 | RNF-01 | Os formulários de cadastro devem ser simples e de fácil entendimento, contendo apenas campos necessários. | Alta | 
