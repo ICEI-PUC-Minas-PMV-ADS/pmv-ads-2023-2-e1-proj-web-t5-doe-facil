@@ -24,10 +24,9 @@ Caso de Teste    | CT-3 - Verificar a funcionalidade do menu |
 | Critérios de êxito | Todas as guias devem redirecionar o usuário para a pagina descrita.  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
-
-Caso de Teste    | CT-4 - Verificar a funcionalidade dos botões "quero me tornar um doador" |
+Caso de Teste    | CT-4 - Verificar se alterações feitas no Painel referentes a "dobra" da página se reflete na página inicial |
 |:---|:---|
-| Requisitos Associados | RF-26, RF-27, RF-28|
+| Requisitos Associados | RF-26, RF-28|
 | Objetivo do Teste | Verificar se as informações da "Dobra" (primeira chamada da página inicial, a descrição e o botão correspondem às informações cadastradas no painel administrativo |
 | Passos | 1 - Acessar a página principal <br> 2 - Verificar as informações da dobra <br> 3 - Clicar em acessar no menu superior e acessar como Administrador (dados de acesso no console do navegador) <br> 4 - Clicar no menu laterar em "Painel Geral" <br> 5 - Alterar as informações referente a "Dobra da Página Inicial" <br> 6 - Acessar a página inicial pelo menu superiro <br> 7 - Verificar se as informações atualizadas no painel refletem com a página inicial. <br> OBS: Deve ser testado também se o redirecionamento está condizente com o endereço cadastrado no painel. |
 | Critérios de êxito | As informações alteradas no painel administrativo devem refletir na página inicial. |
@@ -35,7 +34,7 @@ Caso de Teste    | CT-4 - Verificar a funcionalidade dos botões "quero me torna
 
 Caso de Teste    | CT-5 - Verificar o login do usuário |
 |:---|:---|
-| Requisitos Associados | RF-, RF-|
+| Requisitos Associados | RF-35, RF-36 |
 | Objetivo do Teste | A funcionalidade deve permitir o login do usuários havendo diferença entre a conta do doador e da instituição. |
 | Passos | 1 - Acessar a página principal da funcionalidade <br> 2 - Clicar no botão "acessar" <br> 3 - Realizar o cadastro <br> 4 - Acessar usando e-mail e senha |
 | Critérios de êxito | Após o login, o usuário deverá ser redirecionado para sua página de doações.  |
@@ -53,7 +52,7 @@ Caso de Teste    | CT-7 - Verificar instituições cadastradas |
 |:---|:---|
 | Requisitos Associados | RF-07,RF-18 |
 | Objetivo do Teste | A funcionalidade deve permitir a visualização das instituições cadastradas na plataforma |
-| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em instituições <br> 3 - Verificar as instituições apresentadas |
+| Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em instituições <br> 3 - Verificar as instituições apresentadas |
 | Critérios de êxito | Após o cadastro de uma nova instituição as informações devem estar disponíveis na pagina de instituições |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
@@ -61,7 +60,7 @@ Caso de Teste    | CT-8 - Verificar doações cadastradas  |
 |:---|:---|
 | Requisitos Associados | RF-13|
 | Objetivo do Teste | A funcionalidade deve permitir a visualização das doações cadastradas pelo doador|
-| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em minhas doações <br> 4 -Em ações clicar em visualizar .|
+| Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em minhas doações <br> 4 -Em ações clicar em visualizar .|
 | Critérios de êxito | Após o cadastro de uma nova doação, esta deverá estar disponivel para visualização no painel lateral na guia minhas doações |
 | Responsável pela elaborar do caso de Teste | Jéssica Reis |
 
@@ -70,7 +69,7 @@ Caso de Teste    | CT-9 - Atualização de senha pelo usuário/Doador  |
 |:---|:---|
 | Requisitos Associados | RF-15|
 | Objetivo do Teste | A funcionalidade deve permitir a alteração da senha pelo usuário - doador|
-| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
+| Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
 | Critérios de êxito | Após o preenchimento da nova senha, o login do usuario deverá entrar com os novos parametros fornecidos pelo usuario. |
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
@@ -78,7 +77,7 @@ Caso de Teste    | CT-9.1 - Atualização de senha pelo usuário/Instituição |
 |:---|:---|
 | Requisitos Associados | RF-15|
 | Objetivo do Teste | A funcionalidade deve permitir a alteração da senha pelo usuário - instituição|
-| Passos | <br> 1 - Acessar como instituição <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
+| Passos | 1 - Acessar como instituição <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
 | Critérios de êxito | Após o preenchimento da nova senha, o login do usuario deverá entrar com os novos parametros fornecidos pelo usuario. |
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
@@ -86,7 +85,7 @@ Caso de Teste    | CT-9.2 - Atualização de senha pelo usuário/Administrador |
 |:---|:---|
 | Requisitos Associados | RF-32|
 | Objetivo do Teste | A funcionalidade deve permitir a alteração da senha pelo usuário - administrador|
-| Passos | <br> 1 - Acessar como administrador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
+| Passos | 1 - Acessar como administrador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em meu perfil <br> 4 - No formulário de atualizar senha preencher as informações solicitadas <br> 5 - clicar em salvar.|
 | Critérios de êxito | Após o preenchimento da nova senha, o login do usuario deverá entrar com os novos parametros fornecidos pelo usuario. |
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
@@ -95,7 +94,7 @@ Caso de Teste    | CT-10 - Cadastro de depoimentos/usuário  |
 |:---|:---|
 | Requisitos Associados | RF-22,|
 | Objetivo do Teste | A funcionalidade deve permitir ao usuário o cadastro de depoimentos |
-| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em depoimentos <br> 4 - Inserir um depoimento na caixa de texto <br> 5 - clicar em enviar depoimento.|
+| Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em depoimentos <br> 4 - Inserir um depoimento na caixa de texto <br> 5 - clicar em enviar depoimento.|
 | Critérios de êxito | Após o envio do depoimento, este deverá aparecer na tela inicial na seção depoimentos contendo o nome do usuário que enviou o depoimento  | 
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
@@ -103,7 +102,7 @@ Caso de Teste    | CT-11 - Exclusão de depoimentos/Usuário  |
 |:---|:---|
 | Requisitos Associados | RF-22, |
 | Objetivo do Teste | A funcionalidade deve permitir a exclusão do depoimento realizado pelo usuário|
-| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em depoimentos <br> 4 - Inserir um depoimento na caixa de texto <br> 5 - clicar em enviar depoimento  <br> 6 - Logar como instituição <br> 7- Verificar na página inicial se existe depoimento cadastrado 	<br> 8 - Deslogar como instituição <br> 9 - Logar como doador e efetuar o passo 3 novamente, <br> 10 - Em meus depoimentos clicar em excluir.|
+| Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em depoimentos <br> 4 - Inserir um depoimento na caixa de texto <br> 5 - clicar em enviar depoimento  <br> 6 - Logar como instituição <br> 7- Verificar na página inicial se existe depoimento cadastrado 	<br> 8 - Deslogar como instituição <br> 9 - Logar como doador e efetuar o passo 3 novamente, <br> 10 - Em meus depoimentos clicar em excluir.|
 | Critérios de êxito | Após excluído, o depoimento deixará de aparecer na tela inicial de todos os usuários da plataforma  | 
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
@@ -111,7 +110,7 @@ Caso de Teste    | CT-12 - Alteração do titulo e descrição-Painel Geral/ Per
 |:---|:---|
 | Requisitos Associados | RF-03, |
 | Objetivo do Teste | A funcionalidade deve permitir a alteração das informações do painel geral atraves do perfil de administrador. |
-| Passos | <br> 1 - Acessar como administrador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em painel geral <br> 4 - alterar informação de titulo  <br> 5 - alterar informações de descrição  <br> 6 - clicar em salvar.|
+| Passos | 1 - Acessar como administrador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em painel geral <br> 4 - alterar informação de titulo  <br> 5 - alterar informações de descrição  <br> 6 - clicar em salvar.|
 | Critérios de êxito | Após realizadas as alterações no titulo e na descrição, as informações alteradas deverão passar a aparecer para os perfis de doador e instituição  | 
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
@@ -119,7 +118,7 @@ Caso de Teste    | CT-13 - Verificação data de coleta/perfil doador  |
 |:---|:---|
 | Requisitos Associados | RF-12,|
 | Objetivo do Teste | A funcionalidade  não deve permitir a inclusão de datas no passado.|
-| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em fazer doação <br> 4 - Em cadastro de doação nos campos "coletar do dia", "ate o dia" inserir a data no passado <br> 5 - inserir demais informações para preenchimento do cadastro <br> 6- clicar em cadastrar doação.|
+| Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em fazer doação <br> 4 - Em cadastro de doação nos campos "coletar do dia", "ate o dia" inserir a data no passado <br> 5 - inserir demais informações para preenchimento do cadastro <br> 6- clicar em cadastrar doação.|
 | Critérios de êxito |  A página deverá apresentar uma mensagem de errado para datas menores do que a data atual.  | 
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
@@ -127,7 +126,7 @@ Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perf
 |:---|:---|
 | Requisitos Associados | RF-12,|
 | Objetivo do Teste | A funcionalidade não deve permitir o envio do formulario de cadastro  de doação, caso o campo endereço de coleta, número, complemento e bairro não estejam preenchidos.|
-| Passos | <br> 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em fazer doação <br> 4 - retirar informações dos campos: endereço de coleta, número, complemento e bairro <br> 5 - inserir demais informações para preenchimento do cadastro <br> 6- clicar em cadastrar doação.|
+| Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em fazer doação <br> 4 - retirar informações dos campos: endereço de coleta, número, complemento e bairro <br> 5 - inserir demais informações para preenchimento do cadastro <br> 6- clicar em cadastrar doação.|
 | Critérios de êxito | Após excluidos qualquer um dos campos:"endereço de coleta, número, complemento e bairro"  a funcionalidade não deve permitir o envio do formulário de cadastro de doação. | 
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
