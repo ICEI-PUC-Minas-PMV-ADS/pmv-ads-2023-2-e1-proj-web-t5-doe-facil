@@ -27,6 +27,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 |:---|:---|
 | Resultados obtidos | Êxito na execução. <br> Realizado o teste para verificar se as informações da "Dobra" (primeira chamada da página inicial, a descrição e o botão) correspondem às informações cadastradas no painel administrativo e de acordo com o teste executado, todas as funcionalidades foram testadas e realizadas com êxito.  |
 | Responsável pela execução do caso de Teste | Bárbara Figueiredo |
+https://drive.google.com/drive/folders/1BwnLnBXJ4KVAWyr22rpAmqGbMLUAZITk?usp=sharing
 
 |Caso de Teste    | CT-9 - Atualização de senha pelo usuário |
 |:---|:---|
