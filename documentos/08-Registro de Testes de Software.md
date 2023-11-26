@@ -39,6 +39,16 @@ https://drive.google.com/drive/folders/1BwnLnBXJ4KVAWyr22rpAmqGbMLUAZITk?usp=sha
 | Responsável pela execução do caso de Teste | Guilherme Radicchi |
 |[https://youtube.com/shorts/ZQx5ljrHJbY?feature=share]|
 
+|Caso de Teste    |  CT-07- Verificar instituições cadastradas   |
+|:---|:---|
+| Resultados obtidos |Êxito <br> Ao realizar os testes, verificamos que a plataforma apresenta a lista de instituições cadastradas, foi possivel identificar um erro indireto ao realizar o cadastro de uma nova instituição para teste, as informações apresentadas na tela de instituição apresenta o nome da nova instituição cadastrada, porém ao clicar em "quero saber mais" as informação apresentada na tela não refletem as informadas inseridas na página de cadastro.|
+| Responsável pela execução do caso de Teste | Jéssica Reis |
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/88330119-fcc6-452b-b5ae-3a464db8cffc
+
+
+
+
 |Caso de Teste    | CT-9 - Atualização de senha pelo usuário |
 |:---|:---|
 | Resultados obtidos |Êxito na execução. <br> Realizado o teste de alteração de senha, verificou-se que a plataforma permite a alteração de senha pelo usuário, após a senha alterada, caso o usuário preencha na página de acesso utilizando a senha antiga, a plataforma apresenta uma mensagem de erro "Usuário ou senha inválidos."|
