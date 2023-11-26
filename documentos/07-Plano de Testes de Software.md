@@ -16,7 +16,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 |:---|:---|
 | Requisitos Associados | RF-05, RF-06, RF-08, RF-33 |
 | Objetivo do Teste | Testar cadastro das doações pelo Doador |
-| Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como doador (informações de login no console do navegador). <br> 3 - Clicar no item "Fazer Doações" no menu lateral. <br> 4 - Cadastrar as informações sobre as doações 5 - finalizar a doação no botão "Cadastrar Doação e Fazer a Diferença!" |
+| Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como doador (informações de login no console do navegador). <br> 3 - Clicar no item "Fazer Doações" no menu lateral. <br> 4 - Cadastrar as informações sobre as doações <br> 5 - finalizar a doação no botão "Cadastrar Doação e Fazer a Diferença!" |
 | Critérios de êxito | O usuário deve ser redirecionado para uma página com a visualização das informações da doação. |
 | Responsável pela elaboração do caso de Teste | Carlos Roberto |
 
