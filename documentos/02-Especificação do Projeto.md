@@ -78,7 +78,6 @@
 | RF-26 | A página inicial deve conter uma chamada de ação para se tornar um doador (dobra da página) cadastrável pelo painel | Média |
 | RF-27 | A aplicação deve possuir um painel administrativo contendo um menu de navegação das páginas internas | Alta |
 | RF-28 | O painel da aplicação deve possuir uma área dedicada para a edição das informações da página inicial | Alta |
-| RF-29 | O painel da aplicação deve possuir uma página dedicada ao cadastro de depoimentos | Baixa |
 | RF-30 | O painel deve possuir uma página dedicada a edição da página de "Sobre Nós" | Média |
 | RF-31 | O painel deve possuir uma página para alterar as informações do Doador e Instituição | Alta |
 | RF-32 | O painel deve possuir um formulário de edição de senha dos usuários | Alta |
