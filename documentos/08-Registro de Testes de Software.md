@@ -2,6 +2,12 @@
 
 Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
 
+|Caso de Teste    | CT-1 - Testar do Cadastro de Doações |
+|:---|:---|
+| Resultados obtidos |Êxito na execução. <br> Realizado o teste de cadastro de doações. Ao final do cadastro, o usuário é redirecionado para a página com visualização das informações da doação|
+| Responsável pela execução do caso de Teste | Guilherme Radicchi |
+|[https://youtube.com/shorts/V9w1BLh8cIM?feature=share]|
+
 |Caso de Teste    | CT-2 - Testar edição de edição de informações dos usuários |
 |:---|:---|
 | Resultados obtidos |Êxito na execução. <br> Realizado o teste de alteração de informações do perfil do usuário e de alteração de senha. A plataforma permite a alteração de senha pelo usuário.|
