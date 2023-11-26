@@ -56,7 +56,7 @@ Caso de Teste    | CT-6 - Inclusão de informações na pagina "Sobre nós" |
 
 Caso de Teste    | CT-7 - Verificar instituições cadastradas |
 |:---|:---|
-| Requisitos Associados | RF-07,RF-18 |
+| Requisitos Associados | RF-07, RF-18, RF-04 |
 | Estado do Teste | Não Feito |
 | Objetivo do Teste | A funcionalidade deve permitir a visualização das instituições cadastradas na plataforma |
 | Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em instituições <br> 3 - Verificar as instituições apresentadas |
