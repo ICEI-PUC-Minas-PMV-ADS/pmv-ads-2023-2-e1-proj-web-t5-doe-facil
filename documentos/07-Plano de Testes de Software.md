@@ -43,7 +43,7 @@ Caso de Teste    | CT-5 - Verificar o login do usuário |
 | Objetivo do Teste | A funcionalidade deve permitir o login do usuários havendo diferença entre a conta do doador e da instituição. |
 | Passos | 1 - Acessar a página principal da funcionalidade <br> 2 - Clicar no botão "acessar" <br> 3 - Realizar o cadastro <br> 4 - Acessar usando e-mail e senha |
 | Critérios de êxito | Após o login, o usuário deverá ser redirecionado para sua página de doações.  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Responsável pela elaborar do caso de Teste | Guilherme Radicchi |
 
 Caso de Teste    | CT-6 - Inclusão de informações na pagina "Sobre nós" |
 |:---|:---|
@@ -52,7 +52,7 @@ Caso de Teste    | CT-6 - Inclusão de informações na pagina "Sobre nós" |
 | Objetivo do Teste | A funcionalidade deve permitir a alteração dos dados incluídos na página sobre nós, através da conta de administrador |
 | Passos | 1 - Acessar como administrador <br> 2 - No painel geral clicar em "sobre nós" <br> 3 - Realizar a alteração em um dos campos <br> 4- Salvar a informação <br> 5 - verificar se a alteração foi realizada na pagina sobre nós |
 | Critérios de êxito | Após a alteração utilizando a contra de administrador a pagina sobre nos deverá exibir os textos informados com o usuário administrador. |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Responsável pela elaborar do caso de Teste | Guilherme Radicchi |
 
 Caso de Teste    | CT-7 - Verificar instituições cadastradas |
 |:---|:---|
@@ -150,6 +150,14 @@ Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perf
 | Estado do Teste | Não Feito |
 | Objetivo do Teste | Deve ser testado a listagem de doações, visualziar informações da doação e testar aceite. |
 | Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como Instituição <br> 3 - Visualizar "Minhas Doações" <br> 4 - Clicar no botão Analisar de uma doação  <br> 5 - Conferir informações disponíveis <br> 6 - Clicar em aceitar doação. |
-| Critérios de êxito | Apos o teste o usuário deve ter conseguido seguir todo o fluxo listado e a doção aparecer com estado de aceito na lsita de doadços. | 
+| Critérios de êxito | Após o teste o usuário deve ter conseguido seguir todo o fluxo listado e a doção aparecer com estado de aceito na lsita de doações. | 
 | Responsável pela elaborar do caso de Teste | Carlos Roberto | 
 
+| Caso de Teste | CT-18 - Testar a criação de cards dinâmicos na página inicial |
+|:---|:---|
+| Requisitos Associados | RF-23 |
+| Estado do Teste | Não Feito |
+| Objetivo do Teste | Deve ser testado a criação de cards na página inicial que servem para chamar a atenção do usuário para certos pontos ou páginas da plataforma. |
+| Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como Administrador <br> 3 - Visualizar "Painel Geral" <br> 4 - Criar um card no formulário específico  <br> 5 - Clicar em "Criar Card"|
+| Critérios de êxito | Após o teste, o Administrador deve ter conseguido criar um novo card na página inicial. | 
+| Responsável pela elaborar do caso de Teste | Guilherme Radicchi | 
