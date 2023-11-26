@@ -139,7 +139,8 @@ Guilherme
 
 ### Página com informações sobre a Doe Fácil.
 
-![Tela sobre nós - Doe Fácil]
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/7d5eaa16-eb4b-4390-bf35-a44985d872c4)
+
 
 #### Requisito atendido
 
@@ -182,4 +183,26 @@ Na barra de navegação superior, clicar em "Instituições".
 
 #### Responsável
 Edmilson José
+
+
+### Formulário de revisão das doações
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/67a8aa9b-570d-4d76-a1c4-7835698d95bb)
+
+
+#### Requisito atendido
+
+- RF-34 O painel deve possuir uma página de revisão referente às doações.
+
+#### Artefatos da funcionalidade
+- /donaions/review/review.js
+- /public/js/donation.js
+
+#### Instruções de acesso
+
+- Acessar como doador, clicar em painel, minhas doações, visualizar.
+
+#### Responsável
+
+- Jéssica Reis
+
 
