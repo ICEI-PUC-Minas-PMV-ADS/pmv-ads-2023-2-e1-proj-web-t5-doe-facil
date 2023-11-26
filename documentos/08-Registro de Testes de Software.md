@@ -21,6 +21,18 @@ Relatório com as evidências dos testes de software realizados na aplicação p
 
 https://drive.google.com/drive/folders/1BwnLnBXJ4KVAWyr22rpAmqGbMLUAZITk?usp=sharing
 
+|Caso de Teste    | CT-5 - Verificar o login do usuário |
+|:---|:---|
+| Resultados obtidos | Êxito na execução. <br> Realizado o teste para verificar o login do usuário. Conforme demonstrado, é possível realizar o login, havendo diferença entre os perfis de "Doador" e "Instituição".|
+| Responsável pela execução do caso de Teste | Guilherme Radicchi |
+|[https://youtube.com/shorts/giKAE1ebpeQ?feature=share]|
+
+|Caso de Teste    | CT-6 - Inclusão de informações na pagina "Sobre nós" |
+|:---|:---|
+| Resultados obtidos | Êxito na execução. <br> Realizado o teste para inclusão de informações na página "Sobre Nós". Conforme demonstrado, é possível verificar que o Administrador pode editar as informações da página "Sobre Nós".|
+| Responsável pela execução do caso de Teste | Guilherme Radicchi |
+|[https://youtube.com/shorts/ZQx5ljrHJbY?feature=share]|
+
 |Caso de Teste    | CT-9 - Atualização de senha pelo usuário |
 |:---|:---|
 | Resultados obtidos |Êxito na execução. <br> Realizado o teste de alteração de senha, verificou-se que a plataforma permite a alteração de senha pelo usuário, após a senha alterada, caso o usuário preencha na página de acesso utilizando a senha antiga, a plataforma apresenta uma mensagem de erro "Usuário ou senha inválidos."|
