@@ -146,19 +146,28 @@ Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perf
 
 | Caso de Teste | CT-15 - Testar responsividade das páginas da aplicação |
 |:---|:---|
-| Requisitos Associados | RNF-02, RF-25, RF-27 |
+| Requisitos Associados | RNF-02, RF-25, RF-27, RF-35 |
 | Estado do Teste | Feito |
 | Objetivo do Teste | As páginas devem se adaptar em telas menores sem perder a usabilidade e apresentar problemas de legibilidade. |
 | Passos | 1 - Navegar na página inicial <br> 2 - Navegar no Sobre Nós <br> 3 - Navegar na lista de instituições <br> 4 - Navegar em uma página de instituição <br> 5 - Navegar pela página de acesso <br> 6 - Acessar painel como administrador e navegar pelas páginas internas do painel <br> 7 - Acessar painel como doador e navegar pelas páginas internas do painel <br> 8 - Acessar painel como instituição e navegar pelas páginas internas do painel. |
 | Critérios de êxito | Após navegar pelas páginas da aplicação, é esperado que todas páginas se adaptem em telas grande e menores. | 
 | Responsável pela elaborar do caso de Teste | Carlos Roberto |
 
-| Caso de Teste | CT-16 - Testar responsividade das páginas da aplicação |
+| Caso de Teste | CT-16 - Testar cadastros de Doador / Instituição |
 |:---|:---|
 | Requisitos Associados | RF-01, RF-02, RF-35 |
 | Estado do Teste | Não Feito |
 | Objetivo do Teste | Deve ser testado ambos os cadastros presentes na pagina de acesso: Doador e Instituição |
 | Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Criar cadastro de Doador <br> 3 - O usuário será redirecionado para a página "Minhas Doações" <br> 4 - Clicar no botão de "Sair" <br> 5 - Fazer cadastro de Instituição |
 | Critérios de êxito | Apos o cadastro de ambos os perfis de usuário o usuário deve ser redirecionado para a página "Minhas Doações" com uma sessão criada do usuário que acabou de cadastrar. | 
+| Responsável pela elaborar do caso de Teste | Carlos Roberto | 
+
+| Caso de Teste | CT-17 - Testar visualização de doações da Instituição e ações disponíveis |
+|:---|:---|
+| Requisitos Associados | RF-09, RF-11, RF-34, RF-14 |
+| Estado do Teste | Não Feito |
+| Objetivo do Teste | Deve ser testado a listagem de doações, visualziar informações da doação e testar aceite. |
+| Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Acessar como Instituição <br> 3 - Visualizar "Minhas Doações" <br> 4 - Clicar no botão Analisar de uma doação  <br> 5 - Conferir informações disponíveis <br> 6 - Clicar em aceitar doação. |
+| Critérios de êxito | Apos o teste o usuário deve ter conseguido seguir todo o fluxo listado e a doção aparecer com estado de aceito na lsita de doadços. | 
 | Responsável pela elaborar do caso de Teste | Carlos Roberto | 
 
