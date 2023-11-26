@@ -117,12 +117,12 @@ Caso de Teste    | CT-11 - Exclusão de depoimentos/Usuário  |
 | Critérios de êxito | Após excluído, o depoimento deixará de aparecer na tela inicial de todos os usuários da plataforma  | 
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
-Caso de Teste    | CT-12 - Alteração do titulo e descrição-Painel Geral/ Perfil Administrador  |
+Caso de Teste    | CT-12 - Alteração do titulo e descrição Painel Geral/ Perfil Administrador  |
 |:---|:---|
 | Requisitos Associados | RF-03 |
 | Estado do Teste | Não Feito |
-| Objetivo do Teste | A funcionalidade deve permitir a alteração das informações do painel geral atraves do perfil de administrador. |
-| Passos | 1 - Acessar como administrador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em painel geral <br> 4 - alterar informação de titulo  <br> 5 - alterar informações de descrição  <br> 6 - clicar em salvar.|
+| Objetivo do Teste | A funcionalidade deve permitir a alteração das informações do painel geral atraves do perfil de administrador e informações devem refletir na página inicial |
+| Passos | 1 - Acessar como administrador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em painel geral <br> 4 - alterar informação de titulo  <br> 5 - alterar informações de descrição  <br> 6 - clicar em salvar. <br> 7 - Acessa página inicial da ferramenta e verificar se informações foram refletidas |
 | Critérios de êxito | Após realizadas as alterações no titulo e na descrição, as informações alteradas deverão passar a aparecer para os perfis de doador e instituição  | 
 | Responsável pela elaborar do caso de Teste |Jéssica Reis |
 
