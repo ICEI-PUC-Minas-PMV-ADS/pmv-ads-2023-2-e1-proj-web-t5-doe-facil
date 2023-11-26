@@ -146,9 +146,19 @@ Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perf
 
 | Caso de Teste | CT-15 - Testar responsividade das páginas da aplicação |
 |:---|:---|
-| Requisitos Associados | RNF-02 |
+| Requisitos Associados | RNF-02, RF-25, RF-27 |
 | Estado do Teste | Feito |
 | Objetivo do Teste | As páginas devem se adaptar em telas menores sem perder a usabilidade e apresentar problemas de legibilidade. |
 | Passos | 1 - Navegar na página inicial <br> 2 - Navegar no Sobre Nós <br> 3 - Navegar na lista de instituições <br> 4 - Navegar em uma página de instituição <br> 5 - Navegar pela página de acesso <br> 6 - Acessar painel como administrador e navegar pelas páginas internas do painel <br> 7 - Acessar painel como doador e navegar pelas páginas internas do painel <br> 8 - Acessar painel como instituição e navegar pelas páginas internas do painel. |
 | Critérios de êxito | Após navegar pelas páginas da aplicação, é esperado que todas páginas se adaptem em telas grande e menores. | 
+| Responsável pela elaborar do caso de Teste | Carlos Roberto |
+
+| Caso de Teste | CT-16 - Testar responsividade das páginas da aplicação |
+|:---|:---|
+| Requisitos Associados | RF-01, RF-02, RF-35 |
+| Estado do Teste | Não Feito |
+| Objetivo do Teste | Deve ser testado ambos os cadastros presentes na pagina de acesso: Doador e Instituição |
+| Passos | 1 - Acessar a página de acesso no menu inicial <br> 2 - Criar cadastro de Doador <br> 3 - O usuário será redirecionado para a página "Minhas Doações" <br> 4 - Clicar no botão de "Sair" <br> 5 - Fazer cadastro de Instituição |
+| Critérios de êxito | Apos o cadastro de ambos os perfis de usuário o usuário deve ser redirecionado para a página "Minhas Doações" com uma sessão criada do usuário que acabou de cadastrar. | 
 | Responsável pela elaborar do caso de Teste | Carlos Roberto | 
+
