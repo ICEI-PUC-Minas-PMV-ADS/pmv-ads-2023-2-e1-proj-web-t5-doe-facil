@@ -4,7 +4,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 ### Formulário de Cadastro de Doações
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/7f00efec-9a31-4eb4-9ba6-a80ef9e29b45)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/3b97f416-aa05-4c79-b175-490512c8413e)
 
 #### Requisito atendido
 
@@ -26,8 +26,8 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 ### Edição das informações (Instituição e Doador)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/e47855df-5ad0-4465-9c54-1290df11647e)
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/386e9223-0774-4ee2-b7cd-62480288f43a)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/89fb011c-f9c7-4236-85a6-7874bb22f900)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/e4265013-618e-4d63-825d-35ee2309a389)
 
 #### Requisito atendido
 
@@ -48,8 +48,8 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 - Carlos Roberto
 
 ### Formulário de cadastro de Doador e Instituição
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/fe9cd485-df32-46b8-af31-dc6f339a84f6)
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/efe4bfd7-2a01-4cfe-a0e9-2b58dda6f587)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/01455ccb-4984-47f2-b3bb-27fdc013e5b0)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/27873036/5984f3ce-1918-4304-9e32-9d75eb3d21e1)
 
 #### Requisito atendido
 
