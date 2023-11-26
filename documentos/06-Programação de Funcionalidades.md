@@ -90,10 +90,6 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
   ### Página Inicial
 
-![Página Inicial 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/2f473def-7efd-49da-a274-bb260a846303)
-
-![Página Inicial 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/991c501b-b3ea-4855-b7b3-fc7480a8e016)
-
 #### Requisito atendido
 
 - RF-21	A página inicial deve conter uma seção para visualização dos depoimentos dos usúarios.
@@ -118,10 +114,6 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 Guilherme
 
 ### Página Inicial
-
-![Página Inicial 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/2f473def-7efd-49da-a274-bb260a846303)
-
-![Página Inicial 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/129530573/991c501b-b3ea-4855-b7b3-fc7480a8e016)
 
 #### Requisito atendido
 
