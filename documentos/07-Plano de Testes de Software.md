@@ -25,7 +25,7 @@ Caso de Teste    | CT-3 - Verificar a funcionalidade do menu |
 | Objetivo do Teste | Verificar se os menus redirecionam o usuário para as paginas corretas. |
 | Passos | 1 - Acessar a página principal da funcionalidade <br> 2 - Clicar nas abas superiores <br> 3 - Verificar para qual pagina foi redirecionado |
 | Critérios de êxito | Todas as guias devem redirecionar o usuário para a pagina descrita.  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Responsável pela elaborar do caso de Teste | 	Márcia Monique |
 
 Caso de Teste    | CT-4 - Verificar se alterações feitas no Painel referentes a "dobra" da página se reflete na página inicial |
 |:---|:---|
@@ -61,7 +61,7 @@ Caso de Teste    | CT-7 - Verificar instituições cadastradas |
 | Objetivo do Teste | A funcionalidade deve permitir a visualização das instituições cadastradas na plataforma |
 | Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em instituições <br> 3 - Verificar as instituições apresentadas |
 | Critérios de êxito | Após o cadastro de uma nova instituição as informações devem estar disponíveis na pagina de instituições |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Responsável pela elaborar do caso de Teste | 	Márcia Monique |
 
 Caso de Teste    | CT-8 - Verificar doações cadastradas  |
 |:---|:---|
@@ -102,7 +102,7 @@ Caso de Teste    | CT-11 - Exclusão de depoimentos/Usuário  |
 Caso de Teste    | CT-12 - Alteração do titulo e descrição Painel Geral / Perfil Administrador  |
 |:---|:---|
 | Requisitos Associados | RF-03 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | A funcionalidade deve permitir a alteração das informações do painel geral atraves do perfil de administrador e informações devem refletir na página inicial |
 | Passos | 1 - Acessar como administrador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em painel geral <br> 4 - alterar informação de titulo  <br> 5 - alterar informações de descrição  <br> 6 - clicar em salvar. <br> 7 - Acessa página inicial da ferramenta e verificar se informações foram refletidas |
 | Critérios de êxito | Após realizadas as alterações no titulo e na descrição, as informações alteradas deverão passar a aparecer para os perfis de doador e instituição  | 
@@ -120,7 +120,7 @@ Caso de Teste    | CT-13 - Verificação data de coleta/perfil doador  |
 Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perfil doador  |
 |:---|:---|
 | Requisitos Associados | RF-12 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | A funcionalidade não deve permitir o envio do formulario de cadastro  de doação, caso o campo endereço de coleta, número, complemento e bairro não estejam preenchidos.|
 | Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em fazer doação <br> 4 - retirar informações dos campos: endereço de coleta, número, complemento e bairro <br> 5 - inserir demais informações para preenchimento do cadastro <br> 6- clicar em cadastrar doação.|
 | Critérios de êxito | Após excluidos qualquer um dos campos:"endereço de coleta, número, complemento e bairro"  a funcionalidade não deve permitir o envio do formulário de cadastro de doação. | 
