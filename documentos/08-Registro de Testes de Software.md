@@ -73,12 +73,23 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-faci
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/bda54cb2-2c81-4921-9d1b-15b2a51dddaf
 
+|Caso de Teste    | CT-12 - Alteração do titulo e descrição Painel Geral / Perfil Administrador |
+|:---|:---|
+| Resultados obtidos | Êxito na execução. <br> Realizado o teste alteração do título e descrição. Conforme demonstrado, é possível verificar que o Administrador pode editar o título e descrição presentes na Dobra da página inicial.|
+| Responsável pela execução do caso de Teste | Guilherme Radicchi |
+|[https://youtu.be/ikvUTYSvxTw]|
 
 |Caso de Teste    | CT-13 - Verificação de data de coleta/perfil doador |
 |:---|:---|
 | Resultados obtidos |Erro na execução. <br> Realizado o teste de verificação de data de coleta. O sistema aceita a inclusão de limite de data de coleta no passado e deverá ser corrigido.|
 | Responsável pela execução do caso de Teste | Guilherme Radicchi |
 |[https://youtube.com/shorts/NAObJC21Bvc]|
+
+|Caso de Teste    | CT-14 - Verificação do endereço cadastro de doação/ perfil doador |
+|:---|:---|
+| Resultados obtidos | Êxito na execução. <br> Realizado o teste de obrigatoriedade do endereço ao realizar uma doação. Conforme demonstrado, é possível verificar que o Doador não pode cadastrar uma doação sem antes preencher corretamente as informações do seu endereço.|
+| Responsável pela execução do caso de Teste | Guilherme Radicchi |
+|[https://youtu.be/lVHKHtyn0wQ]|
 
 |Caso de Teste | CT-15 - Testar responsividade das páginas da aplicação |
 |:---|:---|
