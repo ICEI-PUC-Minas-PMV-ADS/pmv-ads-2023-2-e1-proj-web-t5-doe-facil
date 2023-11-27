@@ -89,7 +89,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-faci
 |:---|:---|
 | Resultados obtidos | Êxito na execução. <br> Realizado o teste de obrigatoriedade do endereço ao realizar uma doação. Conforme demonstrado, é possível verificar que o Doador não pode cadastrar uma doação sem antes preencher corretamente as informações do seu endereço.|
 | Responsável pela execução do caso de Teste | Guilherme Radicchi |
-|<iframe width="560" height="315" src="https://www.youtube.com/embed/lVHKHtyn0wQ?si=KdccbxbxuYy7uLU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>|
+|https://youtu.be/lVHKHtyn0wQ?si=nbvcv0eiQiIG9VPc|
 
 |Caso de Teste | CT-15 - Testar responsividade das páginas da aplicação |
 |:---|:---|
