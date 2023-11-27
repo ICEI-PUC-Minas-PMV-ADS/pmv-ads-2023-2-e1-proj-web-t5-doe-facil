@@ -46,8 +46,11 @@ https://drive.google.com/drive/folders/1BwnLnBXJ4KVAWyr22rpAmqGbMLUAZITk?usp=sha
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil/assets/144929767/88330119-fcc6-452b-b5ae-3a464db8cffc
 
-
-
+|Caso de Teste    |  CT-08- Verificar Doações Cadastradas   |
+|:---|:---|
+| Resultados obtidos |Êxito <br> Ao realizar os testes, verificamos que a plataforma apresenta corretamente a verificação das doações cadastradas.|
+| Responsável pela execução do caso de Teste | Márcia Monique |
+|[[https://youtube.com/shorts/ZQx5ljrHJbY?feature=share](https://youtu.be/PP07dsF7qVw)]|
 
 |Caso de Teste    | CT-9 - Atualização de senha pelo usuário |
 |:---|:---|
