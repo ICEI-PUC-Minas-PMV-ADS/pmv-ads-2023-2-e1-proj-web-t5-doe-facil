@@ -207,10 +207,36 @@ Edmilson José
 
 
 #### Informações sobre as instituiçoes 
-![image](C:\Users\marci\OneDrive\Imagens\Capturas de tela\Captura de tela funcionalidade.png)
 
+C:\Users\marci\OneDrive\Imagens\Capturas de tela\Captura de tela funcionalidade.png
 
 ### Requisito atendido
 
 -RF-04 A aplicação deve possuir uma página listando as Instituições com suas informações: nome, descrição, endereço, objetivos e informações de contato como site e telefones.
+
+### Artefato de funcionalidade 
+- about/index.html
+
+### Instruções de acesso 
+
+- Na barra de navegação clicar em insttuições, escolher uma instituição e clicar em saber mais.
+
+### Responsável
+
+- Monique
+
+### Exclusão de depoimento
+
+
+
+### Requisito atendido
+
+- RF-22 A aplicação deve possibilitar o cadastro e exclusão de depoimentos
+
+### Instruções de acesso
+- Clicar em fazer uma doação e clicar em depoimentos
+
+### Responsável
+
+-Monique
 
