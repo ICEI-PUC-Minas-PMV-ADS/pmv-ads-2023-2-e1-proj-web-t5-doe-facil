@@ -206,3 +206,11 @@ Edmilson José
 - Jéssica Reis
 
 
+#### Informações sobre as instituiçoes 
+C:\Users\marci\OneDrive\Imagens\Capturas de tela\Captura de tela funcionalidade.png
+
+
+### Requisito atendido
+
+-RF-04 A aplicação deve possuir uma página listando as Instituições com suas informações: nome, descrição, endereço, objetivos e informações de contato como site e telefones.
+
