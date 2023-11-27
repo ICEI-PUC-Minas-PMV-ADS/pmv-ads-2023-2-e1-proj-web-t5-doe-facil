@@ -66,7 +66,7 @@ Caso de Teste    | CT-7 - Verificar instituições cadastradas |
 Caso de Teste    | CT-8 - Verificar doações cadastradas  |
 |:---|:---|
 | Requisitos Associados | RF-13, RF-14 |
-| Estado do Teste | Não Feito |
+| Estado do Teste | Feito |
 | Objetivo do Teste | A funcionalidade deve permitir a visualização das doações cadastradas pelo doador|
 | Passos | 1 - Acessar como doador <br> 2 - No menu superior clicar em painel <br> 3 - No menu lateral clicar em minhas doações <br> 4 -Em ações clicar em visualizar .|
 | Critérios de êxito | Após o cadastro de uma nova doação, esta deverá estar disponivel para visualização no painel lateral na guia minhas doações |
