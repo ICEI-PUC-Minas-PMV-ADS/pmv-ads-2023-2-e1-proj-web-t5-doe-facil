@@ -208,32 +208,35 @@ export const _aboutSeed = () => {
 export const _cardSeed = () => {
     return [
         {
+            id: _createNewId('card'),
             title: 'Instituições',
             image: 'public/img/donate_1.png',
             description:
                 'Venha conhecer nossas Instituições parceiras! Nesta seção, você poderá descobrir o trabalho maravilhoso que elas fazem e de que forma você pode ajudar!',
-            button: 'Conhecer Instituições',
+            button_label: 'Conhecer Instituições',
             button_type: 'secondary',
             button_href: 'institutions',
             type: 'home',
         },
 
         {
+            id: _createNewId('card'),
             title: 'Sobre Nós',
             image: 'public/img/donate_2.png',
             description:
                 'Nascemos para facilitar a vida de quem deseja ajudar o próximo, mas nem sempre tem tempo de ir até uma Instituição ou, às vezes, nem mesmo conh...',
-            button: 'Saiba Mais!',
+            button_label: 'Saiba Mais!',
             button_type: 'secondary',
             button_href: 'about',
             type: 'home',
         },
 
         {
+            id: _createNewId('card'),
             title: 'Seja Um Doador',
             image: 'public/img/donate_1.png',
             description: '',
-            button: 'Fazer Doação!',
+            button_label: 'Fazer Doação!',
             button_type: 'primary',
             button_href: 'dashboard/donations/create',
             type: 'home',

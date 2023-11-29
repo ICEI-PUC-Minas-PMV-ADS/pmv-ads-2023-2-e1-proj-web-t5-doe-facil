@@ -24,7 +24,7 @@ export const $g_makeHomeCards = () => {
 
                     <img
                         src="${cardItem.image}"
-                        alt="Doações Caixa"
+                        alt="${cardItem.title}"
                     />
                 </div>
                 <div class="card__footer">
@@ -32,7 +32,7 @@ export const $g_makeHomeCards = () => {
                     <button
                         class="btn custom--${cardItem.button_type} btn--custom btn--100"
                     >
-                        ${cardItem.button}
+                        ${cardItem.button_label}
                         </button>
                 </div>
             </section>
@@ -75,10 +75,10 @@ function _updateTestimonyInfo(testimony) {
             <strong class="slide__author">
                 ${testimony.author_name}
             </strong>
-            <p>${testimony.author_type === 'donator' ? 'Doador' : 'Instituição' }</p>
+            <p class="slide__role">${testimony.author_type === 'donator' ? 'Doador' : 'Instituição' }</p>
 
             <blockquote class="slide__quote">
-                ${testimony.text}
+                "${testimony.text}"
             </blockquote>
         </div>
     `

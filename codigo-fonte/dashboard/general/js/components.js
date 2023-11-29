@@ -7,11 +7,12 @@ export const createCardItem = ({
     title,
     image,
     description,
-    button_text,
+    button_label,
     button_type,
+    button_href,
 }) => {
     const cardItem = document.createElement('div')
-    cardItem.classList = 'card__item'
+    cardItem.classList = 'panel_card__item'
     cardItem.id = 'card_' + id
 
     cardItem.innerHTML = `
@@ -19,8 +20,9 @@ export const createCardItem = ({
         <p>
             Descrição: ${description}<br/>
             Imagem: ${image}<br/>
-            Botão: ${button_text}<br/>
-            Tipo de Botão: ${button_type}
+            Botão: ${button_label}<br/>
+            Tipo de Botão: ${button_type}<br/>
+            Rota: ${button_href}
         </p>
 
         <button type="button" class="btn btn-danger btn-sm delete__button">
@@ -44,6 +46,7 @@ export const updateHomeCardList = () => {
     const cards = $g_getAllCards()
 
     for (const card of cards) {
+        console.log(card)
         cardsDiv.appendChild(createCardItem(card))
     }
 }

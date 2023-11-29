@@ -13,7 +13,8 @@ export const $g_createCard = ({
     title,
     image,
     description,
-    button_text,
+    button_label,
+    button_href,
     button_type = 'primary',
     type,
 }) => {
@@ -24,7 +25,8 @@ export const $g_createCard = ({
         title,
         image,
         description,
-        button_text,
+        button_href,
+        button_label,
         button_type,
         type,
     })

@@ -48,8 +48,16 @@
     font-size: 25px;
 }
 
+.slide__role {
+    color: #c3c3c3;
+    font-style: italic;
+}
+
 .slide__quote {
     margin-top: 10px;
+    font-size: 1.5em;
+    font-family: 'Lora', serif;
+    color: #d9aaaa;
 }
 
 .slides {
