@@ -67,7 +67,7 @@ export const $g_registerUser = (user) => {
         return $g_registerUser(user)
     }
 
-    user.id = _createNewId()
+    user.id = _createNewId('user')
     user.image = '../public/img/default.png'
     users.push(user)
 
