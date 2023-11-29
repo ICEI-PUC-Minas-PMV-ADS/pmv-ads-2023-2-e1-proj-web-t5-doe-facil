@@ -3,6 +3,10 @@
     --primary-color-dark: #6ac8a8;
 }
 
+.card__home {
+    background: #FFF;
+}
+
 .custom-navbar {
     background-color: var(--primary-color) !important;
 }
