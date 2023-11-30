@@ -1,5 +1,7 @@
 import { $g_getAboutInfo } from "../public/js/pagesInfo.js";
 import { $g_redirectTo } from "../public/js/global.js";
+import { $g_createTestimonySlides } from "../public/js/home.js"
+
 
 const pageInfo = $g_getAboutInfo()
 const pageInfoDiv = document.querySelector("#page-info");
@@ -32,4 +34,4 @@ buttonDonation.addEventListener('click', function(e) {
     $g_redirectTo('dashboard/donations/create')
 })
 
-
+$g_createTestimonySlides()
