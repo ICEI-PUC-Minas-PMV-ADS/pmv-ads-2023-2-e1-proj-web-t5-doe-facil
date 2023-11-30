@@ -212,27 +212,17 @@ export function $g_makeFooter() {
     footer.innerHTML = `
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-4 pb-4 footer__info">
+                <div class="col-12 col-lg-3 pb-4 footer__info">
                     <h3 class="footer__title">Navegação</h3>
                     <ul class="footer__links">
-                        <li><a href="#">Quero doar!</a></li>
-                        <li><a href="#">Instituições</a></li>
-                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="${PREFIX_URL + 'dashboard/donations/create'}">Quero doar!</a></li>
+                        <li><a href="${PREFIX_URL + 'about'}">Sobre nós</a></li>
+                        <li><a href="${PREFIX_URL + 'institutions'}">Instituições</a></li>
+                        <li><a href="${PREFIX_URL + 'login'}">Painel</a></li>
                     </ul>
                 </div>
 
-                <div class="col-12 col-lg-4 pb-4 footer__info">
-                    <h3 class="footer__title">Suporte</h3>
-                    <ul class="footer__links">
-                        <li><a href="#">Encontrou algum problema?</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Termos de uso</a></li>
-                        <li><a href="#">Política de privacidade</a></li>
-                        <li><a href="#">Ajuda</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-12 col-lg-4 pb-4 footer__info">
+                <div class="col-12 col-lg pb-4 footer__info">
                     <h3 class="footer__title">Sobre nós</h3>
                     <p>
                         Idealizada no ano de 2023, a Doe Fácil! é uma
@@ -240,7 +230,7 @@ export function $g_makeFooter() {
                         para pessoas que têm o desejo de doar algo e
                         instituições que precisam receber doações...
                     </p>
-                    <a href="#" class="footer__about">Saiba mais sobre nós!</a>
+                    <a href="${PREFIX_URL + 'about'}" class="footer__about">Saiba mais sobre nós!</a>
                 </div>
 
                 <div class="col-12 footer__copyright">
