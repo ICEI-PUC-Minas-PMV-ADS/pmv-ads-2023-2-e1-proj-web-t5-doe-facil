@@ -11,6 +11,11 @@
     --border-color: #eeeeee;
     --bs-list-group-border-color: var(--border-color);
     --footer-color: #f0afab;
+    color: #00000090;
+}
+
+.user__info p {
+    color: #FFF;
 }
 
 .p-top {
