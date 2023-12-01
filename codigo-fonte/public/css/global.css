@@ -245,12 +245,12 @@ body {
 .slide__header {
     color: #ef5da8;
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
 
 .slide__header h5 {
-    font-size: 30pt;
+    font-size: 36pt;
     font-weight: bold;
 }
 
@@ -322,4 +322,8 @@ body {
 
 .manual-btn:hover {
     background-color: #ef5da8;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ef5da860;
 }
