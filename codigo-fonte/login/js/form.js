@@ -9,6 +9,9 @@ const donatorForm = document.querySelector('#donator-form')
 const institutionForm = document.querySelector('#institution-form')
 const accessForm = document.querySelector('#access-form')
 
+const params = new URLSearchParams(window.location.search)
+const redirect = params.get('redirect')
+
 const _validateLogin = (payload) => {
     const users = $g_getAllUsers()
     const user = users.find(
@@ -23,14 +26,20 @@ export const submitCreateUser = (type) => {
     const formElement = type === 'donator' ? donatorForm : institutionForm
     const user = $g_registerUser($g_getFormInputs(formElement))
     $g_createSession(user.id, user.type)
-    $g_redirectTo('dashboard/donations')
+
+    let route = 'dashboard/donations'
+    if(redirect) route = redirect
+    $g_redirectTo(route)
 }
 
 export const submitLogin = () => {
     try {
         const user = _validateLogin($g_getFormInputs(accessForm))
         $g_createSession(user.id, user.type)
-        $g_redirectTo('dashboard/donations')
+
+        let route = 'dashboard/donations'
+        if(redirect) route = redirect
+        $g_redirectTo(route)
     } catch (e) {
         alert(e.message)
     }

@@ -1,6 +1,7 @@
 'use strict'
 
 import { $g_makeLateralMenu } from '../../../public/js/components.js'
+import { $g_checkPermissions } from '../../../public/js/permissions.js'
 import { $g_checkSession } from '../../../public/js/session.js'
 import {
     submitAboutForm,
@@ -8,6 +9,8 @@ import {
     submitForm,
 } from './form.js'
 import { mountForms } from './lifecycles.js'
+
+$g_checkPermissions('dashboard/profile')
 
 const donatorForm = document.querySelector('#donator-form')
 const institutionForm = document.querySelector('#institution-form')

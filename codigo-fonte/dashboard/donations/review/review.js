@@ -9,7 +9,9 @@ import {
 import { $g_makeLateralMenu } from '../../../public/js/components.js'
 import { $g_getSessionUserType } from '../../../public/js/session.js'
 import { $g_redirectTo } from '../../../public/js/global.js'
+import { $g_checkPermissions } from '../../../public/js/permissions.js'
 
+$g_checkPermissions('dashboard/donations')
 $g_makeLateralMenu('donation')
 
 const acceptButton = document.querySelector('#accept-button')

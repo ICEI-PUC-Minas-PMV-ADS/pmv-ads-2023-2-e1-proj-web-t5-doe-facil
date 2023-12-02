@@ -163,7 +163,7 @@ export function $g_makeMenu() {
 export const $g_makeLateralMenu = (activeItem) => {
     const user = $g_getSessionUser()
     const lateralMenu = document.getElementById('navbar-links')
-    if (!lateralMenu) return
+    if (!lateralMenu || !user || !user.type) return
 
     const lateralMenuListFiltered = lateralMenuList.filter((i) => {
         if (typeof i.permission === 'string')
@@ -215,9 +215,13 @@ export function $g_makeFooter() {
                 <div class="col-12 col-lg-3 pb-4 footer__info">
                     <h3 class="footer__title">Navegação</h3>
                     <ul class="footer__links">
-                        <li><a href="${PREFIX_URL + 'dashboard/donations/create'}">Quero doar!</a></li>
+                        <li><a href="${
+                            PREFIX_URL + 'dashboard/donations/create'
+                        }">Quero doar!</a></li>
                         <li><a href="${PREFIX_URL + 'about'}">Sobre nós</a></li>
-                        <li><a href="${PREFIX_URL + 'institutions'}">Instituições</a></li>
+                        <li><a href="${
+                            PREFIX_URL + 'institutions'
+                        }">Instituições</a></li>
                         <li><a href="${PREFIX_URL + 'login'}">Painel</a></li>
                     </ul>
                 </div>
@@ -230,7 +234,9 @@ export function $g_makeFooter() {
                         para pessoas que têm o desejo de doar algo e
                         instituições que precisam receber doações...
                     </p>
-                    <a href="${PREFIX_URL + 'about'}" class="footer__about">Saiba mais sobre nós!</a>
+                    <a href="${
+                        PREFIX_URL + 'about'
+                    }" class="footer__about">Saiba mais sobre nós!</a>
                 </div>
 
                 <div class="col-12 footer__copyright">

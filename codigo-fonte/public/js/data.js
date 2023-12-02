@@ -174,7 +174,7 @@ export const _usersSeed = () => {
 
 export const _firstSeed = () => {
     return {
-        title: 'A Sua Doação é Importante!',
+        title: 'Sua Doação é Importante!',
         description: 'Fortaleça as Insituições de Caridade da Sua Região!',
         image: 'public/img/logo.png',
         button: 'Quero me tornar um Doador',

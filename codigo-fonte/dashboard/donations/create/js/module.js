@@ -7,7 +7,7 @@ import { $g_checkDonatorPermissions } from '../../../../public/js/permissions.js
 import { addDonationFields, getFormInputs, submitForm } from './form.js'
 import { mountForm } from './lifecycles.js'
 
-$g_checkDonatorPermissions()
+$g_checkDonatorPermissions('dashboard/donations/create')
 $g_makeLateralMenu('create-donation')
 
 const form = document.querySelector('#donation-form')
