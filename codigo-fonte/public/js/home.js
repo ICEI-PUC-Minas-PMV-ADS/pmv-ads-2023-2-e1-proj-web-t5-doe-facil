@@ -72,14 +72,14 @@ function _updateTestimonyInfo(testimony) {
 
     testimonySlide.innerHTML = `
         <div class="slide">
-            <strong class="slide__author">
-                ${testimony.author_name}
-            </strong>
-            <p class="slide__role">${testimony.author_type === 'donator' ? 'Doador' : 'Instituição' }</p>
-
             <blockquote class="slide__quote">
                 "${testimony.text}"
             </blockquote>
+            
+            <strong class="slide__author">
+                ${testimony.author_name}
+            </strong>
+            <p class="slide__role">${testimony.author_type === 'donator' ? 'Doador da DoeFácil' : 'Instituição' }</p>
         </div>
     `
 }

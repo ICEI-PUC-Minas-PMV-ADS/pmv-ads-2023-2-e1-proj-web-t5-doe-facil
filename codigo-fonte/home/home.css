@@ -1,6 +1,7 @@
 * {
     --primary-color: #79d6b7;
     --primary-color-dark: #6ac8a8;
+    font-size: 1.05rem;
 }
 
 .card__info {
@@ -11,16 +12,23 @@
     font-weight: bold;
 }
 
-.faq__image img {
-    border-radius: 20px;
+.card__info p {
+    font-size: 1.1em;
 }
 
-.faq__accordion {
-    margin-top: 60px;
+.faq__image img {
+    border-radius: 20px;
+    
+}
+
+@media (max-width: 992px) {
+    .faq__image img {
+        margin-bottom: 3em;
+    }
 }
 
 .card__home {
-    background: #fff;
+    background: #eeeeee6e;
 }
 
 .custom-navbar {
@@ -41,17 +49,8 @@
 }
 
 .Titulo {
-    font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        'Segoe UI',
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        'Open Sans',
-        'Helvetica Neue',
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
         sans-serif;
     display: flex;
     font-weight: bold;
@@ -59,3 +58,17 @@
     color: #ef5da8;
 }
 
+.faq__title {
+    padding-bottom: .25em;
+    font-weight: bold;
+    font-size: 2.1em;
+}
+
+.first__text {
+    border-radius: 20px;
+    padding: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.025);
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    background-color: #FFF;
+}

@@ -11,7 +11,8 @@
     --border-color: #eeeeee;
     --bs-list-group-border-color: var(--border-color);
     --footer-color: #f0afab;
-    color: #00000090;
+    --text-color: #00000090;
+    color: var(--text-color);
 }
 
 .user__info p {
@@ -203,12 +204,20 @@ body {
     }
 }
 
+.custom--shadow {
+    border-bottom: 5px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
 .card__item {
     color: black;
     vertical-align: top;
-    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     border-radius: 15px;
+    margin-bottom: 2em;
 }
+
 
 .card__item img {
     width: 100%;
@@ -219,6 +228,10 @@ body {
     .card__item img {
         transform: scale(1) translateY(15px);
     }
+}
+
+.card__info {
+    margin-bottom: 1.5em;
 }
 
 .card__header {
@@ -242,11 +255,19 @@ body {
     font-size: 30px;
 }
 
+.home__benefits {
+    background-color: #FFF;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    padding: 2em;
+    padding-top: 4em;
+    margin-top: 4em;
+}
+
 .slide__header {
-    color: #ef5da8;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 35px;
+    margin-top: 8em;
 }
 
 .slide__header h5 {
@@ -255,7 +276,6 @@ body {
 }
 
 .slide__author {
-    color: #ef5da8;
     font-size: 25px;
 }
 
@@ -324,6 +344,12 @@ body {
     background-color: #ef5da8;
 }
 
+.accordion {
+    border-radius: var(--bs-accordion-inner-border-radius);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
 .accordion-button:not(.collapsed) {
     background-color: #ef5da860;
+    color: var(--text-color);
 }
