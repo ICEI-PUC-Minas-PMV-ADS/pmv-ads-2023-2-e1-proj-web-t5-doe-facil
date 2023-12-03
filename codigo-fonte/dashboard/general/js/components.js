@@ -46,7 +46,6 @@ export const updateHomeCardList = () => {
     const cards = $g_getAllCards()
 
     for (const card of cards) {
-        console.log(card)
         cardsDiv.appendChild(createCardItem(card))
     }
 }

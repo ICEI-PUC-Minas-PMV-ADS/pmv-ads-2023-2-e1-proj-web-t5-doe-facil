@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
@@ -47,7 +47,7 @@
                     <form id="donator-form" class="m-2 block__content">
                         <div class="row">
                             <div class="mb-3 col-12">
-                                <label for="dontator-name" class="form-label">
+                                <label for="donator_name" class="form-label">
                                     Nome completo
                                 </label>
 
@@ -57,10 +57,14 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="donator_name_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-12">
-                                <label for="dontator-cpf" class="form-label">
+                                <label for="donator_cpf" class="form-label">
                                     CPF
                                 </label>
 
@@ -70,11 +74,15 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="donator_cpf_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-12">
                                 <label
-                                    for="donator_bnirthdate"
+                                    for="donator_birthdate"
                                     class="form-label"
                                 >
                                     Data de nascimento
@@ -85,6 +93,10 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="donator_birthdate_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-8">
@@ -98,6 +110,10 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="donator_address_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-4">
@@ -110,10 +126,14 @@
 
                                 <input
                                     id="donator_address_number"
-                                    type="number"
+                                    type="text"
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="donator_address_number_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-12">
@@ -129,6 +149,10 @@
                                     type="text"
                                     class="form-control form_item"
                                 />
+                                <span
+                                    class="error__input"
+                                    id="donator_address_complement_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-6">
@@ -145,6 +169,10 @@
                                     type="text"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="donator_neighborhood_error_message"
+                                ></span>
                             </div>
                             <div class="mb-3 col-6">
                                 <label for="donator_cep" class="form-label">
@@ -157,10 +185,14 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="donator_cep_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-12">
-                                <label for="dontator_phone" class="form-label">
+                                <label for="donator_phone" class="form-label">
                                     Telefone
                                 </label>
 
@@ -170,6 +202,10 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="donator_phone_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-12">
@@ -183,6 +219,10 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="donator_email_error_message"
+                                ></span>
                             </div>
 
                             <div class="col-12 d-grid mt-3">
@@ -219,6 +259,10 @@
                                     type="text"
                                     class="form-control form_item"
                                 />
+                                <span
+                                    class="error__input"
+                                    id="institution_image_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-12">
@@ -235,6 +279,10 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="institution_name_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-12">
@@ -251,6 +299,10 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="institution_cnpj_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-8">
@@ -267,6 +319,10 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="institution_address_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-4">
@@ -279,10 +335,14 @@
 
                                 <input
                                     id="institution_address_number"
-                                    type="number"
+                                    type="text"
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="institution_address_number_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-12">
@@ -298,6 +358,10 @@
                                     type="text"
                                     class="form-control form_item"
                                 />
+                                <span
+                                    class="error__input"
+                                    id="institution_address_complement_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-6">
@@ -314,6 +378,10 @@
                                     type="text"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="institution_neighborhood_error_message"
+                                ></span>
                             </div>
                             <div class="mb-3 col-6">
                                 <label for="institution_cep" class="form-label">
@@ -326,11 +394,17 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="institution_cep_error_message"
+                                ></span>
                             </div>
 
-
                             <div class="mb-3 col-12">
-                                <label for="institution_phone" class="form-label">
+                                <label
+                                    for="institution_phone"
+                                    class="form-label"
+                                >
                                     Telefone
                                 </label>
 
@@ -340,6 +414,10 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="institution_phone_error_message"
+                                ></span>
                             </div>
 
                             <div class="mb-3 col-12">
@@ -356,6 +434,10 @@
                                     class="form-control form_item"
                                     required
                                 />
+                                <span
+                                    class="error__input"
+                                    id="institution_email_error_message"
+                                ></span>
                             </div>
 
                             <div class="col-12 d-grid mt-3">
@@ -401,6 +483,10 @@
                                         rows="4"
                                         required
                                     ></textarea>
+                                    <span
+                                        class="error__input"
+                                        id="institution_description_error_message"
+                                    ></span>
                                 </div>
 
                                 <div class="col-12 mb-3">
@@ -419,6 +505,10 @@
                                         rows="4"
                                         required
                                     ></textarea>
+                                    <span
+                                        class="error__input"
+                                        id="institution_role_error_message"
+                                    ></span>
                                 </div>
 
                                 <div class="col-12 mb-3">

@@ -4,6 +4,11 @@ import { $g_getFormInputs } from '../../public/js/form.js'
 import { $g_redirectTo } from '../../public/js/global.js'
 import { $g_createSession } from '../../public/js/session.js'
 import { $g_getAllUsers, $g_registerUser } from '../../public/js/user.js'
+import {
+    $g_clearElementListErrors,
+    $g_validateElementList,
+} from '../../public/js/validations.js'
+import { donatorValidationsForm, institutionValiationsForm } from './data.js'
 
 const donatorForm = document.querySelector('#donator-form')
 const institutionForm = document.querySelector('#institution-form')
@@ -23,12 +28,21 @@ const _validateLogin = (payload) => {
     return user
 }
 export const submitCreateUser = (type) => {
+    const validationList =
+        type === 'donator' ? donatorValidationsForm : institutionValiationsForm
+
+    $g_clearElementListErrors(
+        type === 'donator' ? institutionValiationsForm : donatorValidationsForm
+    )
+
+    if (!$g_validateElementList(validationList)) return
+
     const formElement = type === 'donator' ? donatorForm : institutionForm
     const user = $g_registerUser($g_getFormInputs(formElement))
     $g_createSession(user.id, user.type)
 
     let route = 'dashboard/donations'
-    if(redirect) route = redirect
+    if (redirect) route = redirect
     $g_redirectTo(route)
 }
 
@@ -38,7 +52,7 @@ export const submitLogin = () => {
         $g_createSession(user.id, user.type)
 
         let route = 'dashboard/donations'
-        if(redirect) route = redirect
+        if (redirect) route = redirect
         $g_redirectTo(route)
     } catch (e) {
         alert(e.message)

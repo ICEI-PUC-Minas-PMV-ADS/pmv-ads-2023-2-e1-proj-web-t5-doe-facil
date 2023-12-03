@@ -352,3 +352,9 @@ body {
     background-color: #ef5da860;
     color: var(--text-color);
 }
+
+.error__input {
+    padding-top: 5px;
+    color: #dc3545;
+    font-size: .9em;
+}

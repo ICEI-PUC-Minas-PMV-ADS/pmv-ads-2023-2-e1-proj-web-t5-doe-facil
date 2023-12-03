@@ -1,8 +1,16 @@
 'use strict'
 
-import { $g_getFormInputs } from "../../../public/js/form.js"
-import { $g_getSessionUser } from "../../../public/js/session.js"
-import { $g_updateUserInfo } from "../../../public/js/user.js"
+import {
+    donatorValidationsForm,
+    institutionValiationsForm,
+} from '../../../login/js/data.js'
+import { $g_getFormInputs } from '../../../public/js/form.js'
+import { $g_getSessionUser } from '../../../public/js/session.js'
+import { $g_updateUserInfo } from '../../../public/js/user.js'
+import {
+    $g_clearElementListErrors,
+    $g_validateElementList,
+} from '../../../public/js/validations.js'
 
 export const submitChangePasswordForm = (form) => {
     const user = $g_getSessionUser()
@@ -46,6 +54,20 @@ export const submitAboutForm = (form) => {
 
 export const submitForm = (form) => {
     const inputs = $g_getFormInputs(form)
+
+    const validationList =
+        inputs.type === 'donator'
+            ? donatorValidationsForm
+            : institutionValiationsForm
+
+    $g_clearElementListErrors(
+        inputs.type === 'donator'
+            ? institutionValiationsForm
+            : donatorValidationsForm
+    )
+
+    if (!$g_validateElementList(validationList)) return
+
     $g_updateUserInfo(inputs)
 
     alert('Informações salvas com sucesso!')
