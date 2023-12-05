@@ -1,6 +1,6 @@
 import { injectInstitutionsOptions, resetDonationFields } from "./form.js";
 import { injectFormDraft } from "./draft.js";
-import { $g_getDonationById } from "../../../../public/js/donation.js";
+import { $g_deleteDonationDraft, $g_getDonationById } from "../../../../public/js/donation.js";
 
 export class DonationForm {
     elementForm;
@@ -21,8 +21,16 @@ export class DonationForm {
     mount() {
         injectInstitutionsOptions();
         resetDonationFields(this.donationElementField);
+        
+        if (this.#pageParams.institutionId) {
+            const institutionSelect = document.getElementById("institution");
+            institutionSelect.value = this.#pageParams.institutionId;
 
+            $g_deleteDonationDraft()
+        }
+        
         if (!this.#donation) return injectFormDraft(this.donationElementField);
+
 
         this.#addHiddenMetadataInputs();
 
@@ -38,7 +46,8 @@ export class DonationForm {
     #getPageParams() {
         const params = new URLSearchParams(window.location.search);
         const id = params.get("id");
-        return { id };
+        const institutionId = params.get("institutionId");
+        return { id, institutionId };
     }
 
     #getDonation() {

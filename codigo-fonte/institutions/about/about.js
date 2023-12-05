@@ -37,7 +37,7 @@ function makeAboutInfo() {
     `
     textContainer.querySelector('button').addEventListener('click', (e) => {
         e.preventDefault()
-        $g_redirectTo('dashboard/donations/create')
+        $g_redirectTo(`dashboard/donations/create/?institutionId=${institution.id}`)
     })
 }
 

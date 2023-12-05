@@ -8,7 +8,15 @@ import { $g_addValidationElementWatch } from "../../../../public/js/validations.
 import { addDonationFields, getFormInputs, submitForm } from "./form.js";
 import { DonationForm } from "./lifecycles.js";
 
-$g_checkDonatorPermissions("dashboard/donations/create");
+const params = new URLSearchParams(window.location.search);
+const institutionId = params.get("institutionId");
+
+$g_checkDonatorPermissions(
+    `dashboard/donations/create${
+        institutionId ? `/?institutionId=${institutionId}` : ""
+    }`
+);
+
 $g_makeLateralMenu("create-donation");
 
 const donationForm = new DonationForm();

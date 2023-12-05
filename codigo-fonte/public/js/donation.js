@@ -165,7 +165,10 @@ export const $g_getDonationById = function (id) {
 }
 
 export const $g_getDonationDraft = () => {
-    const { id: userId } = $g_getSessionUser()
+    const session = $g_getSessionUser()
+    if(!session) return 
+
+    const { id: userId } = session
     const drafts = JSON.parse(localStorage.getItem('donation_drafts'))
 
     if (!drafts || !drafts.length) return null
@@ -174,6 +177,10 @@ export const $g_getDonationDraft = () => {
 
     if (index === -1) return null
     return drafts[index]
+}
+
+export const $g_deleteDonationDraft = () => {
+    localStorage.removeItem('donation_drafts')
 }
 
 export const $g_acceptDonation = (id) => {
