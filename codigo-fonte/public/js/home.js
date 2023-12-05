@@ -57,7 +57,7 @@ export function $g_updateHomeFirstInfo() {
 
     firstImage.src = firstInfo.image
     firstTitle.textContent = firstInfo.title
-    firstDescription.textContent = firstInfo.description
+    firstDescription.innerHTML = firstInfo.description
     firstButton.textContent = firstInfo.button
     firstButton.classList = `btn custom--${firstInfo.button_type}`
 

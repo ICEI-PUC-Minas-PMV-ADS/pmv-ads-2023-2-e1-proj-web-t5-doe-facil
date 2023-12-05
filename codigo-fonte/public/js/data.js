@@ -299,7 +299,7 @@ export const _usersSeed = () => {
 export const _firstSeed = () => {
     return {
         title: "Sua Doação é Importante!",
-        description: "Fortaleça as Instituições de Caridade da Sua Região!",
+        description: `Fortaleça as Instituições de Caridade da Sua Região! <br><br> <strong>Atenção:</strong> Essa aplicação foi desenvolvida para um <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-doe-facil" target=\"_blank\">projeto de faculdade</a>, ou seja, o cadastros de usuários e doações não terão reflexo na vida real.`,
         image: "public/img/logo.png",
         button: "Quero me tornar um Doador",
         button_type: "secondary",
