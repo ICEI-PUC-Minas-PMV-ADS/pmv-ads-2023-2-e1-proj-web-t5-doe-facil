@@ -22,7 +22,7 @@ export class DonationForm {
         injectInstitutionsOptions();
         resetDonationFields(this.donationElementField);
 
-        if (!this.#donation) injectFormDraft(this.donationElementField);
+        if (!this.#donation) return injectFormDraft(this.donationElementField);
 
         this.#addHiddenMetadataInputs();
 
