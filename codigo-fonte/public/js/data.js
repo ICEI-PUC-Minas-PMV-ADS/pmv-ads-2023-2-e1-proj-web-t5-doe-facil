@@ -367,3 +367,21 @@ export const _cardSeed = () => {
         },
     ];
 };
+
+export const _testimonySeed = () => [
+    {
+        id: _createNewId("testimony"),
+        text: "A experiência ao usar a aplicação de doações foi incrível! A interface é intuitiva, o que torna muito simples encontrar instituições de caridade para apoiar. A variedade de causas é impressionante, o que me permitiu escolher aquela que mais ressoa comigo. Além disso, o processo de doação é rápido e seguro. Estou feliz por poder contribuir de forma tão fácil para causas que acredito.",
+        author: 2,
+    },
+    {
+        id: _createNewId("testimony"),
+        text: "Estou bastante satisfeito com a aplicação de doações. Encontrei diversas instituições e projetos que realmente fazem a diferença. O que mais me impressionou foi a transparência das informações fornecidas sobre como o dinheiro é utilizado por cada instituição. Isso me deu confiança para doar sabendo que meu apoio está sendo bem direcionado.",
+        author: 3,
+    },
+    {
+        id: _createNewId("testimony"),
+        text: "A aplicação de doações é uma ferramenta maravilhosa para quem deseja fazer a diferença. A facilidade de navegação e a diversidade de opções de caridade são ótimas. Além disso, o acompanhamento do impacto das doações é bastante informativo. Sinto-me conectado e parte do impacto positivo que cada doação proporciona.",
+        author: 4,
+    },
+];
