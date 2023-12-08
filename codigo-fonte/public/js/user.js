@@ -58,7 +58,8 @@ export const $g_createUsersTable = () => {
     if (!table) table = _usersSeed();
     $g_updateUsers(
         table.map((u) => {
-            if (!u.image) u.image = "../public/img/default.png";
+            if (!u.image && u.type === "institution")
+                u.image = "../public/img/default.png";
             return u;
         })
     );
@@ -68,12 +69,17 @@ export const $g_registerUser = (user) => {
     let users = JSON.parse(localStorage.getItem("users"));
 
     if (!users) {
+        console.log("dei");
         $g_createUsersTable();
         return $g_registerUser(user);
     }
 
     user.id = _createNewId("user");
-    user.image = "../public/img/default.png";
+
+    if (user.type === "institution") {
+        user.image = user.image ? user.image : "../public/img/default.png";
+    }
+
     users.push(user);
 
     localStorage.setItem("users", JSON.stringify(users));
