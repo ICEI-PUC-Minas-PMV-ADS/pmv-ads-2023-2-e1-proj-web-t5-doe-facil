@@ -36,7 +36,7 @@ O projeto "Doe Fácil", é uma plataforma que tem como finalidade facilitar a re
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+[Doe Fácil](https://projeto-doe-facil.netlify.app) 
 
 # Código-Fonte
 
