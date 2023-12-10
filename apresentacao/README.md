@@ -26,7 +26,7 @@ A equipe também deverá gravar um vídeo de, no máximo, três minutos, com a a
 > - formato mp4.
 
 <video width="320" height="240" controls>
-  <source src="doe_facil_video.mp4" type="video/mp4">
+  <source src="./doe_facil_video.mp4" type="video/mp4">
 </video>
 
 ## Hospedagem
