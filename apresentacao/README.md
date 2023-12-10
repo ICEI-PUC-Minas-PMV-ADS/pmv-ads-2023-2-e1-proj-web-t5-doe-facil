@@ -1,34 +1,18 @@
 # Apresentação do Projeto
 
 ## Conjunto de Slides
-
-A apresentação do projeto consiste na geração de um conjunto de slides em um arquivo no formato ppt, pptx ou pdf, contemplando os seguintes itens:
-
-> - Contexto (Problema, Público-alvo)
-> - Requisitos
-> - Solução Implementada (funcionalidades de software)
-> - Conclusão da elaboração do projeto (pontos positivos, desafios, aprendizado).
-
-[Adicione pdf de apresentação.]
-
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
+[Adicionar slide aqui...]
 
 ## Vídeo de apresentação
 
-A equipe também deverá gravar um vídeo de, no máximo, três minutos, com a apresentação da solução. Vocês deverão abrir a aplicação hospedada e apresentar o seu funcionamento.  Poderão ser utilizados quaisquer recursos na montagem do vídeo, mas não se esqueçam de mostrar as funcionalidades da aplicação. Seguem as especificações técnicas que devem ser obedecidas na geração do vídeo:
+Endereço do Vídeo: https://www.youtube.com/watch?v=1Il-hChhdww
 
-> - tamanho do arquivo limitado a 90Mb
-> - taxa de FPS limitada a 30 quadros por segundo
-> - resolução HD (720p) ou Full HD (1080p)
-> - formato mp4.
+[![Doe Fácil](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1Il-hChhdww%26ab_channel%3DCarlinhos)](https://www.youtube.com/watch?v=1Il-hChhdww&ab_channel=Carlinhos)
 
-<video width="320" height="240" controls>
-  <source src="./doe_facil_video.mp4" type="video/mp4">
-</video>
+**OBS:** Como não foi possível fazer o upload do vídeo pelo Github, já que o máximo hoje (12/10/2023) é apenas 10MB e não 90MB como especificado no projeto, o upload foi feito de forma pública pelo YouTube. 
+
+O vídeo está disponível para download nesse mesmo diretório.
 
 ## Hospedagem
 
-[Adicione o endereço eletrônico público onde o site encontra-se hospedado.]
+[projeto-doe-facil.netlify.app](https://projeto-doe-facil.netlify.app)
