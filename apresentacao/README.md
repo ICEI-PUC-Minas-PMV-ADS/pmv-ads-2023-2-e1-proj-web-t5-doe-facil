@@ -15,4 +15,4 @@ O vídeo está disponível para download nesse mesmo diretório.
 
 ## Hospedagem
 
-[projeto-doe-facil.netlify.app](https://projeto-doe-facil.netlify.app)
+Acesso: [projeto-doe-facil.netlify.app](https://projeto-doe-facil.netlify.app)

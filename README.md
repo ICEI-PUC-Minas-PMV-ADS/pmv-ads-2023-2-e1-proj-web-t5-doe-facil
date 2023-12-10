@@ -2,7 +2,7 @@
 
 Tecnologia em Análise e Desenvolvimento de Sistemas - PUC Minas
 
-Desenvolvimento de aplicação Web Front-and
+Desenvolvimento de aplicação Web Front-End
 
    2º SEMESTRE/2023
 
@@ -36,7 +36,7 @@ O projeto "Doe Fácil", é uma plataforma que tem como finalidade facilitar a re
 
 # Hospedagem
 
-[Doe Fácil](https://projeto-doe-facil.netlify.app) 
+Acesso: [projeto-doe-facil.netlify.app](https://projeto-doe-facil.netlify.app)
 
 # Código-Fonte
 
