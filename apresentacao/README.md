@@ -25,7 +25,9 @@ A equipe também deverá gravar um vídeo de, no máximo, três minutos, com a a
 > - resolução HD (720p) ou Full HD (1080p)
 > - formato mp4.
 
-[Adicione vídeo de apresentação.]
+<video width="320" height="240" controls>
+  <source src="doe_facil_video.mp4" type="video/mp4">
+</video>
 
 ## Hospedagem
 
