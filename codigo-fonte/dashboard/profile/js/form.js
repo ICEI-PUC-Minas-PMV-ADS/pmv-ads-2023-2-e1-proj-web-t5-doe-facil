@@ -1,9 +1,5 @@
 'use strict'
 
-import {
-    donatorValidationsForm,
-    institutionValiationsForm,
-} from '../../../login/js/data.js'
 import { $g_getFormInputs } from '../../../public/js/form.js'
 import { $g_getSessionUser } from '../../../public/js/session.js'
 import { $g_updateUserInfo } from '../../../public/js/user.js'
@@ -11,6 +7,7 @@ import {
     $g_clearElementListErrors,
     $g_validateElementList,
 } from '../../../public/js/validations.js'
+import { donatorProfileValidations, institutionProfileValidations } from './data.js'
 
 export const submitChangePasswordForm = (form) => {
     const user = $g_getSessionUser()
@@ -27,6 +24,7 @@ export const submitChangePasswordForm = (form) => {
     }
 
     $g_updateUserInfo({ password: inputs.new })
+    form.reset()
     alert('Senha alterada com sucesso!')
 }
 
@@ -57,14 +55,10 @@ export const submitForm = (form) => {
 
     const validationList =
         inputs.type === 'donator'
-            ? donatorValidationsForm
-            : institutionValiationsForm
+            ? donatorProfileValidations
+            : institutionProfileValidations
 
-    $g_clearElementListErrors(
-        inputs.type === 'donator'
-            ? institutionValiationsForm
-            : donatorValidationsForm
-    )
+    $g_clearElementListErrors([...institutionProfileValidations, ...donatorProfileValidations])
 
     if (!$g_validateElementList(validationList)) return
 
