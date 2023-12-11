@@ -53,7 +53,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Diagramas de Fluxo                  | Miro                               | [Diagramas](https://miro.com/app/board/uXjVMkgPJdw=/?share_link_id=827497143826)                            |
 | Projeto de Interface                | Figma                              | [Protótipo](https://www.figma.com/file/dqXg8pCxWnpWswyVefzP4s/Figma-basics?type=design&node-id=1669-162202&mode=design&t=E90eBQ5eURBbBlgO-0)                            |
 | Gerenciamento do Projeto            | GitHub Projects                    | [Quadro](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/590)                            |
-| Hospedagem                          | GitHub Pages                       | ...                            |
+| Hospedagem                          | Netlify                            | [URL do Projeto](https://projeto-doe-facil.netlify.app/)                            |
 
 
 ### Estratégia de Organização de Codificação 
