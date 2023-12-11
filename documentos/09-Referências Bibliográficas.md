@@ -11,7 +11,3 @@ INSTITUTO PARA O DESENVOLVIMENTO DO INVESTIMENTO SOCIAL. 2021. Confira os result
 NIINIMÄKI,  Kirsi; HASSI,  Lotta.  2011. Emerging  design  strategies  in  sustainable  production  and consumption  of  textiles  and  clothing. Journal  of  Cleaner  Production, v.  19, p.  1876-1883. Acesso em: 20 de agosto de 2023. Disponível em: < Acesso em: 20 de agosto de 2023. 
 
 O’CASS, A.  2000. An  assessment  of  consumers  product,  purchase  decision,  advertising  and consumption  involvement  in  fashion  clothing. Journal  of  Economic  Psychology, v.  21, p. 545-576. 2000. Acesso em: 20 de agosto de 2023. Disponível em: <https://ideas.repec.org/a/eee/joepsy/v21y2000i5p545-576.html>. Acesso em: 20 de agosto de 2023.
-
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
